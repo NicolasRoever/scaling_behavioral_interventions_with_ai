@@ -1,0 +1,33 @@
+Analysis,MITI outcome,Outcome type,N,Original mean,Comparison mean,Mean difference,MAE,Correlation,Absolute-agreement ICC,Exact agreement,Agreement within ±1,Direction changed,Threshold crossing
+LLM baseline (vs human),Global,"Global, 1–5",56,2.71,2.55,-0.16,0.8,0.64,0.64,0.39,0.86,0.41,0.16
+LLM baseline (vs human),Cultivating Change Talk,"Global, 1–5",14,2.5,1.71,-0.79,0.93,0.46,0.36,0.36,0.79,0.5,0.21
+LLM baseline (vs human),Softening Sustain Talk,"Global, 1–5",14,2.79,2.86,0.07,0.79,0.41,0.43,0.43,0.86,0.57,0.14
+LLM baseline (vs human),Partnership,"Global, 1–5",14,2.71,2.64,-0.07,0.64,0.84,0.84,0.43,0.93,0.21,0.07
+LLM baseline (vs human),Empathy,"Global, 1–5",14,2.86,3.0,0.14,0.86,0.66,0.67,0.36,0.86,0.36,0.21
+Stochastic reruns (vs LLM baseline),Cultivating Change Talk,"Global, 1–5",70,1.71,2.8,1.09,1.14,0.49,0.27,0.19,0.73,0.46,0.26
+Stochastic reruns (vs LLM baseline),Softening Sustain Talk,"Global, 1–5",70,2.86,3.16,0.3,0.67,0.56,0.51,0.49,0.84,0.44,0.21
+Stochastic reruns (vs LLM baseline),Partnership,"Global, 1–5",70,2.64,2.61,-0.03,0.74,0.81,0.73,0.31,0.94,0.33,0.19
+Stochastic reruns (vs LLM baseline),Empathy,"Global, 1–5",70,3.0,2.7,-0.3,0.93,0.56,0.47,0.29,0.84,0.47,0.26
+Different model (vs LLM baseline),Cultivating Change Talk,"Global, 1–5",14,1.71,1.07,-0.64,0.64,0.4,0.16,0.57,0.79,0.29,0.0
+Different model (vs LLM baseline),Softening Sustain Talk,"Global, 1–5",14,2.86,2.21,-0.64,0.64,0.6,0.54,0.64,0.86,0.29,0.14
+Different model (vs LLM baseline),Partnership,"Global, 1–5",14,2.64,2.79,0.14,0.57,0.83,0.83,0.5,0.93,0.21,0.07
+Different model (vs LLM baseline),Empathy,"Global, 1–5",14,3.0,2.93,-0.07,0.64,0.83,0.8,0.36,1.0,0.21,0.14
+Prompt ablation (vs LLM baseline),Cultivating Change Talk,"Global, 1–5",14,1.71,2.79,1.07,1.07,0.46,0.21,0.29,0.64,0.5,0.07
+Prompt ablation (vs LLM baseline),Softening Sustain Talk,"Global, 1–5",14,2.86,2.93,0.07,0.5,0.78,0.75,0.5,1.0,0.36,0.29
+Prompt ablation (vs LLM baseline),Partnership,"Global, 1–5",14,2.64,2.71,0.07,0.79,0.74,0.66,0.36,0.86,0.21,0.07
+Prompt ablation (vs LLM baseline),Empathy,"Global, 1–5",14,3.0,2.71,-0.29,0.71,0.76,0.65,0.43,0.86,0.36,0.21
+Stochastic reruns (vs human),Global,"Global, 1–5",280,2.71,2.82,0.1,0.84,0.52,0.48,0.36,0.82,0.42,0.26
+Stochastic reruns (vs human),Cultivating Change Talk,"Global, 1–5",70,2.5,2.8,0.3,0.67,0.58,0.54,0.43,0.9,0.37,0.27
+Stochastic reruns (vs human),Softening Sustain Talk,"Global, 1–5",70,2.79,3.16,0.37,0.83,0.29,0.26,0.4,0.8,0.56,0.27
+Stochastic reruns (vs human),Partnership,"Global, 1–5",70,2.71,2.61,-0.1,0.93,0.71,0.63,0.24,0.83,0.4,0.2
+Stochastic reruns (vs human),Empathy,"Global, 1–5",70,2.86,2.7,-0.16,0.93,0.48,0.41,0.39,0.74,0.36,0.3
+Different model (vs human),Global,"Global, 1–5",56,2.71,2.25,-0.46,0.86,0.6,0.57,0.41,0.8,0.36,0.14
+Different model (vs human),Cultivating Change Talk,"Global, 1–5",14,2.5,1.07,-1.43,1.43,0.13,0.02,0.21,0.57,0.5,0.21
+Different model (vs human),Softening Sustain Talk,"Global, 1–5",14,2.79,2.21,-0.57,0.71,0.56,0.51,0.57,0.79,0.43,0.14
+Different model (vs human),Partnership,"Global, 1–5",14,2.71,2.79,0.07,0.64,0.83,0.82,0.43,0.93,0.29,0.14
+Different model (vs human),Empathy,"Global, 1–5",14,2.86,2.93,0.07,0.64,0.8,0.77,0.43,0.93,0.21,0.07
+Prompt ablation (vs human),Global,"Global, 1–5",56,2.71,2.79,0.07,0.93,0.45,0.4,0.29,0.8,0.48,0.18
+Prompt ablation (vs human),Cultivating Change Talk,"Global, 1–5",14,2.5,2.79,0.29,0.86,0.18,0.15,0.36,0.79,0.57,0.14
+Prompt ablation (vs human),Softening Sustain Talk,"Global, 1–5",14,2.79,2.93,0.14,0.86,0.33,0.34,0.29,0.86,0.64,0.14
+Prompt ablation (vs human),Partnership,"Global, 1–5",14,2.71,2.71,0.0,1.0,0.61,0.54,0.21,0.86,0.29,0.14
+Prompt ablation (vs human),Empathy,"Global, 1–5",14,2.86,2.71,-0.14,1.0,0.52,0.45,0.29,0.71,0.43,0.29
