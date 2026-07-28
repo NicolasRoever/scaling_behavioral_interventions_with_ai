@@ -1,7 +1,7 @@
 # Replication package
 
 This package contains the code, public survey data, and published exhibit files
-for **“Evaluating Behavioral Interventions at Scale with AI.”**.
+for **“Evaluating Behavioral Interventions at Scale with AI.”**
 
 
 ## Directory guide
