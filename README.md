@@ -30,9 +30,9 @@ to `reproduced/stata.log`. Success is marked by `REPLICATION_STATA_COMPLETE`.
 To reconstruct the current survey analysis files from the supplied survey
 exports, run `do 01_clean_data.do` first. It uses the supplied, adjudicated
 numeric screenshot measures and extracted scaling-question scores; it does
-not require raw screenshot images or transcript text. Historical survey
-snapshots used by five manuscript tables are retained separately; see
-`REPRODUCIBILITY_NOTES.md` before interpreting or updating these tables.
+not require raw screenshot images or transcript text. All survey tables use the current cleaned data. The refreshed manuscript
+no longer requires a historical survey snapshot. See
+`REPRODUCIBILITY_NOTES.md` for remaining manuscript/code interpretation issues.
 
 ### Python
 
@@ -78,7 +78,7 @@ original binary hashes of the four reconstructed survey files.
 | `code/private/` | Restricted-input methods and prompts; never invoked by public runners |
 | `code/prompts/parameters.py` | Experimental interview prompts for the four study arms |
 | `data/raw/` | Deidentified baseline and follow-up survey exports |
-| `data/processed/` | Current survey files, historical table snapshot and text-free screenshot measures |
+| `data/processed/` | Current survey files and text-free screenshot measures |
 | `data/derived/` | Numeric/categorical inputs for transcript-derived exhibits |
 | `results/` | Exact reference exhibits included by the manuscript |
 | `reproduced/` | Fresh outputs written by the public runners; not part of the release |

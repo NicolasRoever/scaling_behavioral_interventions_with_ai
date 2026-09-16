@@ -1,4 +1,3 @@
-* This exhibit uses the historical survey snapshot identified in REPRODUCIBILITY_NOTES.md.
 *===============================================================================
 *  Overleaf Regression Tables - Main Effects (Split Tables)
 *===============================================================================
@@ -8,7 +7,7 @@ do 00_setup
 
 * Load data
 clear all
-use "${data_folder}/processed/main_social_media/manuscript_followup_snapshot.dta", clear
+use "${data_folder}/processed/main_social_media/clean_merged.dta", clear
 
 
 gen baseline_wedge = baseline_actual_social_min - baseline_ideal_social_min

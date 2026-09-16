@@ -1,5 +1,5 @@
 {
-  "recorded_at_unix": 1789594055,
+  "recorded_at_unix": 1789597351,
   "source_files": [
     {
       "package_file": "code/stata/fig_baseline_sm_use.do",
@@ -44,7 +44,7 @@
     {
       "package_file": "code/stata/fig_expdemand.do",
       "source": "stata/fig_expdemand.do",
-      "source_sha256": "f4e644b45afedfeb632c13eb9cfd50a888bc35e925fb70d86cd3e1022446adec"
+      "source_sha256": "99439fd4358c90bf87fc36ebf88efe2c944b70a619b143f01be0f3ce4f5a18bb"
     },
     {
       "package_file": "code/stata/fig_treatment_followup.do",

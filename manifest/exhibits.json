@@ -1,5 +1,5 @@
 {
-  "manuscript_sha256": "f9e3ea6a6c8a0a831c840e01c854de1cbe9a396a679c44afa8e78fd0801dfaf1",
+  "manuscript_sha256": "64f89b73687d9c416f0e51c92a0d201cfc96c104404bcbfe1828f5753de81af9",
   "created_at_unix": 1789592732,
   "exhibits": [
     {
@@ -47,9 +47,9 @@
     {
       "manuscript_path": "tables/tab_strategies_followup.tex",
       "status": "included",
-      "sha256": "5b03e522b580724912503afec9ee7186d081d5d7b45b89672749ea9c4b6736b0",
+      "sha256": "0fbcb7a4cf2499fb57fc245dece00a3be4a33c495ba5d710e65be227a7101b21",
       "generator": "code/stata/tab_mechanism_strategies_followup.do",
-      "replication_level": "Historical survey snapshot"
+      "replication_level": "Current public survey data"
     },
     {
       "manuscript_path": "tables/tab_balance.tex",
@@ -75,7 +75,7 @@
     {
       "manuscript_path": "tables/tab_main_treatment_effects_sm_mechanisms_duration_control.tex",
       "status": "included",
-      "sha256": "01bedc074de19db6b0fdd5a4cbd3c036a54022f91c2000e93d150a0084163019",
+      "sha256": "66067dcb1a89e74b05812b89bc0ddc09cf326024f3092f10fa03ed2fe069ab02",
       "generator": "code/stata/tab_main_treatment_effect_duration_control.do",
       "replication_level": "Current public survey data"
     },
@@ -103,9 +103,9 @@
     {
       "manuscript_path": "tables/tab_treatment_effects_motivation_followup.tex",
       "status": "included",
-      "sha256": "de0df63abf01ee6b3903505fe62678cf5200ae917c24b747d52292381e3e0ee3",
+      "sha256": "933e97da595177974e2cf51c37fc62f15638115dc00930b0fbd16dd2ffbdf2c3",
       "generator": "code/stata/tab_treatment_effect_motivation_followup.do",
-      "replication_level": "Historical survey snapshot"
+      "replication_level": "Current public survey data"
     },
     {
       "manuscript_path": "tables/tab_wtp_perceived_cost_mapping.tex",
@@ -124,23 +124,23 @@
     {
       "manuscript_path": "tables/tab_treatment_effects_closetoideal_followup.tex",
       "status": "included",
-      "sha256": "88119d9971bc096d126a7069f031a41d0e010661239ca88704f3fa9b7b9a5d1e",
+      "sha256": "145b64f30c4558c07049a0d4a39182bf818eba5f4e6fd6d6d4153a8f3c61125a",
       "generator": "code/stata/tab_treatment_effects_closetoideal_followup.do",
-      "replication_level": "Historical survey snapshot"
+      "replication_level": "Current public survey data"
     },
     {
       "manuscript_path": "tables/tab_heterogeneity_timeuse_by_wedge.tex",
       "status": "included",
-      "sha256": "1b29f41db0bd8a88c5385a9c126f8fb854ae74725d340cece258ea68889b1b13",
+      "sha256": "c11d4ceb6e1a6155f7d83475b25885726d7c36f3a57c9d1f4b2dd85ced908970",
       "generator": "code/stata/tab_heterogeneity_timeuse_by_wedge.do",
-      "replication_level": "Historical survey snapshot"
+      "replication_level": "Current public survey data"
     },
     {
       "manuscript_path": "tables/tab_heterogeneity_timeuse_by_basetime.tex",
       "status": "included",
-      "sha256": "871632806a89b462439d53dc074068c491df2dda9b5538d2130ef84e516fc1f3",
+      "sha256": "baecdfee568007535ebc29d3bae5f6bffe19fceafbd7a5fe4fe0aee71cca8672",
       "generator": "code/stata/tab_heterogeneity_timeuse_by_basetime.do",
-      "replication_level": "Historical survey snapshot"
+      "replication_level": "Current public survey data"
     },
     {
       "manuscript_path": "tables/tab_differences_strategies.tex",
@@ -187,7 +187,7 @@
     {
       "manuscript_path": "figures/fig_density_interview_dur_by_treat.pdf",
       "status": "included",
-      "sha256": "ca11f1c3304b6dd1710cb671fdbfc1822783709af6883a08e45a24b392a104f1",
+      "sha256": "5ae1328c1809b4d4a18e6c29aaae677f7e6d086c53ed641b8be27d024f8d8de3",
       "generator": "code/stata/fig_interview_dur.do",
       "replication_level": "Current public survey data"
     },
@@ -215,7 +215,7 @@
     {
       "manuscript_path": "figures/fig_actual_vs_ideal_social_time_binned.pdf",
       "status": "included",
-      "sha256": "b1e361bab66a517daeeddeadc71b1d19b2fd7ab1da278012cd17e55d20c4b12b",
+      "sha256": "2eff29769c9c16b1d07694e8f3db62168d04f1c4e0b024e4a6e66e40e65cda99",
       "generator": "code/stata/fig_ideal_vs_actual_time.do",
       "replication_level": "Current public survey data"
     },
@@ -359,5 +359,6 @@
       "generator": "code/python/miti_tables.py",
       "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
     }
-  ]
+  ],
+  "updated_at_unix": 1789597351
 }

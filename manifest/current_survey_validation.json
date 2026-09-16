@@ -1,0 +1,101 @@
+{
+  "validated_at_unix": 1789597440,
+  "checks_passed": true,
+  "rtol": 1e-06,
+  "atol": 1e-08,
+  "source_root": "MI/data",
+  "files": [
+    {
+      "file": "data/processed/main_social_media/clean_data.dta",
+      "rows": 2719,
+      "source_rows": 2719,
+      "numeric_variables_checked": 219,
+      "numeric_values_match": true,
+      "synthetic_variables_checked": [],
+      "source_sha256": "cd07210b8296c7222b41c27459ed908d147d0ffcac14365a6c1ef7be34cfb5f8",
+      "release_sha256": "8cb9cbe50a0f0255f2fd7bface5be0be5964d9456c7ac7b5bf724572b2f8f76a"
+    },
+    {
+      "file": "data/processed/main_social_media/clean_merged.dta",
+      "rows": 2719,
+      "source_rows": 2719,
+      "numeric_variables_checked": 272,
+      "numeric_values_match": true,
+      "synthetic_variables_checked": [],
+      "source_sha256": "3b324c84aef798add71b1503d578e86bb257ff63370a2cbbc1fcbb8fa30dac95",
+      "release_sha256": "b3774610e95fc1924f875ade47b06ccfefb104fa850ec68c90827156d1b0d160"
+    },
+    {
+      "file": "data/processed/main_social_media/clean_merged_with_scrshots.dta",
+      "rows": 2719,
+      "source_rows": 2719,
+      "numeric_variables_checked": 321,
+      "numeric_values_match": true,
+      "synthetic_variables_checked": [],
+      "source_sha256": "67405e630286a14ddd936fd92d2e86c609e61274ad1967e1550d61973933095a",
+      "release_sha256": "f5bb2fc9ea8f0e8fd9d95c7672a46b7ea66697804a4171d907d58467a5959a5e"
+    },
+    {
+      "file": "data/processed/main_social_media/clean_scr_data.dta",
+      "rows": 582,
+      "source_rows": 582,
+      "numeric_variables_checked": 39,
+      "numeric_values_match": true,
+      "synthetic_variables_checked": [],
+      "source_sha256": "f9e2cd0aa84a2502f32ba57c4632f623e09c771d9c0141548b0b1dcafd7dc372",
+      "release_sha256": "f48937e55899246cdef4d7f80949ecb9282db7db5b2d0da5c1d55b7f4b414004"
+    },
+    {
+      "file": "data/processed/main_social_media/df_merged_llm_category_expdemand_v001.dta",
+      "rows": 2719,
+      "source_rows": 2719,
+      "numeric_variables_checked": 0,
+      "numeric_values_match": true,
+      "synthetic_variables_checked": [],
+      "source_sha256": "05fd136c76ea483e4931b5058d8d16b6b1803c9c82fea23ef8a8cd3d0d71f79e",
+      "release_sha256": "f35435528a152b675dc722df8b23fcdd3266d58ca3d563742ee59115019f02d1"
+    },
+    {
+      "file": "data/processed/main_social_media/follow_up_clean.dta",
+      "rows": 2304,
+      "source_rows": 2304,
+      "numeric_variables_checked": 45,
+      "numeric_values_match": true,
+      "synthetic_variables_checked": [],
+      "source_sha256": "30560245ffbf18cc5ee55bc943be309e2eecff15bd62150926e31e759c1d59d0",
+      "release_sha256": "1d53720dc585070f9e634ccaae6580afa254e299fd28324de57468de111dcb6b"
+    },
+    {
+      "file": "data/processed/main_social_media/interview_scores_extracted.dta",
+      "rows": 2719,
+      "source_rows": 2719,
+      "numeric_variables_checked": 2,
+      "numeric_values_match": true,
+      "synthetic_variables_checked": [],
+      "source_sha256": "2d87498f62485452b8767b9d6abcc24cc8e9e97791de428c93afa373887f5071",
+      "release_sha256": "720ef85394c1edca733de170f13550d0fe8e625bf980f0efc9e6d89323a12450"
+    },
+    {
+      "file": "data/raw/main_socialmedia/follow_up_raw.dta",
+      "rows": 2351,
+      "source_rows": 2351,
+      "numeric_variables_checked": 70,
+      "numeric_values_match": true,
+      "synthetic_variables_checked": [],
+      "source_sha256": "ed60d28fbf1971222ef8cb546efa59fc7f43426db1f7dfc944303595277a9978",
+      "release_sha256": "107a51d5c8ab2a45997733da34edff72c3ca28796fa36bf35207e575792b1506"
+    },
+    {
+      "file": "data/raw/main_socialmedia/main_raw.dta",
+      "rows": 3311,
+      "source_rows": 3311,
+      "numeric_variables_checked": 320,
+      "numeric_values_match": true,
+      "synthetic_variables_checked": [
+        "writing_chars (verified against original UTF-8 byte length)"
+      ],
+      "source_sha256": "1988a06532a79dc6146cb12d5fea02f34d6a8455586b1e1cd665531f740e3950",
+      "release_sha256": "bec80e03a4d5a086cc02160019128381f5b68e73084d7fe1df58c715e23211c5"
+    }
+  ]
+}

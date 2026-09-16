@@ -10,7 +10,7 @@ Extracted from active `revision.tex` content, excluding `%` comments and `commen
 | `figures/fig_main_treatment_effects_sm_v001.pdf` | `code/stata/fig_treatment_effect_main.do` | Current public survey data |
 | `figures/fig_minutes_treatment_effects.pdf` | `code/stata/fig_treatment_effect_sm_minutes.do` | Current public survey data |
 | `figures/fig_sm_followup_mechanisms.pdf` | `code/stata/fig_mechanisms_sm_followup.do` | Current public survey data |
-| `tables/tab_strategies_followup.tex` | `code/stata/tab_mechanism_strategies_followup.do` | Historical survey snapshot |
+| `tables/tab_strategies_followup.tex` | `code/stata/tab_mechanism_strategies_followup.do` | Current public survey data |
 | `tables/tab_balance.tex` | `code/stata/tab_balance.do` | Current public survey data |
 | `tables/tab_attrition_analysis_sm.tex` | `code/stata/tab_attrition_sm.do` | Current public survey data |
 | `tables/tab_balance_followup.tex` | `code/stata/tab_balance_followup.do` | Current public survey data |
@@ -18,12 +18,12 @@ Extracted from active `revision.tex` content, excluding `%` comments and `commen
 | `tables/tab_secondary_outcomes_holm_panel_a.tex` | `code/stata/tab_main_treatment_effect_mht.do` | Current public survey data |
 | `tables/tab_secondary_outcomes_holm_panel_b.tex` | `code/stata/tab_main_treatment_effect_mht.do` | Current public survey data |
 | `tables/tab_main_treatment_effects_sm_mechanisms.tex` | `code/stata/tab_main_treatment_effect.do` | Current public survey data |
-| `tables/tab_treatment_effects_motivation_followup.tex` | `code/stata/tab_treatment_effect_motivation_followup.do` | Historical survey snapshot |
+| `tables/tab_treatment_effects_motivation_followup.tex` | `code/stata/tab_treatment_effect_motivation_followup.do` | Current public survey data |
 | `tables/tab_wtp_perceived_cost_mapping.tex` | `code/stata/tab_wtp_perceived_cost_mapping.do` | Current public survey data |
 | `tables/tab_main_treatment_effects_sm_minutes.tex` | `code/stata/tab_main_treatment_effect.do` | Current public survey data |
-| `tables/tab_treatment_effects_closetoideal_followup.tex` | `code/stata/tab_treatment_effects_closetoideal_followup.do` | Historical survey snapshot |
-| `tables/tab_heterogeneity_timeuse_by_wedge.tex` | `code/stata/tab_heterogeneity_timeuse_by_wedge.do` | Historical survey snapshot |
-| `tables/tab_heterogeneity_timeuse_by_basetime.tex` | `code/stata/tab_heterogeneity_timeuse_by_basetime.do` | Historical survey snapshot |
+| `tables/tab_treatment_effects_closetoideal_followup.tex` | `code/stata/tab_treatment_effects_closetoideal_followup.do` | Current public survey data |
+| `tables/tab_heterogeneity_timeuse_by_wedge.tex` | `code/stata/tab_heterogeneity_timeuse_by_wedge.do` | Current public survey data |
+| `tables/tab_heterogeneity_timeuse_by_basetime.tex` | `code/stata/tab_heterogeneity_timeuse_by_basetime.do` | Current public survey data |
 | `tables/tab_differences_strategies.tex` | `code/stata/tab_differences_strategies.do` | Current public survey data |
 | `tables/tab_outcomes_expdemand_additive.tex` | `code/stata/tab_outcomes_expdemand.do` | Current public survey data |
 | `tables/tab_outcomes_expdemand_interacted.tex` | `code/stata/tab_outcomes_expdemand.do` | Current public survey data |

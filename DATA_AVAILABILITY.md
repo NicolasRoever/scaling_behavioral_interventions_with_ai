@@ -9,7 +9,6 @@
 - `clean_scr_data.dta`: structured screenshot measures and week-level validity
   indicators. Raw images, upload metadata and screenshot filenames are absent.
 - `interview_scores_extracted.dta`: numeric importance/confidence ratings.
-- A deidentified historical survey snapshot needed by five manuscript tables.
 - Numeric MITI scores for the actual September 2026 campaign, including its
   benchmark, five stochastic replicates, prompt ablation and two comparison
   models. Only the 14 validation sessions used in the paper are released.

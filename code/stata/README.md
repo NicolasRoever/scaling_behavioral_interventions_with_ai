@@ -10,10 +10,9 @@ Required community packages: `estout`, `coefplot`, `binscatter`, `grstyle`,
 deidentified raw survey exports and supplied numeric screenshot/scaling-score
 inputs. It does not invoke the private transcript or screenshot-image steps.
 
-Five tables use `manuscript_followup_snapshot.dta`; the root
-`REPRODUCIBILITY_NOTES.md` explains the historical sample and the two issues
-with the baseline-use heterogeneity table. This snapshot is not overwritten by
-the cleaning controller.
+All follow-up tables use `clean_merged.dta` from the current cleaning
+pipeline. The obsolete historical survey snapshot has been removed. The root
+`REPRODUCIBILITY_NOTES.md` documents remaining prose/specification issues.
 
 `stats_quoted_in_text.do` logs the original supporting numerical calculations.
 Its demand calculation uses the same current survey merge and saved categories

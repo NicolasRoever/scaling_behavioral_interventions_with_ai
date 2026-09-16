@@ -415,11 +415,6 @@
       ]
     },
     {
-      "file": "data/processed/main_social_media/manuscript_followup_snapshot.dta",
-      "rows": 2719,
-      "numeric_columns": 270
-    },
-    {
       "file": "data/processed/main_social_media/interview_scores_extracted.dta",
       "rows": 2719,
       "numeric_columns": 2
@@ -464,5 +459,6 @@
       "rows": 3311,
       "numeric_columns": 320
     }
-  ]
+  ],
+  "rechecked_at_unix": 1789597351
 }

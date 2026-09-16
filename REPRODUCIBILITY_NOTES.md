@@ -1,70 +1,72 @@
 # Reproducibility notes and manuscript issues
 
-The package reproduces the supplied manuscript's results. The following
-inconsistencies were found while tracing those results; the manuscript was not
-edited as part of this package update.
+The package follows the manuscript exhibits after the author's September 16,
+2026 analysis rerun. The manuscript itself was not edited by this package update.
 
-## Different follow-up snapshots
+## Historical survey-file issue resolved
 
-Five tables use a historical survey snapshot, whereas several newer figures
-and tables use the current cleaned data. The older values are recoverable from
-the survey columns retained in the original
-`df_merged_llm_category_expdemand_v001.dta` (January 2026). The release contains
-that deidentified snapshot as `manuscript_followup_snapshot.dta`.
+The five previously stale follow-up tables now reproduce from the current
+`clean_merged.dta`, using the original analysis scripts. The historical survey
+snapshot and every analysis dependency on it have been removed from the package.
+The follow-up motivation regression now uses 2,302 observations; the follow-up
+screen-time outcome has 2,290 nonmissing observations. No older survey snapshot
+is needed to reproduce the refreshed tables.
 
-It contains 2,130 nonmissing follow-up motivation responses and 2,119 nonmissing
-follow-up screen-time responses. The current cleaned merge contains 2,302 and
-2,290, respectively. For overlapping participants, raw outcomes agree, but
-standardization and winsorization can differ because their reference samples
-differ. This is an input-version difference, not a replication rounding issue.
+`df_merged_llm_category_expdemand_v001.dta` remains only as a two-column file of
+anonymous participant IDs and saved demand classifications. The demand helper
+joins those classifications onto the current cleaned survey data; it does not
+use survey outcomes from the old classification export.
 
-The historical snapshot is used explicitly by:
+## Follow-up prose still needs synchronization
 
-- `tab_treatment_effect_motivation_followup.do`
-- `tab_mechanism_strategies_followup.do`
-- `tab_heterogeneity_timeuse_by_wedge.do`
-- `tab_heterogeneity_timeuse_by_basetime.do`
-- `tab_treatment_effects_closetoideal_followup.do`
+The regenerated motivation table reports Change Talk 0.137 (p<0.05), Decisional
+Balance 0.063 (not significant), and Direct Persuasion 0.141 (p<0.05). The
+manuscript's Persistence paragraph still reports 0.15, 0.07 and 0.16, and assigns
+p<0.01 to Direct Persuasion. Rounded to two decimals, the refreshed estimates are
+0.14, 0.06 and 0.14.
 
-Using this snapshot reproduces their manuscript numbers. The raw-to-clean
-controller rebuilds the **current** survey files and deliberately does not
-replace this historical snapshot. Resolving the manuscript's mixed samples
-would require an author decision followed by consistent updates to its tables,
-figures and prose.
+The cost-benefit persistence paragraph says p<0.001 for both Change Talk and
+Direct Persuasion. The refreshed table has coefficients 0.151 (p approximately
+0.005) and 0.094 (p approximately 0.088), respectively. The follow-up
+life-evaluation paragraph still reports a Change Talk effect of 0.09; the
+refreshed estimate is 0.052 (0.05 rounded to two decimals).
+
+These are remaining prose/table discrepancies, not a need for historical data.
 
 ## Alignment with ideal time
 
-The supplied source script compared follow-up use with *post-treatment* ideal
-time. The manuscript describes *pre-treatment* ideal time. Using
-`baseline_ideal_social_min_w` with the historical snapshot exactly reproduces
-the manuscript table. The replication script therefore uses the baseline
-definition and labels column 4 “Within 30 min,” matching its actual absolute-gap
-definition and the table. The manuscript prose's phrase “below their ideal plus
-30 minutes” describes a different, one-sided outcome and needs review.
+The refreshed table and original source script compare follow-up use with
+*post-treatment* `posterior_ideal_social_min_w`. The replication script now uses
+that same definition and current data. The manuscript table note still describes
+ideal time reported *prior* to the intervention and needs synchronization.
+
+All four columns use an absolute gap (within 5, 10, 20 or 30 minutes). The fourth
+column is still labeled “Below 30 min,” and the prose says “below their ideal
+plus 30 minutes”; these descriptions suggest a different, one-sided outcome.
+The package preserves the refreshed table's labels and calculations for exact
+reproduction and records this unresolved interpretation issue here.
 
 ## Baseline-use heterogeneity table
 
-The source code and reproduced manuscript numbers split participants on the
-median of **follow-up** `w2_actual_social_min`, even though the table caption and
-note call this baseline screen time. Stata's comparison assigns missing
+The source code and refreshed manuscript numbers still split participants on
+the median of **follow-up** `w2_actual_social_min`, even though the table caption
+and note call this baseline screen time. Stata's comparison assigns missing
 follow-up values to the high group (`. > median`), which also affects the
 predicted-time columns. This is not a valid interpretation as heterogeneity by
 a pre-treatment baseline measure.
 
 The same script stores the `a=c` p-value immediately after the `b=c` test,
 without running `test 1.T = 3.T`. Thus the two reported p-value rows duplicate
-each other. The release preserves these calculations for exact reproduction
-and flags them here; changing them would change a published exhibit. This
-table needs an author review before publication.
+each other. The package preserves the refreshed source calculations and flags
+them here. These issues are independent of the resolved historical-file issue.
 
 ## Reference files and numerical fidelity
 
-`results/` holds the exact source manuscript files, with SHA-256 hashes.
-Runners write to `reproduced/`, so a local run cannot overwrite the references.
-All analytic figures are regenerated from data or saved measurements, and all
-table numbers are calculated by code. Static design assets are copied as-is.
-The sole withheld image is explicitly recorded in the exhibit manifest.
+`results/` holds the exact refreshed manuscript exhibit files, with SHA-256
+hashes. Runners write to `reproduced/`. All computed tables and figures are
+regenerated from public survey data or saved text-free measurements. Static
+design assets are supplied as-is. The dialogue-containing screenshot remains
+withheld explicitly.
 
-The commented-out IRR section and its literature-comparison table are not
-included. Alternative analyses, superseded notebooks and model runs not used
-in the active revision are also excluded.
+The commented-out IRR section and its literature-comparison table, unused
+analyses, superseded notebooks and model runs remain excluded.
