@@ -1,0 +1,194 @@
+[
+  {
+    "file": "figures/fig_client_counseling.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_bertopic.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_main_treatment_effects_sm_v001.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_minutes_treatment_effects.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_sm_followup_mechanisms.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_strategies_followup.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_balance.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_attrition_analysis_sm.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_balance_followup.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_main_treatment_effects_sm_mechanisms_duration_control.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_secondary_outcomes_holm_panel_a.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_secondary_outcomes_holm_panel_b.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_main_treatment_effects_sm_mechanisms.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_treatment_effects_motivation_followup.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_wtp_perceived_cost_mapping.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_main_treatment_effects_sm_minutes.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_treatment_effects_closetoideal_followup.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_heterogeneity_timeuse_by_wedge.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_heterogeneity_timeuse_by_basetime.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_differences_strategies.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_outcomes_expdemand_additive.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/tab_outcomes_expdemand_interacted.tex",
+    "text_equal": true
+  },
+  {
+    "file": "figures/tab_thirty_minute_mentions.tex",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_hst_baseline_sm_use.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_density_interview_dur_by_treat.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_cdf_importance_score.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_cdf_confidence_score.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_actual_vs_ideal_social_time_binned.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_emotions.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_miti_score_histograms.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/qtype_shares_manual.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/similarity_by_topic.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_miti_score_distributions_main_study.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/wordclouds_by_arm.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_topic_robustness_elbow.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_topic_seed_stability.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_number_pro_con_statements.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_strategies.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_change_questionnaire.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_main_treatment_effects_sm_followup_v001.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_app_use_effects.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_scrtime_validation_binned_scatter.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_llm_exp_demand.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "figures/fig_prior_posterior_exactly_30_panel.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "tables/mi_validation_results_table.tex",
+    "text_equal": true
+  },
+  {
+    "file": "tables/robustness_handcoded_latex_table.tex",
+    "text_equal": true
+  },
+  {
+    "file": "figures/score_stability_violin_plot.pdf",
+    "text_equal": true
+  },
+  {
+    "file": "tables/score_stability_latex_table.tex",
+    "text_equal": true
+  }
+]

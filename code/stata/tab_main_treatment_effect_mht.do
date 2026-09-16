@@ -141,86 +141,7 @@ end
 * 1. Motivation, beliefs, and WTP: match fig_main_treatment_effects_sm_v001.pdf
 *-------------------------------------------------------------------------------
 
-use "${data_folder}/processed/main_social_media/clean_data.dta", clear
-rename z_smart_bett_wors_revers z_phone_rev
-
-local mechanism_pairs ///
-    z_motivation:controls ///
-    z_costbenefits:controls ///
-    z_phone_rev:controls ///
-    z_awareness:controls ///
-    z_selfefficacy:controls ///
-    z_wtp_dollars:controls
-
-holm_family, pairs("`mechanism_pairs'") prefix(mechanism)
-local mechanism_models_holm `r(models)'
-matrix mechanism_p = r(p_raw)
-matrix mechanism_p_holm = r(p_holm)
-
-esttab `mechanism_models_holm' ///
-    using "${overleaf}/tables/tab_main_treatment_effects_sm_mechanisms_holm.tex", ///
-    cells(b(star pvalue(p_holm) fmt(3)) ///
-          se(par fmt(3)) ///
-          p_holm(par([ ]) fmt(3))) ///
-    keep(1.T 2.T 3.T) ///
-    coeflabel(1.T "Change Talk" ///
-              2.T "Decisional Balance" ///
-              3.T "Direct Persuasion") ///
-    mtitles("\makecell{Motivation\\(std.)}" ///
-            "\makecell{Perceived costs\\of social media\\(std.)}" ///
-            "\makecell{Social media\\makes life worse\\(std.)}" ///
-            "\makecell{Awareness of\\self-control problems\\(std.)}" ///
-            "\makecell{Self-efficacy\\beliefs (std.)}" ///
-            "\makecell{WTP\\(std.)}") ///
-    stats(N r2 controlmean controls, ///
-          fmt(%9.0fc %9.3f %9.3f %9s) ///
-          labels("Observations" ///
-                 "R\textsuperscript{2}" ///
-                 "Control group mean" ///
-                 "Controls")) ///
-    collabels(none) ///
-    starlevels(* 0.10 ** 0.05 *** 0.01) ///
-    booktabs fragment replace
-
-*-------------------------------------------------------------------------------
-* 2. Ideal, predicted, and actual time: match fig_minutes_treatment_effects.pdf
-*-------------------------------------------------------------------------------
-
-use "${data_folder}/processed/main_social_media/clean_merged.dta", clear
-
-local minutes_pairs ///
-    posterior_ideal_social_min_w:controls ///
-    posterior_actual_social_min_w:controls ///
-    w2_actual_social_min_wins:controls_followup
-
-holm_family, pairs("`minutes_pairs'") prefix(minutes)
-local minutes_models_holm `r(models)'
-matrix minutes_p = r(p_raw)
-matrix minutes_p_holm = r(p_holm)
-
-esttab `minutes_models_holm' ///
-    using "${overleaf}/tables/tab_main_treatment_effects_sm_minutes_holm.tex", ///
-    cells(b(star pvalue(p_holm) fmt(3)) ///
-          se(par fmt(3)) ///
-          p_holm(par([ ]) fmt(3))) ///
-    keep(1.T 2.T 3.T) ///
-    coeflabel(1.T "Change Talk" ///
-              2.T "Decisional Balance" ///
-              3.T "Direct Persuasion") ///
-    mtitles("\makecell{Ideal social\\media time (min)}" ///
-            "\makecell{Predicted social\\media time (min)}" ///
-            "\makecell{Actual social\\media time (min)}") ///
-    stats(N r2 controlmean controls, ///
-          fmt(%9.0fc %9.3f %9.3f %9s) ///
-          labels("Observations" ///
-                 "R\textsuperscript{2}" ///
-                 "Control group mean" ///
-                 "Controls")) ///
-    collabels(none) ///
-    starlevels(* 0.10 ** 0.05 *** 0.01) ///
-    booktabs fragment replace
-
-*-------------------------------------------------------------------------------
+* Only the preregistered secondary-outcome family appears in the revision.
 * 3. Preregistered secondary outcomes: one joint Holm family
 *-------------------------------------------------------------------------------
 
@@ -319,11 +240,6 @@ esttab `secondary_models_b' ///
     starlevels(* 0.10 ** 0.05 *** 0.01) ///
     booktabs fragment replace
 
-matrix list mechanism_p
-matrix list mechanism_p_holm
-matrix list minutes_p
-matrix list minutes_p_holm
 matrix list secondary_p
 matrix list secondary_p_holm
 
-exit, clear

@@ -1,46 +1,63 @@
-# Data availability and privacy
+# Data availability
 
-## Included
+## Distributed
 
-- Baseline survey: `data/raw/main_socialmedia/main_raw.dta`
-- Follow-up survey: `data/raw/main_socialmedia/follow_up_raw.dta`
-- Cleaned survey and merged analysis files in
-  `data/processed/main_social_media/`
-- Structured app-use and screen-time measures extracted from screenshots in
-  `data/processed/main_social_media/screenshot_data/`
-- Text-free topic assignments and text-free MITI scores
+- Baseline and follow-up survey exports (`main_raw.dta`, `follow_up_raw.dta`).
+  These are **deidentified exports**, not unmodified Qualtrics exports.
+- The current cleaned baseline file (2,719 participants), follow-up file (2,304
+  records), and merged survey/screen-time files.
+- `clean_scr_data.dta`: structured screenshot measures and week-level validity
+  indicators. Raw images, upload metadata and screenshot filenames are absent.
+- `interview_scores_extracted.dta`: numeric importance/confidence ratings.
+- A deidentified historical survey snapshot needed by five manuscript tables.
+- Numeric MITI scores for the actual September 2026 campaign, including its
+  benchmark, five stochastic replicates, prompt ablation and two comparison
+  models. Only the 14 validation sessions used in the paper are released.
+- Human global ratings for those 14 validation sessions; saved aggregate
+  behavioral-validation statistics used by Panel B.
+- Topic assignments without text, topic diagnostic metrics, pros/cons counts,
+  fixed-category strategy selections, per-chat 30-minute mention indicators,
+  aggregate interviewer-question positions and cosine similarities, and the
+  frequent words/phrases displayed in the published word clouds.
 
-## Deliberately excluded
+`manifest/data_dictionary.csv` documents the Stata variables. The manifest and
+code explain the definitions of the derived CSV fields.
 
-- Raw interview/chat transcripts (`chats_raw.csv` and all equivalents)
-- Participant-level pros/cons transcript input
-  (`df_clean_with_llm_themes_pros_cons_v001.csv`)
-- Participant-level strategy-classification excerpt input
-  (`df_clean_with_llm_themes_strategies_v003.csv`)
-- Example interview text
-- Screenshot image files
-- Screenshot filenames and exclusion logs
-- Screenshot-upload file IDs, names, sizes, and MIME types
-- Rendered per-interview API payloads, free-text justifications, and model
-  responses that could echo transcript content
-- Credentials and `.env` files
+## Removed or withheld
 
-`data/private/interview_transcripts.txt` is a zero-byte placeholder marking the
-location of the unavailable private interview data.
+- All raw interview transcripts and participant-level transcript excerpts.
+- Generated model explanations, raw responses, rendered prompts, request
+  payloads, named pros/cons excerpts and free-form model output.
+- All raw screenshots and upload filenames, IDs, sizes and MIME types, for all
+  three screenshot questions.
+- Prolific and Qualtrics response identifiers. These are consistently replaced
+  by release IDs across survey files; the linking crosswalk is not distributed.
+- Unused free-text survey answers, feedback and technical/browser metadata.
+  Original fields are blanked where their presence is required by cleaning code.
+- Credentials, `.env` files, notebook execution outputs and private caches.
+- The manuscript's chat-interface screenshot, because it displays dialogue.
 
-Because transcripts are unavailable, BERTopic fitting, interviewer-language
-classification, and fresh MITI scoring cannot be rerun publicly. Their analysis
-code is included for transparency, and the package supplies only the minimized
-derived inputs needed to inspect downstream calculations where possible.
+For the writing-task exclusion, `writing_chars` retains the original Stata
+UTF-8 byte length; the writing response is blanked. This preserves sample
+selection without distributing the text. Source survey timestamps keep their
+original Stata units because the cleaning code depends on them. New run and
+manifest timestamps are Unix seconds.
 
-Fresh positive/negative-aspect extraction likewise requires the excluded
-participant-level transcript input. `code/python/fig_pros_cons.py` contains the
-complete prompt, structured-output call, local string counting, checkpointing,
-audit exports, and figure-generation code.
+Study-internal numeric participant IDs and `MI-MAINEXP-<number>` session keys
+remain in derived score files to allow audit joins; these are not external
+recruitment-platform identifiers. Training-material session labels identify
+MITI benchmark sessions, not study participants.
 
-Fresh strategy classification likewise requires the excluded 1,663-row
-participant-level excerpt input. `code/python/fig_strategies.py` contains the
-complete 12-category manual, structured-output call, backend Unix timestamp
-provenance, resumable checkpointing, local share calculation, and figure code.
+## What cannot be regenerated without restricted data
 
-All reusable prompt templates are included and indexed in `PROMPTS.md`.
+Refitting BERTopic, rerunning transcript classification/scoring, recomputing
+interviewer-language similarities, finding 30-minute mentions in the original
+turns, and re-extracting or adjudicating screenshot images require the omitted
+source data. The public workflow starts from the saved text-free measurements.
+The MITI behavioral-count validation panel starts from saved aggregate results;
+it does not redo utterance-level coding or validation.
+
+The restricted-input methods are included under `code/private/` with their
+required filenames documented in its README. No private upstream workflow was
+executed while preparing this release. API-capable Python sources are disabled
+at import/execution in this package under the project's $0 OpenAI API policy.

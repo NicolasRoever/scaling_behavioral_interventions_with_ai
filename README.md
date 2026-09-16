@@ -1,91 +1,100 @@
-# Replication package
+# Scaling Behavioral Interventions with AI: replication package
 
-This package contains the code, public survey data, and published exhibit files
-for **“Evaluating Behavioral Interventions at Scale with AI.”**
+This release follows the active content of `revision.tex` inspected on September
+16, 2026. It contains only the revised manuscript's analyses, dependencies,
+survey data and saved results. The manuscript hash and exhibit inventory are in
+`manifest/exhibits.json`.
 
+**Raw interview transcripts are not distributed.** The public runners rebuild
+the exhibits from survey data and text-free derived results. Recomputing the
+upstream transcript measures requires the restricted interview data. There are
+no API requests in either public runner; additional API/compute cost is **$0**.
 
-## Directory guide
+## Reproduce the results
 
-- `code/stata/`: all code written in stata; survey cleaning, analysis, figures, and tables.
-- `code/python/`: all code written in python; topic model, text, and MITI analyses.
-- `code/prompts/`: prompts used to conduct the experimental interviews.
-- `data/raw/main_socialmedia/`: baseline and follow-up survey files.
-- `data/processed/main_social_media/`: cleaned analysis files and public,
-  text-free derived measures.
-- `results/figures/` and `results/tables/`: the exact exhibit files referenced
-  by the manuscript, except the excluded screenshot.
-- `EXHIBIT_MANIFEST.md`: manuscript exhibit-to-code crosswalk.
-- `DATA_AVAILABILITY.md`: included and excluded data.
-- `PROMPTS.md`: complete prompt-location index.
+### Stata
 
-## Prompts used in this project
+Use Stata 17 or newer. The validation used Stata/SE 17. Install the required
+community packages once: `estout`, `coefplot`, `binscatter`, `grstyle`,
+`palettes`, `colrspace`, `blindschemes`, `balancetable`, and `winsor2`.
 
-The complete prompt index is in `PROMPTS.md`.
+From Stata, change to this package's `code/stata` directory, then run:
 
-- **Experimental interview prompts:** `code/prompts/parameters.py`.
-  This is the requested copy of
-  `/Users/nicolasroever/Dropbox/MI/code/prompts/Prompts_SocialMedia/parameters_v018.py`
-  and contains the global system prompts, opening questions, and turn-specific
-  instructions for all four experimental arms.
-- **MITI global-score prompt:** `code/python/miti_scoring/miti_global_scores.py`.
-- **MITI behavioral-count prompt:** `code/python/miti_scoring/miti_behavioral_counts.py`.
-- **BERTopic labeling prompt:** `code/python/classify_bertopic.py`.
-- **Positive/negative-aspect coding prompt and figure pipeline:**
-  `code/python/fig_pros_cons.py`.
-- **Strategy coding prompt and figure pipeline:**
-  `code/python/fig_strategies.py`.
+```stata
+do 02_run_exhibits.do
+```
 
+This generates the 31 Stata exhibit files and logs supporting in-text statistics
+to `reproduced/stata.log`. Success is marked by `REPLICATION_STATA_COMPLETE`.
 
-## Quick start
+To reconstruct the current survey analysis files from the supplied survey
+exports, run `do 01_clean_data.do` first. It uses the supplied, adjudicated
+numeric screenshot measures and extracted scaling-question scores; it does
+not require raw screenshot images or transcript text. Historical survey
+snapshots used by five manuscript tables are retained separately; see
+`REPRODUCIBILITY_NOTES.md` before interpreting or updating these tables.
 
-To run the analyses made in stata:
+### Python
 
-1. Open Stata 17 or later.
-2. Install the community packages listed in `code/stata/README.md`.
-3. Change the working directory to `code/stata`.
-4. Run `do 02_run_exhibits.do`.
-
-Generated files are written to `results/figures` and `results/tables`.
-
-The raw-to-clean survey pipeline can be started with `do 01_clean_data.do`.
-The screenshot-cleaning and chat-cleaning stages cannot be reconstructed from
-raw images/transcripts because those private sources are deliberately absent.
-The corresponding cleaned, non-image analysis files are supplied.
-
-For Python, create an environment and install:
+The public workflow was tested with Python 3.9.12 and the exact versions in
+`code/python/requirements.txt`. Use a dedicated Python 3.9 or 3.10 environment:
 
 ```bash
 python -m pip install -r code/python/requirements.txt
+python code/python/run_public.py
 ```
 
-Then follow `code/python/README.md`. Analyses that require conversation text
-cannot be rerun from this public package; their text-free derived inputs and
-published outputs are provided for auditability.
+The runner works from any directory and generates 17 Python exhibit files plus
+numeric audit summaries in `reproduced/audit/`. It checks saved MITI score-file
+hashes before using them. Success is marked by `REPLICATION_PYTHON_COMPLETE`.
+No OpenAI client, key, embedding download or network service is required.
+PDF appearance can vary slightly with platform, fonts and rendering libraries.
+The figures use Arial, as in the manuscript.
 
-The positive/negative-aspect pipeline is included in full but requires the
-private participant-level transcript file and an OpenAI API key. The model
-returns named aspect strings; all counts used in the figure are computed
-locally by Python.
+### Verify the distribution
 
-The strategy pipeline is likewise included in full and requires its excluded
-participant-level strategy-excerpt file plus an OpenAI API key. It uses
-`gpt-5.6-luna` with low reasoning by default, returns selections from a fixed
-12-category manual, and computes treatment-arm shares locally.
+```bash
+python code/verify_package.py
+python code/verify_package.py --reproduced
+```
 
-## Treatment coding
+The first command verifies the reference-file hashes, release checksums and
+restricted-file exclusions. The second additionally requires every generated
+exhibit and compares all regenerated LaTeX table bodies with the manuscript.
+See `VALIDATION.md` for the completed release checks and their limits.
 
-- `T = 0`: time-use interview control
-- `T = 1`: Change Talk
-- `T = 2`: Decisional Balance
-- `T = 3`: Direct Persuasion
+Run the initial checksum check before cleaning. Stata rewrites binary metadata
+when saving rebuilt datasets, so after running `01_clean_data.do` use
+`python code/verify_package.py --reproduced --allow-rebuilt-data`. This still
+checks all other release hashes and all generated table bodies; it skips the
+original binary hashes of the four reconstructed survey files.
 
-## Privacy
+## Contents
 
-The raw interview transcripts and screenshot images are private and are not
-included. `data/private/interview_transcripts.txt` is intentionally empty.
-Transcript-derived topic assignments and MITI scores are included without the
-underlying conversation text or model justifications. All reusable prompt
-templates are included. Rendered per-interview API payloads are not included
-because they contain the private transcript inserted into the template.
-Structured screen-time measures extracted from screenshots are included, but
-the screenshot images and screenshot filenames are not.
+| Location | Contents |
+|---|---|
+| `code/stata/` | Public survey cleaning, tables, figures, and supporting statistics |
+| `code/python/` | Offline plotting and tabulation from saved derived results |
+| `code/private/` | Restricted-input methods and prompts; never invoked by public runners |
+| `code/prompts/parameters.py` | Experimental interview prompts for the four study arms |
+| `data/raw/` | Deidentified baseline and follow-up survey exports |
+| `data/processed/` | Current survey files, historical table snapshot and text-free screenshot measures |
+| `data/derived/` | Numeric/categorical inputs for transcript-derived exhibits |
+| `results/` | Exact reference exhibits included by the manuscript |
+| `reproduced/` | Fresh outputs written by the public runners; not part of the release |
+| `manifest/` | Exhibit crosswalk, data dictionary, redaction record and checksums |
+
+There are 51 active external exhibit references: 48 computed exhibits, two
+static assets, and one withheld chat-interface screenshot containing dialogue.
+The two static assets are supplied as-is. The commented-out IRR comparison,
+unused screenshot robustness tables, superseded MITI runs, experimental
+notebooks and other exploratory analyses are excluded.
+
+`T=0` is Control (time-use interview); `T=1` is Change Talk; `T=2` is Decisional
+Balance (called Ambivalence in some source data); `T=3` is Direct Persuasion.
+
+Read `EXHIBIT_MANIFEST.md` for every exhibit's generating code,
+`DATA_AVAILABILITY.md` for the privacy boundary, and
+`REPRODUCIBILITY_NOTES.md` for manuscript/code inconsistencies discovered during
+replication. The manuscript itself is not distributed because its appendices
+include example interviews.

@@ -9,10 +9,6 @@
 
 * Do this once for easier cleaning later on. Saves a bit of time
 clear
-import spss using "${raw_folder}/main_socialmedia/follow_up_raw.sav", case(lower)
-destring *, replace
-save "${raw_folder}/main_socialmedia/follow_up_raw.dta", replace
-
 use "${raw_folder}/main_socialmedia/follow_up_raw.dta", clear
 
 * Consent

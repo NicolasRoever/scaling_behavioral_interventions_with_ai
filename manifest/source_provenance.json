@@ -1,0 +1,240 @@
+{
+  "recorded_at_unix": 1789594055,
+  "source_files": [
+    {
+      "package_file": "code/stata/fig_baseline_sm_use.do",
+      "source": "stata/fig_baseline_sm_use.do",
+      "source_sha256": "1c17c6ae20f7ff289bcda6ee79090943e244e084a692ceb25abd395de2930eba"
+    },
+    {
+      "package_file": "code/stata/fig_verify_scrtime.do",
+      "source": "stata/fig_verify_scrtime.do",
+      "source_sha256": "882988c2cc0060173507d5b7ec114f18a7ec27af336cd725cff594b57a69bfe3"
+    },
+    {
+      "package_file": "code/stata/tab_heterogeneity_timeuse_by_wedge.do",
+      "source": "stata/tab_heterogeneity_timeuse_by_wedge.do",
+      "source_sha256": "3166a55aeba166f56ae5f644c1974fcd244b1750b94d70dba988a77d504be668"
+    },
+    {
+      "package_file": "code/stata/tab_mechanism_strategies_followup.do",
+      "source": "stata/tab_mechanism_strategies_followup.do",
+      "source_sha256": "24b64467d1ff6423891daac16ffbd5f2d7afd8ed51ac5c8b136d82e18054bcd4"
+    },
+    {
+      "package_file": "code/stata/tab_differences_strategies.do",
+      "source": "stata/tab_differences_strategies.do",
+      "source_sha256": "02d91cf89a87639f69184a6f75caf87feb4f6ba08f8439782019c5f87e2602d4"
+    },
+    {
+      "package_file": "code/stata/tab_emotions.do",
+      "source": "stata/tab_emotions.do",
+      "source_sha256": "5f0dfb5f2bdb2ecf4459bd8f23771add2606e86f8bca982008345bcdbac76de2"
+    },
+    {
+      "package_file": "code/stata/fig_interview_dur.do",
+      "source": "stata/fig_interview_dur.do",
+      "source_sha256": "e61a3122ad0f4bc970850f01a96ac965a92a3efe1cc5f391179ad970b2a9753e"
+    },
+    {
+      "package_file": "code/stata/tab_appuse.do",
+      "source": "stata/tab_appuse.do",
+      "source_sha256": "d8680e3132d4b8826b0b7ac1163b8636a1c5ce6b5b566cea5be49dbc497dbd00"
+    },
+    {
+      "package_file": "code/stata/fig_expdemand.do",
+      "source": "stata/fig_expdemand.do",
+      "source_sha256": "f4e644b45afedfeb632c13eb9cfd50a888bc35e925fb70d86cd3e1022446adec"
+    },
+    {
+      "package_file": "code/stata/fig_treatment_followup.do",
+      "source": "stata/fig_treatment_followup.do",
+      "source_sha256": "e3e1e8927d0feb05360d06959f57801d720d356b38edf759adf174cb04ea95bf"
+    },
+    {
+      "package_file": "code/stata/stats_quoted_in_text.do",
+      "source": "stata/stats_quoted_in_text.do",
+      "source_sha256": "a07daea2f4512696a7f5eb8f0a38357e472edbdf3bc0008d0dd2b55148622156"
+    },
+    {
+      "package_file": "code/stata/tab_balance_followup.do",
+      "source": "stata/tab_balance_followup.do",
+      "source_sha256": "97612c52b9e937c071db3159125c6fdd426c74dfd02203064fa1205bcd710c68"
+    },
+    {
+      "package_file": "code/stata/tab_treatment_effect_motivation_followup.do",
+      "source": "stata/tab_treatment_effect_motivation_followup.do",
+      "source_sha256": "b50070da1e7e000067bf7e3c5a997ce9cff70393889d961db16dc97f5516cd11"
+    },
+    {
+      "package_file": "code/stata/fig_treatment_effect_sm_minutes.do",
+      "source": "stata/fig_treatment_effect_sm_minutes.do",
+      "source_sha256": "c110b7c9d3ca36f2259d836dfb995fc4f5615b7c3866450d9e3534d50739e903"
+    },
+    {
+      "package_file": "code/stata/fig_ideal_vs_actual_time.do",
+      "source": "stata/fig_ideal_vs_actual_time.do",
+      "source_sha256": "da8b87827e46a5e6f308ae9041ab112fd149326a5a17889db2fcb79e3b3d21ba"
+    },
+    {
+      "package_file": "code/stata/tab_outcomes_expdemand.do",
+      "source": "stata/tab_outcomes_expdemand.do",
+      "source_sha256": "096447ffb41829d7a6b1316ac9e08127c97169d4ab18ae79c168716a9d3081c7"
+    },
+    {
+      "package_file": "code/stata/tab_heterogeneity_timeuse_by_basetime.do",
+      "source": "stata/tab_heterogeneity_timeuse_by_basetime.do",
+      "source_sha256": "b477a7b070e75291d9c18a8c78925ce315ea6dd38e016c5c8f0dd18ef57387b5"
+    },
+    {
+      "package_file": "code/stata/00_setup.do",
+      "source": "stata/00_setup.do",
+      "source_sha256": "d8299c53cb2b1d408875a0f9f6be5b53f32e6a65c6c9c9ed2644f31261e5a7f4"
+    },
+    {
+      "package_file": "code/stata/fig_mechanisms_sm_followup.do",
+      "source": "stata/fig_mechanisms_sm_followup.do",
+      "source_sha256": "dcc00fda245afb0ccb5c02efdade6c78036ee415d11994886870d3bea769fbf4"
+    },
+    {
+      "package_file": "code/stata/tab_balance.do",
+      "source": "stata/tab_balance.do",
+      "source_sha256": "977c029e9bfd556cf54770005e1d331b5ae971143962671b68e5627817a7d0d9"
+    },
+    {
+      "package_file": "code/stata/tab_main_treatment_effect_mht.do",
+      "source": "stata/tab_main_treatment_effect_mht.do",
+      "source_sha256": "0699eea9d13b6994dddc737bd6f12ad583daa94b04debb3cc3a633fd313eb991"
+    },
+    {
+      "package_file": "code/stata/tab_client_counseling.do",
+      "source": "stata/tab_client_counseling.do",
+      "source_sha256": "ee0d27b6812df07b605793e4e2c89fbeb39ced10c452d0ac9aae955cee784e0b"
+    },
+    {
+      "package_file": "code/stata/fig_treatment_effect_main.do",
+      "source": "stata/fig_treatment_effect_main.do",
+      "source_sha256": "41d1801cd5ba6b3e1b8cc4a43b68a465dbf0f2b2ec14121413f4b8858af7828f"
+    },
+    {
+      "package_file": "code/stata/tab_wtp_perceived_cost_mapping.do",
+      "source": "stata/tab_wtp_perceived_cost_mapping.do",
+      "source_sha256": "bba0f6f37762c085d18b7d6750f3e264895de6ae1268983464fec75433bd971f"
+    },
+    {
+      "package_file": "code/stata/tab_treatment_effects_closetoideal_followup.do",
+      "source": "stata/tab_treatment_effects_closetoideal_followup.do",
+      "source_sha256": "7cae2e5f3084459dfb2308517c72cba57ec4203152900d635c54d87fd6f2ba20"
+    },
+    {
+      "package_file": "code/stata/fig_change_quesionnaire.do",
+      "source": "stata/fig_change_quesionnaire.do",
+      "source_sha256": "60f15c4735ef12934351591c1ccde350804591a35fc8794c5cf3852822688591"
+    },
+    {
+      "package_file": "code/stata/tab_main_treatment_effect_duration_control.do",
+      "source": "stata/tab_main_treatment_effect_duration_control.do",
+      "source_sha256": "71f37c731f6ea17250632fe61237b91fff9906fc97a9099aa6d02c90f3164a58"
+    },
+    {
+      "package_file": "code/stata/tab_main_treatment_effect.do",
+      "source": "stata/tab_main_treatment_effect.do",
+      "source_sha256": "5dbdd46bbb52301925180da1d62a00ae40fb2b2cb0ed11d0244341cbaabc8d9c"
+    },
+    {
+      "package_file": "code/stata/fig_posterior_exactly_30_by_arm.do",
+      "source": "stata/fig_posterior_exactly_30_by_arm.do",
+      "source_sha256": "47b14cec07560647edcc571e1e22b97d3f8d53492fb8a59e2c58f6cb3039043b"
+    },
+    {
+      "package_file": "code/stata/tab_attrition_sm.do",
+      "source": "stata/tab_attrition_sm.do",
+      "source_sha256": "7bff3dadcda09483fd3a5315b3bfe9314efa1e0a7daaebe4c1fd7b0e6bf04b0c"
+    },
+    {
+      "package_file": "code/stata/CleaningScripts/02_cleaning_followup.do",
+      "source": "stata/CleaningScripts/02_cleaning_followup.do",
+      "source_sha256": "4aa6b62bb71462d1c4b1cefc024f340461236488befc8b034b97328fd406c7f4"
+    },
+    {
+      "package_file": "code/stata/CleaningScripts/01_cleaning_baseline.do",
+      "source": "stata/CleaningScripts/01_cleaning_baseline.do",
+      "source_sha256": "c4e71895a101869311eb8a716d15681b6d15f921a6a84bb42c5a4fc05f724a17"
+    },
+    {
+      "package_file": "code/stata/CleaningScripts/04_create_full_data.do",
+      "source": "stata/CleaningScripts/04_create_full_data.do",
+      "source_sha256": "f8f5abccca9e4139b2719ee8e0e0a0931da21a80597ea9b9dfa09ff69d0230d0"
+    },
+    {
+      "package_file": "code/stata/Helpers/load_expdemand_data.do",
+      "source": "stata/Helpers/load_expdemand_data.do",
+      "source_sha256": "af7cb50cbad8172e052e7e417e47dbbdd0ec5db374b85c3f239d9f342ea80dfd"
+    },
+    {
+      "package_file": "code/private/classify_bertopic.py",
+      "source": "python/classify_bertopic.py",
+      "source_sha256": "01993bbdf899c243835734e25cbc83dee4af02e756f76ec8ae9f951bef7fcc24"
+    },
+    {
+      "package_file": "code/private/helper.py",
+      "source": "python/helper.py",
+      "source_sha256": "e5c6e322f8f9a37b2dd423125176275c0ec12339a8d3639ac02591986b359daf"
+    },
+    {
+      "package_file": "code/private/topic_model_robustness.py",
+      "source": "python/topic_model_robustness.py",
+      "source_sha256": "d89718d92786dd731a454f7a48a70fef4761cbbaeefaa5db8d1357a8c9200cf3"
+    },
+    {
+      "package_file": "code/private/fig_strategies.py",
+      "source": "python/fig_strategies.py",
+      "source_sha256": "1b025e4984fdb9cb5b55cf13d3c8f528cf6dc411760cc2e1668134019dfb9684"
+    },
+    {
+      "package_file": "code/private/topic_model_seed_stability.py",
+      "source": "python/topic_model_seed_stability.py",
+      "source_sha256": "76178ebb981356a855ea23fdec87cf6aba2eb96cf1e0b0dbc4ab0a16024bf755"
+    },
+    {
+      "package_file": "code/private/fig_pros_cons.py",
+      "source": "python/fig_pros_cons.py",
+      "source_sha256": "20c7caa3fc05867089ad3424e8710ff6c2cc2ab5128cecb3d7a8a912b050e889"
+    },
+    {
+      "package_file": "code/private/text_analysis/similarity.py",
+      "source": "python/text_analysis/similarity.py",
+      "source_sha256": "e157e4b5dd82df33c942b074aa68b517f3812c7033eee2f3fe3b441b4eead80a"
+    },
+    {
+      "package_file": "code/private/text_analysis/thirty_minute_mentions.py",
+      "source": "python/text_analysis/thirty_minute_mentions.py",
+      "source_sha256": "648e22cb459c4ce93ce20ac8f3568cb05bbcdcc18c872a9fb668805060878904"
+    },
+    {
+      "package_file": "code/private/text_analysis/classify_manual.py",
+      "source": "python/text_analysis/classify_manual.py",
+      "source_sha256": "367b3c082c529be60cb29d4b992dd71b5373928ff98444076e6d5154f0849885"
+    },
+    {
+      "package_file": "code/private/text_analysis/keyness_wordclouds.py",
+      "source": "python/text_analysis/keyness_wordclouds.py",
+      "source_sha256": "3b21ca389f15cef9eea1183432fb8bde77ae4c9376ac634dbf45d4561ae0df12"
+    },
+    {
+      "package_file": "code/private/miti_scoring/miti_behavioral_counts.py",
+      "source": "python/miti_scoring/miti_behavioral_counts.py",
+      "source_sha256": "07d7952b59ec7ac00f83e0985e14cb1150f4cc75d094d43c5b71b0da854eb664"
+    },
+    {
+      "package_file": "code/private/miti_scoring/run_campaign.py",
+      "source": "python/miti_scoring/run_campaign.py",
+      "source_sha256": "9b5bc7b3992de3dbd90ad78222d60008261827c707713a5dd049e9d107f7666f"
+    },
+    {
+      "package_file": "code/private/miti_scoring/miti_global_scores.py",
+      "source": "python/miti_scoring/miti_global_scores.py",
+      "source_sha256": "aae2d5c4b669df48401fc0d5e6eb7a76f54c8dd00247f11d48aefa7f3fa34dd9"
+    }
+  ]
+}

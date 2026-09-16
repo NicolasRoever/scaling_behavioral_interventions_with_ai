@@ -1,13 +1,40 @@
-\begin{tabular}{p{4cm} cc cc cc cc}
+\begin{tabular}{p{9cm}rrr}
 \toprule
- & \multicolumn{2}{c}{\textbf{Benchmark}} & \multicolumn{2}{c}{\textbf{Stochastic Reruns}} & \multicolumn{2}{c}{\textbf{Different Model}} & \multicolumn{2}{c}{\textbf{Prompt Ablation}} \\
-\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
-\textbf{Score Category} & \textbf{Bias} & \textbf{Correlation} & \textbf{Bias} & \textbf{Correlation} & \textbf{Bias} & \textbf{Correlation} & \textbf{Bias} & \textbf{Correlation} \\
+Procedure / score & Sessions & Bias & Correlation \\
 \midrule
-Global & -0.16 & 0.64 & 0.10 & 0.52 & -0.46 & 0.60 & 0.07 & 0.45 \\
-Partnership & -0.07 & 0.84 & -0.10 & 0.71 & 0.07 & 0.83 & 0.00 & 0.61 \\
-Cultivating Change Talk & -0.79 & 0.46 & 0.30 & 0.58 & -1.43 & 0.13 & 0.29 & 0.18 \\
-Empathy & 0.14 & 0.66 & -0.16 & 0.48 & 0.07 & 0.80 & -0.14 & 0.52 \\
-Softening Sustain Talk & 0.07 & 0.41 & 0.37 & 0.29 & -0.57 & 0.56 & 0.14 & 0.33 \\
+\multicolumn{4}{l}{\textit{a. Benchmark}} \\[0.25em]
+Global & 14 & -0.46 & 0.62 \\
+Cultivating Change Talk & 14 & -1.43 & 0.13 \\
+Softening Sustain Talk & 14 & -0.64 & 0.65 \\
+Partnership & 14 & 0.14 & 0.85 \\
+Empathy & 14 & 0.07 & 0.81 \\
+\addlinespace[1em]
+\multicolumn{4}{l}{\textit{b. Stochastic reruns}} \\[0.25em]
+Global & 14 & -0.44 & 0.62 \\
+Cultivating Change Talk & 14 & -1.29 & 0.26 \\
+Softening Sustain Talk & 14 & -0.71 & 0.65 \\
+Partnership & 14 & 0.17 & 0.85 \\
+Empathy & 14 & 0.06 & 0.77 \\
+\addlinespace[1em]
+\multicolumn{4}{l}{\textit{c. Prompt ablation}} \\[0.25em]
+Global & 14 & -0.45 & 0.59 \\
+Cultivating Change Talk & 14 & -1.43 & -0.13 \\
+Softening Sustain Talk & 14 & -0.64 & 0.60 \\
+Partnership & 14 & 0.14 & 0.85 \\
+Empathy & 14 & 0.14 & 0.73 \\
+\addlinespace[1em]
+\multicolumn{4}{l}{\textit{d. Different model: gpt-5.5-2026-04-23}} \\[0.25em]
+Global & 14 & -0.11 & 0.55 \\
+Cultivating Change Talk & 14 & -1.50 & -- \\
+Softening Sustain Talk & 14 & 0.07 & 0.37 \\
+Partnership & 14 & 0.43 & 0.86 \\
+Empathy & 14 & 0.57 & 0.75 \\
+\addlinespace[1em]
+\multicolumn{4}{l}{\textit{e. Different model: gpt-5.4-2026-03-05}} \\[0.25em]
+Global & 14 & -0.38 & 0.69 \\
+Cultivating Change Talk & 14 & -1.21 & 0.35 \\
+Softening Sustain Talk & 14 & -0.14 & 0.82 \\
+Partnership & 14 & -0.07 & 0.86 \\
+Empathy & 14 & -0.07 & 0.76 \\
 \bottomrule
 \end{tabular}

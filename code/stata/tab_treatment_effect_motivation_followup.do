@@ -1,3 +1,4 @@
+* This exhibit uses the historical survey snapshot identified in REPRODUCIBILITY_NOTES.md.
 *===============================================================================
 *  Overleaf Regression Tables - Main Effects (Split Tables)
 *===============================================================================
@@ -5,7 +6,7 @@
 * Add Controls
 * Load data
 clear all
-use "${data_folder}/processed/main_social_media/clean_merged.dta", clear
+use "${data_folder}/processed/main_social_media/manuscript_followup_snapshot.dta", clear
 
 
 *-------------------------------

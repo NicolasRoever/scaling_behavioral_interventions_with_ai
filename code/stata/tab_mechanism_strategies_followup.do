@@ -1,3 +1,4 @@
+* This exhibit uses the historical survey snapshot identified in REPRODUCIBILITY_NOTES.md.
 *===============================================================================
 * Figure Mechanism Question Effects
 *===============================================================================
@@ -8,8 +9,8 @@ do 00_setup
 * Load data
 clear all
 
-use "${data_folder}/processed/main_social_media/clean_merged.dta", clear
-keep if followup_responded == 1
+use "${data_folder}/processed/main_social_media/manuscript_followup_snapshot.dta", clear
+keep if !missing(w2_motivation)
 keep if !missing(w2_time_mechanism)
 
 *-------------------------------

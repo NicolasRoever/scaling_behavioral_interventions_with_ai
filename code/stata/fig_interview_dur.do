@@ -14,7 +14,6 @@ histogram time_interview_minutes, ///
 	
 	
 * Export merged graph
-graph export "${overleaf}/figures/fig_hist_interview_dur.pdf", replace
 
 
 

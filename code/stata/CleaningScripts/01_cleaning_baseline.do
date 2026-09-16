@@ -47,7 +47,8 @@ drop if missing(treatment)
 drop if missing(motivation)
 
 * 4.Drop people with less than 20 characters in writing task
-gen writing_chars = length(writing)
+* Original writing text is withheld; its exact byte length is supplied.
+confirm variable writing_chars
 drop if writing_chars <= 20
 
 * 5. Drop 1% tails based on speed

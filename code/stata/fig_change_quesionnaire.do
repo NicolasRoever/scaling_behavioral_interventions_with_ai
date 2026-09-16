@@ -46,17 +46,6 @@ foreach y of local mechanisms {
 esttab * , se b(3) keep(*T) nobase noomitted label starlevel(* 0.1 ** 0.05 *** 0.01)
 
 esttab `mechanisms' ///
-       using "${overleaf}/tables/tab_sm_change.tex", ///
-       cells(b(fmt(3) star) se(fmt(3) par)) ///
-       starlevels(* 0.10 ** 0.05 *** 0.01) ///
-	   coeflabel("Ambivalence (a)" "Decisional Balance (b)" "Direct Persuasion (c)") ///
-       stats(N r2 controlmean controls p_12 p_13 p_23, ///
-             fmt(%9.0f %9.3f %9.3f %9s %9.3f %9.3f %9.3f) ///
-             labels("Observations" "R-squared" "Control mean" "Controls" "p-value a=b" "p-value a=c" "p-value c=b")) ///
-       keep(1.T 2.T 3.T) ///
-       label nobase noomitted ///
-       mtitles("Want Change" "Could Change" "Good Reasons" "Have to Reduce" "Intent Reduce" "Try Reduce") ///
-       booktabs fragment replace 
 
 	   
 	   

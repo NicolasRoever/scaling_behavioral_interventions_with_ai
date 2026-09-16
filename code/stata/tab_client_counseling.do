@@ -53,7 +53,6 @@ foreach y of local outcomes {
 esttab * , se b(3) nobase noomitted drop($controls _cons) label starlevels(* 0.10 ** 0.05 *** 0.01) mtitles("Help" "Unwanted Talk" "Discuss Need" "Pros/Cons" "Argue Change" "Hopeful" "Recognize" "Partner in Change" "Tell What to Do" "Confidence" "Authority" "Pressure" ) coeflabel(1.T "Change Talk (a)" 2.T "Ambivalence (b)" 3.T "Persuasion (c)") stats(N r2 controlmean controls p_amb_cha p_cha_per p_amb_per, fmt(%9.0fc %9.3f %9.3f %9.3f %9.3f %9.3f %9.3f) labels("Observations" "R\textsuperscript{2}" "Control group mean" "Controls" "p-value: a=b" "p-value: a=c" "p-value: b=c"))  
 */
 
-esttab * using "${overleaf}/tables/tab_sm_client_counseling.tex", se b(3) nobase noomitted drop($controls _cons) label starlevels(* 0.10 ** 0.05 *** 0.01) mtitles("Help" "Unwanted Talk" "Discuss Need" "Pros/Cons" "Argue Change" "Hopeful" "Recognize" "Partner in Change" "Tell What to Do" "Confidence" "Authority" "Pressure" ) coeflabel(1.T "Change Talk (a)" 2.T "Decisional Balance (b)" 3.T "Persuasion (c)") stats(N r2 controlmean controls p_amb_cha p_cha_per p_amb_per, fmt(%9.0fc %9.3f %9.3f %9.3f %9.3f %9.3f %9.3f) labels("Observations" "R\textsuperscript{2}" "Control group mean" "Controls" "p-value: a=b" "p-value: a=c" "p-value: b=c")) booktabs fragment replace
 
 
 *-------------------------------

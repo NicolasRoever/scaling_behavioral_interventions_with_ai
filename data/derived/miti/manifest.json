@@ -1,0 +1,236 @@
+{
+  "campaign_id": "20260910T215439Z_9e5f325e",
+  "benchmark_model": "gpt-5.6-luna",
+  "comparison_models": [
+    "gpt-5.5-2026-04-23",
+    "gpt-5.4-2026-03-05"
+  ],
+  "dimensions": [
+    "Cultivating Change Talk",
+    "Softening Sustain Talk",
+    "Partnership",
+    "Empathy"
+  ],
+  "settings": {
+    "max_output_tokens": 9000,
+    "reasoning": {
+      "effort": "low"
+    },
+    "store": false,
+    "text": {
+      "verbosity": "medium"
+    }
+  },
+  "created_at_unix": 1789077279,
+  "runs": [
+    {
+      "run_id": "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__benchmark",
+      "dataset": "treated",
+      "model": "gpt-5.6-luna",
+      "condition": "benchmark",
+      "replicate": 0,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__benchmark.csv",
+      "rows": 8780,
+      "sha256": "37f421352b3bb8a5ace54bcdd43151f2037e99cc405fb432f48b4e49313d257f"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__control__gpt-5.6-luna__benchmark",
+      "dataset": "control",
+      "model": "gpt-5.6-luna",
+      "condition": "benchmark",
+      "replicate": 0,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__control__gpt-5.6-luna__benchmark.csv",
+      "rows": 2948,
+      "sha256": "946374fc649ad44486c2e36ce2be99dc232e4e4d5056dab15a32112d444cb903"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__validation20__gpt-5.6-luna__benchmark",
+      "dataset": "validation20",
+      "model": "gpt-5.6-luna",
+      "condition": "benchmark",
+      "replicate": 0,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__validation20__gpt-5.6-luna__benchmark.csv",
+      "rows": 56,
+      "sha256": "d470f324313811563124161e9dec6523ad3501feb930bab8a00348e262aa6865"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-01",
+      "dataset": "treated",
+      "model": "gpt-5.6-luna",
+      "condition": "rerun",
+      "replicate": 1,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-01.csv",
+      "rows": 8780,
+      "sha256": "d8c0a23e8c5b26e7642efa58a2e5688e13d69b568ed4a2f702179f18bf7048e0"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-01",
+      "dataset": "validation14",
+      "model": "gpt-5.6-luna",
+      "condition": "rerun",
+      "replicate": 1,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-01.csv",
+      "rows": 56,
+      "sha256": "a8464843d657309492b1b26557bfcc6232bb10bba668f839ff2f0620dc975124"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-02",
+      "dataset": "treated",
+      "model": "gpt-5.6-luna",
+      "condition": "rerun",
+      "replicate": 2,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-02.csv",
+      "rows": 8780,
+      "sha256": "f749fe457eca839aa040c86d647e75f97f0b1fd749292e8ff633b9bf71ae7636"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-02",
+      "dataset": "validation14",
+      "model": "gpt-5.6-luna",
+      "condition": "rerun",
+      "replicate": 2,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-02.csv",
+      "rows": 56,
+      "sha256": "1d495866217ca7c19fb1850c5dd95bc017aeb77396d58b884f4e0b731f0b1de4"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-03",
+      "dataset": "treated",
+      "model": "gpt-5.6-luna",
+      "condition": "rerun",
+      "replicate": 3,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-03.csv",
+      "rows": 8780,
+      "sha256": "e961694de47b7e9269de0742b1751282d68fb2acb252d75e84cc24c281a9686e"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-03",
+      "dataset": "validation14",
+      "model": "gpt-5.6-luna",
+      "condition": "rerun",
+      "replicate": 3,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-03.csv",
+      "rows": 56,
+      "sha256": "741f766cfca9cdb62551cf803c0b217c6babb97a00cf4fedc6858199e575aa3d"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-04",
+      "dataset": "treated",
+      "model": "gpt-5.6-luna",
+      "condition": "rerun",
+      "replicate": 4,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-04.csv",
+      "rows": 8780,
+      "sha256": "fe9e4734d911f0dd14393995a51598a4f3c58c0a86daaa1b911fbdfcad74e0f9"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-04",
+      "dataset": "validation14",
+      "model": "gpt-5.6-luna",
+      "condition": "rerun",
+      "replicate": 4,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-04.csv",
+      "rows": 56,
+      "sha256": "04bf881f187a69d58745597e9f8b13ac3026b1ee4206c6231b27021e1c0c4518"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-05",
+      "dataset": "treated",
+      "model": "gpt-5.6-luna",
+      "condition": "rerun",
+      "replicate": 5,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-05.csv",
+      "rows": 8780,
+      "sha256": "2aa40081e7319e57371796923ce22fb866606d2e8e306eaad443bc6ca8a82ee2"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-05",
+      "dataset": "validation14",
+      "model": "gpt-5.6-luna",
+      "condition": "rerun",
+      "replicate": 5,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-05.csv",
+      "rows": 56,
+      "sha256": "105ca4c16e1eca0bde70fa38170718a7539b3fee59a7fd1a4b4547468916827d"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__ablation",
+      "dataset": "treated",
+      "model": "gpt-5.6-luna",
+      "condition": "ablation",
+      "replicate": 0,
+      "prompt_variant": "ablation",
+      "file": "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__ablation.csv",
+      "rows": 8780,
+      "sha256": "b4cf86b3f444993599f892d9555ee589c4e4e31526869a13f24e67547707ea71"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__ablation",
+      "dataset": "validation14",
+      "model": "gpt-5.6-luna",
+      "condition": "ablation",
+      "replicate": 0,
+      "prompt_variant": "ablation",
+      "file": "20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__ablation.csv",
+      "rows": 56,
+      "sha256": "39b7baac5618de7f90cf5eadd4a34249745ce801bb0266126098750019c15f86"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__treated__gpt-5.5-2026-04-23__model_swap",
+      "dataset": "treated",
+      "model": "gpt-5.5-2026-04-23",
+      "condition": "model_swap",
+      "replicate": 0,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__treated__gpt-5.5-2026-04-23__model_swap.csv",
+      "rows": 8780,
+      "sha256": "83c575c81734b5b4c65dfffc8c5beb243b1c20cddc9bd7f7cc1787a31b04e7be"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__validation14__gpt-5.5-2026-04-23__model_swap",
+      "dataset": "validation14",
+      "model": "gpt-5.5-2026-04-23",
+      "condition": "model_swap",
+      "replicate": 0,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__validation14__gpt-5.5-2026-04-23__model_swap.csv",
+      "rows": 56,
+      "sha256": "9b2a3b5988f0cdde0c88de2ed258f8f6921fd90c5bf945747878c471cc132dec"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__treated__gpt-5.4-2026-03-05__model_swap",
+      "dataset": "treated",
+      "model": "gpt-5.4-2026-03-05",
+      "condition": "model_swap",
+      "replicate": 0,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__treated__gpt-5.4-2026-03-05__model_swap.csv",
+      "rows": 8780,
+      "sha256": "9ec98c760c02ead3ad09da457fe79081ef5901d338881ebb51a0f992f0f72044"
+    },
+    {
+      "run_id": "20260910T215439Z_9e5f325e__validation14__gpt-5.4-2026-03-05__model_swap",
+      "dataset": "validation14",
+      "model": "gpt-5.4-2026-03-05",
+      "condition": "model_swap",
+      "replicate": 0,
+      "prompt_variant": "standard",
+      "file": "20260910T215439Z_9e5f325e__validation14__gpt-5.4-2026-03-05__model_swap.csv",
+      "rows": 56,
+      "sha256": "3b841af986a21bcdedbc9dca576b8946a112c170ddc8578f79029c0646c17d7a"
+    }
+  ]
+}
