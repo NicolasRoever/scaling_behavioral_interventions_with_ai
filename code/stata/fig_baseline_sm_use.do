@@ -7,22 +7,23 @@ use "${data_folder}/processed/main_social_media/clean_data.dta", clear
 * ---------------------------------------------------------
 
 
-* Drop data above 95th percentile of social_hours
-
-* Calculate statistics (including percentiles)
+* Calculate the raw mean and the 95th percentile before truncating the graph
 summarize baseline_actual_social_min, detail
+local raw_mean_val = r(mean)
+local p95_val = r(p95)
 
-* Drop if value is greater than the 95th percentile stored in r(p95)
-drop if baseline_actual_social_min > r(p95)
+* Omit observations above the raw distribution's 95th percentile from the graph
+drop if baseline_actual_social_min > `p95_val'
 
-* 2. Calculate Mean and Median
+* Calculate the mean and median of the observations displayed in the graph
 summarize baseline_actual_social_min, detail
-local mean_val = r(mean)
-local med_val  = r(p50)
+local displayed_mean_val = r(mean)
+local displayed_med_val = r(p50)
 
-* 3. Format them for display (2 decimal places)
-local mean_str : di %3.0f `mean_val'
-local med_str  : di %3.0f `med_val'
+* Format the statistics for display
+local raw_mean_str : di %3.0f `raw_mean_val'
+local displayed_mean_str : di %3.0f `displayed_mean_val'
+local displayed_med_str : di %3.0f `displayed_med_val'
 
 * ---------------------------------------------------------
 * Plot Histogram
@@ -33,7 +34,11 @@ histogram baseline_actual_social_min , ///
     xtitle("Self-reported daily social media use (minutes)") ///
     ytitle("Density") ///
     fcolor(maroon) lcolor(black) ///
-    note("{bf:Mean: `mean_str' minutes}" "{bf:Median: `med_str' minutes}", ring(0) pos(3) size(small))
+    xline(`raw_mean_val', lcolor(black) lpattern(dash)) ///
+    note("{bf:Full-sample raw mean: `raw_mean_str' minutes}" ///
+         "{bf:Mean of observations shown: `displayed_mean_str' minutes}" ///
+         "{bf:Median of observations shown: `displayed_med_str' minutes}", ///
+         ring(0) pos(3) size(small))
 
 * Export merged graph
 graph export "${overleaf}/figures/fig_hst_baseline_sm_use.pdf", replace

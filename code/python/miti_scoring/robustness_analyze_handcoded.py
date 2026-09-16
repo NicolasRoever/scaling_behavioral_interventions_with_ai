@@ -9,7 +9,7 @@ Reuses the metric definitions from robustness_analyze.py (score_metrics, icc_2_1
 
 Each of the three robustness conditions is reported against TWO references:
   - "(vs LLM baseline)": self-consistency vs. the original LLM run on this set
-    (output/validation_miti_global_scores_20251125.csv, gpt-5-nano-2025-08-07),
+    (output/validation_miti_global_scores_20251125.csv, gpt-5.1-2025-11-13),
     mirroring the full-corpus robustness table.
   - "(vs human)": agreement with the human-coded ground truth
     (output/validation_global_scores_extracted.csv), showing whether each condition

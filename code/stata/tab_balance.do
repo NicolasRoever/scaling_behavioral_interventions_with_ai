@@ -3,8 +3,8 @@ set more off
 
 use "${data_folder}/processed/main_social_media/clean_data.dta", clear
 
-* Rename some long variables
-rename baseline_actual_social_min_w actual_social_short
+* Rename some long variables (actual social media time is raw, not winsorized)
+rename baseline_actual_social_min actual_social_short
 rename baseline_ideal_social_min_w ideal_social_short
 rename baseline_tiktok_min_midpoint tiktok_short
 rename baseline_facebook_min_midpoint facebook_short
@@ -64,6 +64,4 @@ gen T2 = T==2
 gen T3 = T==3
 
 * Balance table
-balancetable (mean) (diff T1 if inlist(T, 0, 1)) (diff T2 if inlist(T, 0, 2)) (diff T3 if inlist(T, 0, 3)) (diff T2 if inlist(T, 1, 2)) (diff T3 if inlist(T, 1, 3)) (diff T3 if inlist(T, 2, 3)) `balance_vars' using "${overleaf}/tables/tab_balance.tex", replace pvalues varlabels booktabs starlevels(* 0.1 ** 0.05 *** 0.01) ctitles("" "C vs T1" "C vs T2" "C vs T3" "T1 vs T2" "T1 vs T3" "T2 vs T3") groups("Sample mean" "Mean differences and \textit{p}-values", pattern(1 1 0 0 0 0 0) end("\cmidrule(lr){2-2} \cmidrule(lr){3-8}")) leftctitle(" ") prefoot("& & & & & & & \\ \textit{p}-value of joint \textit{F}-test & & `fval_C_T1' & `fval_C_T2' & `fval_C_T3' & `fval_T1_T2' & `fval_T1_T3' & `fval_T2_T3' \\ & & & & & & & \\ \hline")
-
-
+balancetable (mean) (diff T1 if inlist(T, 0, 1)) (diff T2 if inlist(T, 0, 2)) (diff T3 if inlist(T, 0, 3)) (diff T2 if inlist(T, 1, 2)) (diff T3 if inlist(T, 1, 3)) (diff T3 if inlist(T, 2, 3)) `balance_vars' using "${overleaf}/tables/tab_balance.tex", replace pvalues varlabels booktabs starlevels(* 0.1 ** 0.05 *** 0.01) ctitles("" "C vs T1" "C vs T2" "C vs T3" "T1 vs T2" "T1 vs T3" "T2 vs T3") groups("Sample mean" "Mean differences and \textit{p}-values", pattern(1 1 0 0 0 0 0) end("\cmidrule(lr){2-2} \cmidrule(lr){3-8}")) leftctitle(" ") prefoot("& & & & & & & \\ \textit{p}-value of joint \textit{F}-test & & `fval_C_T1' & `fval_C_T2' & `fval_C_T3' & `fval_T1_T2' & `fval_T1_T3' & `fval_T2_T3' \\ & & & & & & & \\ \midrule")

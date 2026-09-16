@@ -5,7 +5,7 @@ MAIN_PROMPT = """
 You are an expert in evaluating motivational interviewing (MI) sessions. Your task is to rate a clinical session transcript based on a global component--{component_name}--from the Motivational Interviewing Treatment Integrity (MITI) 4.2.1 coding system.
 
 # Change Goal
-The session's change goal is to help the client reduce their weekly mobile phone screen time.
+The session's change goal is to help the client reduce their social media time.
 
 # Coding Manual: {component_name}
 {coding_instructions}

@@ -30,7 +30,10 @@ The complete prompt index is in `PROMPTS.md`.
 - **MITI global-score prompt:** `code/python/miti_scoring/miti_global_scores.py`.
 - **MITI behavioral-count prompt:** `code/python/miti_scoring/miti_behavioral_counts.py`.
 - **BERTopic labeling prompt:** `code/python/classify_bertopic.py`.
-- **Positive/negative-aspect coding prompt:** `code/python/helper.py`.
+- **Positive/negative-aspect coding prompt and figure pipeline:**
+  `code/python/fig_pros_cons.py`.
+- **Strategy coding prompt and figure pipeline:**
+  `code/python/fig_strategies.py`.
 
 
 ## Quick start
@@ -58,6 +61,16 @@ python -m pip install -r code/python/requirements.txt
 Then follow `code/python/README.md`. Analyses that require conversation text
 cannot be rerun from this public package; their text-free derived inputs and
 published outputs are provided for auditability.
+
+The positive/negative-aspect pipeline is included in full but requires the
+private participant-level transcript file and an OpenAI API key. The model
+returns named aspect strings; all counts used in the figure are computed
+locally by Python.
+
+The strategy pipeline is likewise included in full and requires its excluded
+participant-level strategy-excerpt file plus an OpenAI API key. It uses
+`gpt-5.6-luna` with low reasoning by default, returns selections from a fixed
+12-category manual, and computes treatment-arm shares locally.
 
 ## Treatment coding
 

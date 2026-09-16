@@ -5,6 +5,7 @@ matplotlib
 numpy
 openai
 pandas
+pydantic
 python-dotenv
 pyreadstat
 scikit-learn
@@ -15,4 +16,3 @@ statsmodels
 tqdm
 umap-learn
 wordcloud
-

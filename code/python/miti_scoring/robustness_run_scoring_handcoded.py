@@ -4,7 +4,8 @@ validation set (14 sessions with human CCT/SST/PAR/EMP scores, matching the
 paper's behavioral-counts validation N).
 
 Conditions:
-  - stochastic reruns: same model/prompt as the original run, repeated (--condition rerun1 .. rerun5)
+  - repeated runs:      the configured model/prompt, repeated (--condition rerun1 .. rerun5);
+                        the default model is gpt-5-nano-2025-08-07
   - different model:   --condition model_swap --model gpt-5.6-luna
   - prompt ablation:   --condition ablation --ablate-conservative-line
 

@@ -187,7 +187,7 @@ RESPONSE FORMAT:
 Use the following exact JSON structure.
 
 {{
-    "memo": "<3 to 5 sentence analytical note>"
+    "memo": "<3 to 5 sentence analytical note>",
     "label": "<short topic label>",
 }}
 
@@ -301,7 +301,6 @@ for spine in ax.spines.values():
 ax.legend(loc="right", fontsize=14)
 plt.tight_layout()
 fig.savefig(PACKAGE_ROOT / "results/figures/fig_bertopic.pdf")
-
 
 
 

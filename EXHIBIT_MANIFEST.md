@@ -26,8 +26,8 @@ All paths below are relative to the package root.
 | `fig_miti_score_histograms.pdf` | `code/python/fig_density_miti_scores.ipynb` |
 | `fig_miti_score_distributions_main_study.pdf` | `code/python/miti_scoring/fig_miti_score_distributions_main_study.py` |
 | `fig_miti_scores_main_study.pdf` | `code/python/miti_scoring/fig_miti_scores_main_study.py` |
-| `fig_number_pro_con_statements.pdf` | `code/python/fig_pros_cons.ipynb` |
-| `fig_strategies.pdf` | `code/python/fig_strategies_by_treatment.ipynb` |
+| `fig_number_pro_con_statements.pdf` | `code/python/fig_pros_cons.py` (one-click wrapper: `fig_pros_cons.ipynb`; requires excluded private transcript input and an OpenAI API key) |
+| `fig_strategies.pdf` | `code/python/fig_strategies.py` (legacy GPT-5-nano plotting notebook: `fig_strategies_by_treatment.ipynb`; requires excluded private transcript input and an OpenAI API key) |
 | `fig_change_questionnaire.pdf` | `code/stata/fig_change_quesionnaire.do` |
 | `fig_main_treatment_effects_sm_followup_v001.pdf` | `code/stata/fig_treatment_followup.do` |
 | `fig_app_use_effects.pdf` | `code/stata/tab_appuse.do` |
@@ -65,4 +65,3 @@ All paths below are relative to the package root.
 | `robustness_handcoded_latex_table.tex` | `code/python/miti_scoring/create_latex_table_handcoded_robustness.py` |
 | `score_stability_latex_table.tex` | `code/python/miti_scoring/build_score_stability_table.py` |
 | `irr_comparison_table.tex` | `code/python/miti_scoring/create_latex_table_irr_comparison.py` |
-

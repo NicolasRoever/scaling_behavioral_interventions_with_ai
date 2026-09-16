@@ -8,4 +8,7 @@ __pycache__/
 *.log
 *.smcl
 code/python/output/cache/
-
+data/private/*.csv
+code/python/output/df_clean_with_llm_named_pros_cons_v002.csv
+code/python/output/pros_cons_named_aspects_long_v002.csv
+code/python/output/df_clean_with_llm_strategies_luna_v004.csv

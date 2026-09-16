@@ -44,9 +44,19 @@ definitions rather than duplicating them.
 
 - `code/python/classify_bertopic.py`
   - prompt used to assign concise labels and summaries to BERTopic clusters.
+- `code/python/fig_pros_cons.py`
+  - `extraction_instructions()`: active prompt used to identify distinct
+    positive and negative aspects of social media as short strings. The model
+    returns lists of named aspects and is explicitly instructed not to count;
+    Python computes the figure inputs from the list lengths.
+- `code/python/fig_strategies.py`
+  - `coding_instructions()`: active 12-category coding manual used to identify
+    strategies for reducing social media use. The model returns only selected
+    category names; Python computes participant shares by treatment arm. The
+    default model is `gpt-5.6-luna` with low reasoning.
 - `code/python/helper.py`
-  - `prompt_positive_negative`: prompt used to classify positive and negative
-    aspects of social media mentioned in interviews.
+  - `prompt_positive_negative`: legacy count-producing prompt retained only for
+    provenance of the superseded analysis.
 
 ## Privacy boundary
 
