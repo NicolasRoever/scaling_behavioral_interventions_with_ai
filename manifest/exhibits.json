@@ -1,5 +1,5 @@
 {
-  "manuscript_sha256": "666511efc232c12425ccfcefad83c78525394af6dceec73725d726d3e4ff0a5a",
+  "manuscript_sha256": "2b5c5296d3d760e636cd270a68e4bc6be76ca947608e0d8b161269ca73cf76bb",
   "created_at_unix": 1789592732,
   "exhibits": [
     {
@@ -7,358 +7,458 @@
       "status": "included",
       "sha256": "e3616712bb0d7754c9e681ee3f32a1d1c32a8fcb41c9a8fa1f59c2f882b6b385",
       "generator": null,
-      "replication_level": "Static design asset / manually authored table"
+      "replication_level": "Static design asset / manually authored table",
+      "source_manuscript_sha256": "e3616712bb0d7754c9e681ee3f32a1d1c32a8fcb41c9a8fa1f59c2f882b6b385"
     },
     {
       "manuscript_path": "figures/fig_client_counseling.pdf",
       "status": "included",
       "sha256": "9f1ae1b45026d3e1d5806721b41395d68db874446ea4b23df0e0a8bf6f386917",
       "generator": "code/stata/tab_client_counseling.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "9f1ae1b45026d3e1d5806721b41395d68db874446ea4b23df0e0a8bf6f386917",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/fig_bertopic.pdf",
       "status": "included",
-      "sha256": "7d6c335aef6e151617e55d6d0e7d14331534441cfdcef163b96d8981c943f15a",
+      "sha256": "856fb60e525859b00a5a23c6128a445e01d7729a8fce8cad7bb7b6dc35e96e36",
       "generator": "code/python/bertopic_plot.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "7f5abd213d4392ccc9c1230c286408dd4fab4a99d11ac07571e514f9caee9f1d",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "figures/fig_main_treatment_effects_sm_v001.pdf",
       "status": "included",
       "sha256": "8175c8c9d7dd0c5fbb63900be1fa0913783806916481699e7aaee8efaa0f936c",
       "generator": "code/stata/fig_treatment_effect_main.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "8175c8c9d7dd0c5fbb63900be1fa0913783806916481699e7aaee8efaa0f936c",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/fig_minutes_treatment_effects.pdf",
       "status": "included",
-      "sha256": "48ddb53953237a876d647b07762443e01c5e836b961dd2e87272023b246460f6",
+      "sha256": "9469fd7fcf610525d73f19a21fc40d32f6be65234603c2b550a2cf50418e7c98",
       "generator": "code/stata/fig_treatment_effect_sm_minutes.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "9469fd7fcf610525d73f19a21fc40d32f6be65234603c2b550a2cf50418e7c98",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "figures/fig_sm_followup_mechanisms.pdf",
       "status": "included",
-      "sha256": "0b9282993400657e8dc3ed18cde94f8e03c7a1984e52a496223c0b60fcdecb66",
+      "sha256": "3e1821dc4fb99b954022bbf26c3408e800139f6ab624234bb48f768ce07f3fce",
       "generator": "code/stata/fig_mechanisms_sm_followup.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "3e1821dc4fb99b954022bbf26c3408e800139f6ab624234bb48f768ce07f3fce",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "tables/tab_strategies_followup.tex",
       "status": "included",
-      "sha256": "284fb670742ac5312810a82eee4030c9fdec38ac08a93facbb452b49067760be",
+      "sha256": "b0fb98e32a58cf798c294c11e7415cf3911ee14b7667d6ca069e6af22440c0e2",
       "generator": "code/stata/tab_mechanism_strategies_followup.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "5b03e522b580724912503afec9ee7186d081d5d7b45b89672749ea9c4b6736b0",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "tables/tab_balance.tex",
       "status": "included",
       "sha256": "4043f2086ff14340281f1344570d3f02c03555d5d37c3c05fac07e5683507434",
       "generator": "code/stata/tab_balance.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "4043f2086ff14340281f1344570d3f02c03555d5d37c3c05fac07e5683507434",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "tables/tab_attrition_analysis_sm.tex",
       "status": "included",
-      "sha256": "86b2ca020958515cfc64b544c6583e5845eb2925e50800c614893e90dcc7e5dc",
+      "sha256": "897158e93b873264ab2748ba76f6baa8b5715fd43f019620d06c68f43d5e70c3",
       "generator": "code/stata/tab_attrition_sm.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "897158e93b873264ab2748ba76f6baa8b5715fd43f019620d06c68f43d5e70c3",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "tables/tab_balance_followup.tex",
       "status": "included",
-      "sha256": "0b6f387058b68d38ad4dd2da6cb84fb24d6eef3614655ce2a3495c5bfc761e20",
+      "sha256": "c85c5c533113607dae5fce837f85a7f17623443f951964532d0a246047ef7e29",
       "generator": "code/stata/tab_balance_followup.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "c85c5c533113607dae5fce837f85a7f17623443f951964532d0a246047ef7e29",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "tables/tab_main_treatment_effects_sm_mechanisms_duration_control.tex",
       "status": "included",
       "sha256": "01bedc074de19db6b0fdd5a4cbd3c036a54022f91c2000e93d150a0084163019",
       "generator": "code/stata/tab_main_treatment_effect_duration_control.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "66067dcb1a89e74b05812b89bc0ddc09cf326024f3092f10fa03ed2fe069ab02",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "tables/tab_secondary_outcomes_holm_panel_a.tex",
       "status": "included",
       "sha256": "05b9e2b5e57a616831a94f2408a2217ffc67277ce6fe802db6ba54cbb73eed4e",
       "generator": "code/stata/tab_main_treatment_effect_mht.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "05b9e2b5e57a616831a94f2408a2217ffc67277ce6fe802db6ba54cbb73eed4e",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "tables/tab_secondary_outcomes_holm_panel_b.tex",
       "status": "included",
       "sha256": "2311bee2bd8567a0d7f3a47053ebcd4cc54c30eb48cd525173ad7186e49946bf",
       "generator": "code/stata/tab_main_treatment_effect_mht.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "2311bee2bd8567a0d7f3a47053ebcd4cc54c30eb48cd525173ad7186e49946bf",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "tables/tab_main_treatment_effects_sm_mechanisms.tex",
       "status": "included",
       "sha256": "1272d44815ad32b682a7f2418020fd3f7dcca1bf21cf308f118134305b84b2bd",
       "generator": "code/stata/tab_main_treatment_effect.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "1272d44815ad32b682a7f2418020fd3f7dcca1bf21cf308f118134305b84b2bd",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "tables/tab_treatment_effects_motivation_followup.tex",
       "status": "included",
-      "sha256": "933e97da595177974e2cf51c37fc62f15638115dc00930b0fbd16dd2ffbdf2c3",
+      "sha256": "de0df63abf01ee6b3903505fe62678cf5200ae917c24b747d52292381e3e0ee3",
       "generator": "code/stata/tab_treatment_effect_motivation_followup.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "de0df63abf01ee6b3903505fe62678cf5200ae917c24b747d52292381e3e0ee3",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "tables/tab_wtp_perceived_cost_mapping.tex",
       "status": "included",
       "sha256": "18c10ae9df3255405bbe359742cf49e9ade5ef9bd989f7eb9e66bf2ca706a11f",
       "generator": "code/stata/tab_wtp_perceived_cost_mapping.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "18c10ae9df3255405bbe359742cf49e9ade5ef9bd989f7eb9e66bf2ca706a11f",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "tables/tab_main_treatment_effects_sm_minutes.tex",
       "status": "included",
-      "sha256": "ca453c0f655686088cadd8430e1edf671f8c7587cd023333bc1c2ecbe804761c",
+      "sha256": "2495c354dd2ede2b8ee0c02b8ddd8ead9abf951e272e06936e3c319addc97a59",
       "generator": "code/stata/tab_main_treatment_effect.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "2495c354dd2ede2b8ee0c02b8ddd8ead9abf951e272e06936e3c319addc97a59",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "tables/tab_treatment_effects_closetoideal_followup.tex",
       "status": "included",
-      "sha256": "145b64f30c4558c07049a0d4a39182bf818eba5f4e6fd6d6d4153a8f3c61125a",
+      "sha256": "8570116cc80d8246b05319358ef2def0bc4738a26c1818224304f0638c93e623",
       "generator": "code/stata/tab_treatment_effects_closetoideal_followup.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "8570116cc80d8246b05319358ef2def0bc4738a26c1818224304f0638c93e623",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "tables/tab_heterogeneity_timeuse_by_wedge.tex",
       "status": "included",
-      "sha256": "c11d4ceb6e1a6155f7d83475b25885726d7c36f3a57c9d1f4b2dd85ced908970",
+      "sha256": "1b29f41db0bd8a88c5385a9c126f8fb854ae74725d340cece258ea68889b1b13",
       "generator": "code/stata/tab_heterogeneity_timeuse_by_wedge.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "1b29f41db0bd8a88c5385a9c126f8fb854ae74725d340cece258ea68889b1b13",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "tables/tab_heterogeneity_timeuse_by_basetime.tex",
       "status": "included",
-      "sha256": "311261f0b6ef148d00712d970fc208bb47b8bc2cf7bd9c9df3e0ef37a2c4b550",
+      "sha256": "78e11a5d11325a29bd99a8a79808517fdb397a687b5bf438fe5c4458ce311e4f",
       "generator": "code/stata/tab_heterogeneity_timeuse_by_basetime.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "78e11a5d11325a29bd99a8a79808517fdb397a687b5bf438fe5c4458ce311e4f",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "tables/tab_differences_strategies.tex",
       "status": "included",
-      "sha256": "2cd2ddca93ad06e88d7120a1e3821d10cee2264a46b18eb15668dd569639419c",
+      "sha256": "ff4f86e2fe730448a340fe4bfa07f790eceecb3b5830ebe9aa51035f70e4064b",
       "generator": "code/stata/tab_differences_strategies.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "ff4f86e2fe730448a340fe4bfa07f790eceecb3b5830ebe9aa51035f70e4064b",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "tables/tab_outcomes_expdemand_additive.tex",
       "status": "included",
       "sha256": "8cb648b7447358a4eac64d611680030110bd1a690c1b60b877b3eb60f464763a",
       "generator": "code/stata/tab_outcomes_expdemand.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "8cb648b7447358a4eac64d611680030110bd1a690c1b60b877b3eb60f464763a",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "tables/tab_outcomes_expdemand_interacted.tex",
       "status": "included",
       "sha256": "be674007d42de7232fee243bcdae8ef175cbc9c1a0e3ce2db277e60046d02043",
       "generator": "code/stata/tab_outcomes_expdemand.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "be674007d42de7232fee243bcdae8ef175cbc9c1a0e3ce2db277e60046d02043",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/tab_thirty_minute_mentions.tex",
       "status": "included",
       "sha256": "6fc0ae2263286f8aeb776fa136ba7780c91ad789101df41bb0344ae1f4cd2368",
       "generator": "code/python/mentions_table.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "6fc0ae2263286f8aeb776fa136ba7780c91ad789101df41bb0344ae1f4cd2368",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/manual/mi_design.png",
       "status": "included",
       "sha256": "64a8929be291156399efffa60afcbd6ee12b4a4020b1f38acb8a6375634b59b1",
       "generator": null,
-      "replication_level": "Static design asset / manually authored table"
+      "replication_level": "Static design asset / manually authored table",
+      "source_manuscript_sha256": "64a8929be291156399efffa60afcbd6ee12b4a4020b1f38acb8a6375634b59b1"
     },
     {
       "manuscript_path": "figures/fig_hst_baseline_sm_use.pdf",
       "status": "included",
       "sha256": "dbdf2745c3d221f6b49d40f0ccecc671593b839d64e5791e08e45d1f9ab6a353",
       "generator": "code/stata/fig_baseline_sm_use.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "dbdf2745c3d221f6b49d40f0ccecc671593b839d64e5791e08e45d1f9ab6a353",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/fig_density_interview_dur_by_treat.pdf",
       "status": "included",
       "sha256": "5ae1328c1809b4d4a18e6c29aaae677f7e6d086c53ed641b8be27d024f8d8de3",
       "generator": "code/stata/fig_interview_dur.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "5ae1328c1809b4d4a18e6c29aaae677f7e6d086c53ed641b8be27d024f8d8de3",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "screenshots/interview_layout_question_2.png",
       "status": "withheld: image contains interview dialogue",
       "sha256": "24610e4d76f08337b7409f6cca6c9bb1a573a713372cf7475a6a601b6424594a",
       "generator": null,
-      "replication_level": "Withheld: contains interview dialogue"
+      "replication_level": "Withheld: contains interview dialogue",
+      "source_manuscript_sha256": "24610e4d76f08337b7409f6cca6c9bb1a573a713372cf7475a6a601b6424594a"
     },
     {
       "manuscript_path": "figures/fig_cdf_importance_score.pdf",
       "status": "included",
       "sha256": "c571c7deb3682d2c510534fcc97b3fe363a4aae7558f2faff7a0c8749319e7d6",
       "generator": "code/python/cdf_scores.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "c571c7deb3682d2c510534fcc97b3fe363a4aae7558f2faff7a0c8749319e7d6",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/fig_cdf_confidence_score.pdf",
       "status": "included",
       "sha256": "38a1f19dd924604e37c92f59ed79d9fa91eab88af9982e81e17f5a4a3528bad5",
       "generator": "code/python/cdf_scores.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "38a1f19dd924604e37c92f59ed79d9fa91eab88af9982e81e17f5a4a3528bad5",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/fig_actual_vs_ideal_social_time_binned.pdf",
       "status": "included",
       "sha256": "2eff29769c9c16b1d07694e8f3db62168d04f1c4e0b024e4a6e66e40e65cda99",
       "generator": "code/stata/fig_ideal_vs_actual_time.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "2eff29769c9c16b1d07694e8f3db62168d04f1c4e0b024e4a6e66e40e65cda99",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/fig_emotions.pdf",
       "status": "included",
       "sha256": "bd994e8ee69a037f4c5cfc17c0fce0fe03c63087a56c7f00547b4c6c789d45c3",
       "generator": "code/stata/tab_emotions.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "bd994e8ee69a037f4c5cfc17c0fce0fe03c63087a56c7f00547b4c6c789d45c3",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/fig_miti_score_histograms.pdf",
       "status": "included",
       "sha256": "e41e068f450cc621799c28d9f721915f4adefc45f3b9f8b4e033d210b5857f44",
       "generator": "code/python/miti_tables.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "e41e068f450cc621799c28d9f721915f4adefc45f3b9f8b4e033d210b5857f44",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/qtype_shares_manual.pdf",
       "status": "included",
       "sha256": "106a61914c5dc00d3c1f0a102f5242e1acba2f24407b27328dca4bdafae094f5",
       "generator": "code/python/question_sequence.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "106a61914c5dc00d3c1f0a102f5242e1acba2f24407b27328dca4bdafae094f5",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/similarity_by_topic.pdf",
       "status": "included",
       "sha256": "d2b45113f8b74db9b822cbdcaf653879c24bdb5556976b45e8a5fd9ac281a8b1",
       "generator": "code/python/language_similarity.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "d2b45113f8b74db9b822cbdcaf653879c24bdb5556976b45e8a5fd9ac281a8b1",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/fig_miti_score_distributions_main_study.pdf",
       "status": "included",
       "sha256": "2ed654393107a987131b7de9e4187e2ad90b7db667b16aaa7ba40eddd4a2e0bf",
       "generator": "code/python/miti_tables.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "2ed654393107a987131b7de9e4187e2ad90b7db667b16aaa7ba40eddd4a2e0bf",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/wordclouds_by_arm.pdf",
       "status": "included",
       "sha256": "8e32a65b8f8e4cb94eac71fea149a7c344b67e81449b62e7ce18f791f5f1ace2",
       "generator": "code/python/wordcloud_plot.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "8e32a65b8f8e4cb94eac71fea149a7c344b67e81449b62e7ce18f791f5f1ace2",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/fig_topic_robustness_elbow.pdf",
       "status": "included",
-      "sha256": "e20c92de30b2a95773297666e3ecca1772c72ece88d7b9cd1c0f4f06dc5eb520",
+      "sha256": "6c0a30b3568d068b2fdd110d6c9520158e2fcbed1b5cd7235ef7260da9fc5684",
       "generator": "code/python/topic_diagnostics.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "e20c92de30b2a95773297666e3ecca1772c72ece88d7b9cd1c0f4f06dc5eb520",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "figures/fig_topic_seed_stability.pdf",
       "status": "included",
-      "sha256": "40df1f8df13ca75bb714c624adb3948d6c0aef0c06ec52c2f1ae84b6dfa1df91",
+      "sha256": "0b1df0525e6253e22284ac5cd3b64c7520e0c4cadc6aeb35052db9c029b18869",
       "generator": "code/python/topic_diagnostics.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "40df1f8df13ca75bb714c624adb3948d6c0aef0c06ec52c2f1ae84b6dfa1df91",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "figures/fig_number_pro_con_statements.pdf",
       "status": "included",
-      "sha256": "d483e00cd196c46906bef7784f854dd818e2ac618a5248a50efbbc1d0c1c8e2c",
+      "sha256": "d4d9a0be190bad88d09c69198e35318a0fc823b16a84de1a823326800f8d916c",
       "generator": "code/python/pros_cons_plot.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "d483e00cd196c46906bef7784f854dd818e2ac618a5248a50efbbc1d0c1c8e2c",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "figures/fig_strategies.pdf",
       "status": "included",
       "sha256": "37714e8554c4061fb899e88cdaec7affa5671567d8aa9604d5b77413ba8803b8",
       "generator": "code/python/strategies_plot.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "37714e8554c4061fb899e88cdaec7affa5671567d8aa9604d5b77413ba8803b8",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/fig_change_questionnaire.pdf",
       "status": "included",
       "sha256": "3c399c4a6deee2155aa5d787b339ed0c106c1d755e066432676f103651341183",
       "generator": "code/stata/fig_change_quesionnaire.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "3c399c4a6deee2155aa5d787b339ed0c106c1d755e066432676f103651341183",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/fig_main_treatment_effects_sm_followup_v001.pdf",
       "status": "included",
-      "sha256": "eb63b4d1f752e6951365f6d1a7e17e78d1a9542226b0248b22b8f15f6cbea3da",
+      "sha256": "22890e3c43ac71d59dc522ad996f5554b06b0712bfb88a1ac826988a804a28d6",
       "generator": "code/stata/fig_treatment_followup.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "22890e3c43ac71d59dc522ad996f5554b06b0712bfb88a1ac826988a804a28d6",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "figures/fig_app_use_effects.pdf",
       "status": "included",
       "sha256": "dc3c37c1dd91a8e41db30bcaf383b175dc6e0bc3e5a22b328f3f76c00892099b",
       "generator": "code/stata/tab_appuse.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "dc3c37c1dd91a8e41db30bcaf383b175dc6e0bc3e5a22b328f3f76c00892099b",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/fig_scrtime_validation_binned_scatter.pdf",
       "status": "included",
-      "sha256": "9522788f9fe00925c9a04499590edb50345c554501391dd8de55e0d0c64cf95e",
+      "sha256": "f6066f2c4b19639441183815b7263eb251a94549f8cc1969a2bf51da7e692730",
       "generator": "code/stata/fig_verify_scrtime.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "f6066f2c4b19639441183815b7263eb251a94549f8cc1969a2bf51da7e692730",
+      "reference_origin": "refreshed public runner"
     },
     {
       "manuscript_path": "figures/fig_llm_exp_demand.pdf",
       "status": "included",
       "sha256": "0e55d3031683ea8ac99a6f96710a617af329f8b296890534525706f54ed96766",
       "generator": "code/stata/fig_expdemand.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "0e55d3031683ea8ac99a6f96710a617af329f8b296890534525706f54ed96766",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/fig_prior_posterior_exactly_30_panel.pdf",
       "status": "included",
       "sha256": "f651d145fe882d5dc0bae4bdfd7e0e9a959114153d82dbbfd0ca45e4fce207dd",
       "generator": "code/stata/fig_posterior_exactly_30_by_arm.do",
-      "replication_level": "Current public survey data"
+      "replication_level": "Current public survey data",
+      "source_manuscript_sha256": "f651d145fe882d5dc0bae4bdfd7e0e9a959114153d82dbbfd0ca45e4fce207dd",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "tables/mi_validation_results_table.tex",
       "status": "included",
       "sha256": "79139828da242a173a2aa530d6be3a00ee99d399b7b3a0e042fb03c6954e524c",
       "generator": "code/python/miti_tables.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "79139828da242a173a2aa530d6be3a00ee99d399b7b3a0e042fb03c6954e524c",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "tables/robustness_handcoded_latex_table.tex",
       "status": "included",
       "sha256": "78d4c5932ed702f9ec3d6f3cb71f559f8f59335d19bc11fc46984eaf7b99a811",
       "generator": "code/python/miti_tables.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "78d4c5932ed702f9ec3d6f3cb71f559f8f59335d19bc11fc46984eaf7b99a811",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "figures/score_stability_violin_plot.pdf",
       "status": "included",
       "sha256": "fa33b13c4cbf56c085aeed16f51f6f46315e6213bd1da6aa204447a3a909072a",
       "generator": "code/python/miti_tables.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "fa33b13c4cbf56c085aeed16f51f6f46315e6213bd1da6aa204447a3a909072a",
+      "reference_origin": "unchanged equivalent reference"
     },
     {
       "manuscript_path": "tables/score_stability_latex_table.tex",
       "status": "included",
       "sha256": "92ed0c5ec1b6d10d24ff901a5235f4f357aa9324673e168bc80399ec86654c63",
       "generator": "code/python/miti_tables.py",
-      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
+      "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
+      "source_manuscript_sha256": "92ed0c5ec1b6d10d24ff901a5235f4f357aa9324673e168bc80399ec86654c63",
+      "reference_origin": "unchanged equivalent reference"
     }
   ],
-  "updated_at_unix": 1789672148
+  "updated_at_unix": 1789679741,
+  "reference_policy": "Computed results refreshed from the active survey snapshot and current code; source_manuscript_sha256 identifies the separately inspected manuscript exhibit."
 }

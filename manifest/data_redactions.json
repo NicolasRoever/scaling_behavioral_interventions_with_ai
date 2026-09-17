@@ -27,7 +27,7 @@
   },
   {
     "file": "data/raw/main_socialmedia/follow_up_raw.dta",
-    "rows": 2351,
+    "rows": 2176,
     "columns": 90,
     "removed_or_blanked": [
       "screenshot_upload_1_id",
@@ -79,7 +79,7 @@
   },
   {
     "file": "data/processed/main_social_media/follow_up_clean.dta",
-    "rows": 2304,
+    "rows": 2132,
     "columns": 57,
     "removed_or_blanked": [
       "screenshot_upload_1_id",

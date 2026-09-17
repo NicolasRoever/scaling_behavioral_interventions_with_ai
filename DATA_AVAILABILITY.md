@@ -4,15 +4,19 @@
 
 - Baseline and follow-up survey exports (`main_raw.dta`, `follow_up_raw.dta`).
   These are **deidentified exports**, not unmodified Qualtrics exports.
-- The current cleaned baseline file (2,719 participants), follow-up file (2,304
+- The current cleaned baseline file (2,719 participants), follow-up file (2,132
   records), and merged survey/screen-time files.
 - `clean_scr_data.dta`: structured screenshot measures and week-level validity
   indicators. Raw images, upload metadata and screenshot filenames are absent.
 - `interview_scores_extracted.dta`: numeric importance/confidence ratings.
 - Numeric MITI scores for the actual September 2026 campaign, including its
   benchmark, five stochastic replicates, prompt ablation and two comparison
-  models. Only the 14 validation sessions used in the paper are released.
-- Human global ratings for those 14 validation sessions; saved aggregate
+  models. Only the 14 validation sessions used in the revised paper are released for
+  this campaign.
+- The 80 human/model score pairs from the original 20-session global-score
+  validation (November 2025), with anonymous keys and no text, used only to
+  reconstruct original-submission Table C.1.
+- Human global ratings for the current 14 validation sessions; saved aggregate
   behavioral-validation statistics used by Panel B.
 - Topic assignments without text, topic diagnostic metrics, pros/cons counts,
   fixed-category strategy selections, per-chat 30-minute mention indicators,

@@ -1,0 +1,1182 @@
+{
+  "submission_pdf_sha256": "f9780ba2df9df301b0664eb669c735c9433e187f16dd5be39a18aff248322e24",
+  "source_filename": "ssrn-6081126.pdf",
+  "comparison": "Printed numeric cells and significance stars; signed zero normalized. Captions and table numbering are metadata, not numeric entries.",
+  "tables": [
+    {
+      "table": "1",
+      "pdf_page": 11,
+      "result": "tables/manual/tab_treatment_description.tex",
+      "reference_path": "submission_results/tables/manual/tab_treatment_description.tex",
+      "reference_sha256": "f87285ab2774e7527fb547b1e6bbf4f3ee8bfc4b661de190469e560653b1fb93"
+    },
+    {
+      "table": "2",
+      "pdf_page": 35,
+      "result": "tables/tab_strategies_followup.tex",
+      "rows": {
+        "changetalk": [
+          "-0.094***",
+          "0.110***",
+          "0.054*"
+        ],
+        "changetalk__se": [
+          "0.027",
+          "0.029",
+          "0.030"
+        ],
+        "decisionalbalance": [
+          "-0.042",
+          "0.072**",
+          "0.022"
+        ],
+        "decisionalbalance__se": [
+          "0.028",
+          "0.030",
+          "0.029"
+        ],
+        "directpersuasion": [
+          "-0.085***",
+          "0.093***",
+          "0.073**"
+        ],
+        "directpersuasion__se": [
+          "0.028",
+          "0.030",
+          "0.030"
+        ],
+        "observations": [
+          "2115",
+          "2115",
+          "2115"
+        ],
+        "r2": [
+          "0.036",
+          "0.026",
+          "0.053"
+        ],
+        "controlgroupmean": [
+          "0.321",
+          "0.577",
+          "0.384"
+        ],
+        "controls": [
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "pvalueab": [
+          "0.046",
+          "0.182",
+          "0.266"
+        ],
+        "pvalueac": [
+          "0.749",
+          "0.560",
+          "0.549"
+        ],
+        "pvaluebc": [
+          "0.106",
+          "0.468",
+          "0.089"
+        ]
+      },
+      "reference_path": "submission_results/tables/tab_strategies_followup.tex",
+      "reference_sha256": "b0fb98e32a58cf798c294c11e7415cf3911ee14b7667d6ca069e6af22440c0e2"
+    },
+    {
+      "table": "A.1",
+      "pdf_page": 43,
+      "result": "tables/tab_balance.tex",
+      "rows": {
+        "age": [
+          "41.034",
+          "0.339",
+          "0.515",
+          "0.810",
+          "0.176",
+          "0.471",
+          "0.295"
+        ],
+        "age__se": [
+          "12.860",
+          "0.620",
+          "0.458",
+          "0.256",
+          "0.797",
+          "0.502",
+          "0.679"
+        ],
+        "female": [
+          "0.599",
+          "0.052*",
+          "0.020",
+          "-0.001",
+          "-0.031",
+          "-0.053**",
+          "-0.021"
+        ],
+        "female__se": [
+          "0.490",
+          "0.052",
+          "0.449",
+          "0.972",
+          "0.233",
+          "0.047",
+          "0.427"
+        ],
+        "collegedegree": [
+          "0.620",
+          "0.031",
+          "0.039",
+          "0.025",
+          "0.008",
+          "-0.005",
+          "-0.014"
+        ],
+        "collegedegree__se": [
+          "0.485",
+          "0.243",
+          "0.139",
+          "0.340",
+          "0.751",
+          "0.834",
+          "0.599"
+        ],
+        "employed": [
+          "0.672",
+          "0.032",
+          "0.012",
+          "-0.031",
+          "-0.020",
+          "-0.063**",
+          "-0.043*"
+        ],
+        "employed__se": [
+          "0.469",
+          "0.206",
+          "0.646",
+          "0.225",
+          "0.421",
+          "0.013",
+          "0.093"
+        ],
+        "loghouseholdincome": [
+          "11.050",
+          "0.049",
+          "0.021",
+          "0",
+          "-0.028",
+          "-0.050",
+          "-0.022"
+        ],
+        "loghouseholdincome__se": [
+          "0.768",
+          "0.240",
+          "0.613",
+          "0.995",
+          "0.490",
+          "0.229",
+          "0.602"
+        ],
+        "caucasianwhite": [
+          "0.741",
+          "0.033",
+          "-0.020",
+          "0.002",
+          "-0.053**",
+          "-0.031",
+          "0.022"
+        ],
+        "caucasianwhite__se": [
+          "0.438",
+          "0.158",
+          "0.408",
+          "0.946",
+          "0.025",
+          "0.178",
+          "0.369"
+        ],
+        "africanamericanblack": [
+          "0.125",
+          "-0.025",
+          "-0.002",
+          "-0.013",
+          "0.024",
+          "0.012",
+          "-0.012"
+        ],
+        "africanamericanblack__se": [
+          "0.331",
+          "0.155",
+          "0.923",
+          "0.464",
+          "0.184",
+          "0.491",
+          "0.523"
+        ],
+        "hispanicorigin": [
+          "0.058",
+          "0.003",
+          "0.004",
+          "-0.011",
+          "0.001",
+          "-0.014",
+          "-0.015"
+        ],
+        "hispanicorigin__se": [
+          "0.235",
+          "0.830",
+          "0.782",
+          "0.371",
+          "0.950",
+          "0.265",
+          "0.241"
+        ],
+        "countryunitedstates": [
+          "0.473",
+          "-0.002",
+          "-0.014",
+          "0",
+          "-0.011",
+          "0.003",
+          "0.014"
+        ],
+        "countryunitedstates__se": [
+          "0.499",
+          "0.932",
+          "0.615",
+          "0.992",
+          "0.674",
+          "0.924",
+          "0.607"
+        ],
+        "socialmediauseminday": [
+          "183.016",
+          "-5.103",
+          "-7.822",
+          "-6.847",
+          "-2.719",
+          "-1.744",
+          "0.975"
+        ],
+        "socialmediauseminday__se": [
+          "110.931",
+          "0.401",
+          "0.196",
+          "0.267",
+          "0.644",
+          "0.771",
+          "0.870"
+        ],
+        "iphoneuser": [
+          "0.535",
+          "0.006",
+          "0.022",
+          "-0.015",
+          "0.016",
+          "-0.022",
+          "-0.037"
+        ],
+        "iphoneuser__se": [
+          "0.499",
+          "0.813",
+          "0.410",
+          "0.579",
+          "0.554",
+          "0.426",
+          "0.166"
+        ],
+        "tiktokorinstagramuser": [
+          "0.918",
+          "-0.026*",
+          "-0.003",
+          "-0.017",
+          "0.022",
+          "0.009",
+          "-0.013"
+        ],
+        "tiktokorinstagramuser__se": [
+          "0.274",
+          "0.086",
+          "0.804",
+          "0.250",
+          "0.139",
+          "0.568",
+          "0.365"
+        ],
+        "pvalueofjointftest": [
+          "0.243",
+          "0.827",
+          "0.852",
+          "0.355",
+          "0.121",
+          "0.706"
+        ],
+        "observations": [
+          "2719",
+          "1360",
+          "1351",
+          "1350",
+          "1369",
+          "1368",
+          "1359"
+        ]
+      },
+      "reference_path": "submission_results/tables/tab_balance.tex",
+      "reference_sha256": "0dfdcdb81044115b8fe9bf5c2f1262e05486cb8c966f994f0653281a4c92975c"
+    },
+    {
+      "table": "A.2",
+      "pdf_page": 44,
+      "result": "tables/tab_attrition_analysis_sm.tex",
+      "column_indices": [
+        1
+      ],
+      "rows": {
+        "changetalk": [
+          "0.012"
+        ],
+        "changetalk__se": [
+          "0.024"
+        ],
+        "decisionalbalance": [
+          "0.002"
+        ],
+        "decisionalbalance__se": [
+          "0.024"
+        ],
+        "directpersuasion": [
+          "-0.041"
+        ],
+        "directpersuasion__se": [
+          "0.025"
+        ],
+        "observations": [
+          "2719"
+        ],
+        "r2": [
+          "0.002"
+        ],
+        "controlgroupmean": [
+          "0.712"
+        ]
+      },
+      "reference_path": "submission_results/tables/tab_attrition_analysis_sm.tex",
+      "reference_sha256": "c149c9f4f9c9e9bacbb1fcf0e780dc88abd69ff766c3cd4ff75bdfbeccc1de04"
+    },
+    {
+      "table": "A.3",
+      "pdf_page": 45,
+      "result": "tables/tab_balance_followup.tex",
+      "rows": {
+        "age": [
+          "42.130",
+          "0.089",
+          "-0.166",
+          "1.054",
+          "-0.255",
+          "0.965",
+          "1.220"
+        ],
+        "age__se": [
+          "12.929",
+          "0.907",
+          "0.833",
+          "0.197",
+          "0.741",
+          "0.227",
+          "0.138"
+        ],
+        "female": [
+          "0.602",
+          "0.039",
+          "0.012",
+          "0.004",
+          "-0.027",
+          "-0.035",
+          "-0.007"
+        ],
+        "female__se": [
+          "0.490",
+          "0.192",
+          "0.699",
+          "0.891",
+          "0.360",
+          "0.250",
+          "0.806"
+        ],
+        "collegedegree": [
+          "0.617",
+          "0.024",
+          "0.030",
+          "0.022",
+          "0.006",
+          "-0.002",
+          "-0.008"
+        ],
+        "collegedegree__se": [
+          "0.486",
+          "0.420",
+          "0.310",
+          "0.461",
+          "0.827",
+          "0.959",
+          "0.791"
+        ],
+        "employed": [
+          "0.668",
+          "0.028",
+          "0",
+          "-0.035",
+          "-0.028",
+          "-0.063**",
+          "-0.035"
+        ],
+        "employed__se": [
+          "0.471",
+          "0.319",
+          "1.000",
+          "0.232",
+          "0.318",
+          "0.028",
+          "0.232"
+        ],
+        "loghouseholdincome": [
+          "11.046",
+          "0.068",
+          "0.029",
+          "0.027",
+          "-0.040",
+          "-0.042",
+          "-0.002"
+        ],
+        "loghouseholdincome__se": [
+          "0.765",
+          "0.147",
+          "0.542",
+          "0.581",
+          "0.380",
+          "0.375",
+          "0.969"
+        ],
+        "caucasianwhite": [
+          "0.759",
+          "0.055**",
+          "-0.027",
+          "-0.004",
+          "-0.082***",
+          "-0.059**",
+          "0.023"
+        ],
+        "caucasianwhite__se": [
+          "0.428",
+          "0.028",
+          "0.322",
+          "0.886",
+          "0.001",
+          "0.020",
+          "0.404"
+        ],
+        "africanamericanblack": [
+          "0.113",
+          "-0.036*",
+          "0.012",
+          "0.002",
+          "0.048**",
+          "0.037**",
+          "-0.011"
+        ],
+        "africanamericanblack__se": [
+          "0.316",
+          "0.051",
+          "0.540",
+          "0.934",
+          "0.010",
+          "0.044",
+          "0.601"
+        ],
+        "hispanicorigin": [
+          "0.054",
+          "0.011",
+          "0.015",
+          "0.002",
+          "0.004",
+          "-0.008",
+          "-0.012"
+        ],
+        "hispanicorigin__se": [
+          "0.226",
+          "0.431",
+          "0.290",
+          "0.867",
+          "0.779",
+          "0.542",
+          "0.380"
+        ],
+        "countryunitedstates": [
+          "0.447",
+          "0.001",
+          "-0.016",
+          "0",
+          "-0.017",
+          "-0.001",
+          "0.015"
+        ],
+        "countryunitedstates__se": [
+          "0.497",
+          "0.970",
+          "0.608",
+          "0.991",
+          "0.579",
+          "0.962",
+          "0.620"
+        ],
+        "socialmediauseminday": [
+          "175.363",
+          "3.265",
+          "-1.741",
+          "-4.920",
+          "-5.006",
+          "-8.185",
+          "-3.179"
+        ],
+        "socialmediauseminday__se": [
+          "108.354",
+          "0.626",
+          "0.793",
+          "0.463",
+          "0.448",
+          "0.220",
+          "0.630"
+        ],
+        "iphoneuser": [
+          "0.522",
+          "-0.007",
+          "0.046",
+          "-0.019",
+          "0.053*",
+          "-0.012",
+          "-0.065**"
+        ],
+        "iphoneuser__se": [
+          "0.500",
+          "0.817",
+          "0.135",
+          "0.543",
+          "0.081",
+          "0.699",
+          "0.037"
+        ],
+        "tiktokorinstagramuser": [
+          "0.912",
+          "-0.024",
+          "-0.001",
+          "-0.027",
+          "0.022",
+          "-0.003",
+          "-0.026"
+        ],
+        "tiktokorinstagramuser__se": [
+          "0.284",
+          "0.163",
+          "0.929",
+          "0.123",
+          "0.191",
+          "0.860",
+          "0.145"
+        ],
+        "pvalueofjointftest": [
+          "0.153",
+          "0.922",
+          "0.872",
+          "0.021",
+          "0.103",
+          "0.605"
+        ],
+        "observations": [
+          "2130",
+          "1087",
+          "1067",
+          "1040",
+          "1090",
+          "1063",
+          "1043"
+        ]
+      },
+      "reference_path": "submission_results/tables/tab_balance_followup.tex",
+      "reference_sha256": "63b44bb8fd070620df8ddf175084447837ce9881fbd07a1b8c33dcf407a3426f"
+    },
+    {
+      "table": "A.4",
+      "pdf_page": 46,
+      "result": "tables/tab_main_treatment_effects_sm_mechanisms.tex",
+      "rows": {
+        "changetalk": [
+          "0.516***",
+          "0.451***",
+          "0.270***",
+          "0.216***",
+          "0.184***",
+          "0.816***"
+        ],
+        "changetalk__se": [
+          "0.051",
+          "0.049",
+          "0.053",
+          "0.050",
+          "0.050",
+          "0.255"
+        ],
+        "decisionalbalance": [
+          "0.212***",
+          "0.127**",
+          "-0.155***",
+          "-0.013",
+          "0.140***",
+          "0.148"
+        ],
+        "decisionalbalance__se": [
+          "0.054",
+          "0.052",
+          "0.054",
+          "0.051",
+          "0.051",
+          "0.232"
+        ],
+        "directpersuasion": [
+          "0.432***",
+          "0.202***",
+          "0.021",
+          "0.078",
+          "0.191***",
+          "0.345"
+        ],
+        "directpersuasion__se": [
+          "0.052",
+          "0.052",
+          "0.053",
+          "0.051",
+          "0.049",
+          "0.236"
+        ],
+        "observations": [
+          "2719",
+          "2719",
+          "2719",
+          "2719",
+          "2719",
+          "2719"
+        ],
+        "r2": [
+          "0.092",
+          "0.101",
+          "0.073",
+          "0.106",
+          "0.068",
+          "0.037"
+        ],
+        "controlgroupmean": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "3.004"
+        ],
+        "controls": [
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "pvalueab": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0.364",
+          "0.009"
+        ],
+        "pvalueac": [
+          "0.101",
+          "0",
+          "0",
+          "0.006",
+          "0.876",
+          "0.072"
+        ],
+        "pvaluebc": [
+          "0",
+          "0.158",
+          "0.001",
+          "0.078",
+          "0.285",
+          "0.410"
+        ]
+      },
+      "reference_path": "submission_results/tables/tab_main_treatment_effects_sm_mechanisms.tex",
+      "reference_sha256": "1272d44815ad32b682a7f2418020fd3f7dcca1bf21cf308f118134305b84b2bd"
+    },
+    {
+      "table": "A.5",
+      "pdf_page": 47,
+      "result": "tables/tab_main_treatment_effects_sm_minutes.tex",
+      "rows": {
+        "changetalk": [
+          "-7.754***",
+          "-25.265***",
+          "-11.203*"
+        ],
+        "changetalk__se": [
+          "2.773",
+          "3.909",
+          "5.930"
+        ],
+        "decisionalbalance": [
+          "4.130",
+          "-14.552***",
+          "-11.937**"
+        ],
+        "decisionalbalance__se": [
+          "2.866",
+          "3.716",
+          "5.698"
+        ],
+        "directpersuasion": [
+          "-7.444**",
+          "-39.320***",
+          "-23.824***"
+        ],
+        "directpersuasion__se": [
+          "2.959",
+          "4.213",
+          "6.181"
+        ],
+        "observations": [
+          "2719",
+          "2719",
+          "2119"
+        ],
+        "r2": [
+          "0.362",
+          "0.409",
+          "0.427"
+        ],
+        "controlgroupmean": [
+          "89.970",
+          "154.511",
+          "187.874"
+        ],
+        "controls": [
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "pvalueab": [
+          "0",
+          "0.004",
+          "0.896"
+        ],
+        "pvalueac": [
+          "0.913",
+          "0.001",
+          "0.039"
+        ],
+        "pvaluebc": [
+          "0",
+          "0",
+          "0.043"
+        ]
+      },
+      "reference_path": "submission_results/tables/tab_main_treatment_effects_sm_minutes.tex",
+      "reference_sha256": "2495c354dd2ede2b8ee0c02b8ddd8ead9abf951e272e06936e3c319addc97a59"
+    },
+    {
+      "table": "A.6",
+      "pdf_page": 48,
+      "result": "tables/tab_treatment_effects_motivation_followup.tex",
+      "rows": {
+        "changetalk": [
+          "0.147**",
+          "0.167***",
+          "0.088"
+        ],
+        "changetalk__se": [
+          "0.057",
+          "0.055",
+          "0.058"
+        ],
+        "decisionalbalance": [
+          "0.068",
+          "0.054",
+          "-0.073"
+        ],
+        "decisionalbalance__se": [
+          "0.059",
+          "0.057",
+          "0.059"
+        ],
+        "directpersuasion": [
+          "0.161***",
+          "0.118**",
+          "0.010"
+        ],
+        "directpersuasion__se": [
+          "0.059",
+          "0.057",
+          "0.059"
+        ],
+        "observations": [
+          "2130",
+          "2126",
+          "2126"
+        ],
+        "r2": [
+          "0.067",
+          "0.084",
+          "0.084"
+        ],
+        "controlgroupmean": [
+          "0",
+          "0",
+          "0"
+        ],
+        "controls": [
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "pvalueab": [
+          "0.167",
+          "0.036",
+          "0.007"
+        ],
+        "pvalueac": [
+          "0.806",
+          "0.363",
+          "0.181"
+        ],
+        "pvaluebc": [
+          "0.116",
+          "0.252",
+          "0.163"
+        ]
+      },
+      "reference_path": "submission_results/tables/tab_treatment_effects_motivation_followup.tex",
+      "reference_sha256": "de0df63abf01ee6b3903505fe62678cf5200ae917c24b747d52292381e3e0ee3"
+    },
+    {
+      "table": "A.7",
+      "pdf_page": 49,
+      "result": "tables/tab_treatment_effects_closetoideal_followup.tex",
+      "rows": {
+        "changetalk": [
+          "0.033*",
+          "0.029",
+          "0.055**",
+          "0.051*"
+        ],
+        "changetalk__se": [
+          "0.018",
+          "0.020",
+          "0.024",
+          "0.026"
+        ],
+        "decisionalbalance": [
+          "0.011",
+          "0.009",
+          "0.020",
+          "0.040"
+        ],
+        "decisionalbalance__se": [
+          "0.017",
+          "0.019",
+          "0.024",
+          "0.027"
+        ],
+        "directpersuasion": [
+          "0.053***",
+          "0.070***",
+          "0.082***",
+          "0.099***"
+        ],
+        "directpersuasion__se": [
+          "0.019",
+          "0.022",
+          "0.026",
+          "0.028"
+        ],
+        "observations": [
+          "2119",
+          "2119",
+          "2119",
+          "2119"
+        ],
+        "r2": [
+          "0.036",
+          "0.045",
+          "0.112",
+          "0.123"
+        ],
+        "controlgroupmean": [
+          "0.079",
+          "0.109",
+          "0.202",
+          "0.287"
+        ],
+        "controls": [
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "pvalueab": [
+          "0.222",
+          "0.318",
+          "0.159",
+          "0.683"
+        ],
+        "pvalueac": [
+          "0.319",
+          "0.065",
+          "0.312",
+          "0.096"
+        ],
+        "pvaluebc": [
+          "0.031",
+          "0.006",
+          "0.019",
+          "0.041"
+        ]
+      },
+      "reference_path": "submission_results/tables/tab_treatment_effects_closetoideal_followup.tex",
+      "reference_sha256": "88119d9971bc096d126a7069f031a41d0e010661239ca88704f3fa9b7b9a5d1e"
+    },
+    {
+      "table": "A.8",
+      "pdf_page": 50,
+      "result": "tables/tab_heterogeneity_timeuse_by_wedge.tex",
+      "rows": {
+        "changetalk": [
+          "-12.513***",
+          "-31.942***",
+          "-2.728",
+          "-20.259**"
+        ],
+        "changetalk__se": [
+          "3.993",
+          "5.050",
+          "7.656",
+          "9.054"
+        ],
+        "decisionalbalance": [
+          "-4.904",
+          "-19.114***",
+          "-4.594",
+          "-22.136**"
+        ],
+        "decisionalbalance__se": [
+          "3.864",
+          "5.187",
+          "7.271",
+          "8.899"
+        ],
+        "directpersuasion": [
+          "-21.046***",
+          "-52.803***",
+          "-19.723***",
+          "-30.256***"
+        ],
+        "directpersuasion__se": [
+          "4.510",
+          "5.856",
+          "7.537",
+          "10.231"
+        ],
+        "observations": [
+          "1361",
+          "1358",
+          "1105",
+          "1014"
+        ],
+        "r2": [
+          "0.630",
+          "0.457",
+          "0.413",
+          "0.309"
+        ],
+        "controlgroupmean": [
+          "114.712",
+          "191.451",
+          "139.191",
+          "239.198"
+        ],
+        "controls": [
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "pvalueab": [
+          "0.036",
+          "0.011",
+          "0.806",
+          "0.818"
+        ],
+        "pvalueac": [
+          "0",
+          "0",
+          "0.040",
+          "0.387"
+        ],
+        "pvaluebc": [
+          "0",
+          "0",
+          "0.040",
+          "0.387"
+        ]
+      },
+      "reference_path": "submission_results/tables/tab_heterogeneity_timeuse_by_wedge.tex",
+      "reference_sha256": "ff3f23fd1b4012ba08f91da3121123682eb559102b515ca5ba2e284a5067a96b"
+    },
+    {
+      "table": "A.9",
+      "pdf_page": 51,
+      "result": "tables/tab_heterogeneity_timeuse_by_basetime.tex",
+      "rows": {
+        "changetalk": [
+          "-13.961***",
+          "-28.246***",
+          "-3.473",
+          "-16.542**"
+        ],
+        "changetalk__se": [
+          "3.985",
+          "4.703",
+          "2.877",
+          "8.194"
+        ],
+        "decisionalbalance": [
+          "-6.340",
+          "-15.643***",
+          "-2.185",
+          "-20.608**"
+        ],
+        "decisionalbalance__se": [
+          "3.998",
+          "4.635",
+          "2.857",
+          "8.140"
+        ],
+        "directpersuasion": [
+          "-18.791***",
+          "-47.287***",
+          "-5.887**",
+          "-15.722*"
+        ],
+        "directpersuasion__se": [
+          "4.588",
+          "5.294",
+          "2.852",
+          "8.906"
+        ],
+        "observations": [
+          "1076",
+          "1643",
+          "1076",
+          "1043"
+        ],
+        "r2": [
+          "0.343",
+          "0.496",
+          "0.187",
+          "0.227"
+        ],
+        "controlgroupmean": [
+          "89.766",
+          "194.451",
+          "82.090",
+          "286.708"
+        ],
+        "controls": [
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "pvalueab": [
+          "0.045",
+          "0.005",
+          "0.636",
+          "0.619"
+        ],
+        "pvalueac": [
+          "0.006",
+          "0",
+          "0.165",
+          "0.586"
+        ],
+        "pvaluebc": [
+          "0.006",
+          "0",
+          "0.165",
+          "0.586"
+        ]
+      },
+      "reference_path": "submission_results/tables/tab_heterogeneity_timeuse_by_basetime.tex",
+      "reference_sha256": "871632806a89b462439d53dc074068c491df2dda9b5538d2130ef84e516fc1f3"
+    },
+    {
+      "table": "C.1",
+      "pdf_page": 69,
+      "result": "tables/mi_validation_results_table.tex",
+      "rows": {
+        "global": [
+          "-0.24",
+          "0.72"
+        ],
+        "partnership": [
+          "-0.10",
+          "0.89"
+        ],
+        "cultivatingchangetalk": [
+          "-0.75",
+          "0.66"
+        ],
+        "empathy": [
+          "0.15",
+          "0.75"
+        ],
+        "softeningsustaintalk": [
+          "-0.25",
+          "0.45"
+        ],
+        "sharecomplexreflections": [
+          "-0.20",
+          "-0.01"
+        ],
+        "reflectiontoquestionratio": [
+          "-0.65",
+          "0.83"
+        ],
+        "totalmiadherentbehavior": [
+          "0.43",
+          "0.81"
+        ],
+        "totalminonadherentbehavior": [
+          "-0.43",
+          "0.84"
+        ],
+        "reflectioncorrelation": [
+          null,
+          "0.72"
+        ]
+      },
+      "reference_path": "submission_results/tables/mi_validation_results_table.tex",
+      "reference_sha256": "c1524f3b0fc87d42c3ce38664a6c03c29f0343a86fe2bf974708a3abdb1a9074"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "compared_at_unix": 1789679276,
+  "mode": "original_submission",
+  "submission_pdf_sha256": "f9780ba2df9df301b0664eb669c735c9433e187f16dd5be39a18aff248322e24",
+  "tables": [
+    {
+      "table": "1",
+      "pdf_page": 11,
+      "result": "tables/manual/tab_treatment_description.tex",
+      "status": "static protocol table; original wording restored",
+      "numeric_match": null
+    },
+    {
+      "table": "2",
+      "pdf_page": 35,
+      "result": "tables/tab_strategies_followup.tex",
+      "checked_cells": 39,
+      "matching_cells": 39,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    },
+    {
+      "table": "A.1",
+      "pdf_page": 43,
+      "result": "tables/tab_balance.tex",
+      "checked_cells": 181,
+      "matching_cells": 181,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    },
+    {
+      "table": "A.2",
+      "pdf_page": 44,
+      "result": "tables/tab_attrition_analysis_sm.tex",
+      "checked_cells": 9,
+      "matching_cells": 9,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    },
+    {
+      "table": "A.3",
+      "pdf_page": 45,
+      "result": "tables/tab_balance_followup.tex",
+      "checked_cells": 181,
+      "matching_cells": 181,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    },
+    {
+      "table": "A.4",
+      "pdf_page": 46,
+      "result": "tables/tab_main_treatment_effects_sm_mechanisms.tex",
+      "checked_cells": 78,
+      "matching_cells": 78,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    },
+    {
+      "table": "A.5",
+      "pdf_page": 47,
+      "result": "tables/tab_main_treatment_effects_sm_minutes.tex",
+      "checked_cells": 39,
+      "matching_cells": 39,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    },
+    {
+      "table": "A.6",
+      "pdf_page": 48,
+      "result": "tables/tab_treatment_effects_motivation_followup.tex",
+      "checked_cells": 39,
+      "matching_cells": 39,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    },
+    {
+      "table": "A.7",
+      "pdf_page": 49,
+      "result": "tables/tab_treatment_effects_closetoideal_followup.tex",
+      "checked_cells": 52,
+      "matching_cells": 52,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    },
+    {
+      "table": "A.8",
+      "pdf_page": 50,
+      "result": "tables/tab_heterogeneity_timeuse_by_wedge.tex",
+      "checked_cells": 52,
+      "matching_cells": 52,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    },
+    {
+      "table": "A.9",
+      "pdf_page": 51,
+      "result": "tables/tab_heterogeneity_timeuse_by_basetime.tex",
+      "checked_cells": 52,
+      "matching_cells": 52,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    },
+    {
+      "table": "C.1",
+      "pdf_page": 69,
+      "result": "tables/mi_validation_results_table.tex",
+      "checked_cells": 20,
+      "matching_cells": 20,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    }
+  ],
+  "numeric_tables": 11,
+  "exact_numeric_matches": 11
+}

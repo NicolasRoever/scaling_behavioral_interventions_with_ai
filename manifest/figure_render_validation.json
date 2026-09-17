@@ -1,170 +1,143 @@
 [
   {
-    "file": "fig_client_counseling.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_client_counseling.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_bertopic.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_bertopic.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_main_treatment_effects_sm_v001.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_main_treatment_effects_sm_v001.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_minutes_treatment_effects.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_minutes_treatment_effects.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_sm_followup_mechanisms.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_sm_followup_mechanisms.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_hst_baseline_sm_use.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_hst_baseline_sm_use.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_density_interview_dur_by_treat.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_density_interview_dur_by_treat.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_cdf_importance_score.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_cdf_importance_score.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_cdf_confidence_score.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_cdf_confidence_score.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_actual_vs_ideal_social_time_binned.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_actual_vs_ideal_social_time_binned.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_emotions.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_emotions.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_miti_score_histograms.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_miti_score_histograms.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "qtype_shares_manual.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/qtype_shares_manual.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "similarity_by_topic.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/similarity_by_topic.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_miti_score_distributions_main_study.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_miti_score_distributions_main_study.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "wordclouds_by_arm.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/wordclouds_by_arm.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_topic_robustness_elbow.pdf",
-    "same_size": false,
-    "reference_size": [
-      1000,
-      299
-    ],
-    "reproduced_size": [
-      1000,
-      300
-    ]
+    "file": "figures/fig_topic_robustness_elbow.pdf",
+    "source_manuscript_pixel_equal": false,
+    "render_dimension": 1000,
+    "visually_reviewed": true,
+    "assessment": "Plotted results agree; styles, hatching, label shading, margins, ticks or rendering differ."
   },
   {
-    "file": "fig_topic_seed_stability.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 3.1526105752054305,
-    "fraction_pixels_different": 0.025709539121114684
+    "file": "figures/fig_topic_seed_stability.pdf",
+    "source_manuscript_pixel_equal": false,
+    "render_dimension": 1000,
+    "visually_reviewed": true,
+    "assessment": "Plotted results agree; styles, hatching, label shading, margins, ticks or rendering differ."
   },
   {
-    "file": "fig_number_pro_con_statements.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 1.0207450980392156,
-    "fraction_pixels_different": 0.009294117647058824
+    "file": "figures/fig_number_pro_con_statements.pdf",
+    "source_manuscript_pixel_equal": false,
+    "render_dimension": 1000,
+    "visually_reviewed": true,
+    "assessment": "Plotted results agree; styles, hatching, label shading, margins, ticks or rendering differ."
   },
   {
-    "file": "fig_strategies.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_strategies.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_change_questionnaire.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_change_questionnaire.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_main_treatment_effects_sm_followup_v001.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_main_treatment_effects_sm_followup_v001.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_app_use_effects.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_app_use_effects.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_scrtime_validation_binned_scatter.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_scrtime_validation_binned_scatter.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_llm_exp_demand.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_llm_exp_demand.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "fig_prior_posterior_exactly_30_panel.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/fig_prior_posterior_exactly_30_panel.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   },
   {
-    "file": "score_stability_violin_plot.pdf",
-    "same_size": true,
-    "mean_abs_pixel_difference": 0.0,
-    "fraction_pixels_different": 0.0
+    "file": "figures/score_stability_violin_plot.pdf",
+    "source_manuscript_pixel_equal": true,
+    "render_dimension": 1000
   }
 ]

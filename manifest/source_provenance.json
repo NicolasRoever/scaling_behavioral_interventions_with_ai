@@ -1,5 +1,5 @@
 {
-  "recorded_at_unix": 1789672148,
+  "recorded_at_unix": 1789679479,
   "source_files": [
     {
       "package_file": "code/stata/fig_baseline_sm_use.do",
@@ -20,7 +20,7 @@
       "package_file": "code/stata/tab_mechanism_strategies_followup.do",
       "source": "stata/tab_mechanism_strategies_followup.do",
       "source_sha256": "24b64467d1ff6423891daac16ffbd5f2d7afd8ed51ac5c8b136d82e18054bcd4",
-      "package_adjustment": "Correct Technology-based column-label spelling to match the manuscript; calculations unchanged."
+      "package_adjustment": "Correct Technology-based column-label spelling for valid presentation; calculations unchanged."
     },
     {
       "package_file": "code/stata/tab_differences_strategies.do",
@@ -80,7 +80,8 @@
     {
       "package_file": "code/stata/tab_outcomes_expdemand.do",
       "source": "stata/tab_outcomes_expdemand.do",
-      "source_sha256": "096447ffb41829d7a6b1316ac9e08127c97169d4ab18ae79c168716a9d3081c7"
+      "source_sha256": "3894d2abeb984b5736533420e6785ce9ce9733bfe09fc1c34d5ae529d9345126",
+      "package_adjustment": "Omit source-only PDF rendering of manuscript table environments; its two active LaTeX table fragments are reproduced, and the manuscript with interview examples is not distributed."
     },
     {
       "package_file": "code/stata/tab_heterogeneity_timeuse_by_basetime.do",
@@ -136,7 +137,7 @@
       "package_file": "code/stata/tab_main_treatment_effect_duration_control.do",
       "source": "stata/tab_main_treatment_effect_duration_control.do",
       "source_sha256": "71f37c731f6ea17250632fe61237b91fff9906fc97a9099aa6d02c90f3164a58",
-      "package_adjustment": "Escape the WTP dollar sign through Stata so the emitted LaTeX matches the manuscript; calculations unchanged."
+      "package_adjustment": "Escape the WTP dollar sign through Stata in the emitted LaTeX; calculations unchanged."
     },
     {
       "package_file": "code/stata/tab_main_treatment_effect.do",
@@ -175,7 +176,7 @@
     },
     {
       "package_file": "code/private/classify_bertopic.py",
-      "source": "python/classify_bertopic.py",
+      "source": "python/bertopic_classification/classify_bertopic.py",
       "source_sha256": "01993bbdf899c243835734e25cbc83dee4af02e756f76ec8ae9f951bef7fcc24"
     },
     {
@@ -185,7 +186,7 @@
     },
     {
       "package_file": "code/private/topic_model_robustness.py",
-      "source": "python/topic_model_robustness.py",
+      "source": "python/bertopic_classification/topic_model_robustness.py",
       "source_sha256": "d89718d92786dd731a454f7a48a70fef4761cbbaeefaa5db8d1357a8c9200cf3"
     },
     {
@@ -195,8 +196,9 @@
     },
     {
       "package_file": "code/private/topic_model_seed_stability.py",
-      "source": "python/topic_model_seed_stability.py",
-      "source_sha256": "76178ebb981356a855ea23fdec87cf6aba2eb96cf1e0b0dbc4ab0a16024bf755"
+      "source": "python/bertopic_classification/topic_model_seed_stability.py",
+      "source_sha256": "ebb6dc3bbae1f4b57c379ee4b3b04e6b2ab56c640061581c37c256eab1660d3f",
+      "package_adjustment": "Retain the sibling topic_model_robustness import for the flat restricted-source directory; execution remains disabled and public reproduction uses saved measurements."
     },
     {
       "package_file": "code/private/fig_pros_cons.py",
@@ -237,6 +239,25 @@
       "package_file": "code/private/miti_scoring/miti_global_scores.py",
       "source": "python/miti_scoring/miti_global_scores.py",
       "source_sha256": "aae2d5c4b669df48401fc0d5e6eb7a76f54c8dd00247f11d48aefa7f3fa34dd9"
+    },
+    {
+      "package_file": "code/python/bertopic_plot.py",
+      "source": "python/bertopic_classification/fig_bertopic.py",
+      "source_sha256": "9683e29988a9ea1009c15a00a40b31df7c5a7b874f7ee2e4e3217deb9229ffe7",
+      "package_adjustment": "Offline function with explicit input/output paths; preserve the source outlier exclusion after fixing denominators."
     }
-  ]
+  ],
+  "submission_validation_sources": [
+    {
+      "source": "python/miti_scoring/output/validation_global_scores_extracted.csv",
+      "source_sha256": "be0609a0c9e6cc8f355b1541cffe86b4093c2151de58943a1798aa8269aca221",
+      "retained": "Anonymous pair keys, dimension, numeric human/model scores only"
+    },
+    {
+      "source": "python/miti_scoring/output/validation_miti_global_scores_20251125.csv",
+      "source_sha256": "541302b138d99ec6981e27ae9ca27613afbe953c5e71119be46ed9d9a61e883e",
+      "retained": "Anonymous pair keys, dimension, numeric human/model scores only"
+    }
+  ],
+  "submission_archival_adaptations": "code/reproduce_submission.py; see SUBMISSION_TABLE_AUDIT.md. No default statistical specifications were altered."
 }

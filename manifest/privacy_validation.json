@@ -1,15 +1,80 @@
 {
+  "validated_at_unix": 1789679018,
   "checks_passed": true,
   "no_notebooks": true,
+  "unchanged_derived_files_rechecked": true,
   "data_files": [
     {
-      "file": "data/derived/pros_cons_counts.csv",
-      "columns": [
-        "user_id_raw",
-        "T",
-        "number_positive_aspects",
-        "number_negative_aspects"
-      ]
+      "file": "data/raw/main_socialmedia/main_raw.dta",
+      "rows": 3311,
+      "numeric_columns": 320,
+      "identifier_mapping_consistent": true,
+      "free_text_absent_or_blank": true,
+      "screenshot_upload_metadata_absent": true
+    },
+    {
+      "file": "data/raw/main_socialmedia/follow_up_raw.dta",
+      "rows": 2176,
+      "numeric_columns": 70,
+      "identifier_mapping_consistent": true,
+      "free_text_absent_or_blank": true,
+      "screenshot_upload_metadata_absent": true
+    },
+    {
+      "file": "data/processed/main_social_media/clean_data.dta",
+      "rows": 2719,
+      "numeric_columns": 219,
+      "identifier_mapping_consistent": true,
+      "free_text_absent_or_blank": true,
+      "screenshot_upload_metadata_absent": true
+    },
+    {
+      "file": "data/processed/main_social_media/follow_up_clean.dta",
+      "rows": 2132,
+      "numeric_columns": 45,
+      "identifier_mapping_consistent": true,
+      "free_text_absent_or_blank": true,
+      "screenshot_upload_metadata_absent": true
+    },
+    {
+      "file": "data/processed/main_social_media/clean_merged.dta",
+      "rows": 2719,
+      "numeric_columns": 272,
+      "identifier_mapping_consistent": true,
+      "free_text_absent_or_blank": true,
+      "screenshot_upload_metadata_absent": true
+    },
+    {
+      "file": "data/processed/main_social_media/clean_merged_with_scrshots.dta",
+      "rows": 2719,
+      "numeric_columns": 321,
+      "identifier_mapping_consistent": true,
+      "free_text_absent_or_blank": true,
+      "screenshot_upload_metadata_absent": true
+    },
+    {
+      "file": "data/processed/main_social_media/interview_scores_extracted.dta",
+      "rows": 2719,
+      "numeric_columns": 2,
+      "identifier_mapping_consistent": true,
+      "free_text_absent_or_blank": true,
+      "screenshot_upload_metadata_absent": true
+    },
+    {
+      "file": "data/processed/main_social_media/clean_scr_data.dta",
+      "rows": 582,
+      "numeric_columns": 39,
+      "identifier_mapping_consistent": true,
+      "free_text_absent_or_blank": true,
+      "screenshot_upload_metadata_absent": true
+    },
+    {
+      "file": "data/processed/main_social_media/df_merged_llm_category_expdemand_v001.dta",
+      "rows": 2719,
+      "numeric_columns": 0,
+      "identifier_mapping_consistent": true,
+      "free_text_absent_or_blank": true,
+      "screenshot_upload_metadata_absent": true
     },
     {
       "file": "data/derived/bertopic_labeled.csv",
@@ -33,88 +98,73 @@
       ]
     },
     {
-      "file": "data/derived/topic_seed_stability_summary.csv",
-      "columns": [
-        "topic_id",
-        "topic_label",
-        "n_docs",
-        "mean_retention",
-        "min_retention",
-        "mean_precision",
-        "min_precision",
-        "mean_f1",
-        "min_f1",
-        "mean_jaccard",
-        "min_jaccard",
-        "frac_seeds_reproduced",
-        "stable"
-      ]
-    },
-    {
-      "file": "data/derived/topic_robustness_elbow.csv",
-      "columns": [
-        "nr_topics",
-        "n_topics_actual",
-        "n_docs",
-        "outlier_share",
-        "largest_topic_share",
-        "mean_intra_topic_cosine",
-        "silhouette"
-      ]
-    },
-    {
-      "file": "data/derived/similarity_by_topic.csv",
-      "columns": [
-        "arm",
-        "question_topic",
-        "position",
-        "within_cosine",
-        "n",
-        "reference"
-      ]
-    },
-    {
-      "file": "data/derived/question_sequence.csv",
-      "columns": [
-        "arm",
-        "question_topic",
-        "order"
-      ]
-    },
-    {
-      "file": "data/derived/topic_seed_stability_metrics.csv",
-      "columns": [
-        "seed",
-        "topic_id",
-        "topic_label",
-        "component_topic_ids",
-        "n_reference_docs",
-        "n_matched_docs",
-        "retention",
-        "precision",
-        "f1",
-        "jaccard",
-        "matched_seed_topic_ids",
-        "component_matches"
-      ]
-    },
-    {
-      "file": "data/derived/thirty_minute_mentions_by_chat.csv",
+      "file": "data/derived/miti/20260910T215439Z_9e5f325e__control__gpt-5.6-luna__benchmark.csv",
       "columns": [
         "session_id",
-        "T",
-        "Interviewer mentions 30 minutes / half an hour",
-        "Participant mentions 30 minutes / half an hour",
-        "Participant mentions before any interviewer mention, or without one",
-        "Participant mentions after an interviewer mention"
+        "miti_dimension",
+        "run_id",
+        "dataset",
+        "model",
+        "condition",
+        "replicate",
+        "prompt_variant",
+        "score"
       ]
     },
     {
-      "file": "data/derived/strategy_categories.csv",
+      "file": "data/derived/miti/20260910T215439Z_9e5f325e__treated__gpt-5.4-2026-03-05__model_swap.csv",
       "columns": [
-        "user_id_raw",
-        "T",
-        "llm_strategies_openai"
+        "session_id",
+        "miti_dimension",
+        "run_id",
+        "dataset",
+        "model",
+        "condition",
+        "replicate",
+        "prompt_variant",
+        "score"
+      ]
+    },
+    {
+      "file": "data/derived/miti/20260910T215439Z_9e5f325e__treated__gpt-5.5-2026-04-23__model_swap.csv",
+      "columns": [
+        "session_id",
+        "miti_dimension",
+        "run_id",
+        "dataset",
+        "model",
+        "condition",
+        "replicate",
+        "prompt_variant",
+        "score"
+      ]
+    },
+    {
+      "file": "data/derived/miti/20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__ablation.csv",
+      "columns": [
+        "session_id",
+        "miti_dimension",
+        "run_id",
+        "dataset",
+        "model",
+        "condition",
+        "replicate",
+        "prompt_variant",
+        "score"
+      ]
+    },
+    {
+      "file": "data/derived/miti/20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__benchmark.csv",
+      "columns": [
+        "session_id",
+        "miti_dimension",
+        "run_id",
+        "dataset",
+        "model",
+        "condition",
+        "replicate",
+        "prompt_variant",
+        "score"
       ]
     },
     {
@@ -160,20 +210,6 @@
       ]
     },
     {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__ablation.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
       "file": "data/derived/miti/20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-04.csv",
       "columns": [
         "session_id",
@@ -202,35 +238,7 @@
       ]
     },
     {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__benchmark.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__treated__gpt-5.5-2026-04-23__model_swap.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__treated__gpt-5.4-2026-03-05__model_swap.csv",
+      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.4-2026-03-05__model_swap.csv",
       "columns": [
         "session_id",
         "miti_dimension",
@@ -258,63 +266,7 @@
       ]
     },
     {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__control__gpt-5.6-luna__benchmark.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.4-2026-03-05__model_swap.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation20__gpt-5.6-luna__benchmark.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-04.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-05.csv",
+      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__ablation.csv",
       "columns": [
         "session_id",
         "miti_dimension",
@@ -356,20 +308,6 @@
       ]
     },
     {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__ablation.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
       "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-03.csv",
       "columns": [
         "session_id",
@@ -384,9 +322,45 @@
       ]
     },
     {
-      "file": "data/derived/miti/inputs/subset.csv",
+      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-04.csv",
       "columns": [
-        "source_pdf"
+        "session_id",
+        "miti_dimension",
+        "run_id",
+        "dataset",
+        "model",
+        "condition",
+        "replicate",
+        "prompt_variant",
+        "score"
+      ]
+    },
+    {
+      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-05.csv",
+      "columns": [
+        "session_id",
+        "miti_dimension",
+        "run_id",
+        "dataset",
+        "model",
+        "condition",
+        "replicate",
+        "prompt_variant",
+        "score"
+      ]
+    },
+    {
+      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation20__gpt-5.6-luna__benchmark.csv",
+      "columns": [
+        "session_id",
+        "miti_dimension",
+        "run_id",
+        "dataset",
+        "model",
+        "condition",
+        "replicate",
+        "prompt_variant",
+        "score"
       ]
     },
     {
@@ -394,6 +368,14 @@
       "columns": [
         "user_id_raw",
         "T"
+      ]
+    },
+    {
+      "file": "data/derived/miti/inputs/behavioral_results.csv",
+      "columns": [
+        "Category",
+        "Bias",
+        "Correlation"
       ]
     },
     {
@@ -407,58 +389,113 @@
       ]
     },
     {
-      "file": "data/derived/miti/inputs/behavioral_results.csv",
+      "file": "data/derived/miti/inputs/subset.csv",
       "columns": [
-        "Category",
-        "Bias",
-        "Correlation"
+        "source_pdf"
       ]
     },
     {
-      "file": "data/processed/main_social_media/interview_scores_extracted.dta",
-      "rows": 2719,
-      "numeric_columns": 2
+      "file": "data/derived/pros_cons_counts.csv",
+      "columns": [
+        "user_id_raw",
+        "T",
+        "number_positive_aspects",
+        "number_negative_aspects"
+      ]
     },
     {
-      "file": "data/processed/main_social_media/df_merged_llm_category_expdemand_v001.dta",
-      "rows": 2719,
-      "numeric_columns": 0
+      "file": "data/derived/question_sequence.csv",
+      "columns": [
+        "arm",
+        "question_topic",
+        "order"
+      ]
     },
     {
-      "file": "data/processed/main_social_media/clean_data.dta",
-      "rows": 2719,
-      "numeric_columns": 219
+      "file": "data/derived/similarity_by_topic.csv",
+      "columns": [
+        "arm",
+        "question_topic",
+        "position",
+        "within_cosine",
+        "n",
+        "reference"
+      ]
     },
     {
-      "file": "data/processed/main_social_media/clean_scr_data.dta",
-      "rows": 582,
-      "numeric_columns": 39
+      "file": "data/derived/strategy_categories.csv",
+      "columns": [
+        "user_id_raw",
+        "T",
+        "llm_strategies_openai"
+      ]
     },
     {
-      "file": "data/processed/main_social_media/clean_merged.dta",
-      "rows": 2719,
-      "numeric_columns": 272
+      "file": "data/derived/submission_miti_global_pairs.csv",
+      "columns": [
+        "session_id",
+        "miti_dimension",
+        "human_score",
+        "model_score"
+      ]
     },
     {
-      "file": "data/processed/main_social_media/clean_merged_with_scrshots.dta",
-      "rows": 2719,
-      "numeric_columns": 321
+      "file": "data/derived/thirty_minute_mentions_by_chat.csv",
+      "columns": [
+        "session_id",
+        "T",
+        "Interviewer mentions 30 minutes / half an hour",
+        "Participant mentions 30 minutes / half an hour",
+        "Participant mentions before any interviewer mention, or without one",
+        "Participant mentions after an interviewer mention"
+      ]
     },
     {
-      "file": "data/processed/main_social_media/follow_up_clean.dta",
-      "rows": 2304,
-      "numeric_columns": 45
+      "file": "data/derived/topic_robustness_elbow.csv",
+      "columns": [
+        "nr_topics",
+        "n_topics_actual",
+        "n_docs",
+        "outlier_share",
+        "largest_topic_share",
+        "mean_intra_topic_cosine",
+        "silhouette"
+      ]
     },
     {
-      "file": "data/raw/main_socialmedia/follow_up_raw.dta",
-      "rows": 2351,
-      "numeric_columns": 70
+      "file": "data/derived/topic_seed_stability_metrics.csv",
+      "columns": [
+        "seed",
+        "topic_id",
+        "topic_label",
+        "component_topic_ids",
+        "n_reference_docs",
+        "n_matched_docs",
+        "retention",
+        "precision",
+        "f1",
+        "jaccard",
+        "matched_seed_topic_ids",
+        "component_matches"
+      ]
     },
     {
-      "file": "data/raw/main_socialmedia/main_raw.dta",
-      "rows": 3311,
-      "numeric_columns": 320
+      "file": "data/derived/topic_seed_stability_summary.csv",
+      "columns": [
+        "topic_id",
+        "topic_label",
+        "n_docs",
+        "mean_retention",
+        "min_retention",
+        "mean_precision",
+        "min_precision",
+        "mean_f1",
+        "min_f1",
+        "mean_jaccard",
+        "min_jaccard",
+        "frac_seeds_reproduced",
+        "stable"
+      ]
     }
-  ],
-  "rechecked_at_unix": 1789597351
+  ]
 }

@@ -1,0 +1,973 @@
+{
+  "compared_at_unix": 1789679018,
+  "mode": "current_analysis",
+  "submission_pdf_sha256": "f9780ba2df9df301b0664eb669c735c9433e187f16dd5be39a18aff248322e24",
+  "tables": [
+    {
+      "table": "1",
+      "pdf_page": 11,
+      "result": "tables/manual/tab_treatment_description.tex",
+      "status": "static protocol table supplied; wording has minor edits",
+      "numeric_match": null
+    },
+    {
+      "table": "2",
+      "pdf_page": 35,
+      "result": "tables/tab_strategies_followup.tex",
+      "checked_cells": 39,
+      "matching_cells": 39,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    },
+    {
+      "table": "A.1",
+      "pdf_page": 43,
+      "result": "tables/tab_balance.tex",
+      "checked_cells": 181,
+      "matching_cells": 161,
+      "numeric_match": false,
+      "differences": [
+        {
+          "row": "socialmediauseminday",
+          "column": 1,
+          "pdf": "183.016",
+          "replicated": "189.696"
+        },
+        {
+          "row": "socialmediauseminday",
+          "column": 2,
+          "pdf": "-5.103",
+          "replicated": "-5.596"
+        },
+        {
+          "row": "socialmediauseminday",
+          "column": 3,
+          "pdf": "-7.822",
+          "replicated": "-9.864"
+        },
+        {
+          "row": "socialmediauseminday",
+          "column": 4,
+          "pdf": "-6.847",
+          "replicated": "-7.171"
+        },
+        {
+          "row": "socialmediauseminday",
+          "column": 5,
+          "pdf": "-2.719",
+          "replicated": "-4.268"
+        },
+        {
+          "row": "socialmediauseminday",
+          "column": 6,
+          "pdf": "-1.744",
+          "replicated": "-1.575"
+        },
+        {
+          "row": "socialmediauseminday",
+          "column": 7,
+          "pdf": "0.975",
+          "replicated": "2.693"
+        },
+        {
+          "row": "socialmediauseminday__se",
+          "column": 1,
+          "pdf": "110.931",
+          "replicated": "134.907"
+        },
+        {
+          "row": "socialmediauseminday__se",
+          "column": 2,
+          "pdf": "0.401",
+          "replicated": "0.450"
+        },
+        {
+          "row": "socialmediauseminday__se",
+          "column": 3,
+          "pdf": "0.196",
+          "replicated": "0.177"
+        },
+        {
+          "row": "socialmediauseminday__se",
+          "column": 4,
+          "pdf": "0.267",
+          "replicated": "0.340"
+        },
+        {
+          "row": "socialmediauseminday__se",
+          "column": 5,
+          "pdf": "0.644",
+          "replicated": "0.550"
+        },
+        {
+          "row": "socialmediauseminday__se",
+          "column": 6,
+          "pdf": "0.771",
+          "replicated": "0.830"
+        },
+        {
+          "row": "socialmediauseminday__se",
+          "column": 7,
+          "pdf": "0.870",
+          "replicated": "0.710"
+        },
+        {
+          "row": "pvalueofjointftest",
+          "column": 1,
+          "pdf": "0.243",
+          "replicated": "0.246"
+        },
+        {
+          "row": "pvalueofjointftest",
+          "column": 2,
+          "pdf": "0.827",
+          "replicated": "0.812"
+        },
+        {
+          "row": "pvalueofjointftest",
+          "column": 3,
+          "pdf": "0.852",
+          "replicated": "0.863"
+        },
+        {
+          "row": "pvalueofjointftest",
+          "column": 4,
+          "pdf": "0.355",
+          "replicated": "0.330"
+        },
+        {
+          "row": "pvalueofjointftest",
+          "column": 5,
+          "pdf": "0.121",
+          "replicated": "0.122"
+        },
+        {
+          "row": "pvalueofjointftest",
+          "column": 6,
+          "pdf": "0.706",
+          "replicated": "0.682"
+        }
+      ],
+      "status": "differs from PDF; see differences"
+    },
+    {
+      "table": "A.2",
+      "pdf_page": 44,
+      "result": "tables/tab_attrition_analysis_sm.tex",
+      "checked_cells": 9,
+      "matching_cells": 8,
+      "numeric_match": false,
+      "differences": [
+        {
+          "row": "controlgroupmean",
+          "column": 1,
+          "pdf": "0.712",
+          "replicated": "0.718"
+        }
+      ],
+      "status": "differs from PDF; see differences"
+    },
+    {
+      "table": "A.3",
+      "pdf_page": 45,
+      "result": "tables/tab_balance_followup.tex",
+      "checked_cells": 181,
+      "matching_cells": 161,
+      "numeric_match": false,
+      "differences": [
+        {
+          "row": "socialmediauseminday",
+          "column": 1,
+          "pdf": "175.363",
+          "replicated": "180.983"
+        },
+        {
+          "row": "socialmediauseminday",
+          "column": 2,
+          "pdf": "3.265",
+          "replicated": "4.598"
+        },
+        {
+          "row": "socialmediauseminday",
+          "column": 3,
+          "pdf": "-1.741",
+          "replicated": "-4.884"
+        },
+        {
+          "row": "socialmediauseminday",
+          "column": 4,
+          "pdf": "-4.920",
+          "replicated": "-4.689"
+        },
+        {
+          "row": "socialmediauseminday",
+          "column": 5,
+          "pdf": "-5.006",
+          "replicated": "-9.481"
+        },
+        {
+          "row": "socialmediauseminday",
+          "column": 6,
+          "pdf": "-8.185",
+          "replicated": "-9.287"
+        },
+        {
+          "row": "socialmediauseminday",
+          "column": 7,
+          "pdf": "-3.179",
+          "replicated": "0.194"
+        },
+        {
+          "row": "socialmediauseminday__se",
+          "column": 1,
+          "pdf": "108.354",
+          "replicated": "129.397"
+        },
+        {
+          "row": "socialmediauseminday__se",
+          "column": 2,
+          "pdf": "0.626",
+          "replicated": "0.573"
+        },
+        {
+          "row": "socialmediauseminday__se",
+          "column": 3,
+          "pdf": "0.793",
+          "replicated": "0.524"
+        },
+        {
+          "row": "socialmediauseminday__se",
+          "column": 4,
+          "pdf": "0.463",
+          "replicated": "0.564"
+        },
+        {
+          "row": "socialmediauseminday__se",
+          "column": 5,
+          "pdf": "0.448",
+          "replicated": "0.221"
+        },
+        {
+          "row": "socialmediauseminday__se",
+          "column": 6,
+          "pdf": "0.220",
+          "replicated": "0.257"
+        },
+        {
+          "row": "socialmediauseminday__se",
+          "column": 7,
+          "pdf": "0.630",
+          "replicated": "0.980"
+        },
+        {
+          "row": "pvalueofjointftest",
+          "column": 1,
+          "pdf": "0.153",
+          "replicated": "0.152"
+        },
+        {
+          "row": "pvalueofjointftest",
+          "column": 2,
+          "pdf": "0.922",
+          "replicated": "0.897"
+        },
+        {
+          "row": "pvalueofjointftest",
+          "column": 3,
+          "pdf": "0.872",
+          "replicated": "0.875"
+        },
+        {
+          "row": "pvalueofjointftest",
+          "column": 4,
+          "pdf": "0.021",
+          "replicated": "0.012"
+        },
+        {
+          "row": "pvalueofjointftest",
+          "column": 5,
+          "pdf": "0.103",
+          "replicated": "0.102"
+        },
+        {
+          "row": "pvalueofjointftest",
+          "column": 6,
+          "pdf": "0.605",
+          "replicated": "0.569"
+        }
+      ],
+      "status": "differs from PDF; see differences"
+    },
+    {
+      "table": "A.4",
+      "pdf_page": 46,
+      "result": "tables/tab_main_treatment_effects_sm_mechanisms.tex",
+      "checked_cells": 78,
+      "matching_cells": 78,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    },
+    {
+      "table": "A.5",
+      "pdf_page": 47,
+      "result": "tables/tab_main_treatment_effects_sm_minutes.tex",
+      "checked_cells": 39,
+      "matching_cells": 39,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    },
+    {
+      "table": "A.6",
+      "pdf_page": 48,
+      "result": "tables/tab_treatment_effects_motivation_followup.tex",
+      "checked_cells": 39,
+      "matching_cells": 39,
+      "numeric_match": true,
+      "differences": [],
+      "status": "matches PDF numeric entries"
+    },
+    {
+      "table": "A.7",
+      "pdf_page": 49,
+      "result": "tables/tab_treatment_effects_closetoideal_followup.tex",
+      "checked_cells": 52,
+      "matching_cells": 12,
+      "numeric_match": false,
+      "differences": [
+        {
+          "row": "changetalk",
+          "column": 1,
+          "pdf": "0.033*",
+          "replicated": "0.011"
+        },
+        {
+          "row": "changetalk",
+          "column": 2,
+          "pdf": "0.029",
+          "replicated": "0.008"
+        },
+        {
+          "row": "changetalk",
+          "column": 3,
+          "pdf": "0.055**",
+          "replicated": "0.035"
+        },
+        {
+          "row": "changetalk",
+          "column": 4,
+          "pdf": "0.051*",
+          "replicated": "0.027"
+        },
+        {
+          "row": "changetalk__se",
+          "column": 1,
+          "pdf": "0.018",
+          "replicated": "0.017"
+        },
+        {
+          "row": "changetalk__se",
+          "column": 2,
+          "pdf": "0.020",
+          "replicated": "0.019"
+        },
+        {
+          "row": "changetalk__se",
+          "column": 3,
+          "pdf": "0.024",
+          "replicated": "0.023"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 1,
+          "pdf": "0.011",
+          "replicated": "0.015"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 2,
+          "pdf": "0.009",
+          "replicated": "0.017"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 3,
+          "pdf": "0.020",
+          "replicated": "0.044*"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 4,
+          "pdf": "0.040",
+          "replicated": "0.050*"
+        },
+        {
+          "row": "decisionalbalance__se",
+          "column": 1,
+          "pdf": "0.017",
+          "replicated": "0.018"
+        },
+        {
+          "row": "decisionalbalance__se",
+          "column": 4,
+          "pdf": "0.027",
+          "replicated": "0.026"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 1,
+          "pdf": "0.053***",
+          "replicated": "0.015"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 2,
+          "pdf": "0.070***",
+          "replicated": "0.026"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 3,
+          "pdf": "0.082***",
+          "replicated": "0.036"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 4,
+          "pdf": "0.099***",
+          "replicated": "0.040"
+        },
+        {
+          "row": "directpersuasion__se",
+          "column": 1,
+          "pdf": "0.019",
+          "replicated": "0.018"
+        },
+        {
+          "row": "directpersuasion__se",
+          "column": 2,
+          "pdf": "0.022",
+          "replicated": "0.020"
+        },
+        {
+          "row": "directpersuasion__se",
+          "column": 3,
+          "pdf": "0.026",
+          "replicated": "0.024"
+        },
+        {
+          "row": "directpersuasion__se",
+          "column": 4,
+          "pdf": "0.028",
+          "replicated": "0.027"
+        },
+        {
+          "row": "r2",
+          "column": 1,
+          "pdf": "0.036",
+          "replicated": "0.033"
+        },
+        {
+          "row": "r2",
+          "column": 2,
+          "pdf": "0.045",
+          "replicated": "0.043"
+        },
+        {
+          "row": "r2",
+          "column": 4,
+          "pdf": "0.123",
+          "replicated": "0.135"
+        },
+        {
+          "row": "controlgroupmean",
+          "column": 1,
+          "pdf": "0.079",
+          "replicated": "0.083"
+        },
+        {
+          "row": "controlgroupmean",
+          "column": 2,
+          "pdf": "0.109",
+          "replicated": "0.108"
+        },
+        {
+          "row": "controlgroupmean",
+          "column": 3,
+          "pdf": "0.202",
+          "replicated": "0.194"
+        },
+        {
+          "row": "controlgroupmean",
+          "column": 4,
+          "pdf": "0.287",
+          "replicated": "0.277"
+        },
+        {
+          "row": "pvalueab",
+          "column": 1,
+          "pdf": "0.222",
+          "replicated": "0.819"
+        },
+        {
+          "row": "pvalueab",
+          "column": 2,
+          "pdf": "0.318",
+          "replicated": "0.671"
+        },
+        {
+          "row": "pvalueab",
+          "column": 3,
+          "pdf": "0.159",
+          "replicated": "0.717"
+        },
+        {
+          "row": "pvalueab",
+          "column": 4,
+          "pdf": "0.683",
+          "replicated": "0.372"
+        },
+        {
+          "row": "pvalueac",
+          "column": 1,
+          "pdf": "0.319",
+          "replicated": "0.813"
+        },
+        {
+          "row": "pvalueac",
+          "column": 2,
+          "pdf": "0.065",
+          "replicated": "0.377"
+        },
+        {
+          "row": "pvalueac",
+          "column": 3,
+          "pdf": "0.312",
+          "replicated": "0.970"
+        },
+        {
+          "row": "pvalueac",
+          "column": 4,
+          "pdf": "0.096",
+          "replicated": "0.611"
+        },
+        {
+          "row": "pvaluebc",
+          "column": 1,
+          "pdf": "0.031",
+          "replicated": "0.992"
+        },
+        {
+          "row": "pvaluebc",
+          "column": 2,
+          "pdf": "0.006",
+          "replicated": "0.651"
+        },
+        {
+          "row": "pvaluebc",
+          "column": 3,
+          "pdf": "0.019",
+          "replicated": "0.752"
+        },
+        {
+          "row": "pvaluebc",
+          "column": 4,
+          "pdf": "0.041",
+          "replicated": "0.716"
+        }
+      ],
+      "status": "differs from PDF; see differences"
+    },
+    {
+      "table": "A.8",
+      "pdf_page": 50,
+      "result": "tables/tab_heterogeneity_timeuse_by_wedge.tex",
+      "checked_cells": 52,
+      "matching_cells": 49,
+      "numeric_match": false,
+      "differences": [
+        {
+          "row": "pvalueac",
+          "column": 1,
+          "pdf": "0",
+          "replicated": "0.046"
+        },
+        {
+          "row": "pvalueac",
+          "column": 3,
+          "pdf": "0.040",
+          "replicated": "0.028"
+        },
+        {
+          "row": "pvalueac",
+          "column": 4,
+          "pdf": "0.387",
+          "replicated": "0.299"
+        }
+      ],
+      "status": "differs from PDF; see differences"
+    },
+    {
+      "table": "A.9",
+      "pdf_page": 51,
+      "result": "tables/tab_heterogeneity_timeuse_by_basetime.tex",
+      "checked_cells": 52,
+      "matching_cells": 6,
+      "numeric_match": false,
+      "differences": [
+        {
+          "row": "changetalk",
+          "column": 1,
+          "pdf": "-13.961***",
+          "replicated": "-12.408***"
+        },
+        {
+          "row": "changetalk",
+          "column": 2,
+          "pdf": "-28.246***",
+          "replicated": "-34.556***"
+        },
+        {
+          "row": "changetalk",
+          "column": 3,
+          "pdf": "-3.473",
+          "replicated": "-6.157"
+        },
+        {
+          "row": "changetalk",
+          "column": 4,
+          "pdf": "-16.542**",
+          "replicated": "-16.933*"
+        },
+        {
+          "row": "changetalk__se",
+          "column": 1,
+          "pdf": "3.985",
+          "replicated": "3.394"
+        },
+        {
+          "row": "changetalk__se",
+          "column": 2,
+          "pdf": "4.703",
+          "replicated": "5.518"
+        },
+        {
+          "row": "changetalk__se",
+          "column": 3,
+          "pdf": "2.877",
+          "replicated": "7.132"
+        },
+        {
+          "row": "changetalk__se",
+          "column": 4,
+          "pdf": "8.194",
+          "replicated": "9.586"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 1,
+          "pdf": "-6.340",
+          "replicated": "-8.773***"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 2,
+          "pdf": "-15.643***",
+          "replicated": "-15.837***"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 3,
+          "pdf": "-2.185",
+          "replicated": "-10.985*"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 4,
+          "pdf": "-20.608**",
+          "replicated": "-12.749"
+        },
+        {
+          "row": "decisionalbalance__se",
+          "column": 1,
+          "pdf": "3.998",
+          "replicated": "3.183"
+        },
+        {
+          "row": "decisionalbalance__se",
+          "column": 2,
+          "pdf": "4.635",
+          "replicated": "5.521"
+        },
+        {
+          "row": "decisionalbalance__se",
+          "column": 3,
+          "pdf": "2.857",
+          "replicated": "6.634"
+        },
+        {
+          "row": "decisionalbalance__se",
+          "column": 4,
+          "pdf": "8.140",
+          "replicated": "9.422"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 1,
+          "pdf": "-18.791***",
+          "replicated": "-17.122***"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 2,
+          "pdf": "-47.287***",
+          "replicated": "-58.041***"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 3,
+          "pdf": "-5.887**",
+          "replicated": "-17.709***"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 4,
+          "pdf": "-15.722*",
+          "replicated": "-34.373***"
+        },
+        {
+          "row": "directpersuasion__se",
+          "column": 1,
+          "pdf": "4.588",
+          "replicated": "3.765"
+        },
+        {
+          "row": "directpersuasion__se",
+          "column": 2,
+          "pdf": "5.294",
+          "replicated": "6.261"
+        },
+        {
+          "row": "directpersuasion__se",
+          "column": 3,
+          "pdf": "2.852",
+          "replicated": "6.780"
+        },
+        {
+          "row": "directpersuasion__se",
+          "column": 4,
+          "pdf": "8.906",
+          "replicated": "10.645"
+        },
+        {
+          "row": "observations",
+          "column": 1,
+          "pdf": "1076",
+          "replicated": "1378"
+        },
+        {
+          "row": "observations",
+          "column": 2,
+          "pdf": "1643",
+          "replicated": "1341"
+        },
+        {
+          "row": "observations",
+          "column": 3,
+          "pdf": "1076",
+          "replicated": "1140"
+        },
+        {
+          "row": "observations",
+          "column": 4,
+          "pdf": "1043",
+          "replicated": "979"
+        },
+        {
+          "row": "r2",
+          "column": 1,
+          "pdf": "0.343",
+          "replicated": "0.268"
+        },
+        {
+          "row": "r2",
+          "column": 2,
+          "pdf": "0.496",
+          "replicated": "0.363"
+        },
+        {
+          "row": "r2",
+          "column": 3,
+          "pdf": "0.187",
+          "replicated": "0.179"
+        },
+        {
+          "row": "r2",
+          "column": 4,
+          "pdf": "0.227",
+          "replicated": "0.241"
+        },
+        {
+          "row": "controlgroupmean",
+          "column": 1,
+          "pdf": "89.766",
+          "replicated": "86.414"
+        },
+        {
+          "row": "controlgroupmean",
+          "column": 2,
+          "pdf": "194.451",
+          "replicated": "222.812"
+        },
+        {
+          "row": "controlgroupmean",
+          "column": 3,
+          "pdf": "82.090",
+          "replicated": "118.613"
+        },
+        {
+          "row": "controlgroupmean",
+          "column": 4,
+          "pdf": "286.708",
+          "replicated": "267.833"
+        },
+        {
+          "row": "pvalueab",
+          "column": 1,
+          "pdf": "0.045",
+          "replicated": "0.264"
+        },
+        {
+          "row": "pvalueab",
+          "column": 2,
+          "pdf": "0.005",
+          "replicated": "0.001"
+        },
+        {
+          "row": "pvalueab",
+          "column": 3,
+          "pdf": "0.636",
+          "replicated": "0.488"
+        },
+        {
+          "row": "pvalueab",
+          "column": 4,
+          "pdf": "0.619",
+          "replicated": "0.636"
+        },
+        {
+          "row": "pvalueac",
+          "column": 1,
+          "pdf": "0.006",
+          "replicated": "0.211"
+        },
+        {
+          "row": "pvalueac",
+          "column": 3,
+          "pdf": "0.165",
+          "replicated": "0.100"
+        },
+        {
+          "row": "pvalueac",
+          "column": 4,
+          "pdf": "0.586",
+          "replicated": "0.085"
+        },
+        {
+          "row": "pvaluebc",
+          "column": 1,
+          "pdf": "0.006",
+          "replicated": "0.021"
+        },
+        {
+          "row": "pvaluebc",
+          "column": 3,
+          "pdf": "0.165",
+          "replicated": "0.309"
+        },
+        {
+          "row": "pvaluebc",
+          "column": 4,
+          "pdf": "0.586",
+          "replicated": "0.030"
+        }
+      ],
+      "status": "differs from PDF; see differences"
+    },
+    {
+      "table": "C.1",
+      "pdf_page": 69,
+      "result": "tables/mi_validation_results_table.tex",
+      "checked_cells": 20,
+      "matching_cells": 10,
+      "numeric_match": false,
+      "differences": [
+        {
+          "row": "global",
+          "column": 1,
+          "pdf": "-0.24",
+          "replicated": "-0.46"
+        },
+        {
+          "row": "global",
+          "column": 2,
+          "pdf": "0.72",
+          "replicated": "0.62"
+        },
+        {
+          "row": "partnership",
+          "column": 1,
+          "pdf": "-0.10",
+          "replicated": "0.14"
+        },
+        {
+          "row": "partnership",
+          "column": 2,
+          "pdf": "0.89",
+          "replicated": "0.85"
+        },
+        {
+          "row": "cultivatingchangetalk",
+          "column": 1,
+          "pdf": "-0.75",
+          "replicated": "-1.43"
+        },
+        {
+          "row": "cultivatingchangetalk",
+          "column": 2,
+          "pdf": "0.66",
+          "replicated": "0.13"
+        },
+        {
+          "row": "empathy",
+          "column": 1,
+          "pdf": "0.15",
+          "replicated": "0.07"
+        },
+        {
+          "row": "empathy",
+          "column": 2,
+          "pdf": "0.75",
+          "replicated": "0.81"
+        },
+        {
+          "row": "softeningsustaintalk",
+          "column": 1,
+          "pdf": "-0.25",
+          "replicated": "-0.64"
+        },
+        {
+          "row": "softeningsustaintalk",
+          "column": 2,
+          "pdf": "0.45",
+          "replicated": "0.65"
+        }
+      ],
+      "status": "differs from PDF; see differences"
+    }
+  ],
+  "numeric_tables": 11,
+  "exact_numeric_matches": 4
+}

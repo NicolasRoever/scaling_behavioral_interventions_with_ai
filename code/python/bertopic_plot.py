@@ -29,6 +29,9 @@ def main(derived, output_dir):
     
     frequencies = counts_by_treatment.merge(treatment_group_sizes, on="T", how="left")
     frequencies["frequency"] = frequencies["topic_dummy"] / frequencies["T_size"] * 100.0
+
+    # Match the source: exclude the outlier after fixing all-conversation denominators.
+    frequencies = frequencies.loc[frequencies["topic_id"] != -1].copy()
     
     
     

@@ -1,4 +1,529 @@
 file,variable,description,dtype,rows
+data/raw/main_socialmedia/main_raw.dta,startdate,Start Date,float64,3311
+data/raw/main_socialmedia/main_raw.dta,enddate,End Date,float64,3311
+data/raw/main_socialmedia/main_raw.dta,status,Response Type,int8,3311
+data/raw/main_socialmedia/main_raw.dta,progress,Progress,int8,3311
+data/raw/main_socialmedia/main_raw.dta,duration__in_seconds_,Duration (in seconds),int32,3311
+data/raw/main_socialmedia/main_raw.dta,finished,Finished,int8,3311
+data/raw/main_socialmedia/main_raw.dta,recordeddate,Recorded Date,float64,3311
+data/raw/main_socialmedia/main_raw.dta,responseid,Anonymous release response identifier,str,3311
+data/raw/main_socialmedia/main_raw.dta,distributionchannel,Distribution Channel,str,3311
+data/raw/main_socialmedia/main_raw.dta,userlanguage,User Language,str,3311
+data/raw/main_socialmedia/main_raw.dta,q_recaptchascore,Q_RecaptchaScore,float64,3311
+data/raw/main_socialmedia/main_raw.dta,q_duplicaterespondent,Q_DuplicateRespondent,str,3311
+data/raw/main_socialmedia/main_raw.dta,time_captcha_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_captcha_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_captcha_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_captcha_click_count,Timing - Click Count,int8,3311
+data/raw/main_socialmedia/main_raw.dta,consent,"In this study, you will participate in an interview with an AI chatbot. The AI c",float64,3311
+data/raw/main_socialmedia/main_raw.dta,meta_data_browser,meta_data - Browser,str,3311
+data/raw/main_socialmedia/main_raw.dta,meta_data_version,meta_data - Version,str,3311
+data/raw/main_socialmedia/main_raw.dta,meta_data_operating_system,meta_data - Operating System,str,3311
+data/raw/main_socialmedia/main_raw.dta,meta_data_resolution,meta_data - Resolution,str,3311
+data/raw/main_socialmedia/main_raw.dta,time_consent_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_consent_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_consent_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_consent_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,llm_audio_screener_1,"Please follow the instructions in the audio to answer the question below.
+
+This ",str,3311
+data/raw/main_socialmedia/main_raw.dta,time_audio_screener_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_audio_screener_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_audio_screener_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_audio_screener_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,human_screener_1,"The next question is about the following problem. In questionnaires like ours, s",float64,3311
+data/raw/main_socialmedia/main_raw.dta,human_screener_2,"The next question is about the following problem. In questionnaires like ours, s",float64,3311
+data/raw/main_socialmedia/main_raw.dta,human_screener_3,"The next question is about the following problem. In questionnaires like ours, s",float64,3311
+data/raw/main_socialmedia/main_raw.dta,human_screener_4,"The next question is about the following problem. In questionnaires like ours, s",float64,3311
+data/raw/main_socialmedia/main_raw.dta,human_screener_5,"The next question is about the following problem. In questionnaires like ours, s",float64,3311
+data/raw/main_socialmedia/main_raw.dta,writing,What is your favorite month of the year? Please explain in about 15 to 30 words.,str,3311
+data/raw/main_socialmedia/main_raw.dta,time_writing_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_writing_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_writing_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_writing_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,oper_system,"Operating System
+
+
+
+What is the operating system of your primary phone?",float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_op_system_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_op_system_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_op_system_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_op_system_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,screen_time_enabled,"Screen Time 
+
+
+
+Screen Time is a feature on iPhones that provides a summary of h",float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_scr_time_en_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_scr_time_en_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_scr_time_en_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_scr_time_en_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,app_current_1,Which of the following apps are currently installed on your smartphone? TikTok,float64,3311
+data/raw/main_socialmedia/main_raw.dta,app_current_2,Which of the following apps are currently installed on your smartphone? Instagra,float64,3311
+data/raw/main_socialmedia/main_raw.dta,app_current_4,Which of the following apps are currently installed on your smartphone? Snapchat,float64,3311
+data/raw/main_socialmedia/main_raw.dta,app_current_5,Which of the following apps are currently installed on your smartphone? Facebook,float64,3311
+data/raw/main_socialmedia/main_raw.dta,app_current_12,Which of the following apps are currently installed on your smartphone? YouTube,float64,3311
+data/raw/main_socialmedia/main_raw.dta,app_current_6,Which of the following apps are currently installed on your smartphone? Reddit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,app_current_9,Which of the following apps are currently installed on your smartphone? X/Twitte,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_app_current_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_app_current_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_app_current_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_app_current_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,actual_time_1_1_1,"On a typical day, how much total time do you spend on social media? (TikTok, In",float64,3311
+data/raw/main_socialmedia/main_raw.dta,actual_time_1_1_2,"On a typical day, how much total time do you spend on social media? (TikTok, In",float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_actual_time_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_actual_time_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_actual_time_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_actual_time_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,ideal_social_time_1_1_1,You just told us that you typically spend about ${q://QID503%231/ChoiceTextEntry,float64,3311
+data/raw/main_socialmedia/main_raw.dta,ideal_social_time_1_1_2,You just told us that you typically spend about ${q://QID503%231/ChoiceTextEntry,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_social_apps_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_social_apps_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_social_apps_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_social_apps_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_each_1,"On a typical day, how much time do you spend on each of these apps? - TikTok",float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_each_2,"On a typical day, how much time do you spend on each of these apps? - Instagram",float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_each_3,"On a typical day, how much time do you spend on each of these apps? - Snapchat",float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_each_4,"On a typical day, how much time do you spend on each of these apps? - YouTube",float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_each_5,"On a typical day, how much time do you spend on each of these apps? - Facebook",float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_each_6,"On a typical day, how much time do you spend on each of these apps? - Reddit",float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_each_7,"On a typical day, how much time do you spend on each of these apps? - X/Twitter",float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_time_each_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_time_each_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_time_each_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_time_each_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,platform_usage_1,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
+data/raw/main_socialmedia/main_raw.dta,platform_usage_2,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
+data/raw/main_socialmedia/main_raw.dta,platform_usage_3,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
+data/raw/main_socialmedia/main_raw.dta,platform_usage_4,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
+data/raw/main_socialmedia/main_raw.dta,platform_usage_5,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
+data/raw/main_socialmedia/main_raw.dta,platform_usage_6,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
+data/raw/main_socialmedia/main_raw.dta,platform_usage_7,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_platform_usage_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_platform_usage_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_platform_usage_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_platform_usage_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,addicted_1,How addicted do you feel towards the social media apps below? - TikTok,float64,3311
+data/raw/main_socialmedia/main_raw.dta,addicted_2,How addicted do you feel towards the social media apps below? - Instagram,float64,3311
+data/raw/main_socialmedia/main_raw.dta,addicted_3,How addicted do you feel towards the social media apps below? - Snapchat,float64,3311
+data/raw/main_socialmedia/main_raw.dta,addicted_4,How addicted do you feel towards the social media apps below? - Facebook,float64,3311
+data/raw/main_socialmedia/main_raw.dta,addicted_5,How addicted do you feel towards the social media apps below? - YouTube,float64,3311
+data/raw/main_socialmedia/main_raw.dta,addicted_6,How addicted do you feel towards the social media apps below? - Reddit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,addicted_7,How addicted do you feel towards the social media apps below? - X/Twitter,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_addicted_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_addicted_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_addicted_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_addicted_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_tutorial_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_tutorial_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_tutorial_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_tutorial_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_interview_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_interview_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_interview_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_interview_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_transition_outc_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_transition_outc_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_transition_outc_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_transition_outc_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,motivation,How motivated are you to reduce your time on social media apps?,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_moviation_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_moviation_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_moviation_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_moviation_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,costsbenefits_1,How much do you agree or disagree with each of the following statements? - Spend,float64,3311
+data/raw/main_socialmedia/main_raw.dta,costsbenefits_2,How much do you agree or disagree with each of the following statements? - Exces,float64,3311
+data/raw/main_socialmedia/main_raw.dta,costsbenefits_3,How much do you agree or disagree with each of the following statements? - Reduc,float64,3311
+data/raw/main_socialmedia/main_raw.dta,costsbenefits_4,How much do you agree or disagree with each of the following statements? - Using,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_costsbenefits_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_costsbenefits_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_costsbenefits_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_costsbenefits_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,selfefficacy_1,How much do you agree or disagree with each of the following statements? - I can,float64,3311
+data/raw/main_socialmedia/main_raw.dta,selfefficacy_2,How much do you agree or disagree with each of the following statements? - When ,float64,3311
+data/raw/main_socialmedia/main_raw.dta,selfefficacy_3,How much do you agree or disagree with each of the following statements? - Even ,float64,3311
+data/raw/main_socialmedia/main_raw.dta,selfefficacy_4,How much do you agree or disagree with each of the following statements? - I can,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_selfefficacy_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_selfefficacy_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_selfefficacy_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_selfefficacy_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,awareness_1,How much do you agree or disagree with each of the following statements? - I oft,float64,3311
+data/raw/main_socialmedia/main_raw.dta,awareness_2,How much do you agree or disagree with each of the following statements? - Even ,float64,3311
+data/raw/main_socialmedia/main_raw.dta,awareness_3,How much do you agree or disagree with each of the following statements? - I som,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_awareness_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_awareness_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_awareness_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_awareness_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,image_1,How much do you agree or disagree with the following statements? - I would be em,float64,3311
+data/raw/main_socialmedia/main_raw.dta,image_2,How much do you agree or disagree with the following statements? - It is importa,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_image_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_image_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_image_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_image_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,smartphone_better_wo,To what extent do you think your current social media use makes your life better,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_smart_bettwors_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_smart_bettwors_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_smart_bettwors_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_smart_bettwors_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,posterior_idealtime_1_1_1,How much total time would you ideally like to spend on social media per day? - p,float64,3311
+data/raw/main_socialmedia/main_raw.dta,posterior_idealtime_1_1_2,How much total time would you ideally like to spend on social media per day? - p,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_post_idealtime_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_post_idealtime_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_post_idealtime_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_post_idealtime_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,app_use_intentions_1,"Compared to the past four weeks, how do you expect your time spent on each of th",float64,3311
+data/raw/main_socialmedia/main_raw.dta,app_use_intentions_2,"Compared to the past four weeks, how do you expect your time spent on each of th",float64,3311
+data/raw/main_socialmedia/main_raw.dta,app_use_intentions_3,"Compared to the past four weeks, how do you expect your time spent on each of th",float64,3311
+data/raw/main_socialmedia/main_raw.dta,app_use_intentions_4,"Compared to the past four weeks, how do you expect your time spent on each of th",float64,3311
+data/raw/main_socialmedia/main_raw.dta,app_use_intentions_5,"Compared to the past four weeks, how do you expect your time spent on each of th",float64,3311
+data/raw/main_socialmedia/main_raw.dta,app_use_intentions_6,"Compared to the past four weeks, how do you expect your time spent on each of th",float64,3311
+data/raw/main_socialmedia/main_raw.dta,app_use_intentions_7,"Compared to the past four weeks, how do you expect your time spent on each of th",float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_app_use_intenti_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_app_use_intenti_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_app_use_intenti_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_app_use_intenti_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,prediction_social_1_1_1,How much time do you think you will actually spend on social media per day on av,float64,3311
+data/raw/main_socialmedia/main_raw.dta,prediction_social_1_1_2,How much time do you think you will actually spend on social media per day on av,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_prediction_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_prediction_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_prediction_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_prediction_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,change_questionnaire_1,How much do you agree or disagree with each of the following statements? - I wan,float64,3311
+data/raw/main_socialmedia/main_raw.dta,change_questionnaire_2,How much do you agree or disagree with each of the following statements? - I cou,float64,3311
+data/raw/main_socialmedia/main_raw.dta,change_questionnaire_3,How much do you agree or disagree with each of the following statements? - There,float64,3311
+data/raw/main_socialmedia/main_raw.dta,change_questionnaire_4,How much do you agree or disagree with each of the following statements? - I hav,float64,3311
+data/raw/main_socialmedia/main_raw.dta,change_questionnaire_5,How much do you agree or disagree with each of the following statements? - I int,float64,3311
+data/raw/main_socialmedia/main_raw.dta,change_questionnaire_6,How much do you agree or disagree with each of the following statements? - I am ,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_change_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_change_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_change_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_change_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_1,"For each statement, please select the option that best describes the behavior of",float64,3311
+data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_2,"For each statement, please select the option that best describes the behavior of",float64,3311
+data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_3,"For each statement, please select the option that best describes the behavior of",float64,3311
+data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_4,"For each statement, please select the option that best describes the behavior of",float64,3311
+data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_5,"For each statement, please select the option that best describes the behavior of",float64,3311
+data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_6,"For each statement, please select the option that best describes the behavior of",float64,3311
+data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_7,"For each statement, please select the option that best describes the behavior of",float64,3311
+data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_8,"For each statement, please select the option that best describes the behavior of",float64,3311
+data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_9,"For each statement, please select the option that best describes the behavior of",float64,3311
+data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_10,"For each statement, please select the option that best describes the behavior of",float64,3311
+data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_11,"For each statement, please select the option that best describes the behavior of",float64,3311
+data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_12,"For each statement, please select the option that best describes the behavior of",float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_client_evaluati_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_client_evaluati_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_client_evaluati_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_client_evaluati_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_1,"Please think about the interview you had as part of this survey.
+
+Indicate the e",float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_2,"Please think about the interview you had as part of this survey.
+
+Indicate the e",float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_3,"Please think about the interview you had as part of this survey.
+
+Indicate the e",float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_4,"Please think about the interview you had as part of this survey.
+
+Indicate the e",float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_5,"Please think about the interview you had as part of this survey.
+
+Indicate the e",float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_6,"Please think about the interview you had as part of this survey.
+
+Indicate the e",float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_7,"Please think about the interview you had as part of this survey.
+
+Indicate the e",float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_8,"Please think about the interview you had as part of this survey.
+
+Indicate the e",float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_panas_em_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_panas_em_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_panas_em_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_panas_em_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tpb_emotions_2,"For me, thinking about reducing my social media use feels:",float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_tpb_em_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_tpb_em_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_tpb_em_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_tpb_em_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,current_use,Do you currently use any apps that help you manage your social media use (by set,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_current_use_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_current_use_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_current_use_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_current_use_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,interst_self_control,How interested would you be in an app that helps you manage your social media sc,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_interest_selfco_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_interest_selfco_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_interest_selfco_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_interest_selfco_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,familiar_freedom,Are you familiar with the Freedom app?,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_freedom_intro_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_freedom_intro_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_freedom_intro_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_freedom_intro_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_freedom_video_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_freedom_video_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_freedom_video_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_freedom_video_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_freedom_1_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_freedom_1_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_freedom_1_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_freedom_1_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_freedom_1,Which option do you prefer? - 1 year access to Freedom:$0 bonus,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_freedom_2,Which option do you prefer? - 1 year access to Freedom:$1 bonus,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_freedom_3,Which option do you prefer? - 1 year access to Freedom:$2 bonus,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_freedom_4,Which option do you prefer? - 1 year access to Freedom:$3 bonus,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_freedom_5,Which option do you prefer? - 1 year access to Freedom:$4 bonus,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_freedom_6,Which option do you prefer? - 1 year access to Freedom:$5 bonus,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_freedom_7,Which option do you prefer? - 1 year access to Freedom:$6 bonus,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_freedom_8,Which option do you prefer? - 1 year access to Freedom:$7 bonus,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_freedom_9,Which option do you prefer? - 1 year access to Freedom:$8 bonus,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_freedom_10,Which option do you prefer? - 1 year access to Freedom:$9 bonus,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_freedom_11,Which option do you prefer? - 1 year access to Freedom:$10 bonus,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_freedom_12,Which option do you prefer? - 1 year access to Freedom:$15 bonus,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_freedom_13,Which option do you prefer? - 1 year access to Freedom:$20 bonus,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_wtp_freedom_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_wtp_freedom_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_wtp_freedom_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_wtp_freedom_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,correct_wtp,"On the previous page, your answers implied that you would prefer one-year access",float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_correct_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_correct_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_correct_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_correct_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_1,"Your valuation of the Freedom app
+
+
+
+You are about to make choices that can have",float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_2,"Your valuation of the Freedom app
+
+
+
+You are about to make choices that can have",float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_3,"Your valuation of the Freedom app
+
+
+
+You are about to make choices that can have",float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_4,"Your valuation of the Freedom app
+
+
+
+You are about to make choices that can have",float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_5,"Your valuation of the Freedom app
+
+
+
+You are about to make choices that can have",float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_6,"Your valuation of the Freedom app
+
+
+
+You are about to make choices that can have",float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_7,"Your valuation of the Freedom app
+
+
+
+You are about to make choices that can have",float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_8,"Your valuation of the Freedom app
+
+
+
+You are about to make choices that can have",float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_9,"Your valuation of the Freedom app
+
+
+
+You are about to make choices that can have",float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_10,"Your valuation of the Freedom app
+
+
+
+You are about to make choices that can have",float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_11,"Your valuation of the Freedom app
+
+
+
+You are about to make choices that can have",float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_12,"Your valuation of the Freedom app
+
+
+
+You are about to make choices that can have",float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_13,"Your valuation of the Freedom app
+
+
+
+You are about to make choices that can have",float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_wtp_2_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_wtp_2_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_wtp_2_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_wtp_2_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,ai_trust,"How much do you trust AI technology, such as large language models like ChatGPT,",float64,3311
+data/raw/main_socialmedia/main_raw.dta,ai_chatgpt,How often do you use ChatGPT or other large language models?,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_trust_ai_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_trust_ai_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_trust_ai_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_trust_ai_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,country,In which country do you currently reside?,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_country_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_country_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_country_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,tim_country_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,gender,What is your gender?,float64,3311
+data/raw/main_socialmedia/main_raw.dta,age,What is your age?,float64,3311
+data/raw/main_socialmedia/main_raw.dta,race,Which of the following best describes your race or ethnicity?,float64,3311
+data/raw/main_socialmedia/main_raw.dta,race_uk,Which of the following best describes your race or ethnicity?,float64,3311
+data/raw/main_socialmedia/main_raw.dta,ethnicity,"Are you of Hispanic, Latino, or Spanish origin?",float64,3311
+data/raw/main_socialmedia/main_raw.dta,employment,What is your current employment status?,float64,3311
+data/raw/main_socialmedia/main_raw.dta,education_us,What is the highest level of education you have completed?,float64,3311
+data/raw/main_socialmedia/main_raw.dta,education_uk,What is the highest level of education you have completed?,float64,3311
+data/raw/main_socialmedia/main_raw.dta,income_us,What was your annual household income in 2024 in US dollars before taxes and ded,float64,3311
+data/raw/main_socialmedia/main_raw.dta,income_uk,Gross annual household income in British Pounds,float64,3311
+data/raw/main_socialmedia/main_raw.dta,political_us,Which of the below best describes you political affiliation?,float64,3311
+data/raw/main_socialmedia/main_raw.dta,election_us,Who did you vote for in the 2024 presidential election between Donald Trump and ,float64,3311
+data/raw/main_socialmedia/main_raw.dta,political_uk,Which of the below best describes your political affiliation?,float64,3311
+data/raw/main_socialmedia/main_raw.dta,election_uk,"Who did you vote for in the 2024 UK general election, or did you not vote? - Sel",float64,3311
+data/raw/main_socialmedia/main_raw.dta,election_uk_14_text,"Who did you vote for in the 2024 UK general election, or did you not vote? - Oth",str,3311
+data/raw/main_socialmedia/main_raw.dta,time_demographics_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_demographics_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_demographics_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_demographics_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,experimenterdemand,What do you think was the purpose of this study?,str,3311
+data/raw/main_socialmedia/main_raw.dta,time_open_hypothesis_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_open_hypothesis_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_open_hypothesis_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_open_hypothesis_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,feedback,"Thank you for completing this survey!
+
+
+
+If you have any feedback or comments, p",str,3311
+data/raw/main_socialmedia/main_raw.dta,time_feedback_first_click,Timing - First Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_feedback_last_click,Timing - Last Click,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_feedback_page_submit,Timing - Page Submit,float64,3311
+data/raw/main_socialmedia/main_raw.dta,time_feedback_click_count,Timing - Click Count,float64,3311
+data/raw/main_socialmedia/main_raw.dta,prolific_pid,Anonymous release person identifier,str,3311
+data/raw/main_socialmedia/main_raw.dta,study_id,STUDY_ID,str,3311
+data/raw/main_socialmedia/main_raw.dta,session_id,SESSION_ID,str,3311
+data/raw/main_socialmedia/main_raw.dta,user_id,user_id,int32,3311
+data/raw/main_socialmedia/main_raw.dta,interview_id,interview_id,str,3311
+data/raw/main_socialmedia/main_raw.dta,interview_endpoint,interview_endpoint,str,3311
+data/raw/main_socialmedia/main_raw.dta,random_number,random_number,int8,3311
+data/raw/main_socialmedia/main_raw.dta,first_question,first_question,str,3311
+data/raw/main_socialmedia/main_raw.dta,error_count,error_count,int8,3311
+data/raw/main_socialmedia/main_raw.dta,audio_count,audio_count,int8,3311
+data/raw/main_socialmedia/main_raw.dta,audio_error_count,audio_error_count,int8,3311
+data/raw/main_socialmedia/main_raw.dta,safari_browser,safari_browser,int8,3311
+data/raw/main_socialmedia/main_raw.dta,keystrokes,keystrokes,str,3311
+data/raw/main_socialmedia/main_raw.dta,typing_time,typing_time,str,3311
+data/raw/main_socialmedia/main_raw.dta,typing_speed,typing_speed,str,3311
+data/raw/main_socialmedia/main_raw.dta,r_status,r_status,str,3311
+data/raw/main_socialmedia/main_raw.dta,interview_finish,interview_finish,float64,3311
+data/raw/main_socialmedia/main_raw.dta,r_status_2,r_status_2,str,3311
+data/raw/main_socialmedia/main_raw.dta,interview_topic,interview_topic,str,3311
+data/raw/main_socialmedia/main_raw.dta,treatment,treatment,str,3311
+data/raw/main_socialmedia/main_raw.dta,writing_chars,Writing-task UTF-8 byte length used by original Stata exclusion,int32,3311
+data/raw/main_socialmedia/follow_up_raw.dta,startdate,Start Date,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,enddate,End Date,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,status,Response Type,int8,2176
+data/raw/main_socialmedia/follow_up_raw.dta,progress,Progress,int8,2176
+data/raw/main_socialmedia/follow_up_raw.dta,duration__in_seconds_,Duration (in seconds),int32,2176
+data/raw/main_socialmedia/follow_up_raw.dta,finished,Finished,int8,2176
+data/raw/main_socialmedia/follow_up_raw.dta,recordeddate,Recorded Date,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,responseid,Anonymous release response identifier,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,distributionchannel,Distribution Channel,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,userlanguage,User Language,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,q_recaptchascore,Q_RecaptchaScore,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,q_duplicaterespondent,Q_DuplicateRespondent,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,consent,"Do you consent to the processing of your data and our privacy policy?
+ 
+
+Click h",int8,2176
+data/raw/main_socialmedia/follow_up_raw.dta,meta_data_browser,meta_data - Browser,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,meta_data_version,meta_data - Version,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,meta_data_operating_system,meta_data - Operating System,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,meta_data_resolution,meta_data - Resolution,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_consent_first_click,Timing - First Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_consent_last_click,Timing - Last Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_consent_page_submit,Timing - Page Submit,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_consent_click_count,Timing - Click Count,int8,2176
+data/raw/main_socialmedia/follow_up_raw.dta,motivation,"A few weeks ago, you told us that you typically spend about [Field-baseline_hour",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_moviation_first_click,Timing - First Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_moviation_last_click,Timing - Last Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_moviation_page_submit,Timing - Page Submit,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_moviation_click_count,Timing - Click Count,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,costsbenefits_1,How much do you agree or disagree with each of the following statements? - Spend,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,costsbenefits_2,How much do you agree or disagree with each of the following statements? - Exces,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,costsbenefits_3,How much do you agree or disagree with each of the following statements? - Spend,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,costsbenefits_4,How much do you agree or disagree with each of the following statements? - Spend,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_costsbenefits_first_click,Timing - First Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_costsbenefits_last_click,Timing - Last Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_costsbenefits_page_submit,Timing - Page Submit,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_costsbenefits_click_count,Timing - Click Count,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,smartphone_better_wo,To what extent do you think that social media makes your life better or worse?,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_betterworse_first_click,Timing - First Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_betterworse_last_click,Timing - Last Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_betterworse_page_submit,Timing - Page Submit,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_betterworse_click_count,Timing - Click Count,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,actual_time_1_1_1,"Over the last two weeks, how much time have you spent on social media per day, o",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,actual_time_1_1_2,"Over the last two weeks, how much time have you spent on social media per day, o",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_actual_social_first_click,Timing - First Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_actual_social_last_click,Timing - Last Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_actual_social_page_submit,Timing - Page Submit,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_actual_social_click_count,Timing - Click Count,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_1,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_10,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_11,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_12,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_13,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_14,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_15,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_16,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_17,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_18,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_19,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_20,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_21,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_22,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_21_text,"Which, if any, steps have you taken to reduce your time on social media apps ove",str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_mechanism_first_click,Timing - First Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_mechanism_last_click,Timing - Last Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_mechanism_page_submit,Timing - Page Submit,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_mechanism_click_count,Timing - Click Count,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_1_first_click,Timing - First Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_1_last_click,Timing - Last Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_1_page_submit,Timing - Page Submit,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_1_click_count,Timing - Click Count,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_2_first_click,Timing - First Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_2_last_click,Timing - Last Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_2_page_submit,Timing - Page Submit,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_2_click_count,Timing - Click Count,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,feedback,"Thank you for completing this survey!
+
+
+
+If you have any feedback or comments, p",str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_feedback_first_click,Timing - First Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_feedback_last_click,Timing - Last Click,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_feedback_page_submit,Timing - Page Submit,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,time_feedback_click_count,Timing - Click Count,float64,2176
+data/raw/main_socialmedia/follow_up_raw.dta,prolific_pid,Anonymous release person identifier,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,study_id,STUDY_ID,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,session_id,SESSION_ID,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,r_status,r_status,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,baseline_hours,baseline_hours,int8,2176
+data/raw/main_socialmedia/follow_up_raw.dta,baseline_minutes,baseline_minutes,int8,2176
+data/raw/main_socialmedia/follow_up_raw.dta,valid_iphone,valid_iphone,int8,2176
+data/raw/main_socialmedia/follow_up_raw.dta,starting_weekday,starting_weekday,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,social_minutes,social_minutes,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,social_hours,social_hours,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,scrshot_dates_3,scrshot_dates_3,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,scrshot_dates_2,scrshot_dates_2,str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,scrshot_dates_1,scrshot_dates_1,str,2176
 data/processed/main_social_media/clean_data.dta,prolific_id,Anonymous release person identifier,str,2719
 data/processed/main_social_media/clean_data.dta,T,Treatment group,int8,2719
 data/processed/main_social_media/clean_data.dta,control,Control,int8,2719
@@ -244,6 +769,67 @@ data/processed/main_social_media/clean_data.dta,log_income,Log annual household 
 data/processed/main_social_media/clean_data.dta,high_social_media_use,"Actual social media time > median (1=yes,0=no)",int8,2719
 data/processed/main_social_media/clean_data.dta,confidence_score,,float64,2719
 data/processed/main_social_media/clean_data.dta,importance_score,,float64,2719
+data/processed/main_social_media/follow_up_clean.dta,prolific_id,Anonymous release person identifier,str,2132
+data/processed/main_social_media/follow_up_clean.dta,motivation,Motivation,int8,2132
+data/processed/main_social_media/follow_up_clean.dta,costbenefits,Cost-benefit,float32,2132
+data/processed/main_social_media/follow_up_clean.dta,smartphone_better_worse,Smartphone makes life better/worse,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,mechanism_settings,Used built-in phone settings (Screen Time/Digital Wellbeing),float64,2132
+data/processed/main_social_media/follow_up_clean.dta,mechanism_blocker,Used a third-party app blocker,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,mechanism_notif,Turned off or muted notifications,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,mechanism_friction,"Made access harder (e.g., logged out, hid apps)",float64,2132
+data/processed/main_social_media/follow_up_clean.dta,mechanism_delete,Deleted/uninstalled apps or deactivated account,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,mechanism_rules,"Set specific rules/goals (e.g., no phone at bedtime)",float64,2132
+data/processed/main_social_media/follow_up_clean.dta,mechanism_reach,Put phone out of reach,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,mechanism_reduce_phone,Reduced overall phone use,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,mechanism_curate_feed,"Changed feed content (e.g., unfollowed accounts)",float64,2132
+data/processed/main_social_media/follow_up_clean.dta,mechanism_replace_act,Replaced social media with other activities,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,mechanism_help,Asked someone else to help (accountability),float64,2132
+data/processed/main_social_media/follow_up_clean.dta,mechanism_willpower,Relied on willpower/discipline,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,mechanism_other,Other mechanism,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,mechanism_none,No steps taken,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,start_time_raw,Survey start time (raw),float64,2132
+data/processed/main_social_media/follow_up_clean.dta,end_time_raw,Survey end time (raw),float64,2132
+data/processed/main_social_media/follow_up_clean.dta,status,Response Type,int8,2132
+data/processed/main_social_media/follow_up_clean.dta,progress,Progress,int8,2132
+data/processed/main_social_media/follow_up_clean.dta,duration_seconds,Survey duration in seconds,int32,2132
+data/processed/main_social_media/follow_up_clean.dta,finished,Finished,int8,2132
+data/processed/main_social_media/follow_up_clean.dta,recordeddate,Recorded Date,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,response_id,Anonymous release response identifier,str,2132
+data/processed/main_social_media/follow_up_clean.dta,costsbenefits_1,How much do you agree or disagree with each of the following statements? - Spend,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,costsbenefits_2,How much do you agree or disagree with each of the following statements? - Exces,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,costsbenefits_3,How much do you agree or disagree with each of the following statements? - Spend,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,costsbenefits_4,How much do you agree or disagree with each of the following statements? - Spend,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,feedback,"Thank you for completing this survey!
+
+
+
+If you have any feedback or comments, p",str,2132
+data/processed/main_social_media/follow_up_clean.dta,study_id_raw,Original study ID,str,2132
+data/processed/main_social_media/follow_up_clean.dta,session_id,SESSION_ID,str,2132
+data/processed/main_social_media/follow_up_clean.dta,r_status,r_status,str,2132
+data/processed/main_social_media/follow_up_clean.dta,baseline_hours,baseline_hours,int8,2132
+data/processed/main_social_media/follow_up_clean.dta,baseline_minutes,baseline_minutes,int8,2132
+data/processed/main_social_media/follow_up_clean.dta,valid_iphone,valid_iphone,int8,2132
+data/processed/main_social_media/follow_up_clean.dta,starting_weekday,starting_weekday,str,2132
+data/processed/main_social_media/follow_up_clean.dta,social_minutes,social_minutes,str,2132
+data/processed/main_social_media/follow_up_clean.dta,social_hours,social_hours,str,2132
+data/processed/main_social_media/follow_up_clean.dta,scrshot_dates_3,scrshot_dates_3,str,2132
+data/processed/main_social_media/follow_up_clean.dta,scrshot_dates_2,scrshot_dates_2,str,2132
+data/processed/main_social_media/follow_up_clean.dta,scrshot_dates_1,scrshot_dates_1,str,2132
+data/processed/main_social_media/follow_up_clean.dta,duration_minutes,Survey duration in minutes,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,start_time,Survey start time,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,end_time,Survey end time,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,actual_social_min,Self-reported actual social media time (minutes),float32,2132
+data/processed/main_social_media/follow_up_clean.dta,actual_social_min_wins,"Actual social media time (minutes, winsorized)",float64,2132
+data/processed/main_social_media/follow_up_clean.dta,time_consent,Timing - Page Submit,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,time_moviation,Timing - Page Submit,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,time_costsbenefits,Timing - Page Submit,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,time_betterworse,Timing - Page Submit,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,time_actual_social,Timing - Page Submit,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,time_mechanism,Timing - Page Submit,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,time_feedback,Timing - Page Submit,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,time_scr_upload_1,Timing - Page Submit,float64,2132
+data/processed/main_social_media/follow_up_clean.dta,time_scr_upload_2,Timing - Page Submit,float64,2132
 data/processed/main_social_media/clean_merged.dta,prolific_id,Anonymous release person identifier,str,2719
 data/processed/main_social_media/clean_merged.dta,w2_motivation,Motivation,float64,2719
 data/processed/main_social_media/clean_merged.dta,w2_costbenefits,Cost-benefit,float32,2719
@@ -919,6 +1505,9 @@ data/processed/main_social_media/clean_merged_with_scrshots.dta,ver_pref_instagr
 data/processed/main_social_media/clean_merged_with_scrshots.dta,ver_pref_instagram_w,Instagram Time Daily Minutes from Screeenshots Average Week 1 Week 52,float32,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,actual_time,"Screentime from OpenAI in Average Daily Minutes (Week 1 ands 52), winsorized",float32,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,reported_time,"Actual social media time (minutes, winsorized)",float64,2719
+data/processed/main_social_media/interview_scores_extracted.dta,prolific_id,Anonymous release person identifier,str,2719
+data/processed/main_social_media/interview_scores_extracted.dta,confidence_score,,float64,2719
+data/processed/main_social_media/interview_scores_extracted.dta,importance_score,,float64,2719
 data/processed/main_social_media/clean_scr_data.dta,response_id,Anonymous release response identifier,str,582
 data/processed/main_social_media/clean_scr_data.dta,valid_scr_wk1,Valid extracted week 1 screenshot,int8,582
 data/processed/main_social_media/clean_scr_data.dta,valid_scr_wk51,Valid extracted week 51 screenshot,int8,582
@@ -961,592 +1550,3 @@ data/processed/main_social_media/clean_scr_data.dta,whatsapp_wk52,,float64,582
 data/processed/main_social_media/clean_scr_data.dta,snapchat_wk52,,float64,582
 data/processed/main_social_media/df_merged_llm_category_expdemand_v001.dta,prolific_id,,str,2719
 data/processed/main_social_media/df_merged_llm_category_expdemand_v001.dta,llm_category_expdemand,,str,2719
-data/processed/main_social_media/follow_up_clean.dta,prolific_id,Anonymous release person identifier,str,2304
-data/processed/main_social_media/follow_up_clean.dta,motivation,Motivation,int8,2304
-data/processed/main_social_media/follow_up_clean.dta,costbenefits,Cost-benefit,float32,2304
-data/processed/main_social_media/follow_up_clean.dta,smartphone_better_worse,Smartphone makes life better/worse,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,mechanism_settings,Used built-in phone settings (Screen Time/Digital Wellbeing),float64,2304
-data/processed/main_social_media/follow_up_clean.dta,mechanism_blocker,Used a third-party app blocker,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,mechanism_notif,Turned off or muted notifications,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,mechanism_friction,"Made access harder (e.g., logged out, hid apps)",float64,2304
-data/processed/main_social_media/follow_up_clean.dta,mechanism_delete,Deleted/uninstalled apps or deactivated account,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,mechanism_rules,"Set specific rules/goals (e.g., no phone at bedtime)",float64,2304
-data/processed/main_social_media/follow_up_clean.dta,mechanism_reach,Put phone out of reach,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,mechanism_reduce_phone,Reduced overall phone use,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,mechanism_curate_feed,"Changed feed content (e.g., unfollowed accounts)",float64,2304
-data/processed/main_social_media/follow_up_clean.dta,mechanism_replace_act,Replaced social media with other activities,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,mechanism_help,Asked someone else to help (accountability),float64,2304
-data/processed/main_social_media/follow_up_clean.dta,mechanism_willpower,Relied on willpower/discipline,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,mechanism_other,Other mechanism,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,mechanism_none,No steps taken,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,start_time_raw,Survey start time (raw),float64,2304
-data/processed/main_social_media/follow_up_clean.dta,end_time_raw,Survey end time (raw),float64,2304
-data/processed/main_social_media/follow_up_clean.dta,status,Response Type,int8,2304
-data/processed/main_social_media/follow_up_clean.dta,progress,Progress,int8,2304
-data/processed/main_social_media/follow_up_clean.dta,duration_seconds,Survey duration in seconds,int32,2304
-data/processed/main_social_media/follow_up_clean.dta,finished,Finished,int8,2304
-data/processed/main_social_media/follow_up_clean.dta,recordeddate,Recorded Date,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,response_id,Anonymous release response identifier,str,2304
-data/processed/main_social_media/follow_up_clean.dta,costsbenefits_1,How much do you agree or disagree with each of the following statements? - Spend,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,costsbenefits_2,How much do you agree or disagree with each of the following statements? - Exces,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,costsbenefits_3,How much do you agree or disagree with each of the following statements? - Spend,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,costsbenefits_4,How much do you agree or disagree with each of the following statements? - Spend,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,feedback,"Thank you for completing this survey!
-
-
-
-If you have any feedback or comments, p",str,2304
-data/processed/main_social_media/follow_up_clean.dta,study_id_raw,Original study ID,str,2304
-data/processed/main_social_media/follow_up_clean.dta,session_id,SESSION_ID,str,2304
-data/processed/main_social_media/follow_up_clean.dta,r_status,r_status,str,2304
-data/processed/main_social_media/follow_up_clean.dta,baseline_hours,baseline_hours,int8,2304
-data/processed/main_social_media/follow_up_clean.dta,baseline_minutes,baseline_minutes,int8,2304
-data/processed/main_social_media/follow_up_clean.dta,valid_iphone,valid_iphone,int8,2304
-data/processed/main_social_media/follow_up_clean.dta,starting_weekday,starting_weekday,str,2304
-data/processed/main_social_media/follow_up_clean.dta,social_minutes,social_minutes,str,2304
-data/processed/main_social_media/follow_up_clean.dta,social_hours,social_hours,str,2304
-data/processed/main_social_media/follow_up_clean.dta,scrshot_dates_3,scrshot_dates_3,str,2304
-data/processed/main_social_media/follow_up_clean.dta,scrshot_dates_2,scrshot_dates_2,str,2304
-data/processed/main_social_media/follow_up_clean.dta,scrshot_dates_1,scrshot_dates_1,str,2304
-data/processed/main_social_media/follow_up_clean.dta,duration_minutes,Survey duration in minutes,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,start_time,Survey start time,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,end_time,Survey end time,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,actual_social_min,Self-reported actual social media time (minutes),float32,2304
-data/processed/main_social_media/follow_up_clean.dta,actual_social_min_wins,"Actual social media time (minutes, winsorized)",float64,2304
-data/processed/main_social_media/follow_up_clean.dta,time_consent,Timing - Page Submit,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,time_moviation,Timing - Page Submit,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,time_costsbenefits,Timing - Page Submit,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,time_betterworse,Timing - Page Submit,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,time_actual_social,Timing - Page Submit,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,time_mechanism,Timing - Page Submit,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,time_feedback,Timing - Page Submit,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,time_scr_upload_1,Timing - Page Submit,float64,2304
-data/processed/main_social_media/follow_up_clean.dta,time_scr_upload_2,Timing - Page Submit,float64,2304
-data/processed/main_social_media/interview_scores_extracted.dta,prolific_id,Anonymous release person identifier,str,2719
-data/processed/main_social_media/interview_scores_extracted.dta,confidence_score,,float64,2719
-data/processed/main_social_media/interview_scores_extracted.dta,importance_score,,float64,2719
-data/raw/main_socialmedia/follow_up_raw.dta,startdate,Start Date,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,enddate,End Date,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,status,Response Type,int8,2351
-data/raw/main_socialmedia/follow_up_raw.dta,progress,Progress,int8,2351
-data/raw/main_socialmedia/follow_up_raw.dta,duration__in_seconds_,Duration (in seconds),int32,2351
-data/raw/main_socialmedia/follow_up_raw.dta,finished,Finished,int8,2351
-data/raw/main_socialmedia/follow_up_raw.dta,recordeddate,Recorded Date,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,responseid,Anonymous release response identifier,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,distributionchannel,Distribution Channel,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,userlanguage,User Language,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,q_recaptchascore,Q_RecaptchaScore,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,q_duplicaterespondent,Q_DuplicateRespondent,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,consent,"Do you consent to the processing of your data and our privacy policy?
- 
-
-Click h",int8,2351
-data/raw/main_socialmedia/follow_up_raw.dta,meta_data_browser,meta_data - Browser,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,meta_data_version,meta_data - Version,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,meta_data_operating_system,meta_data - Operating System,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,meta_data_resolution,meta_data - Resolution,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_consent_first_click,Timing - First Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_consent_last_click,Timing - Last Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_consent_page_submit,Timing - Page Submit,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_consent_click_count,Timing - Click Count,int8,2351
-data/raw/main_socialmedia/follow_up_raw.dta,motivation,"A few weeks ago, you told us that you typically spend about [Field-baseline_hour",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_moviation_first_click,Timing - First Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_moviation_last_click,Timing - Last Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_moviation_page_submit,Timing - Page Submit,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_moviation_click_count,Timing - Click Count,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,costsbenefits_1,How much do you agree or disagree with each of the following statements? - Spend,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,costsbenefits_2,How much do you agree or disagree with each of the following statements? - Exces,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,costsbenefits_3,How much do you agree or disagree with each of the following statements? - Spend,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,costsbenefits_4,How much do you agree or disagree with each of the following statements? - Spend,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_costsbenefits_first_click,Timing - First Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_costsbenefits_last_click,Timing - Last Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_costsbenefits_page_submit,Timing - Page Submit,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_costsbenefits_click_count,Timing - Click Count,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,smartphone_better_wo,To what extent do you think that social media makes your life better or worse?,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_betterworse_first_click,Timing - First Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_betterworse_last_click,Timing - Last Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_betterworse_page_submit,Timing - Page Submit,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_betterworse_click_count,Timing - Click Count,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,actual_time_1_1_1,"Over the last two weeks, how much time have you spent on social media per day, o",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,actual_time_1_1_2,"Over the last two weeks, how much time have you spent on social media per day, o",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_actual_social_first_click,Timing - First Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_actual_social_last_click,Timing - Last Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_actual_social_page_submit,Timing - Page Submit,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_actual_social_click_count,Timing - Click Count,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_1,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_10,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_11,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_12,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_13,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_14,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_15,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_16,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_17,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_18,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_19,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_20,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_21,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_22,"Which, if any, steps have you taken to reduce your time on social media apps ove",float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,mechanisms_21_text,"Which, if any, steps have you taken to reduce your time on social media apps ove",str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_mechanism_first_click,Timing - First Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_mechanism_last_click,Timing - Last Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_mechanism_page_submit,Timing - Page Submit,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_mechanism_click_count,Timing - Click Count,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_1_first_click,Timing - First Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_1_last_click,Timing - Last Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_1_page_submit,Timing - Page Submit,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_1_click_count,Timing - Click Count,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_2_first_click,Timing - First Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_2_last_click,Timing - Last Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_2_page_submit,Timing - Page Submit,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_2_click_count,Timing - Click Count,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,feedback,"Thank you for completing this survey!
-
-
-
-If you have any feedback or comments, p",str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_feedback_first_click,Timing - First Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_feedback_last_click,Timing - Last Click,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_feedback_page_submit,Timing - Page Submit,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,time_feedback_click_count,Timing - Click Count,float64,2351
-data/raw/main_socialmedia/follow_up_raw.dta,prolific_pid,Anonymous release person identifier,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,study_id,STUDY_ID,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,session_id,SESSION_ID,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,r_status,r_status,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,baseline_hours,baseline_hours,int8,2351
-data/raw/main_socialmedia/follow_up_raw.dta,baseline_minutes,baseline_minutes,int8,2351
-data/raw/main_socialmedia/follow_up_raw.dta,valid_iphone,valid_iphone,int8,2351
-data/raw/main_socialmedia/follow_up_raw.dta,starting_weekday,starting_weekday,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,social_minutes,social_minutes,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,social_hours,social_hours,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,scrshot_dates_3,scrshot_dates_3,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,scrshot_dates_2,scrshot_dates_2,str,2351
-data/raw/main_socialmedia/follow_up_raw.dta,scrshot_dates_1,scrshot_dates_1,str,2351
-data/raw/main_socialmedia/main_raw.dta,startdate,Start Date,float64,3311
-data/raw/main_socialmedia/main_raw.dta,enddate,End Date,float64,3311
-data/raw/main_socialmedia/main_raw.dta,status,Response Type,int8,3311
-data/raw/main_socialmedia/main_raw.dta,progress,Progress,int8,3311
-data/raw/main_socialmedia/main_raw.dta,duration__in_seconds_,Duration (in seconds),int32,3311
-data/raw/main_socialmedia/main_raw.dta,finished,Finished,int8,3311
-data/raw/main_socialmedia/main_raw.dta,recordeddate,Recorded Date,float64,3311
-data/raw/main_socialmedia/main_raw.dta,responseid,Anonymous release response identifier,str,3311
-data/raw/main_socialmedia/main_raw.dta,distributionchannel,Distribution Channel,str,3311
-data/raw/main_socialmedia/main_raw.dta,userlanguage,User Language,str,3311
-data/raw/main_socialmedia/main_raw.dta,q_recaptchascore,Q_RecaptchaScore,float64,3311
-data/raw/main_socialmedia/main_raw.dta,q_duplicaterespondent,Q_DuplicateRespondent,str,3311
-data/raw/main_socialmedia/main_raw.dta,time_captcha_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_captcha_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_captcha_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_captcha_click_count,Timing - Click Count,int8,3311
-data/raw/main_socialmedia/main_raw.dta,consent,"In this study, you will participate in an interview with an AI chatbot. The AI c",float64,3311
-data/raw/main_socialmedia/main_raw.dta,meta_data_browser,meta_data - Browser,str,3311
-data/raw/main_socialmedia/main_raw.dta,meta_data_version,meta_data - Version,str,3311
-data/raw/main_socialmedia/main_raw.dta,meta_data_operating_system,meta_data - Operating System,str,3311
-data/raw/main_socialmedia/main_raw.dta,meta_data_resolution,meta_data - Resolution,str,3311
-data/raw/main_socialmedia/main_raw.dta,time_consent_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_consent_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_consent_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_consent_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,llm_audio_screener_1,"Please follow the instructions in the audio to answer the question below.
-
-This ",str,3311
-data/raw/main_socialmedia/main_raw.dta,time_audio_screener_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_audio_screener_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_audio_screener_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_audio_screener_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,human_screener_1,"The next question is about the following problem. In questionnaires like ours, s",float64,3311
-data/raw/main_socialmedia/main_raw.dta,human_screener_2,"The next question is about the following problem. In questionnaires like ours, s",float64,3311
-data/raw/main_socialmedia/main_raw.dta,human_screener_3,"The next question is about the following problem. In questionnaires like ours, s",float64,3311
-data/raw/main_socialmedia/main_raw.dta,human_screener_4,"The next question is about the following problem. In questionnaires like ours, s",float64,3311
-data/raw/main_socialmedia/main_raw.dta,human_screener_5,"The next question is about the following problem. In questionnaires like ours, s",float64,3311
-data/raw/main_socialmedia/main_raw.dta,writing,What is your favorite month of the year? Please explain in about 15 to 30 words.,str,3311
-data/raw/main_socialmedia/main_raw.dta,time_writing_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_writing_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_writing_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_writing_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,oper_system,"Operating System
-
-
-
-What is the operating system of your primary phone?",float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_op_system_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_op_system_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_op_system_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_op_system_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,screen_time_enabled,"Screen Time 
-
-
-
-Screen Time is a feature on iPhones that provides a summary of h",float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_scr_time_en_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_scr_time_en_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_scr_time_en_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_scr_time_en_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,app_current_1,Which of the following apps are currently installed on your smartphone? TikTok,float64,3311
-data/raw/main_socialmedia/main_raw.dta,app_current_2,Which of the following apps are currently installed on your smartphone? Instagra,float64,3311
-data/raw/main_socialmedia/main_raw.dta,app_current_4,Which of the following apps are currently installed on your smartphone? Snapchat,float64,3311
-data/raw/main_socialmedia/main_raw.dta,app_current_5,Which of the following apps are currently installed on your smartphone? Facebook,float64,3311
-data/raw/main_socialmedia/main_raw.dta,app_current_12,Which of the following apps are currently installed on your smartphone? YouTube,float64,3311
-data/raw/main_socialmedia/main_raw.dta,app_current_6,Which of the following apps are currently installed on your smartphone? Reddit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,app_current_9,Which of the following apps are currently installed on your smartphone? X/Twitte,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_app_current_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_app_current_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_app_current_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_app_current_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,actual_time_1_1_1,"On a typical day, how much total time do you spend on social media? (TikTok, In",float64,3311
-data/raw/main_socialmedia/main_raw.dta,actual_time_1_1_2,"On a typical day, how much total time do you spend on social media? (TikTok, In",float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_actual_time_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_actual_time_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_actual_time_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_actual_time_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,ideal_social_time_1_1_1,You just told us that you typically spend about ${q://QID503%231/ChoiceTextEntry,float64,3311
-data/raw/main_socialmedia/main_raw.dta,ideal_social_time_1_1_2,You just told us that you typically spend about ${q://QID503%231/ChoiceTextEntry,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_social_apps_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_social_apps_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_social_apps_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_social_apps_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_each_1,"On a typical day, how much time do you spend on each of these apps? - TikTok",float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_each_2,"On a typical day, how much time do you spend on each of these apps? - Instagram",float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_each_3,"On a typical day, how much time do you spend on each of these apps? - Snapchat",float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_each_4,"On a typical day, how much time do you spend on each of these apps? - YouTube",float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_each_5,"On a typical day, how much time do you spend on each of these apps? - Facebook",float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_each_6,"On a typical day, how much time do you spend on each of these apps? - Reddit",float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_each_7,"On a typical day, how much time do you spend on each of these apps? - X/Twitter",float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_time_each_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_time_each_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_time_each_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_time_each_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,platform_usage_1,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
-data/raw/main_socialmedia/main_raw.dta,platform_usage_2,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
-data/raw/main_socialmedia/main_raw.dta,platform_usage_3,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
-data/raw/main_socialmedia/main_raw.dta,platform_usage_4,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
-data/raw/main_socialmedia/main_raw.dta,platform_usage_5,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
-data/raw/main_socialmedia/main_raw.dta,platform_usage_6,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
-data/raw/main_socialmedia/main_raw.dta,platform_usage_7,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_platform_usage_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_platform_usage_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_platform_usage_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_platform_usage_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,addicted_1,How addicted do you feel towards the social media apps below? - TikTok,float64,3311
-data/raw/main_socialmedia/main_raw.dta,addicted_2,How addicted do you feel towards the social media apps below? - Instagram,float64,3311
-data/raw/main_socialmedia/main_raw.dta,addicted_3,How addicted do you feel towards the social media apps below? - Snapchat,float64,3311
-data/raw/main_socialmedia/main_raw.dta,addicted_4,How addicted do you feel towards the social media apps below? - Facebook,float64,3311
-data/raw/main_socialmedia/main_raw.dta,addicted_5,How addicted do you feel towards the social media apps below? - YouTube,float64,3311
-data/raw/main_socialmedia/main_raw.dta,addicted_6,How addicted do you feel towards the social media apps below? - Reddit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,addicted_7,How addicted do you feel towards the social media apps below? - X/Twitter,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_addicted_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_addicted_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_addicted_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_addicted_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_tutorial_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_tutorial_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_tutorial_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_tutorial_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_interview_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_interview_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_interview_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_interview_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_transition_outc_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_transition_outc_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_transition_outc_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_transition_outc_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,motivation,How motivated are you to reduce your time on social media apps?,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_moviation_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_moviation_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_moviation_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_moviation_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,costsbenefits_1,How much do you agree or disagree with each of the following statements? - Spend,float64,3311
-data/raw/main_socialmedia/main_raw.dta,costsbenefits_2,How much do you agree or disagree with each of the following statements? - Exces,float64,3311
-data/raw/main_socialmedia/main_raw.dta,costsbenefits_3,How much do you agree or disagree with each of the following statements? - Reduc,float64,3311
-data/raw/main_socialmedia/main_raw.dta,costsbenefits_4,How much do you agree or disagree with each of the following statements? - Using,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_costsbenefits_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_costsbenefits_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_costsbenefits_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_costsbenefits_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,selfefficacy_1,How much do you agree or disagree with each of the following statements? - I can,float64,3311
-data/raw/main_socialmedia/main_raw.dta,selfefficacy_2,How much do you agree or disagree with each of the following statements? - When ,float64,3311
-data/raw/main_socialmedia/main_raw.dta,selfefficacy_3,How much do you agree or disagree with each of the following statements? - Even ,float64,3311
-data/raw/main_socialmedia/main_raw.dta,selfefficacy_4,How much do you agree or disagree with each of the following statements? - I can,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_selfefficacy_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_selfefficacy_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_selfefficacy_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_selfefficacy_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,awareness_1,How much do you agree or disagree with each of the following statements? - I oft,float64,3311
-data/raw/main_socialmedia/main_raw.dta,awareness_2,How much do you agree or disagree with each of the following statements? - Even ,float64,3311
-data/raw/main_socialmedia/main_raw.dta,awareness_3,How much do you agree or disagree with each of the following statements? - I som,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_awareness_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_awareness_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_awareness_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_awareness_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,image_1,How much do you agree or disagree with the following statements? - I would be em,float64,3311
-data/raw/main_socialmedia/main_raw.dta,image_2,How much do you agree or disagree with the following statements? - It is importa,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_image_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_image_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_image_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_image_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,smartphone_better_wo,To what extent do you think your current social media use makes your life better,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_smart_bettwors_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_smart_bettwors_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_smart_bettwors_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_smart_bettwors_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,posterior_idealtime_1_1_1,How much total time would you ideally like to spend on social media per day? - p,float64,3311
-data/raw/main_socialmedia/main_raw.dta,posterior_idealtime_1_1_2,How much total time would you ideally like to spend on social media per day? - p,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_post_idealtime_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_post_idealtime_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_post_idealtime_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_post_idealtime_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,app_use_intentions_1,"Compared to the past four weeks, how do you expect your time spent on each of th",float64,3311
-data/raw/main_socialmedia/main_raw.dta,app_use_intentions_2,"Compared to the past four weeks, how do you expect your time spent on each of th",float64,3311
-data/raw/main_socialmedia/main_raw.dta,app_use_intentions_3,"Compared to the past four weeks, how do you expect your time spent on each of th",float64,3311
-data/raw/main_socialmedia/main_raw.dta,app_use_intentions_4,"Compared to the past four weeks, how do you expect your time spent on each of th",float64,3311
-data/raw/main_socialmedia/main_raw.dta,app_use_intentions_5,"Compared to the past four weeks, how do you expect your time spent on each of th",float64,3311
-data/raw/main_socialmedia/main_raw.dta,app_use_intentions_6,"Compared to the past four weeks, how do you expect your time spent on each of th",float64,3311
-data/raw/main_socialmedia/main_raw.dta,app_use_intentions_7,"Compared to the past four weeks, how do you expect your time spent on each of th",float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_app_use_intenti_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_app_use_intenti_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_app_use_intenti_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_app_use_intenti_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,prediction_social_1_1_1,How much time do you think you will actually spend on social media per day on av,float64,3311
-data/raw/main_socialmedia/main_raw.dta,prediction_social_1_1_2,How much time do you think you will actually spend on social media per day on av,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_prediction_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_prediction_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_prediction_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_prediction_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,change_questionnaire_1,How much do you agree or disagree with each of the following statements? - I wan,float64,3311
-data/raw/main_socialmedia/main_raw.dta,change_questionnaire_2,How much do you agree or disagree with each of the following statements? - I cou,float64,3311
-data/raw/main_socialmedia/main_raw.dta,change_questionnaire_3,How much do you agree or disagree with each of the following statements? - There,float64,3311
-data/raw/main_socialmedia/main_raw.dta,change_questionnaire_4,How much do you agree or disagree with each of the following statements? - I hav,float64,3311
-data/raw/main_socialmedia/main_raw.dta,change_questionnaire_5,How much do you agree or disagree with each of the following statements? - I int,float64,3311
-data/raw/main_socialmedia/main_raw.dta,change_questionnaire_6,How much do you agree or disagree with each of the following statements? - I am ,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_change_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_change_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_change_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_change_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_1,"For each statement, please select the option that best describes the behavior of",float64,3311
-data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_2,"For each statement, please select the option that best describes the behavior of",float64,3311
-data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_3,"For each statement, please select the option that best describes the behavior of",float64,3311
-data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_4,"For each statement, please select the option that best describes the behavior of",float64,3311
-data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_5,"For each statement, please select the option that best describes the behavior of",float64,3311
-data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_6,"For each statement, please select the option that best describes the behavior of",float64,3311
-data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_7,"For each statement, please select the option that best describes the behavior of",float64,3311
-data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_8,"For each statement, please select the option that best describes the behavior of",float64,3311
-data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_9,"For each statement, please select the option that best describes the behavior of",float64,3311
-data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_10,"For each statement, please select the option that best describes the behavior of",float64,3311
-data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_11,"For each statement, please select the option that best describes the behavior of",float64,3311
-data/raw/main_socialmedia/main_raw.dta,mi_clientevaluation_12,"For each statement, please select the option that best describes the behavior of",float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_client_evaluati_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_client_evaluati_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_client_evaluati_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_client_evaluati_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_1,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_2,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_3,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_4,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_5,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_6,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_7,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_8,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_panas_em_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_panas_em_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_panas_em_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_panas_em_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tpb_emotions_2,"For me, thinking about reducing my social media use feels:",float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_tpb_em_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_tpb_em_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_tpb_em_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_tpb_em_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,current_use,Do you currently use any apps that help you manage your social media use (by set,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_current_use_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_current_use_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_current_use_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_current_use_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,interst_self_control,How interested would you be in an app that helps you manage your social media sc,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_interest_selfco_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_interest_selfco_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_interest_selfco_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_interest_selfco_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,familiar_freedom,Are you familiar with the Freedom app?,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_freedom_intro_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_freedom_intro_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_freedom_intro_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_freedom_intro_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_freedom_video_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_freedom_video_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_freedom_video_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_freedom_video_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_freedom_1_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_freedom_1_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_freedom_1_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_freedom_1_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_freedom_1,Which option do you prefer? - 1 year access to Freedom:$0 bonus,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_freedom_2,Which option do you prefer? - 1 year access to Freedom:$1 bonus,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_freedom_3,Which option do you prefer? - 1 year access to Freedom:$2 bonus,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_freedom_4,Which option do you prefer? - 1 year access to Freedom:$3 bonus,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_freedom_5,Which option do you prefer? - 1 year access to Freedom:$4 bonus,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_freedom_6,Which option do you prefer? - 1 year access to Freedom:$5 bonus,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_freedom_7,Which option do you prefer? - 1 year access to Freedom:$6 bonus,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_freedom_8,Which option do you prefer? - 1 year access to Freedom:$7 bonus,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_freedom_9,Which option do you prefer? - 1 year access to Freedom:$8 bonus,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_freedom_10,Which option do you prefer? - 1 year access to Freedom:$9 bonus,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_freedom_11,Which option do you prefer? - 1 year access to Freedom:$10 bonus,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_freedom_12,Which option do you prefer? - 1 year access to Freedom:$15 bonus,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_freedom_13,Which option do you prefer? - 1 year access to Freedom:$20 bonus,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_wtp_freedom_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_wtp_freedom_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_wtp_freedom_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_wtp_freedom_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,correct_wtp,"On the previous page, your answers implied that you would prefer one-year access",float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_correct_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_correct_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_correct_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_correct_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_1,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_2,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_3,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_4,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_5,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_6,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_7,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_8,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_9,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_10,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_11,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_12,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_13,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_wtp_2_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_wtp_2_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_wtp_2_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_wtp_2_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,ai_trust,"How much do you trust AI technology, such as large language models like ChatGPT,",float64,3311
-data/raw/main_socialmedia/main_raw.dta,ai_chatgpt,How often do you use ChatGPT or other large language models?,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_trust_ai_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_trust_ai_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_trust_ai_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_trust_ai_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,country,In which country do you currently reside?,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_country_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_country_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_country_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,tim_country_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,gender,What is your gender?,float64,3311
-data/raw/main_socialmedia/main_raw.dta,age,What is your age?,float64,3311
-data/raw/main_socialmedia/main_raw.dta,race,Which of the following best describes your race or ethnicity?,float64,3311
-data/raw/main_socialmedia/main_raw.dta,race_uk,Which of the following best describes your race or ethnicity?,float64,3311
-data/raw/main_socialmedia/main_raw.dta,ethnicity,"Are you of Hispanic, Latino, or Spanish origin?",float64,3311
-data/raw/main_socialmedia/main_raw.dta,employment,What is your current employment status?,float64,3311
-data/raw/main_socialmedia/main_raw.dta,education_us,What is the highest level of education you have completed?,float64,3311
-data/raw/main_socialmedia/main_raw.dta,education_uk,What is the highest level of education you have completed?,float64,3311
-data/raw/main_socialmedia/main_raw.dta,income_us,What was your annual household income in 2024 in US dollars before taxes and ded,float64,3311
-data/raw/main_socialmedia/main_raw.dta,income_uk,Gross annual household income in British Pounds,float64,3311
-data/raw/main_socialmedia/main_raw.dta,political_us,Which of the below best describes you political affiliation?,float64,3311
-data/raw/main_socialmedia/main_raw.dta,election_us,Who did you vote for in the 2024 presidential election between Donald Trump and ,float64,3311
-data/raw/main_socialmedia/main_raw.dta,political_uk,Which of the below best describes your political affiliation?,float64,3311
-data/raw/main_socialmedia/main_raw.dta,election_uk,"Who did you vote for in the 2024 UK general election, or did you not vote? - Sel",float64,3311
-data/raw/main_socialmedia/main_raw.dta,election_uk_14_text,"Who did you vote for in the 2024 UK general election, or did you not vote? - Oth",str,3311
-data/raw/main_socialmedia/main_raw.dta,time_demographics_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_demographics_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_demographics_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_demographics_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,experimenterdemand,What do you think was the purpose of this study?,str,3311
-data/raw/main_socialmedia/main_raw.dta,time_open_hypothesis_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_open_hypothesis_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_open_hypothesis_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_open_hypothesis_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,feedback,"Thank you for completing this survey!
-
-
-
-If you have any feedback or comments, p",str,3311
-data/raw/main_socialmedia/main_raw.dta,time_feedback_first_click,Timing - First Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_feedback_last_click,Timing - Last Click,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_feedback_page_submit,Timing - Page Submit,float64,3311
-data/raw/main_socialmedia/main_raw.dta,time_feedback_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,prolific_pid,Anonymous release person identifier,str,3311
-data/raw/main_socialmedia/main_raw.dta,study_id,STUDY_ID,str,3311
-data/raw/main_socialmedia/main_raw.dta,session_id,SESSION_ID,str,3311
-data/raw/main_socialmedia/main_raw.dta,user_id,user_id,int32,3311
-data/raw/main_socialmedia/main_raw.dta,interview_id,interview_id,str,3311
-data/raw/main_socialmedia/main_raw.dta,interview_endpoint,interview_endpoint,str,3311
-data/raw/main_socialmedia/main_raw.dta,random_number,random_number,int8,3311
-data/raw/main_socialmedia/main_raw.dta,first_question,first_question,str,3311
-data/raw/main_socialmedia/main_raw.dta,error_count,error_count,int8,3311
-data/raw/main_socialmedia/main_raw.dta,audio_count,audio_count,int8,3311
-data/raw/main_socialmedia/main_raw.dta,audio_error_count,audio_error_count,int8,3311
-data/raw/main_socialmedia/main_raw.dta,safari_browser,safari_browser,int8,3311
-data/raw/main_socialmedia/main_raw.dta,keystrokes,keystrokes,str,3311
-data/raw/main_socialmedia/main_raw.dta,typing_time,typing_time,str,3311
-data/raw/main_socialmedia/main_raw.dta,typing_speed,typing_speed,str,3311
-data/raw/main_socialmedia/main_raw.dta,r_status,r_status,str,3311
-data/raw/main_socialmedia/main_raw.dta,interview_finish,interview_finish,float64,3311
-data/raw/main_socialmedia/main_raw.dta,r_status_2,r_status_2,str,3311
-data/raw/main_socialmedia/main_raw.dta,interview_topic,interview_topic,str,3311
-data/raw/main_socialmedia/main_raw.dta,treatment,treatment,str,3311
-data/raw/main_socialmedia/main_raw.dta,writing_chars,Writing-task UTF-8 byte length used by original Stata exclusion,int32,3311

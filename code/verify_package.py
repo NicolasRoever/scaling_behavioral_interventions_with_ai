@@ -7,7 +7,7 @@ import re
 import sys
 
 
-def verify(package, check_reproduced, allow_rebuilt_data):
+def verify(package, check_reproduced, allow_rebuilt_data, check_submission=False):
     manifest = json.loads((package / 'manifest/exhibits.json').read_text())
     checksums = json.loads((package / 'manifest/release_checksums.json').read_text())
     errors = []
@@ -36,13 +36,36 @@ def verify(package, check_reproduced, allow_rebuilt_data):
                 errors.append('Withheld exhibit unexpectedly present: ' + relative)
             continue
         if path.exists() and hashlib.sha256(path.read_bytes()).hexdigest() != record['sha256']:
-            errors.append('Reference differs from manuscript: ' + relative)
+            errors.append('Reference checksum mismatch: ' + relative)
         if check_reproduced and record['generator']:
             output = package / 'reproduced' / relative
             if not output.exists():
                 errors.append('Missing generated exhibit: ' + relative)
             elif output.suffix == '.tex' and re.sub(r'\s+', '', output.read_text()) != re.sub(r'\s+', '', path.read_text()):
                 errors.append('Generated LaTeX differs: ' + relative)
+    from compare_submission import compare
+    submission_spec = json.loads((package / 'manifest/submission_tables.json').read_text())
+    expected_tables = {t['result'] for t in submission_spec['tables']}
+    supplied_tables = {str(f.relative_to(package / 'submission_results'))
+                       for f in (package / 'submission_results').rglob('*') if f.is_file()}
+    if supplied_tables != expected_tables:
+        errors.append('Original-submission reference table coverage differs')
+    if len(expected_tables) != 12:
+        errors.append('Expected all 12 original-submission tables')
+    roots = [package / 'submission_results']
+    if check_submission:
+        roots.append(package / 'reproduced/submission')
+    for root in roots:
+        if any(not (root / relative).is_file() for relative in expected_tables):
+            errors.append('Missing original-submission table in ' + str(root))
+            continue
+        report = compare(package, root, submission=True)
+        if report['exact_numeric_matches'] != 11:
+            errors.append('Original-submission numerical table mismatch in ' + str(root))
+        if check_submission and root.name == 'submission':
+            for relative in expected_tables:
+                if re.sub(r'\s+', '', (root / relative).read_text()) != re.sub(r'\s+', '', (package / 'submission_results' / relative).read_text()):
+                    errors.append('Archival reference differs from generated table: ' + relative)
     forbidden = {'chats_raw.csv', 'clean_chat_data.dta', 'sessions.json', 'prompts.json', '.env'}
     for relative in checksums['files']:
         path = Path(relative)
@@ -62,8 +85,11 @@ def verify(package, check_reproduced, allow_rebuilt_data):
     computed = sum(bool(r['generator']) for r in manifest['exhibits'])
     print(f'PASS: {len(checksums["files"])} release files; {len(refs)} reference exhibits; '
           f'{computed} computed exhibits; 1 explicitly withheld image.')
+    print('PASS: all 12 original-submission reference tables supplied; 11/11 numerical tables match the PDF.')
+    if check_submission:
+        print('PASS: original-submission rerun matches PDF numbers and released table references.')
     if check_reproduced:
-        print('PASS: all computed outputs exist and all regenerated LaTeX matches the manuscript.')
+        print('PASS: all computed outputs exist and all regenerated LaTeX matches the release references.')
     if allow_rebuilt_data:
         print('Original binary hashes of the four rebuilt survey files were not checked.')
     return 0
@@ -73,10 +99,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--package-root', type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument('--reproduced', action='store_true')
+    parser.add_argument('--submission', action='store_true', help='Check regenerated original-submission tables.')
     parser.add_argument('--allow-rebuilt-data', action='store_true',
                         help='Skip original binary hashes of the four files rebuilt by 01_clean_data.do.')
     args = parser.parse_args()
-    sys.exit(verify(args.package_root.resolve(), args.reproduced, args.allow_rebuilt_data))
+    sys.exit(verify(args.package_root.resolve(), args.reproduced, args.allow_rebuilt_data, args.submission))
 
 
 if __name__ == '__main__':
