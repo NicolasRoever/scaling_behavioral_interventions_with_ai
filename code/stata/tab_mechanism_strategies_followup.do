@@ -64,7 +64,7 @@ esttab * , se b(3) starlevel(* 0.1 ** 0.05 *** 0.01) nobase noomitted keep(*T) l
 * 2a. Export mechanisms table with p-values
 *-------------------------------
 
-esttab * using "${overleaf}/tables/tab_strategies_followup.tex", se b(3) nobase noomitted keep(*T) label starlevels(* 0.10 ** 0.05 *** 0.01) mtitles("\makecell{No steps \\ taken}" "\makecell{Behavioral\\ strategy used}" "\makecell{Technolgy-based\\strategy used}") coeflabel(1.T "Change Talk (a)" 2.T "Decisional Balance (b)" 3.T "Direct Persuasion (c)") stats(N r2 controlmean controls p_amb_cha p_cha_per p_amb_per, fmt(%9.0fc %9.3f %9.3f %9.3f %9.3f %9.3f %9.3f) labels("Observations" "R\textsuperscript{2}" "Control group mean" "Controls" "p-value: a=b" "p-value: a=c" "p-value: b=c")) booktabs fragment replace
+esttab * using "${overleaf}/tables/tab_strategies_followup.tex", se b(3) nobase noomitted keep(*T) label starlevels(* 0.10 ** 0.05 *** 0.01) mtitles("\makecell{No steps \\ taken}" "\makecell{Behavioral\\ strategy used}" "\makecell{Technology-based\\strategy used}") coeflabel(1.T "Change Talk (a)" 2.T "Decisional Balance (b)" 3.T "Direct Persuasion (c)") stats(N r2 controlmean controls p_amb_cha p_cha_per p_amb_per, fmt(%9.0fc %9.3f %9.3f %9.3f %9.3f %9.3f %9.3f) labels("Observations" "R\textsuperscript{2}" "Control group mean" "Controls" "p-value: a=b" "p-value: a=c" "p-value: b=c")) booktabs fragment replace
 
 
 

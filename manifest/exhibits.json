@@ -1,5 +1,5 @@
 {
-  "manuscript_sha256": "64f89b73687d9c416f0e51c92a0d201cfc96c104404bcbfe1828f5753de81af9",
+  "manuscript_sha256": "666511efc232c12425ccfcefad83c78525394af6dceec73725d726d3e4ff0a5a",
   "created_at_unix": 1789592732,
   "exhibits": [
     {
@@ -47,7 +47,7 @@
     {
       "manuscript_path": "tables/tab_strategies_followup.tex",
       "status": "included",
-      "sha256": "0fbcb7a4cf2499fb57fc245dece00a3be4a33c495ba5d710e65be227a7101b21",
+      "sha256": "284fb670742ac5312810a82eee4030c9fdec38ac08a93facbb452b49067760be",
       "generator": "code/stata/tab_mechanism_strategies_followup.do",
       "replication_level": "Current public survey data"
     },
@@ -75,7 +75,7 @@
     {
       "manuscript_path": "tables/tab_main_treatment_effects_sm_mechanisms_duration_control.tex",
       "status": "included",
-      "sha256": "66067dcb1a89e74b05812b89bc0ddc09cf326024f3092f10fa03ed2fe069ab02",
+      "sha256": "01bedc074de19db6b0fdd5a4cbd3c036a54022f91c2000e93d150a0084163019",
       "generator": "code/stata/tab_main_treatment_effect_duration_control.do",
       "replication_level": "Current public survey data"
     },
@@ -138,7 +138,7 @@
     {
       "manuscript_path": "tables/tab_heterogeneity_timeuse_by_basetime.tex",
       "status": "included",
-      "sha256": "baecdfee568007535ebc29d3bae5f6bffe19fceafbd7a5fe4fe0aee71cca8672",
+      "sha256": "311261f0b6ef148d00712d970fc208bb47b8bc2cf7bd9c9df3e0ef37a2c4b550",
       "generator": "code/stata/tab_heterogeneity_timeuse_by_basetime.do",
       "replication_level": "Current public survey data"
     },
@@ -360,5 +360,5 @@
       "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`"
     }
   ],
-  "updated_at_unix": 1789597351
+  "updated_at_unix": 1789672148
 }

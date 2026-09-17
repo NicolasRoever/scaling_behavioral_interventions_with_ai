@@ -1,5 +1,5 @@
 {
-  "recorded_at_unix": 1789597351,
+  "recorded_at_unix": 1789672148,
   "source_files": [
     {
       "package_file": "code/stata/fig_baseline_sm_use.do",
@@ -19,7 +19,8 @@
     {
       "package_file": "code/stata/tab_mechanism_strategies_followup.do",
       "source": "stata/tab_mechanism_strategies_followup.do",
-      "source_sha256": "24b64467d1ff6423891daac16ffbd5f2d7afd8ed51ac5c8b136d82e18054bcd4"
+      "source_sha256": "24b64467d1ff6423891daac16ffbd5f2d7afd8ed51ac5c8b136d82e18054bcd4",
+      "package_adjustment": "Correct Technology-based column-label spelling to match the manuscript; calculations unchanged."
     },
     {
       "package_file": "code/stata/tab_differences_strategies.do",
@@ -84,7 +85,7 @@
     {
       "package_file": "code/stata/tab_heterogeneity_timeuse_by_basetime.do",
       "source": "stata/tab_heterogeneity_timeuse_by_basetime.do",
-      "source_sha256": "b477a7b070e75291d9c18a8c78925ce315ea6dd38e016c5c8f0dd18ef57387b5"
+      "source_sha256": "afe702276b729eca2a9671421683f8eb0b2cf239db65909b64ab9ec72bb36f94"
     },
     {
       "package_file": "code/stata/00_setup.do",
@@ -134,7 +135,8 @@
     {
       "package_file": "code/stata/tab_main_treatment_effect_duration_control.do",
       "source": "stata/tab_main_treatment_effect_duration_control.do",
-      "source_sha256": "71f37c731f6ea17250632fe61237b91fff9906fc97a9099aa6d02c90f3164a58"
+      "source_sha256": "71f37c731f6ea17250632fe61237b91fff9906fc97a9099aa6d02c90f3164a58",
+      "package_adjustment": "Escape the WTP dollar sign through Stata so the emitted LaTeX matches the manuscript; calculations unchanged."
     },
     {
       "package_file": "code/stata/tab_main_treatment_effect.do",

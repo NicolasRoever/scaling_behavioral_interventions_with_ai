@@ -12,7 +12,8 @@ inputs. It does not invoke the private transcript or screenshot-image steps.
 
 All follow-up tables use `clean_merged.dta` from the current cleaning
 pipeline. The obsolete historical survey snapshot has been removed. The root
-`REPRODUCIBILITY_NOTES.md` documents remaining prose/specification issues.
+`REPRODUCIBILITY_NOTES.md` records the corrected baseline split and coefficient tests, and identifies
+remaining manuscript prose/interpretation discrepancies.
 
 `stats_quoted_in_text.do` logs the original supporting numerical calculations.
 Its demand calculation uses the same current survey merge and saved categories

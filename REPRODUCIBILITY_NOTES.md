@@ -1,72 +1,71 @@
-# Reproducibility notes and manuscript issues
+# Reproducibility notes
 
-The package follows the manuscript exhibits after the author's September 16,
-2026 analysis rerun. The manuscript itself was not edited by this package update.
+This package follows the source code and manuscript inspected on September 17,
+2026. The manuscript and original analysis code were not edited by this update.
 
-## Historical survey-file issue resolved
+## Resolved items
 
-The five previously stale follow-up tables now reproduce from the current
-`clean_merged.dta`, using the original analysis scripts. The historical survey
-snapshot and every analysis dependency on it have been removed from the package.
-The follow-up motivation regression now uses 2,302 observations; the follow-up
-screen-time outcome has 2,290 nonmissing observations. No older survey snapshot
-is needed to reproduce the refreshed tables.
+- All five previously stale follow-up tables use current `clean_merged.dta`.
+  The historical survey snapshot remains removed. The motivation regression
+  uses 2,302 observations; follow-up screen time has 2,290 nonmissing values.
+- The baseline-use heterogeneity analysis now splits on
+  `baseline_actual_social_min`. Observations with missing baseline use are
+  excluded from the split. The script now runs `test 1.T = 3.T` separately in
+  each subgroup, so the `a=c` p-values are calculated correctly.
+- The main-text Persistence paragraph now reports the current motivation
+  estimates: 0.14 for Change Talk and Direct Persuasion (both p<0.05), and 0.06
+  for Decisional Balance (not statistically significant).
+- The packaged table exporters match the manuscript's corrected
+  “Technology-based” spelling and escaped WTP dollar sign. These are label-only
+  adjustments to the original exporters.
 
-`df_merged_llm_category_expdemand_v001.dta` remains only as a two-column file of
-anonymous participant IDs and saved demand classifications. The demand helper
-joins those classifications onto the current cleaned survey data; it does not
-use survey outcomes from the old classification export.
+`df_merged_llm_category_expdemand_v001.dta` remains only as anonymous participant
+IDs and saved demand classifications. Its categories are joined onto current
+survey data; none of its old survey outcomes are used.
 
-## Follow-up prose still needs synchronization
+## Remaining prose discrepancies
 
-The regenerated motivation table reports Change Talk 0.137 (p<0.05), Decisional
-Balance 0.063 (not significant), and Direct Persuasion 0.141 (p<0.05). The
-manuscript's Persistence paragraph still reports 0.15, 0.07 and 0.16, and assigns
-p<0.01 to Direct Persuasion. Rounded to two decimals, the refreshed estimates are
-0.14, 0.06 and 0.14.
+These statements remain in the supplied `revision.tex`:
 
-The cost-benefit persistence paragraph says p<0.001 for both Change Talk and
-Direct Persuasion. The refreshed table has coefficients 0.151 (p approximately
-0.005) and 0.094 (p approximately 0.088), respectively. The follow-up
-life-evaluation paragraph still reports a Change Talk effect of 0.09; the
-refreshed estimate is 0.052 (0.05 rounded to two decimals).
+- The introduction still reports follow-up motivation effects of 0.15 for
+  Change Talk, 0.16 for Direct Persuasion (p<0.01), and 0.07 for Decisional
+  Balance. The current table gives 0.137, 0.141 (both p<0.05), and 0.063.
+- The cost-benefit persistence paragraph still says p<0.001 for both Change
+  Talk and Direct Persuasion. Their current estimates are 0.151 (p approximately
+  0.005) and 0.094 (p approximately 0.088), respectively.
+- The follow-up life-evaluation paragraph still quotes a Change Talk effect of
+  0.09 standard deviations. The current estimate is 0.052 (0.05 rounded).
 
-These are remaining prose/table discrepancies, not a need for historical data.
+## Remaining ideal-time interpretation and prose discrepancies
 
-## Alignment with ideal time
+The original script and reproduced table compare follow-up use with
+*post-treatment* `posterior_ideal_social_min_w`. The alignment paragraph and
+its table note still describe a *pre-treatment* ideal. Adding “absolute minutes”
+to the table note does not resolve this timing difference.
 
-The refreshed table and original source script compare follow-up use with
-*post-treatment* `posterior_ideal_social_min_w`. The replication script now uses
-that same definition and current data. The manuscript table note still describes
-ideal time reported *prior* to the intervention and needs synchronization.
+The four outcomes are absolute gaps within 5, 10, 20 and 30 minutes. Column 4 is
+still labeled “Below 30 min,” and the prose says “below their ideal plus 30
+minutes,” which suggests a one-sided threshold instead.
 
-All four columns use an absolute gap (within 5, 10, 20 or 30 minutes). The fourth
-column is still labeled “Below 30 min,” and the prose says “below their ideal
-plus 30 minutes”; these descriptions suggest a different, one-sided outcome.
-The package preserves the refreshed table's labels and calculations for exact
-reproduction and records this unresolved interpretation issue here.
+The alignment paragraph also retains older estimates and conclusions. It quotes
+Direct Persuasion effects of 5.3, 7.0, 8.2 and 9.9 percentage points, all with
+p<0.01. The current table reports 1.3, 2.5, 3.1 and 3.6 percentage points, none
+statistically significant at 10%. It says Decisional Balance has no significant
+effects, while the current table reports 4.2 percentage points at 20 minutes
+(p<0.10) and 5.4 at 30 minutes (p<0.05). The Change Talk effects in the current
+table are also not statistically significant at 10%.
 
-## Baseline-use heterogeneity table
+The package preserves the current source calculations and manuscript table
+labels. These remaining issues concern the manuscript's interpretation and
+prose, not a requirement for historical survey data.
 
-The source code and refreshed manuscript numbers still split participants on
-the median of **follow-up** `w2_actual_social_min`, even though the table caption
-and note call this baseline screen time. Stata's comparison assigns missing
-follow-up values to the high group (`. > median`), which also affects the
-predicted-time columns. This is not a valid interpretation as heterogeneity by
-a pre-treatment baseline measure.
+## Reproduction scope
 
-The same script stores the `a=c` p-value immediately after the `b=c` test,
-without running `test 1.T = 3.T`. Thus the two reported p-value rows duplicate
-each other. The package preserves the refreshed source calculations and flags
-them here. These issues are independent of the resolved historical-file issue.
+`results/` contains the exact current manuscript exhibits, with SHA-256 hashes.
+The runners generate fresh outputs under `reproduced/` using public survey data
+and saved text-free measurements. Raw interview transcripts remain withheld;
+recomputing upstream transcript measures requires those private inputs.
 
-## Reference files and numerical fidelity
-
-`results/` holds the exact refreshed manuscript exhibit files, with SHA-256
-hashes. Runners write to `reproduced/`. All computed tables and figures are
-regenerated from public survey data or saved text-free measurements. Static
-design assets are supplied as-is. The dialogue-containing screenshot remains
-withheld explicitly.
-
-The commented-out IRR section and its literature-comparison table, unused
-analyses, superseded notebooks and model runs remain excluded.
+Static design assets are supplied as-is. The dialogue-containing screenshot is
+withheld explicitly. Commented-out exhibits, unused analyses, superseded
+notebooks and model runs remain excluded.

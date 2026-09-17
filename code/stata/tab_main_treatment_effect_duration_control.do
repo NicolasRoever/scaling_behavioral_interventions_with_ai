@@ -51,7 +51,7 @@ esttab * using ///
         "\makecell{Social media\\makes life \\ worse (std.)}" ///
         "\makecell{Awareness\\ self-control\\ problems (std.)}" ///
         "\makecell{Self-\\efficacy\\ belief (std.)}" ///
-        "\makecell{WTP\\(\$)}" ///
+        "\makecell{WTP\\(\\$)}" ///
     ) ///
     coeflabel( ///
         1.T "Change Talk (a)" ///

@@ -1,7 +1,7 @@
 # Scaling Behavioral Interventions with AI: replication package
 
 This release follows the active content of `revision.tex` inspected on September
-16, 2026. It contains only the revised manuscript's analyses, dependencies,
+17, 2026. It contains only the revised manuscript's analyses, dependencies,
 survey data and saved results. The manuscript hash and exhibit inventory are in
 `manifest/exhibits.json`.
 
@@ -32,7 +32,7 @@ exports, run `do 01_clean_data.do` first. It uses the supplied, adjudicated
 numeric screenshot measures and extracted scaling-question scores; it does
 not require raw screenshot images or transcript text. All survey tables use the current cleaned data. The refreshed manuscript
 no longer requires a historical survey snapshot. See
-`REPRODUCIBILITY_NOTES.md` for remaining manuscript/code interpretation issues.
+`REPRODUCIBILITY_NOTES.md` for resolved corrections and remaining manuscript interpretation issues.
 
 ### Python
 

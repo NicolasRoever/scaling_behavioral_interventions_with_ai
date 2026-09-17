@@ -8,8 +8,8 @@ use "${data_folder}/processed/main_social_media/clean_merged.dta", clear
 
 * gen baseline_wedge = baseline_actual_social_min_w
 
-summ w2_actual_social_min, de
-gen high = w2_actual_social_min > r(p50)
+summ baseline_actual_social_min, de
+gen high = baseline_actual_social_min > r(p50) if !missing(baseline_actual_social_min)
 
 eststo clear
 eststo: reg w2_actual_social_min_wins i.T $controls_followup if high==0, r
@@ -50,6 +50,7 @@ foreach y in  posterior_actual_social_min_w w2_actual_social_min_wins {
     estadd scalar p_amb_per = r(p)
 	
     * Change vs Persuasion
+    test 1.T = 3.T
     estadd scalar p_cha_per = r(p)	
 
     * REGRESSION 2: ABOVE MEDIAN WEDGE
@@ -72,6 +73,7 @@ foreach y in  posterior_actual_social_min_w w2_actual_social_min_wins {
     estadd scalar p_amb_per = r(p)
 	
     * Change vs Persuasion
+    test 1.T = 3.T
     estadd scalar p_cha_per = r(p)	
 }
 
