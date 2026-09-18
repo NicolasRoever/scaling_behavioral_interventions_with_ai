@@ -102,7 +102,7 @@ original binary hashes of the four reconstructed survey files.
 | `code/stata/` | Public survey cleaning, tables, figures, and supporting statistics |
 | `code/python/` | Offline plotting and tabulation from saved derived results |
 | `code/private/` | Restricted-input methods and prompts; never invoked by public runners |
-| `code/prompts/parameters.py` | Experimental interview prompts for the four study arms |
+| `code/prompts/parameters.py` | All four appendix protocols; 69 checked prompt blocks |
 | `data/raw/` | Deidentified baseline and follow-up survey exports |
 | `data/processed/` | Current survey files and text-free screenshot measures |
 | `data/derived/` | Numeric/categorical inputs for transcript-derived exhibits |
@@ -121,7 +121,8 @@ exploratory analyses are excluded. The only added older MITI scores are the
 `T=0` is Control (time-use interview); `T=1` is Change Talk; `T=2` is Decisional
 Balance (called Ambivalence in some source data); `T=3` is Direct Persuasion.
 
-Read `EXHIBIT_MANIFEST.md` for every exhibit's generating code,
+Read `PROMPTS.md` for the appendix prompt text and verification command,
+`EXHIBIT_MANIFEST.md` for every exhibit's generating code,
 `DATA_AVAILABILITY.md` for the privacy boundary, and
 `REPRODUCIBILITY_NOTES.md` for manuscript/code inconsistencies discovered during
 replication. The manuscript itself is not distributed because its appendices

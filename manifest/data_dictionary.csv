@@ -24,9 +24,7 @@ data/raw/main_socialmedia/main_raw.dta,time_consent_first_click,Timing - First C
 data/raw/main_socialmedia/main_raw.dta,time_consent_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,time_consent_page_submit,Timing - Page Submit,float64,3311
 data/raw/main_socialmedia/main_raw.dta,time_consent_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,llm_audio_screener_1,"Please follow the instructions in the audio to answer the question below.
-
-This ",str,3311
+data/raw/main_socialmedia/main_raw.dta,llm_audio_screener_1,Please follow the instructions in the audio to answer the question below. This,str,3311
 data/raw/main_socialmedia/main_raw.dta,time_audio_screener_first_click,Timing - First Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,time_audio_screener_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,time_audio_screener_page_submit,Timing - Page Submit,float64,3311
@@ -41,20 +39,12 @@ data/raw/main_socialmedia/main_raw.dta,time_writing_first_click,Timing - First C
 data/raw/main_socialmedia/main_raw.dta,time_writing_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,time_writing_page_submit,Timing - Page Submit,float64,3311
 data/raw/main_socialmedia/main_raw.dta,time_writing_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,oper_system,"Operating System
-
-
-
-What is the operating system of your primary phone?",float64,3311
+data/raw/main_socialmedia/main_raw.dta,oper_system,Operating System What is the operating system of your primary phone?,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_op_system_first_click,Timing - First Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_op_system_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_op_system_page_submit,Timing - Page Submit,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_op_system_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,screen_time_enabled,"Screen Time 
-
-
-
-Screen Time is a feature on iPhones that provides a summary of h",float64,3311
+data/raw/main_socialmedia/main_raw.dta,screen_time_enabled,Screen Time Screen Time is a feature on iPhones that provides a summary of h,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_scr_time_en_first_click,Timing - First Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_scr_time_en_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_scr_time_en_page_submit,Timing - Page Submit,float64,3311
@@ -70,8 +60,8 @@ data/raw/main_socialmedia/main_raw.dta,tim_app_current_first_click,Timing - Firs
 data/raw/main_socialmedia/main_raw.dta,tim_app_current_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_app_current_page_submit,Timing - Page Submit,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_app_current_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,actual_time_1_1_1,"On a typical day, how much total time do you spend on social media? (TikTok, In",float64,3311
-data/raw/main_socialmedia/main_raw.dta,actual_time_1_1_2,"On a typical day, how much total time do you spend on social media? (TikTok, In",float64,3311
+data/raw/main_socialmedia/main_raw.dta,actual_time_1_1_1,"On a typical day, how much total time do you spend on social media? (TikTok, In",float64,3311
+data/raw/main_socialmedia/main_raw.dta,actual_time_1_1_2,"On a typical day, how much total time do you spend on social media? (TikTok, In",float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_actual_time_first_click,Timing - First Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_actual_time_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_actual_time_page_submit,Timing - Page Submit,float64,3311
@@ -93,13 +83,13 @@ data/raw/main_socialmedia/main_raw.dta,tim_time_each_first_click,Timing - First 
 data/raw/main_socialmedia/main_raw.dta,tim_time_each_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_time_each_page_submit,Timing - Page Submit,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_time_each_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,platform_usage_1,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
-data/raw/main_socialmedia/main_raw.dta,platform_usage_2,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
-data/raw/main_socialmedia/main_raw.dta,platform_usage_3,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
-data/raw/main_socialmedia/main_raw.dta,platform_usage_4,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
-data/raw/main_socialmedia/main_raw.dta,platform_usage_5,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
-data/raw/main_socialmedia/main_raw.dta,platform_usage_6,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
-data/raw/main_socialmedia/main_raw.dta,platform_usage_7,"Thinking about your current use of the social media platforms below, do you use ",float64,3311
+data/raw/main_socialmedia/main_raw.dta,platform_usage_1,"Thinking about your current use of the social media platforms below, do you use",float64,3311
+data/raw/main_socialmedia/main_raw.dta,platform_usage_2,"Thinking about your current use of the social media platforms below, do you use",float64,3311
+data/raw/main_socialmedia/main_raw.dta,platform_usage_3,"Thinking about your current use of the social media platforms below, do you use",float64,3311
+data/raw/main_socialmedia/main_raw.dta,platform_usage_4,"Thinking about your current use of the social media platforms below, do you use",float64,3311
+data/raw/main_socialmedia/main_raw.dta,platform_usage_5,"Thinking about your current use of the social media platforms below, do you use",float64,3311
+data/raw/main_socialmedia/main_raw.dta,platform_usage_6,"Thinking about your current use of the social media platforms below, do you use",float64,3311
+data/raw/main_socialmedia/main_raw.dta,platform_usage_7,"Thinking about your current use of the social media platforms below, do you use",float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_platform_usage_first_click,Timing - First Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_platform_usage_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_platform_usage_page_submit,Timing - Page Submit,float64,3311
@@ -141,15 +131,15 @@ data/raw/main_socialmedia/main_raw.dta,tim_costsbenefits_last_click,Timing - Las
 data/raw/main_socialmedia/main_raw.dta,tim_costsbenefits_page_submit,Timing - Page Submit,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_costsbenefits_click_count,Timing - Click Count,float64,3311
 data/raw/main_socialmedia/main_raw.dta,selfefficacy_1,How much do you agree or disagree with each of the following statements? - I can,float64,3311
-data/raw/main_socialmedia/main_raw.dta,selfefficacy_2,How much do you agree or disagree with each of the following statements? - When ,float64,3311
-data/raw/main_socialmedia/main_raw.dta,selfefficacy_3,How much do you agree or disagree with each of the following statements? - Even ,float64,3311
+data/raw/main_socialmedia/main_raw.dta,selfefficacy_2,How much do you agree or disagree with each of the following statements? - When,float64,3311
+data/raw/main_socialmedia/main_raw.dta,selfefficacy_3,How much do you agree or disagree with each of the following statements? - Even,float64,3311
 data/raw/main_socialmedia/main_raw.dta,selfefficacy_4,How much do you agree or disagree with each of the following statements? - I can,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_selfefficacy_first_click,Timing - First Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_selfefficacy_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_selfefficacy_page_submit,Timing - Page Submit,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_selfefficacy_click_count,Timing - Click Count,float64,3311
 data/raw/main_socialmedia/main_raw.dta,awareness_1,How much do you agree or disagree with each of the following statements? - I oft,float64,3311
-data/raw/main_socialmedia/main_raw.dta,awareness_2,How much do you agree or disagree with each of the following statements? - Even ,float64,3311
+data/raw/main_socialmedia/main_raw.dta,awareness_2,How much do you agree or disagree with each of the following statements? - Even,float64,3311
 data/raw/main_socialmedia/main_raw.dta,awareness_3,How much do you agree or disagree with each of the following statements? - I som,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_awareness_first_click,Timing - First Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_awareness_last_click,Timing - Last Click,float64,3311
@@ -194,7 +184,7 @@ data/raw/main_socialmedia/main_raw.dta,change_questionnaire_2,How much do you ag
 data/raw/main_socialmedia/main_raw.dta,change_questionnaire_3,How much do you agree or disagree with each of the following statements? - There,float64,3311
 data/raw/main_socialmedia/main_raw.dta,change_questionnaire_4,How much do you agree or disagree with each of the following statements? - I hav,float64,3311
 data/raw/main_socialmedia/main_raw.dta,change_questionnaire_5,How much do you agree or disagree with each of the following statements? - I int,float64,3311
-data/raw/main_socialmedia/main_raw.dta,change_questionnaire_6,How much do you agree or disagree with each of the following statements? - I am ,float64,3311
+data/raw/main_socialmedia/main_raw.dta,change_questionnaire_6,How much do you agree or disagree with each of the following statements? - I am,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_change_first_click,Timing - First Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_change_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_change_page_submit,Timing - Page Submit,float64,3311
@@ -215,30 +205,14 @@ data/raw/main_socialmedia/main_raw.dta,time_client_evaluati_first_click,Timing -
 data/raw/main_socialmedia/main_raw.dta,time_client_evaluati_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,time_client_evaluati_page_submit,Timing - Page Submit,float64,3311
 data/raw/main_socialmedia/main_raw.dta,time_client_evaluati_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_1,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_2,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_3,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_4,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_5,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_6,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_7,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
-data/raw/main_socialmedia/main_raw.dta,emotions_panas_8,"Please think about the interview you had as part of this survey.
-
-Indicate the e",float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_1,Please think about the interview you had as part of this survey. Indicate the e,float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_2,Please think about the interview you had as part of this survey. Indicate the e,float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_3,Please think about the interview you had as part of this survey. Indicate the e,float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_4,Please think about the interview you had as part of this survey. Indicate the e,float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_5,Please think about the interview you had as part of this survey. Indicate the e,float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_6,Please think about the interview you had as part of this survey. Indicate the e,float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_7,Please think about the interview you had as part of this survey. Indicate the e,float64,3311
+data/raw/main_socialmedia/main_raw.dta,emotions_panas_8,Please think about the interview you had as part of this survey. Indicate the e,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_panas_em_first_click,Timing - First Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_panas_em_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_panas_em_page_submit,Timing - Page Submit,float64,3311
@@ -293,71 +267,19 @@ data/raw/main_socialmedia/main_raw.dta,tim_correct_first_click,Timing - First Cl
 data/raw/main_socialmedia/main_raw.dta,tim_correct_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_correct_page_submit,Timing - Page Submit,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_correct_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_1,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_2,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_3,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_4,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_5,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_6,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_7,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_8,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_9,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_10,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_11,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_12,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
-data/raw/main_socialmedia/main_raw.dta,wtp_free_2_13,"Your valuation of the Freedom app
-
-
-
-You are about to make choices that can have",float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_1,Your valuation of the Freedom app You are about to make choices that can have,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_2,Your valuation of the Freedom app You are about to make choices that can have,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_3,Your valuation of the Freedom app You are about to make choices that can have,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_4,Your valuation of the Freedom app You are about to make choices that can have,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_5,Your valuation of the Freedom app You are about to make choices that can have,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_6,Your valuation of the Freedom app You are about to make choices that can have,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_7,Your valuation of the Freedom app You are about to make choices that can have,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_8,Your valuation of the Freedom app You are about to make choices that can have,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_9,Your valuation of the Freedom app You are about to make choices that can have,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_10,Your valuation of the Freedom app You are about to make choices that can have,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_11,Your valuation of the Freedom app You are about to make choices that can have,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_12,Your valuation of the Freedom app You are about to make choices that can have,float64,3311
+data/raw/main_socialmedia/main_raw.dta,wtp_free_2_13,Your valuation of the Freedom app You are about to make choices that can have,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_wtp_2_first_click,Timing - First Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_wtp_2_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,tim_wtp_2_page_submit,Timing - Page Submit,float64,3311
@@ -384,7 +306,7 @@ data/raw/main_socialmedia/main_raw.dta,education_uk,What is the highest level of
 data/raw/main_socialmedia/main_raw.dta,income_us,What was your annual household income in 2024 in US dollars before taxes and ded,float64,3311
 data/raw/main_socialmedia/main_raw.dta,income_uk,Gross annual household income in British Pounds,float64,3311
 data/raw/main_socialmedia/main_raw.dta,political_us,Which of the below best describes you political affiliation?,float64,3311
-data/raw/main_socialmedia/main_raw.dta,election_us,Who did you vote for in the 2024 presidential election between Donald Trump and ,float64,3311
+data/raw/main_socialmedia/main_raw.dta,election_us,Who did you vote for in the 2024 presidential election between Donald Trump and,float64,3311
 data/raw/main_socialmedia/main_raw.dta,political_uk,Which of the below best describes your political affiliation?,float64,3311
 data/raw/main_socialmedia/main_raw.dta,election_uk,"Who did you vote for in the 2024 UK general election, or did you not vote? - Sel",float64,3311
 data/raw/main_socialmedia/main_raw.dta,election_uk_14_text,"Who did you vote for in the 2024 UK general election, or did you not vote? - Oth",str,3311
@@ -397,11 +319,7 @@ data/raw/main_socialmedia/main_raw.dta,time_open_hypothesis_first_click,Timing -
 data/raw/main_socialmedia/main_raw.dta,time_open_hypothesis_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,time_open_hypothesis_page_submit,Timing - Page Submit,float64,3311
 data/raw/main_socialmedia/main_raw.dta,time_open_hypothesis_click_count,Timing - Click Count,float64,3311
-data/raw/main_socialmedia/main_raw.dta,feedback,"Thank you for completing this survey!
-
-
-
-If you have any feedback or comments, p",str,3311
+data/raw/main_socialmedia/main_raw.dta,feedback,"Thank you for completing this survey! If you have any feedback or comments, p",str,3311
 data/raw/main_socialmedia/main_raw.dta,time_feedback_first_click,Timing - First Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,time_feedback_last_click,Timing - Last Click,float64,3311
 data/raw/main_socialmedia/main_raw.dta,time_feedback_page_submit,Timing - Page Submit,float64,3311
@@ -439,10 +357,7 @@ data/raw/main_socialmedia/follow_up_raw.dta,distributionchannel,Distribution Cha
 data/raw/main_socialmedia/follow_up_raw.dta,userlanguage,User Language,str,2176
 data/raw/main_socialmedia/follow_up_raw.dta,q_recaptchascore,Q_RecaptchaScore,float64,2176
 data/raw/main_socialmedia/follow_up_raw.dta,q_duplicaterespondent,Q_DuplicateRespondent,str,2176
-data/raw/main_socialmedia/follow_up_raw.dta,consent,"Do you consent to the processing of your data and our privacy policy?
- 
-
-Click h",int8,2176
+data/raw/main_socialmedia/follow_up_raw.dta,consent,Do you consent to the processing of your data and our privacy policy? Click h,int8,2176
 data/raw/main_socialmedia/follow_up_raw.dta,meta_data_browser,meta_data - Browser,str,2176
 data/raw/main_socialmedia/follow_up_raw.dta,meta_data_version,meta_data - Version,str,2176
 data/raw/main_socialmedia/follow_up_raw.dta,meta_data_operating_system,meta_data - Operating System,str,2176
@@ -502,11 +417,7 @@ data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_2_first_click,Timing 
 data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_2_last_click,Timing - Last Click,float64,2176
 data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_2_page_submit,Timing - Page Submit,float64,2176
 data/raw/main_socialmedia/follow_up_raw.dta,tim_scr_upload_2_click_count,Timing - Click Count,float64,2176
-data/raw/main_socialmedia/follow_up_raw.dta,feedback,"Thank you for completing this survey!
-
-
-
-If you have any feedback or comments, p",str,2176
+data/raw/main_socialmedia/follow_up_raw.dta,feedback,"Thank you for completing this survey! If you have any feedback or comments, p",str,2176
 data/raw/main_socialmedia/follow_up_raw.dta,time_feedback_first_click,Timing - First Click,float64,2176
 data/raw/main_socialmedia/follow_up_raw.dta,time_feedback_last_click,Timing - Last Click,float64,2176
 data/raw/main_socialmedia/follow_up_raw.dta,time_feedback_page_submit,Timing - Page Submit,float64,2176
@@ -543,11 +454,7 @@ data/processed/main_social_media/clean_data.dta,meta_data_operating_system,meta_
 data/processed/main_social_media/clean_data.dta,meta_data_resolution,meta_data - Resolution,str,2719
 data/processed/main_social_media/clean_data.dta,writing,Writing task: Favourite month of the year,str,2719
 data/processed/main_social_media/clean_data.dta,smartphone_OS,Smartphone operating system,int8,2719
-data/processed/main_social_media/clean_data.dta,screen_time_enabled,"Screen Time 
-
-
-
-Screen Time is a feature on iPhones that provides a summary of h",float64,2719
+data/processed/main_social_media/clean_data.dta,screen_time_enabled,Screen Time Screen Time is a feature on iPhones that provides a summary of h,float64,2719
 data/processed/main_social_media/clean_data.dta,app_installed_tiktok,TikTok installed (0/1),int8,2719
 data/processed/main_social_media/clean_data.dta,app_installed_instagram,Instagram installed (0/1),int8,2719
 data/processed/main_social_media/clean_data.dta,app_installed_snapchat,Snapchat installed (0/1),int8,2719
@@ -582,11 +489,11 @@ data/processed/main_social_media/clean_data.dta,costsbenefits_2,How much do you 
 data/processed/main_social_media/clean_data.dta,costsbenefits_3,How much do you agree or disagree with each of the following statements? - Reduc,int8,2719
 data/processed/main_social_media/clean_data.dta,costsbenefits_4,How much do you agree or disagree with each of the following statements? - Using,int8,2719
 data/processed/main_social_media/clean_data.dta,selfefficacy_1,How much do you agree or disagree with each of the following statements? - I can,int8,2719
-data/processed/main_social_media/clean_data.dta,selfefficacy_2,How much do you agree or disagree with each of the following statements? - When ,int8,2719
-data/processed/main_social_media/clean_data.dta,selfefficacy_3,How much do you agree or disagree with each of the following statements? - Even ,int8,2719
+data/processed/main_social_media/clean_data.dta,selfefficacy_2,How much do you agree or disagree with each of the following statements? - When,int8,2719
+data/processed/main_social_media/clean_data.dta,selfefficacy_3,How much do you agree or disagree with each of the following statements? - Even,int8,2719
 data/processed/main_social_media/clean_data.dta,selfefficacy_4,How much do you agree or disagree with each of the following statements? - I can,int8,2719
 data/processed/main_social_media/clean_data.dta,awareness_1,How much do you agree or disagree with each of the following statements? - I oft,int8,2719
-data/processed/main_social_media/clean_data.dta,awareness_2,How much do you agree or disagree with each of the following statements? - Even ,int8,2719
+data/processed/main_social_media/clean_data.dta,awareness_2,How much do you agree or disagree with each of the following statements? - Even,int8,2719
 data/processed/main_social_media/clean_data.dta,awareness_3,How much do you agree or disagree with each of the following statements? - I som,int8,2719
 data/processed/main_social_media/clean_data.dta,image_1,How much do you agree or disagree with the following statements? - I would be em,int8,2719
 data/processed/main_social_media/clean_data.dta,image_2,How much do you agree or disagree with the following statements? - It is importa,int8,2719
@@ -643,16 +550,12 @@ data/processed/main_social_media/clean_data.dta,education_uk,Highest education (
 data/processed/main_social_media/clean_data.dta,income_us,Household income band (USD),float64,2719
 data/processed/main_social_media/clean_data.dta,income_uk,Household income band (pounds),float64,2719
 data/processed/main_social_media/clean_data.dta,political_us,Which of the below best describes you political affiliation?,float64,2719
-data/processed/main_social_media/clean_data.dta,election_us,Who did you vote for in the 2024 presidential election between Donald Trump and ,float64,2719
+data/processed/main_social_media/clean_data.dta,election_us,Who did you vote for in the 2024 presidential election between Donald Trump and,float64,2719
 data/processed/main_social_media/clean_data.dta,political_uk,Which of the below best describes your political affiliation?,float64,2719
 data/processed/main_social_media/clean_data.dta,election_uk,"Who did you vote for in the 2024 UK general election, or did you not vote? - Sel",float64,2719
 data/processed/main_social_media/clean_data.dta,election_uk_14_text,"Who did you vote for in the 2024 UK general election, or did you not vote? - Oth",str,2719
 data/processed/main_social_media/clean_data.dta,experimenterdemand,What do you think was the purpose of this study?,str,2719
-data/processed/main_social_media/clean_data.dta,feedback,"Thank you for completing this survey!
-
-
-
-If you have any feedback or comments, p",str,2719
+data/processed/main_social_media/clean_data.dta,feedback,"Thank you for completing this survey! If you have any feedback or comments, p",str,2719
 data/processed/main_social_media/clean_data.dta,study_id_raw,Original study ID,str,2719
 data/processed/main_social_media/clean_data.dta,user_id_raw,Original platform user ID,int32,2719
 data/processed/main_social_media/clean_data.dta,interview_id_raw,Interview ID,str,2719
@@ -799,11 +702,7 @@ data/processed/main_social_media/follow_up_clean.dta,costsbenefits_1,How much do
 data/processed/main_social_media/follow_up_clean.dta,costsbenefits_2,How much do you agree or disagree with each of the following statements? - Exces,float64,2132
 data/processed/main_social_media/follow_up_clean.dta,costsbenefits_3,How much do you agree or disagree with each of the following statements? - Spend,float64,2132
 data/processed/main_social_media/follow_up_clean.dta,costsbenefits_4,How much do you agree or disagree with each of the following statements? - Spend,float64,2132
-data/processed/main_social_media/follow_up_clean.dta,feedback,"Thank you for completing this survey!
-
-
-
-If you have any feedback or comments, p",str,2132
+data/processed/main_social_media/follow_up_clean.dta,feedback,"Thank you for completing this survey! If you have any feedback or comments, p",str,2132
 data/processed/main_social_media/follow_up_clean.dta,study_id_raw,Original study ID,str,2132
 data/processed/main_social_media/follow_up_clean.dta,session_id,SESSION_ID,str,2132
 data/processed/main_social_media/follow_up_clean.dta,r_status,r_status,str,2132
@@ -860,11 +759,7 @@ data/processed/main_social_media/clean_merged.dta,w2_costsbenefits_1,How much do
 data/processed/main_social_media/clean_merged.dta,w2_costsbenefits_2,How much do you agree or disagree with each of the following statements? - Exces,float64,2719
 data/processed/main_social_media/clean_merged.dta,w2_costsbenefits_3,How much do you agree or disagree with each of the following statements? - Spend,float64,2719
 data/processed/main_social_media/clean_merged.dta,w2_costsbenefits_4,How much do you agree or disagree with each of the following statements? - Spend,float64,2719
-data/processed/main_social_media/clean_merged.dta,w2_feedback,"Thank you for completing this survey!
-
-
-
-If you have any feedback or comments, p",str,2719
+data/processed/main_social_media/clean_merged.dta,w2_feedback,"Thank you for completing this survey! If you have any feedback or comments, p",str,2719
 data/processed/main_social_media/clean_merged.dta,w2_study_id_raw,Original study ID,str,2719
 data/processed/main_social_media/clean_merged.dta,w2_session_id,SESSION_ID,str,2719
 data/processed/main_social_media/clean_merged.dta,w2_r_status,r_status,str,2719
@@ -909,11 +804,7 @@ data/processed/main_social_media/clean_merged.dta,meta_data_operating_system,met
 data/processed/main_social_media/clean_merged.dta,meta_data_resolution,meta_data - Resolution,str,2719
 data/processed/main_social_media/clean_merged.dta,writing,Writing task: Favourite month of the year,str,2719
 data/processed/main_social_media/clean_merged.dta,smartphone_OS,Smartphone operating system,int8,2719
-data/processed/main_social_media/clean_merged.dta,screen_time_enabled,"Screen Time 
-
-
-
-Screen Time is a feature on iPhones that provides a summary of h",float64,2719
+data/processed/main_social_media/clean_merged.dta,screen_time_enabled,Screen Time Screen Time is a feature on iPhones that provides a summary of h,float64,2719
 data/processed/main_social_media/clean_merged.dta,app_installed_tiktok,TikTok installed (0/1),int8,2719
 data/processed/main_social_media/clean_merged.dta,app_installed_instagram,Instagram installed (0/1),int8,2719
 data/processed/main_social_media/clean_merged.dta,app_installed_snapchat,Snapchat installed (0/1),int8,2719
@@ -948,11 +839,11 @@ data/processed/main_social_media/clean_merged.dta,costsbenefits_2,How much do yo
 data/processed/main_social_media/clean_merged.dta,costsbenefits_3,How much do you agree or disagree with each of the following statements? - Reduc,int8,2719
 data/processed/main_social_media/clean_merged.dta,costsbenefits_4,How much do you agree or disagree with each of the following statements? - Using,int8,2719
 data/processed/main_social_media/clean_merged.dta,selfefficacy_1,How much do you agree or disagree with each of the following statements? - I can,int8,2719
-data/processed/main_social_media/clean_merged.dta,selfefficacy_2,How much do you agree or disagree with each of the following statements? - When ,int8,2719
-data/processed/main_social_media/clean_merged.dta,selfefficacy_3,How much do you agree or disagree with each of the following statements? - Even ,int8,2719
+data/processed/main_social_media/clean_merged.dta,selfefficacy_2,How much do you agree or disagree with each of the following statements? - When,int8,2719
+data/processed/main_social_media/clean_merged.dta,selfefficacy_3,How much do you agree or disagree with each of the following statements? - Even,int8,2719
 data/processed/main_social_media/clean_merged.dta,selfefficacy_4,How much do you agree or disagree with each of the following statements? - I can,int8,2719
 data/processed/main_social_media/clean_merged.dta,awareness_1,How much do you agree or disagree with each of the following statements? - I oft,int8,2719
-data/processed/main_social_media/clean_merged.dta,awareness_2,How much do you agree or disagree with each of the following statements? - Even ,int8,2719
+data/processed/main_social_media/clean_merged.dta,awareness_2,How much do you agree or disagree with each of the following statements? - Even,int8,2719
 data/processed/main_social_media/clean_merged.dta,awareness_3,How much do you agree or disagree with each of the following statements? - I som,int8,2719
 data/processed/main_social_media/clean_merged.dta,image_1,How much do you agree or disagree with the following statements? - I would be em,int8,2719
 data/processed/main_social_media/clean_merged.dta,image_2,How much do you agree or disagree with the following statements? - It is importa,int8,2719
@@ -1009,16 +900,12 @@ data/processed/main_social_media/clean_merged.dta,education_uk,Highest education
 data/processed/main_social_media/clean_merged.dta,income_us,Household income band (USD),float64,2719
 data/processed/main_social_media/clean_merged.dta,income_uk,Household income band (pounds),float64,2719
 data/processed/main_social_media/clean_merged.dta,political_us,Which of the below best describes you political affiliation?,float64,2719
-data/processed/main_social_media/clean_merged.dta,election_us,Who did you vote for in the 2024 presidential election between Donald Trump and ,float64,2719
+data/processed/main_social_media/clean_merged.dta,election_us,Who did you vote for in the 2024 presidential election between Donald Trump and,float64,2719
 data/processed/main_social_media/clean_merged.dta,political_uk,Which of the below best describes your political affiliation?,float64,2719
 data/processed/main_social_media/clean_merged.dta,election_uk,"Who did you vote for in the 2024 UK general election, or did you not vote? - Sel",float64,2719
 data/processed/main_social_media/clean_merged.dta,election_uk_14_text,"Who did you vote for in the 2024 UK general election, or did you not vote? - Oth",str,2719
 data/processed/main_social_media/clean_merged.dta,experimenterdemand,What do you think was the purpose of this study?,str,2719
-data/processed/main_social_media/clean_merged.dta,feedback,"Thank you for completing this survey!
-
-
-
-If you have any feedback or comments, p",str,2719
+data/processed/main_social_media/clean_merged.dta,feedback,"Thank you for completing this survey! If you have any feedback or comments, p",str,2719
 data/processed/main_social_media/clean_merged.dta,study_id_raw,Original study ID,str,2719
 data/processed/main_social_media/clean_merged.dta,user_id_raw,Original platform user ID,int32,2719
 data/processed/main_social_media/clean_merged.dta,interview_id_raw,Interview ID,str,2719
@@ -1173,11 +1060,7 @@ data/processed/main_social_media/clean_merged_with_scrshots.dta,w2_costsbenefits
 data/processed/main_social_media/clean_merged_with_scrshots.dta,w2_costsbenefits_2,How much do you agree or disagree with each of the following statements? - Exces,float64,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,w2_costsbenefits_3,How much do you agree or disagree with each of the following statements? - Spend,float64,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,w2_costsbenefits_4,How much do you agree or disagree with each of the following statements? - Spend,float64,2719
-data/processed/main_social_media/clean_merged_with_scrshots.dta,w2_feedback,"Thank you for completing this survey!
-
-
-
-If you have any feedback or comments, p",str,2719
+data/processed/main_social_media/clean_merged_with_scrshots.dta,w2_feedback,"Thank you for completing this survey! If you have any feedback or comments, p",str,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,w2_study_id_raw,Original study ID,str,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,w2_session_id,SESSION_ID,str,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,w2_r_status,r_status,str,2719
@@ -1221,11 +1104,7 @@ data/processed/main_social_media/clean_merged_with_scrshots.dta,meta_data_operat
 data/processed/main_social_media/clean_merged_with_scrshots.dta,meta_data_resolution,meta_data - Resolution,str,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,writing,Writing task: Favourite month of the year,str,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,smartphone_OS,Smartphone operating system,int8,2719
-data/processed/main_social_media/clean_merged_with_scrshots.dta,screen_time_enabled,"Screen Time 
-
-
-
-Screen Time is a feature on iPhones that provides a summary of h",float64,2719
+data/processed/main_social_media/clean_merged_with_scrshots.dta,screen_time_enabled,Screen Time Screen Time is a feature on iPhones that provides a summary of h,float64,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,app_installed_tiktok,TikTok installed (0/1),int8,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,app_installed_instagram,Instagram installed (0/1),int8,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,app_installed_snapchat,Snapchat installed (0/1),int8,2719
@@ -1260,11 +1139,11 @@ data/processed/main_social_media/clean_merged_with_scrshots.dta,costsbenefits_2,
 data/processed/main_social_media/clean_merged_with_scrshots.dta,costsbenefits_3,How much do you agree or disagree with each of the following statements? - Reduc,int8,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,costsbenefits_4,How much do you agree or disagree with each of the following statements? - Using,int8,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,selfefficacy_1,How much do you agree or disagree with each of the following statements? - I can,int8,2719
-data/processed/main_social_media/clean_merged_with_scrshots.dta,selfefficacy_2,How much do you agree or disagree with each of the following statements? - When ,int8,2719
-data/processed/main_social_media/clean_merged_with_scrshots.dta,selfefficacy_3,How much do you agree or disagree with each of the following statements? - Even ,int8,2719
+data/processed/main_social_media/clean_merged_with_scrshots.dta,selfefficacy_2,How much do you agree or disagree with each of the following statements? - When,int8,2719
+data/processed/main_social_media/clean_merged_with_scrshots.dta,selfefficacy_3,How much do you agree or disagree with each of the following statements? - Even,int8,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,selfefficacy_4,How much do you agree or disagree with each of the following statements? - I can,int8,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,awareness_1,How much do you agree or disagree with each of the following statements? - I oft,int8,2719
-data/processed/main_social_media/clean_merged_with_scrshots.dta,awareness_2,How much do you agree or disagree with each of the following statements? - Even ,int8,2719
+data/processed/main_social_media/clean_merged_with_scrshots.dta,awareness_2,How much do you agree or disagree with each of the following statements? - Even,int8,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,awareness_3,How much do you agree or disagree with each of the following statements? - I som,int8,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,image_1,How much do you agree or disagree with the following statements? - I would be em,int8,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,image_2,How much do you agree or disagree with the following statements? - It is importa,int8,2719
@@ -1321,16 +1200,12 @@ data/processed/main_social_media/clean_merged_with_scrshots.dta,education_uk,Hig
 data/processed/main_social_media/clean_merged_with_scrshots.dta,income_us,Household income band (USD),float64,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,income_uk,Household income band (pounds),float64,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,political_us,Which of the below best describes you political affiliation?,float64,2719
-data/processed/main_social_media/clean_merged_with_scrshots.dta,election_us,Who did you vote for in the 2024 presidential election between Donald Trump and ,float64,2719
+data/processed/main_social_media/clean_merged_with_scrshots.dta,election_us,Who did you vote for in the 2024 presidential election between Donald Trump and,float64,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,political_uk,Which of the below best describes your political affiliation?,float64,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,election_uk,"Who did you vote for in the 2024 UK general election, or did you not vote? - Sel",float64,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,election_uk_14_text,"Who did you vote for in the 2024 UK general election, or did you not vote? - Oth",str,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,experimenterdemand,What do you think was the purpose of this study?,str,2719
-data/processed/main_social_media/clean_merged_with_scrshots.dta,feedback,"Thank you for completing this survey!
-
-
-
-If you have any feedback or comments, p",str,2719
+data/processed/main_social_media/clean_merged_with_scrshots.dta,feedback,"Thank you for completing this survey! If you have any feedback or comments, p",str,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,study_id_raw,Original study ID,str,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,user_id_raw,Original platform user ID,int32,2719
 data/processed/main_social_media/clean_merged_with_scrshots.dta,interview_id_raw,Interview ID,str,2719

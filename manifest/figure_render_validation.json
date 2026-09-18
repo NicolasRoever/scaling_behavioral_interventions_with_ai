@@ -84,21 +84,21 @@
     "source_manuscript_pixel_equal": false,
     "render_dimension": 1000,
     "visually_reviewed": true,
-    "assessment": "Plotted results agree; styles, hatching, label shading, margins, ticks or rendering differ."
+    "assessment": "Plotted values and annotations agree; margins, ticks, confidence-interval strokes or rendering differ."
   },
   {
     "file": "figures/fig_topic_seed_stability.pdf",
     "source_manuscript_pixel_equal": false,
     "render_dimension": 1000,
     "visually_reviewed": true,
-    "assessment": "Plotted results agree; styles, hatching, label shading, margins, ticks or rendering differ."
+    "assessment": "Plotted values and annotations agree; margins, ticks, confidence-interval strokes or rendering differ."
   },
   {
     "file": "figures/fig_number_pro_con_statements.pdf",
     "source_manuscript_pixel_equal": false,
     "render_dimension": 1000,
     "visually_reviewed": true,
-    "assessment": "Plotted results agree; styles, hatching, label shading, margins, ticks or rendering differ."
+    "assessment": "Plotted values and annotations agree; margins, ticks, confidence-interval strokes or rendering differ."
   },
   {
     "file": "figures/fig_strategies.pdf",
@@ -137,7 +137,10 @@
   },
   {
     "file": "figures/score_stability_violin_plot.pdf",
-    "source_manuscript_pixel_equal": true,
-    "render_dimension": 1000
+    "source_manuscript_pixel_equal": false,
+    "render_dimension": 1000,
+    "current_source_pixel_equal": true,
+    "assessment": "Matches the current original builder output after the eligible-sample filter; differs from the older manuscript figure.",
+    "visually_reviewed": true
   }
 ]

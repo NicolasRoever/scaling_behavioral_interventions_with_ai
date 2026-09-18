@@ -12,7 +12,7 @@ describe that private project layout. Public users should run
 | BERTopic fitting/labeling and seed diagnostics | `data/raw/main_socialmedia/chats_raw.csv` with `session_id`, `type`, `content`, `question_name`, `order`; cleaned survey treatment assignments |
 | Pros/cons extraction | `df_clean_with_llm_themes_pros_cons_v001.csv`, including participant `full_content` |
 | Strategy classification | `df_clean_with_llm_themes_strategies_v003.csv`, including participant `full_content` |
-| Question sequencing, similarity, word clouds | Original `chats_raw.csv` and original survey arm mapping (`main_raw.sav`) |
+| Similarity and word clouds | Original `chats_raw.csv` and original survey arm mapping (`main_raw.sav`) |
 | Thirty-minute lexical mentions | Original `chats_raw.csv` and `clean_data.dta` |
 | MITI global scoring | Full private campaign inputs, including transcript sessions, rendered prompts and human-validation source material |
 | Behavioral-count validation | Original annotated training utterances and saved model utterance classifications |
@@ -29,3 +29,7 @@ Source methods may describe intermediates that contain text; none are
 distributed. Public figures start from numeric/categorical saved inputs in
 `data/derived`. Only the code paths relevant to the manuscript's pipelines are
 included; unrelated exploratory scripts are omitted.
+
+The updated question-sequence figure is public and manual: see
+`../python/question_sequence.py`. Its former transcript-based classifier and
+sequence input are no longer part of this release.

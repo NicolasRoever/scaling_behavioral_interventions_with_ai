@@ -464,6 +464,14 @@ def create_figure(results: pd.DataFrame) -> plt.Figure:
             capsize=0.1,
             ax=ax,
         )
+        ax.bar_label(
+            ax.containers[0],
+            fmt="Mean: %.2f",
+            label_type="center",
+            color="white",
+            fontsize=12,
+            fontweight="bold",
+        )
         ax.set_xlabel("")
         ax.set_ylabel("")
         sns.despine(ax=ax)

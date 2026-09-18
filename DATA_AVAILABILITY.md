@@ -20,8 +20,12 @@
   behavioral-validation statistics used by Panel B.
 - Topic assignments without text, topic diagnostic metrics, pros/cons counts,
   fixed-category strategy selections, per-chat 30-minute mention indicators,
-  aggregate interviewer-question positions and cosine similarities, and the
+  aggregate cosine similarities, and the
   frequent words/phrases displayed in the published word clouds.
+
+The question-sequence figure is now drawn from the manually specified appendix
+stages in `code/python/question_sequence.py`; it does not read transcript
+positions or require interview data.
 
 `manifest/data_dictionary.csv` documents the Stata variables. The manifest and
 code explain the definitions of the derived CSV fields.

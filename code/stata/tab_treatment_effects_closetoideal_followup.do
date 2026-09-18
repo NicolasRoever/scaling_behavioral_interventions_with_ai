@@ -13,10 +13,10 @@ clear all
 
 use "${data_folder}/processed/main_social_media/clean_merged.dta", clear
 
-gen close_to_ideal_5 = abs(w2_actual_social_min_wins - posterior_ideal_social_min_w) <= 5 if !missing(w2_actual_social_min_wins)
-gen close_to_ideal_10 = abs(w2_actual_social_min_wins - posterior_ideal_social_min_w) <= 10 if !missing(w2_actual_social_min_wins)
-gen close_to_ideal_20 = abs(w2_actual_social_min_wins - posterior_ideal_social_min_w) <= 20 if !missing(w2_actual_social_min_wins)
-gen close_to_ideal_30 = abs(w2_actual_social_min_wins - posterior_ideal_social_min_w) <= 30 if !missing(w2_actual_social_min_wins)
+gen close_to_ideal_5 = abs(w2_actual_social_min_wins - baseline_ideal_social_min_w) <= 5 if !missing(w2_actual_social_min_wins)
+gen close_to_ideal_10 = abs(w2_actual_social_min_wins - baseline_ideal_social_min_w) <= 10 if !missing(w2_actual_social_min_wins)
+gen close_to_ideal_20 = abs(w2_actual_social_min_wins - baseline_ideal_social_min_w) <= 20 if !missing(w2_actual_social_min_wins)
+gen close_to_ideal_30 = abs(w2_actual_social_min_wins - baseline_ideal_social_min_w) <= 30 if !missing(w2_actual_social_min_wins)
 
 eststo clear
 eststo: reg close_to_ideal_5 i.T $controls_followup, r
@@ -31,26 +31,26 @@ eststo: reg close_to_ideal_30 i.T $controls_followup, r
 eststo clear
 foreach y in close_to_ideal_5 close_to_ideal_10 close_to_ideal_20 close_to_ideal_30 {
     eststo: reg `y' i.T $controls_followup, r
-    
+
     * Add control mean
     qui summ `y' if control
     estadd scalar controlmean = r(mean)
-    
+
     * Add controls indicator
     estadd local controls "Yes"
-	
+
 	* Add tests
     * Ambivalence vs Change
 	test 1.T = 2.T
     estadd scalar p_amb_cha = r(p)
-	
+
     * Ambivalence vs Persuasion
 	test 2.T = 3.T
     estadd scalar p_amb_per = r(p)
-	
+
     * Change vs Persuasion
 	test 1.T = 3.T
-    estadd scalar p_cha_per = r(p)	
+    estadd scalar p_cha_per = r(p)
 }
 
 esttab * , se b(3) starlevel(* 0.1 ** 0.05 *** 0.01) keep(*T) label nobase noomitted

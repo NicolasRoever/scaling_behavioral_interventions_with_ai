@@ -27,13 +27,9 @@ def submission_script(name, text):
                                'rename baseline_actual_social_min_w actual_social_short')
     elif name == 'tab_attrition_sm.do':
         # The published "control group mean" was the overall completion mean.
-        text = replace_checked(text, 'summarize followup_finished if T == 0, meanonly',
-                               'summarize followup_finished, meanonly')
-        text = replace_checked(text, 'esttab participation completed using', 'esttab completed using')
-        text = replace_checked(text, 'mgroups("Participated in follow-up" "Completed follow-up", pattern(1 1)',
-                               'mgroups("Completed follow-up", pattern(1)')
+        text = replace_checked(text, 'summarize followup_finished if e(sample) & T == 0, meanonly',
+                               'summarize followup_finished if e(sample), meanonly')
     elif name == 'tab_treatment_effects_closetoideal_followup.do':
-        text = replace_checked(text, 'posterior_ideal_social_min_w', 'baseline_ideal_social_min_w', 4)
         text = replace_checked(text, r'\makecell{Below \\ 30 min}', r'\makecell{Within \\ 30 min}')
     elif name == 'tab_heterogeneity_timeuse_by_basetime.do':
         # Published split used follow-up use, including missing values in high.

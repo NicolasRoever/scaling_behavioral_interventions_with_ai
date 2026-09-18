@@ -130,5 +130,7 @@
       "numeric_variables_checked": 321,
       "numeric_mismatches": []
     }
-  ]
+  ],
+  "source_hashes_rechecked_at_unix": 1789692991,
+  "cleaning_files_unchanged_since_raw_to_clean_validation": true
 }

@@ -37,7 +37,7 @@ Extracted from active `revision.tex` content, excluding `%` comments and `commen
 | `figures/fig_actual_vs_ideal_social_time_binned.pdf` | `code/stata/fig_ideal_vs_actual_time.do` | Current public survey data |
 | `figures/fig_emotions.pdf` | `code/stata/tab_emotions.do` | Current public survey data |
 | `figures/fig_miti_score_histograms.pdf` | `code/python/miti_tables.py` | Saved numeric/categorical results; run via `code/python/run_public.py` |
-| `figures/qtype_shares_manual.pdf` | `code/python/question_sequence.py` | Saved numeric/categorical results; run via `code/python/run_public.py` |
+| `figures/qtype_shares_manual.pdf` | `code/python/question_sequence.py` | Manual appendix question stages; no transcripts required |
 | `figures/similarity_by_topic.pdf` | `code/python/language_similarity.py` | Saved numeric/categorical results; run via `code/python/run_public.py` |
 | `figures/fig_miti_score_distributions_main_study.pdf` | `code/python/miti_tables.py` | Saved numeric/categorical results; run via `code/python/run_public.py` |
 | `figures/wordclouds_by_arm.pdf` | `code/python/wordcloud_plot.py` | Saved numeric/categorical results; run via `code/python/run_public.py` |

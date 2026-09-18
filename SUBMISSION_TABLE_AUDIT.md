@@ -44,7 +44,7 @@ snapshot. “Original” refers to the separate archival runner.
 | A.4 | 46 | Main mechanisms | 78/78 | 78/78 |
 | A.5 | 47 | Social-media minutes | 39/39 | 39/39 |
 | A.6 | 48 | Follow-up motivation and perceptions | 39/39 | 39/39 |
-| A.7 | 49 | Alignment with ideal time | 12/52 | 52/52 |
+| A.7 | 49 | Alignment with ideal time | 52/52 | 52/52 |
 | A.8 | 50 | Heterogeneity by baseline wedge | 49/52 | 52/52 |
 | A.9 | 51 | Heterogeneity labeled baseline use | 6/52 | 52/52 |
 | C.1 | 69 | Human/model MITI validation | 10/20 | 20/20 |
@@ -52,8 +52,8 @@ snapshot. “Original” refers to the separate archival runner.
 Comparisons use printed precision, retain significance stars and normalize
 signed zero. “Controls: Yes” and the intentionally blank bias cell are checked
 as well. Headers, captions and surrounding prose are not numerical cells.
-The current A.2 comparison selects its completed-follow-up column; the current
-analysis also reports a participation column absent from the original PDF.
+The current A.2 analysis now reports a single completed-follow-up column,
+matching the original table layout.
 
 ## Why the default analysis differs
 
@@ -66,10 +66,10 @@ analysis also reports a participation column absent from the original PDF.
   or 0.718 rounded. All regression estimates, standard errors, N and R-squared
   already agree. The archival route reproduces the mislabeled overall mean;
   the default route reports the control mean correctly.
-- **A.7:** The PDF uses pre-treatment `baseline_ideal_social_min_w`. The current
-  source script uses post-treatment `posterior_ideal_social_min_w`. Both
-  calculate absolute gaps within 5, 10, 20 and 30 minutes. The archival route
-  restores the baseline ideal and “Within 30 min” heading.
+- **A.7:** The current source has now restored pre-treatment
+  `baseline_ideal_social_min_w`, so all 52 numerical entries match the PDF.
+  The archival route only restores the original “Within 30 min” heading; the
+  current exporter still says “Below 30 min,” despite computing absolute gaps.
 - **A.8:** The PDF's `a=c` row repeats the `b=c` test. Three rounded entries
   differ from a correctly calculated `test 1.T = 3.T`. The archival route
   retains the duplicated test solely to reconstruct the printed table.
@@ -89,7 +89,7 @@ analysis also reports a participation column absent from the original PDF.
 
 These differences are not rounding problems or evidence that another survey
 snapshot is needed. Reconstructing a published error does not validate its
-interpretation. The default corrected scripts remain separate and unchanged.
+interpretation. The archival adapters leave the default corrected scripts intact.
 
 ## Audit files and scope
 

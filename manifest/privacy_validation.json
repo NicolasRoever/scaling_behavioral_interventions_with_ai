@@ -1,5 +1,5 @@
 {
-  "validated_at_unix": 1789679018,
+  "validated_at_unix": 1789692991,
   "checks_passed": true,
   "no_notebooks": true,
   "unchanged_derived_files_rechecked": true,
@@ -364,13 +364,6 @@
       ]
     },
     {
-      "file": "data/derived/miti/inputs/arms.csv",
-      "columns": [
-        "user_id_raw",
-        "T"
-      ]
-    },
-    {
       "file": "data/derived/miti/inputs/behavioral_results.csv",
       "columns": [
         "Category",
@@ -401,14 +394,6 @@
         "T",
         "number_positive_aspects",
         "number_negative_aspects"
-      ]
-    },
-    {
-      "file": "data/derived/question_sequence.csv",
-      "columns": [
-        "arm",
-        "question_topic",
-        "order"
       ]
     },
     {
@@ -497,5 +482,8 @@
         "stable"
       ]
     }
-  ]
+  ],
+  "prompt_blocks_checked": 69,
+  "removed_unused_sequence_input": true,
+  "removed_redundant_miti_arm_input": true
 }

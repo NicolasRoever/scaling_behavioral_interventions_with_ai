@@ -30,7 +30,7 @@ import topic_diagnostics
 import wordcloud_plot
 
 
-def build_miti(folder, out):
+def build_miti(folder, survey_path, out):
     manifest = json.loads((folder / 'manifest.json').read_text())
     runs = manifest['runs']
     frames = {}
@@ -47,6 +47,25 @@ def build_miti(folder, out):
             if not frame[key].eq(run[key]).all():
                 raise ValueError(f'Mixed metadata: {key}')
         frames[run['run_id']] = frame
+    arms = miti_tables.arm_assignments(survey_path)
+    sample_audit = {
+        'file': 'data/processed/main_social_media/clean_merged_with_scrshots.dta',
+        'sha256': hashlib.sha256(survey_path.read_bytes()).hexdigest(),
+        'runs': {},
+    }
+    # Apply the current source's survey eligibility rule before all experimental
+    # comparisons. Human validation retains its separate 14-session sample.
+    for run in runs:
+        if run['dataset'] in ['treated', 'control']:
+            frame = frames[run['run_id']]
+            eligible, audit = miti_tables.attach_arms(frame, arms)
+            arm_mask = arms['T'].eq(0) if run['dataset'] == 'control' else arms['T'].isin([1, 2, 3])
+            expected = set(arms.loc[arm_mask, 'user_id_raw'])
+            if set(eligible.user_id_raw) != expected:
+                raise ValueError(f"Eligible sample coverage mismatch: {run['run_id']}")
+            frames[run['run_id']] = eligible[frame.columns].copy()
+            sample_audit['runs'][run['run_id']] = dict(
+                audit, eligible_sessions=eligible.session_id.nunique())
     miti_tables.build_validation(folder, manifest, runs, frames, out, miti_metrics.score_metrics)
     plt.rcParams.update({'font.family': 'Arial', 'font.size': 10,
                          'axes.spines.top': False, 'axes.spines.right': False})
@@ -61,10 +80,10 @@ def build_miti(folder, out):
             rows += miti_tables.comparison_rows(procedures['Benchmark'], frames[run['run_id']],
                 f"Stochastic rerun {run['replicate']}", 'Luna benchmark', manifest['dimensions'], miti_metrics.score_metrics)
     miti_tables.write_table(pd.DataFrame(rows), out, 'robustness_summary_table')
-    arms = miti_tables.arm_assignments(folder)
     control = next(frames[r['run_id']] for r in runs if r['dataset'] == 'control')
     data, audit = miti_tables.attach_arms(pd.concat([procedures['Benchmark'], control]), arms)
-    (out / 'survey_sample_audit.json').write_text(json.dumps(audit, indent=2))
+    (out / 'survey_sample_audit.json').write_text(
+        json.dumps(dict(audit, eligible_sample=sample_audit), indent=2) + '\n')
     miti_tables.build_main_figures(data, manifest['dimensions'], out)
     miti_tables.build_stability(procedures, manifest['dimensions'], out)
 
@@ -95,8 +114,8 @@ def build_all(package, out):
     figure.savefig(out / 'fig_strategies.pdf', bbox_inches='tight')
     plt.close(figure)
     plt.rcdefaults()
-    question_sequence.plot_question_sequence(pd.read_csv(derived / 'question_sequence.csv'),
-        out / 'qtype_shares_manual.pdf', question_sequence.configuration())
+    panels, category_colors = question_sequence.configuration()
+    question_sequence.plot_question_sequence(panels, category_colors, out / 'qtype_shares_manual.pdf')
     table = pd.read_csv(derived / 'similarity_by_topic.csv')
     config = language_similarity.configuration()
     results, references = {}, {}
@@ -115,7 +134,8 @@ def build_all(package, out):
     (out / 'tab_thirty_minute_mentions.tex').write_text(mentions_table.overleaf_table(percentages))
     percentages.to_csv(out / 'thirty_minute_mentions_percentages.csv')
     plt.rcdefaults()
-    build_miti(derived / 'miti', out)
+    build_miti(derived / 'miti',
+               package / 'data/processed/main_social_media/clean_merged_with_scrshots.dta', out)
 
 
 def main():

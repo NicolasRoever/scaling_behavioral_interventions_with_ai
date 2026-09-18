@@ -1,82 +1,93 @@
 # Reproducibility notes
 
-This release uses the active follow-up snapshot and source code inspected on
-September 17, 2026. The original analysis directories and manuscript were not
-modified. All released results are tied to this snapshot by SHA-256 hashes.
+This release incorporates the source-code and manuscript updates inspected on
+September 17, 2026. Only the replication package was changed; the original
+analysis code and manuscript were read-only. Provenance and validation records
+use Unix timestamps and SHA-256 hashes.
 
-## Survey snapshot
+## Today's updates
 
-The supplied follow-up export has 2,176 records. Cleaning yields 2,132 records;
-the 2,719-person baseline merge contains 2,130 nonmissing follow-up motivation
+- Interview prompts now follow Appendix D.1--D.4: all 69 blocks and four arm
+  configurations were verified. Existing routing metadata for those arms is
+  preserved. See `PROMPTS.md` and `manifest/prompt_validation.json`.
+- The ideal-time table now compares follow-up use with **pre-treatment**
+  `baseline_ideal_social_min_w`, matching the manuscript's intended definition.
+  Its numerical entries also reproduce original-submission Table A.7. The old
+  note about using the post-treatment ideal is no longer applicable.
+- The attrition table now reports only completed follow-up, uses Control as
+  the explicit reference arm, and calculates the control mean in the estimation
+  sample. It matches the manuscript's one-column table.
+- The question-sequence figure uses the manual appendix-stage specification
+  from the updated source. Its Control panel has the fixed opener and 11
+  interview turns; navigation messages are not plotted as interview questions.
+  The obsolete transcript-based sequence input and method were removed.
+- MITI robustness and stability calculations now filter every experimental
+  scoring run to the cleaned survey sample: 2,048 treated participants and 671
+  controls. Human validation retains its separate 14 sessions. Arm assignments
+  come directly from the released cleaned survey; the redundant CSV was removed.
+- The pros/cons figure now includes the source's mean labels inside each bar.
+- The original-submission adapters were updated for the changed current
+  scripts; all 11 numerical original tables continue to reproduce.
+
+## Survey inputs
+
+The survey datasets are unchanged by this synchronization. The active follow-up
+export has 2,176 records and the cleaned follow-up file has 2,132. The baseline
+merge has 2,719 participants, including 2,130 nonmissing follow-up motivation
 responses and 2,119 nonmissing follow-up social-media-time responses.
-Rebuilding all four cleaned survey files from the supplied deidentified
-exports reproduces every numeric variable within Stata storage precision.
 
-All default survey analyses read the active cleaned data. There is no separate
-`manuscript_followup_snapshot.dta`, and no table requires the survey columns
-from an old demand-classification file. The file named
+Every default survey analysis uses the active cleaned data. No separate
+`manuscript_followup_snapshot.dta` is required. The file named
 `df_merged_llm_category_expdemand_v001.dta` contains only anonymous participant
-IDs and saved demand classifications, joined onto the current survey data.
+IDs and saved demand classifications. The public helper joins those categories
+onto current survey data, including for supporting in-text statistics. This
+preserves the public data boundary when the original script refers to its
+full private classification merge.
 
-The prior release's 2,302/2,290 follow-up counts and its resulting coefficient
-comparisons are superseded by the newly supplied snapshot. Matching the original
-submission's sample counts now does not imply that every current analysis uses
-the original specification.
+The prior raw-to-clean checks remain applicable: unchanged raw exports and
+cleaning code reproduce all four cleaned datasets at Stata storage precision.
+The earlier 2,302/2,290 follow-up counts remain superseded by the active snapshot.
 
-## Original submission
+## Revised manuscript and original submission
 
-`SUBMISSION_TABLE_AUDIT.md` covers every table in `ssrn-6081126.pdf`.
-The separate archival runner reproduces all 11 numerical tables exactly at
-printed precision, and restores the original static Table 1 wording. It
-explicitly reconstructs the published specifications and reporting errors;
-the default scripts retain the corrected baseline split and hypothesis tests.
+The Persistence paragraph now agrees with the refreshed motivation estimates:
+0.147 for Change Talk (p<0.05), 0.161 for Direct Persuasion (p<0.01), and 0.068 for
+Decisional Balance (not significant at 10%). The cost-benefit persistence prose
+now uses the correct significance levels (p<0.01 and p<0.05), and the rounded
+follow-up life-evaluation effect of 0.09 agrees with the table. The corresponding
+obsolete discrepancy notes have been removed.
 
-The differences include raw versus winsorized balance measures, baseline
-versus post-treatment ideal time, a mislabeled overall mean, duplicated test
-p-values, a follow-up split labeled as baseline, and the old 20-session global
-validation panel. These are documented specification/reporting differences,
-not a need to restore stale survey outcomes.
+One wording issue remains: the current absolute-gap table's fourth column is
+labeled “Below 30 min,” and the Change Talk sentence still says “below 30
+minutes.” The calculation is **within 30 minutes of the baseline ideal**.
+The source code/manuscript were not edited to resolve that label.
 
-## Current revised manuscript
+The manuscript's MITI stability table and violin figure still use the earlier
+full scored corpus (2,195 treated interviews). The updated package follows
+today's source code and exactly reproduces its new outputs for the 2,048
+eligible treated participants. The manuscript captions still say “all treated”
+or “full corpus.” Its robustness paragraph also needs the updated rounded
+mean-difference/MAE pairs: stochastic reruns +0.01/0.23; prompt ablation
++0.07/0.25; gpt-5.5 +0.32/0.42; gpt-5.4 -0.19/0.39. The package records these
+source-versus-manuscript differences without editing the manuscript.
 
-The 48 computed default exhibits were regenerated. `results/` now contains
-references consistent with those calculations. `manifest/exhibits.json`
-records both the released reference hashes and the separately inspected source
-manuscript exhibit hashes. All numerical table entries agree with the inspected
-revised manuscript's current table files; two text differences are the
-package's corrected “Technology-based” spelling and escaped WTP dollar sign.
+`SUBMISSION_TABLE_AUDIT.md` distinguishes current analyses from the separate
+archival runner, which reproduces all original printed numerical table entries.
+The archival route retains documented published errors solely for reconstruction:
+a mislabeled overall mean, duplicated hypothesis-test p-values, a follow-up
+split labeled as baseline use, and the older 20-session global-validation panel.
+The default analyses retain the corrected calculations.
 
-Twenty-four of 27 figures match the inspected manuscript pixel-for-pixel at
-1,000 pixels. Three have visual rendering differences with matching plotted results:
-topic-count diagnostics, topic seed stability and pros/cons counts. Released
-references use the public runners' output for these figures. The BERTopic
-figure also incorporates the source update excluding the outlier category
-after fixing the full-conversation denominators.
-
-Some prose remains inconsistent with the refreshed analyses:
-
-- The Persistence paragraph still gives motivation effects of 0.14, 0.14 and
-  0.06. The new table reports 0.147 for Change Talk (p<0.05), 0.161 for Direct
-  Persuasion (p<0.01), and 0.068 for Decisional Balance (not significant at 10%).
-  The introduction's rounded 0.15/0.16/0.07 now agrees with the table.
-- The cost-benefit paragraph still says p<0.001 for both treatments. The new
-  table reports 0.167 for Change Talk (p<0.01) and 0.118 for Direct Persuasion
-  (p<0.05). The former release's 0.151/0.094 discussion is obsolete.
-- The alignment prose describes a pre-treatment ideal and gives the original
-  A.7 estimates. The current default script instead uses the post-treatment
-  ideal: Direct Persuasion effects are 1.5, 2.6, 3.6 and 4.0 percentage points,
-  all insignificant at 10%. Decisional Balance has effects of 4.4 and 5.0
-  percentage points at 20 and 30 minutes (both p<0.10). The absolute-gap fourth
-  column remains labeled “Below 30 min”; that label suggests a one-sided
-  threshold, while the actual calculation is within 30 minutes.
-
-The follow-up life-evaluation estimate is 0.088, so the prose's rounded 0.09
-now agrees. These notes do not claim a complete audit of all manuscript prose.
+`results/` contains verified default references, with inspected manuscript
+hashes recorded separately. `submission_results/` contains archival references.
+The validation report records any remaining rendering or label differences;
+this synchronization does not claim a complete audit of every prose statement.
 
 ## Restricted inputs
 
 Public runners use deidentified survey data and saved numeric/categorical
-measurements. Raw interview transcripts and participant-level excerpts remain
-withheld. Recomputing upstream transcript measures requires the private data;
-no API calls or private upstream workflows were executed. Static design assets
-are supplied as-is, and the dialogue-containing screenshot remains withheld.
+measurements, plus the manually specified question stages. Raw interview
+transcripts, participant excerpts, screenshot images and model explanations
+remain withheld. Re-extracting transcript measures requires the private data.
+No APIs or private upstream workflows were run. The dialogue-containing
+screenshot remains withheld, and static design assets are supplied as-is.

@@ -1,163 +1,128 @@
-from __future__ import annotations
-import numpy as np
+"""Manual question-sequence figure from the appendix protocols; no private inputs."""
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
-from language_similarity import topic_labels
+
 
 def configuration():
-    ARMS = ["T1_MI_CHANGE", "T2_MI_AMBIVALENCE", "T4_CLEAR_PERSUASION", "TIME_USE"]
-    
-    ARM_LABELS = {"T1_MI_CHANGE": "Change Talk", "T2_MI_AMBIVALENCE": "Decisional Balance",
-                  "T4_CLEAR_PERSUASION": "Direct Persuasion", "TIME_USE": "Control (Time Use)"}
-    
-    ARM_COLORS = {"T1_MI_CHANGE": "#b83232", "T2_MI_AMBIVALENCE": "#777777",
-                  "T4_CLEAR_PERSUASION": "#4c4c86", "TIME_USE": "#bdbdbd"}
-    
-    CATEGORIES = {
-        "change-eliciting": [
-            "deepen_negative_impacts", "followup_2_past_negatives", "deepen_negatives",
-            "values_future_vision", "values_discrepancy", "followup_first_scaling_question",
-            "importance_followup_lower", "dig_deeper_first_scaling_question",
-            "followup_second_scaling_question", "confidence_followup_lower",
-            "confidence_past_success", "strengths_past_success", "t4_reaction_relevance",
-            "t4_habits_map", "t4_direct_harms", "t4_benefits_counter", "t4_confidence_strengthen"],
-        "ambivalence-balancing": [
-            "followup_past_negatives", "followup_past_positives", "deepen_positives",
-            "importance_followup_higher", "confidence_followup_higher", "imagine_consequences",
-            "t4_benefits_ask"],
-        "scaling": [
-            "first_scaling_question", "second_scaling_question",
-            "t4_importance_scale", "t4_confidence_scale2"],
-        "information-provision": ["t4_barriers_solutions"],
-        "plan-commitment": [
-            "menu_of_choices_1", "action_step", "ability_booster_strengths",
-            "t4_importance_to_plan", "t4_plan_or_benchmarks", "t4_commitment_rule", "t4_enforcement"],
-        "reflective-summary": ["summary_understanding", "review_interview"],
-        "opener/conclusion": [
-            "opener", "wrap_up", "summarizing_statement", "t4_closing_summary", "last_question"],
-        "other": [
-            "followup_morning_routine", "question_midday", "question_evening", "follow_up_evening",
-            "planning_question", "question_routines", "seasonal_variation", "seasonal_variation_followup",
-            "question_differences", "routine_change_wish", "routine_change_followup",
-            "surprise_day_off", "surprise_day_off_followup"],
+    panels = {
+        "Change Talk": [
+            ("Opening question", "Opener/Conclusion"),
+            ("Follow-up: past negatives", "Change-Eliciting"),
+            ("Deepen: negative impacts", "Change-Eliciting"),
+            ("Follow-up 2: past negatives", "Change-Eliciting"),
+            ("Values & future vision", "Change-Eliciting"),
+            ("Summary check-in", "Reflective Summary"),
+            ("First scaling question", "Scaling"),
+            ("Follow-up: first scaling question", "Change-Eliciting"),
+            ("Dig deeper: first scaling question", "Change-Eliciting"),
+            ("Second scaling question", "Scaling"),
+            ("Follow-up: second scaling question", "Change-Eliciting"),
+            ("Strengths & abilities", "Plan Commitment"),
+            ("Confidence: past success", "Change-Eliciting"),
+            ("Menu of choices", "Plan Commitment"),
+            ("Action step", "Plan Commitment"),
+            ("Interview review", "Reflective Summary"),
+            ("Wrap-up", "Opener/Conclusion"),
+        ],
+        "Decisional Balance": [
+            ("Opening question", "Opener/Conclusion"),
+            ("Follow-up: past positives", "Ambivalence-Balancing"),
+            ("Deepen: positives", "Ambivalence-Balancing"),
+            ("Follow-up: past negatives", "Ambivalence-Balancing"),
+            ("Deepen: negatives", "Change-Eliciting"),
+            ("Values discrepancy", "Change-Eliciting"),
+            ("Summary check-in", "Reflective Summary"),
+            ("First scaling question", "Scaling"),
+            ("Follow-up: lower importance", "Change-Eliciting"),
+            ("Follow-up: higher importance", "Ambivalence-Balancing"),
+            ("Imagine consequences", "Ambivalence-Balancing"),
+            ("Second scaling question", "Scaling"),
+            ("Follow-up: lower confidence", "Change-Eliciting"),
+            ("Follow-up: higher confidence", "Ambivalence-Balancing"),
+            ("Strengths & past success", "Change-Eliciting"),
+            ("Menu of choices", "Plan Commitment"),
+            ("Action step", "Plan Commitment"),
+            ("Interview review", "Reflective Summary"),
+            ("Wrap-up", "Opener/Conclusion"),
+        ],
+        "Direct Persuasion": [
+            ("Opening question", ("Opener/Conclusion", "Information Provision")),
+            ("Reaction & relevance", "Change-Eliciting"),
+            ("Habits mapping", "Change-Eliciting"),
+            ("Direct harms", "Change-Eliciting"),
+            ("Perceived benefits", "Ambivalence-Balancing"),
+            ("Counter benefits", "Change-Eliciting"),
+            ("Importance scale", "Scaling"),
+            ("Importance to plan", "Plan Commitment"),
+            ("Plan / benchmarks", "Plan Commitment"),
+            ("Commitment rule", "Plan Commitment"),
+            ("Enforcement", "Plan Commitment"),
+            ("Confidence scale", "Scaling"),
+            ("Strengthen confidence", "Change-Eliciting"),
+            ("Barriers & solutions", "Information Provision"),
+            ("Closing summary", "Opener/Conclusion"),
+        ],
+        "Control (Time Use)": [
+            # Fixed opener, then appendix D.4 turns 1--11. Navigation/termination
+            # messages are not additional interview questions and are not plotted.
+            ("Opening question: morning routine", "Opener/Conclusion"),
+            ("Follow-up on morning routine", "Other"),
+            ("Midday routine", "Other"),
+            ("Evening routine", "Other"),
+            ("Follow-up on evening routine", "Other"),
+            ("Planning", "Other"),
+            ("Daily routines", "Other"),
+            ("Seasonal variation", "Other"),
+            ("Follow-up on seasonal variation", "Other"),
+            ("Weekday versus weekend routines", "Other"),
+            ("Final reflection", "Opener/Conclusion"),
+            ("Closing summary", "Opener/Conclusion"),
+        ],
     }
-    
-    CATEGORY_ORDER = list(CATEGORIES)
-    
-    CATEGORY_COLORS = {"change-eliciting": "#b83232", "ambivalence-balancing": "#4f8a7b",
-                       "scaling": "#8b6a9e", "information-provision": "#9a762f",
-                       "plan-commitment": "#4c4c86", "reflective-summary": "#b76e8a",
-                       "opener/conclusion": "#b56a45", "other": "#777777"}
-    
-    CATEGORY_LABELS = {"change-eliciting": "Change-Eliciting",
-                       "ambivalence-balancing": "Ambivalence-Balancing",
-                       "scaling": "Scaling",
-                       "information-provision": "Information Provision",
-                       "plan-commitment": "Plan Commitment",
-                       "reflective-summary": "Reflective Summary",
-                       "opener/conclusion": "Opener/Conclusion",
-                       "other": "Other"}
-    CATEGORY_OF = {topic: category for category, topics in CATEGORIES.items() for topic in topics}
-    return {'ARMS': ARMS, 'ARM_LABELS': ARM_LABELS, 'ARM_COLORS': ARM_COLORS, 'CATEGORIES': CATEGORIES, 'CATEGORY_ORDER': CATEGORY_ORDER, 'CATEGORY_COLORS': CATEGORY_COLORS, 'CATEGORY_LABELS': CATEGORY_LABELS, 'CATEGORY_OF': CATEGORY_OF}
+    category_colors = {
+        "Change-Eliciting": "#b83232",
+        "Ambivalence-Balancing": "#4f8a7b",
+        "Scaling": "#8b6a9e",
+        "Information Provision": "#9a762f",
+        "Plan Commitment": "#4c4c86",
+        "Reflective Summary": "#b76e8a",
+        "Opener/Conclusion": "#b56a45",
+        "Other": "#777777",
+    }
+    return panels, category_colors
 
 
+def plot_question_sequence(panels, category_colors, out_path):
+    """Draw the four panels; mixed categories get equal-width segments."""
+    with plt.rc_context({"font.family": "Arial", "font.size": 10}):
+        fig, axes = plt.subplots(2, 2, figsize=(12, 10.5))
+        for ax, (arm, questions) in zip(axes.flat, panels.items()):
+            y = list(range(len(questions)))[::-1]
+            for yi, (_, categories) in zip(y, questions):
+                assigned = (categories,) if isinstance(categories, str) else categories
+                width = 1 / len(assigned)
+                for segment, category in enumerate(assigned):
+                    ax.barh(yi, width, left=segment * width, height=0.72,
+                            color=category_colors[category], edgecolor="white", linewidth=1.2)
+                ax.text(0.5, yi, " +\n".join(assigned), ha="center", va="center",
+                        color="white", fontsize=7.5 if len(assigned) > 1 else 8.5,
+                        fontweight="bold")
 
-def category_weights(arm, topic, config):
-    """
-    How much of one turn to credit to each category, as {category: weight}.
+            ax.set_yticks(y)
+            ax.set_yticklabels([f"{i}. {name}" for i, (name, _) in enumerate(questions, 1)],
+                               fontsize=8)
+            ax.set_xlim(0, 1)
+            ax.set_xticks([])
+            ax.set_title(arm, fontsize=12, fontweight="bold", loc="left", pad=6)
+            ax.tick_params(axis="y", length=0, pad=5)
+            for spine in ax.spines.values():
+                spine.set_visible(False)
 
-    Almost always a single category with weight 1. The one exception is the
-    Direct-Persuasion (T4) opener: it both opens the interview and lays out the
-    research, so we split it half opener/conclusion, half information-provision.
-    """
-    ARMS, ARM_LABELS, ARM_COLORS, CATEGORIES, CATEGORY_ORDER, CATEGORY_COLORS, CATEGORY_LABELS, CATEGORY_OF = (config[k] for k in ['ARMS', 'ARM_LABELS', 'ARM_COLORS', 'CATEGORIES', 'CATEGORY_ORDER', 'CATEGORY_COLORS', 'CATEGORY_LABELS', 'CATEGORY_OF'])
-    if arm == "T4_CLEAR_PERSUASION" and topic == "opener":
-        return {"opener/conclusion": 0.5, "information-provision": 0.5}
-    return {CATEGORY_OF.get(topic, "other"): 1.0}
-
-def ordered_questions(interviewer_turns, config):
-    """Return each arm's question topics in their typical interview order."""
-    ARMS, ARM_LABELS, ARM_COLORS, CATEGORIES, CATEGORY_ORDER, CATEGORY_COLORS, CATEGORY_LABELS, CATEGORY_OF = (config[k] for k in ['ARMS', 'ARM_LABELS', 'ARM_COLORS', 'CATEGORIES', 'CATEGORY_ORDER', 'CATEGORY_COLORS', 'CATEGORY_LABELS', 'CATEGORY_OF'])
-    questions_by_arm = {}
-    for arm in ARMS:
-        arm_turns = interviewer_turns[interviewer_turns["arm"] == arm]
-        median_order = (
-            arm_turns.groupby("question_topic", sort=False)["order"]
-            .median()
-            .sort_values()
-        )
-        questions_by_arm[arm] = median_order.index.tolist()
-    return questions_by_arm
-
-def plot_question_sequence(interviewer_turns, out_path, config):
-    """
-    Show each arm's questions in interview order and the category assigned to each.
-
-    Questions run from top to bottom within each panel. Each bar represents one
-    scripted question; its fill and in-bar label identify its category. Questions
-    assigned to two categories are split proportionally across the bar.
-    """
-    ARMS, ARM_LABELS, ARM_COLORS, CATEGORIES, CATEGORY_ORDER, CATEGORY_COLORS, CATEGORY_LABELS, CATEGORY_OF = (config[k] for k in ['ARMS', 'ARM_LABELS', 'ARM_COLORS', 'CATEGORIES', 'CATEGORY_ORDER', 'CATEGORY_COLORS', 'CATEGORY_LABELS', 'CATEGORY_OF'])
-    plt.rcParams.update({"font.family": "Arial", "font.size": 10})
-    fig, axes = plt.subplots(2, 2, figsize=(12, 10.5))
-    questions_by_arm = ordered_questions(interviewer_turns, config)
-
-    for ax, arm in zip(axes.ravel(), ARMS):
-        topics = questions_by_arm[arm]
-        y = np.arange(len(topics))[::-1]  # first question at the top
-
-        for yi, topic in zip(y, topics):
-            weights = category_weights(arm, topic, config)
-            left = 0.0
-            for category, weight in weights.items():
-                ax.barh(
-                    yi,
-                    weight,
-                    left=left,
-                    height=0.72,
-                    color=CATEGORY_COLORS[category],
-                    edgecolor="white",
-                    linewidth=1.2,
-                )
-                left += weight
-
-            category_text = " +\n".join(CATEGORY_LABELS[category] for category in weights)
-            ax.text(
-                0.5,
-                yi,
-                category_text,
-                ha="center",
-                va="center",
-                color="white",
-                fontsize=7.5 if len(weights) > 1 else 8.5,
-                fontweight="bold",
-            )
-
-        question_labels = [
-            f"{number}. {topic_labels().get(topic, topic.replace('_', ' ').capitalize())}"
-            for number, topic in enumerate(topics, start=1)
-        ]
-        ax.set_yticks(y)
-        ax.set_yticklabels(question_labels, fontsize=8)
-        ax.set_xlim(0, 1)
-        ax.set_xticks([])
-        ax.set_title(ARM_LABELS[arm], fontsize=12, fontweight="bold", loc="left", pad=6)
-        ax.tick_params(axis="y", length=0, pad=5)
-        for spine in ax.spines.values():
-            spine.set_visible(False)
-
-    legend_handles = [
-        Patch(facecolor=CATEGORY_COLORS[category], label=CATEGORY_LABELS[category])
-        for category in CATEGORY_ORDER
-    ]
-    fig.legend(
-        handles=legend_handles,
-        ncol=4,
-        fontsize=9,
-        frameon=False,
-        loc="lower center",
-        bbox_to_anchor=(0.5, 0.005),
-    )
-    fig.tight_layout(rect=(0, 0.08, 1, 1), h_pad=2.0, w_pad=3.0)
-    fig.savefig(out_path, bbox_inches="tight", facecolor="white")
-    plt.close(fig)
+        fig.legend(handles=[Patch(facecolor=color, label=category)
+                            for category, color in category_colors.items()],
+                   ncol=4, fontsize=9, frameon=False, loc="lower center",
+                   bbox_to_anchor=(0.5, 0.005))
+        fig.tight_layout(rect=(0, 0.08, 1, 1), h_pad=2.0, w_pad=3.0)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        fig.savefig(out_path, bbox_inches="tight", facecolor="white")
+        plt.close(fig)

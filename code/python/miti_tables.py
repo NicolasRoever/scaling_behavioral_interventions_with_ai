@@ -130,8 +130,12 @@ def build_validation(folder, manifest, runs, frames, out, metric_fn):
     return summary
 
 
-def arm_assignments(folder):
-    return pd.read_csv(folder / "inputs/arms.csv")
+def arm_assignments(survey_path):
+    arms = pd.read_stata(survey_path, convert_categoricals=False,
+                         columns=["user_id_raw", "T"]).dropna().drop_duplicates()
+    if arms.user_id_raw.duplicated().any():
+        raise ValueError("Conflicting survey arm assignment")
+    return arms
 
 
 def attach_arms(scores, arms):
@@ -224,5 +228,4 @@ def build_stability(procedures, dimensions, out):
             ax.axis("off")
         save_figure(fig, out, f"score_stability_{kind}_plot")
     return table
-
 

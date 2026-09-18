@@ -330,9 +330,6 @@
       "table": "A.2",
       "pdf_page": 44,
       "result": "tables/tab_attrition_analysis_sm.tex",
-      "column_indices": [
-        1
-      ],
       "rows": {
         "changetalk": [
           "0.012"

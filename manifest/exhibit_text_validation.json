@@ -28,109 +28,109 @@
     "file": "tables/tab_strategies_followup.tex",
     "source_manuscript_text_equal": false,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_balance.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_attrition_analysis_sm.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_balance_followup.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_main_treatment_effects_sm_mechanisms_duration_control.tex",
-    "source_manuscript_text_equal": false,
+    "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_secondary_outcomes_holm_panel_a.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_secondary_outcomes_holm_panel_b.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_main_treatment_effects_sm_mechanisms.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_treatment_effects_motivation_followup.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_wtp_perceived_cost_mapping.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_main_treatment_effects_sm_minutes.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_treatment_effects_closetoideal_followup.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_heterogeneity_timeuse_by_wedge.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_heterogeneity_timeuse_by_basetime.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_differences_strategies.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_outcomes_expdemand_additive.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/tab_outcomes_expdemand_interacted.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "figures/tab_thirty_minute_mentions.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "figures/fig_hst_baseline_sm_use.pdf",
@@ -241,23 +241,25 @@
     "file": "tables/mi_validation_results_table.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "tables/robustness_handcoded_latex_table.tex",
     "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": true
   },
   {
     "file": "figures/score_stability_violin_plot.pdf",
     "source_manuscript_text_equal": true,
-    "released_text_equal_to_regenerated": true
+    "released_text_equal_to_regenerated": true,
+    "assessment": "Current source filters treated scoring runs to the eligible survey sample. The inspected manuscript still uses the earlier full scored corpus."
   },
   {
     "file": "tables/score_stability_latex_table.tex",
-    "source_manuscript_text_equal": true,
+    "source_manuscript_text_equal": false,
     "released_text_equal_to_regenerated": true,
-    "source_manuscript_equal_after_two_documented_label_fixes": true
+    "source_manuscript_equal_after_documented_label_fixes": false,
+    "assessment": "Current source filters treated scoring runs to the eligible survey sample. The inspected manuscript still uses the earlier full scored corpus."
   }
 ]

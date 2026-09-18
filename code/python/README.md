@@ -10,10 +10,16 @@ fonts/spacing slightly differently; reference PDFs remain under `results/`.
 
 The runner rebuilds topic plots from saved assignments/diagnostics; pros/cons
 plots from integer counts; strategies from fixed-category selections; question
-sequences, wording similarity and word clouds from aggregate inputs; and the
+sequences from the manually specified appendix stages; wording similarity and
+word clouds from aggregate inputs; and the
 30-minute table from saved Boolean chat-level indicators.
 
 MITI tables and figures use only the explicitly named September 2026 campaign.
+All experimental scoring runs are filtered to the cleaned survey before any
+robustness/stability calculations: 2,048 treated participants and 671 controls.
+The runner reads treatment assignments directly from the released
+`clean_merged_with_scrshots.dta` and checks complete eligible-session coverage.
+`reproduced/audit/survey_sample_audit.json` records included/excluded counts.
 The validation benchmark contains 14 sessions and 56 dimension-level ratings.
 Five stochastic runs are additional ratings of those same sessions, not 70
 independent interviews. Stability ranges are empirical score percentiles,

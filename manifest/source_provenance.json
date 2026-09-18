@@ -1,5 +1,5 @@
 {
-  "recorded_at_unix": 1789679479,
+  "recorded_at_unix": 1789692991,
   "source_files": [
     {
       "package_file": "code/stata/fig_baseline_sm_use.do",
@@ -55,7 +55,8 @@
     {
       "package_file": "code/stata/stats_quoted_in_text.do",
       "source": "stata/stats_quoted_in_text.do",
-      "source_sha256": "a07daea2f4512696a7f5eb8f0a38357e472edbdf3bc0008d0dd2b55148622156"
+      "source_sha256": "590db7d306fd2d35f7b194d45ec6b9b00407b934be1ba19d1719669f703735ed",
+      "package_adjustment": "Join released ID/category-only demand classifications onto active cleaned survey data; do not rely on the original full private classification merge."
     },
     {
       "package_file": "code/stata/tab_balance_followup.do",
@@ -126,7 +127,7 @@
     {
       "package_file": "code/stata/tab_treatment_effects_closetoideal_followup.do",
       "source": "stata/tab_treatment_effects_closetoideal_followup.do",
-      "source_sha256": "7cae2e5f3084459dfb2308517c72cba57ec4203152900d635c54d87fd6f2ba20"
+      "source_sha256": "d22cd1002ba4f68058230ca6164eb278afc7db4149508cf0a20037c2a2bd8ab6"
     },
     {
       "package_file": "code/stata/fig_change_quesionnaire.do",
@@ -152,7 +153,7 @@
     {
       "package_file": "code/stata/tab_attrition_sm.do",
       "source": "stata/tab_attrition_sm.do",
-      "source_sha256": "7bff3dadcda09483fd3a5315b3bfe9314efa1e0a7daaebe4c1fd7b0e6bf04b0c"
+      "source_sha256": "b94029f18a95f2ae5a4843983e48a1ea1f6668c718bb0da0221e0f57b612dcd8"
     },
     {
       "package_file": "code/stata/CleaningScripts/02_cleaning_followup.do",
@@ -203,7 +204,7 @@
     {
       "package_file": "code/private/fig_pros_cons.py",
       "source": "python/fig_pros_cons.py",
-      "source_sha256": "20c7caa3fc05867089ad3424e8710ff6c2cc2ab5128cecb3d7a8a912b050e889"
+      "source_sha256": "ea08416437eaa14106def8665be931b834902afc02b8498e93c97f28288f19f8"
     },
     {
       "package_file": "code/private/text_analysis/similarity.py",
@@ -216,9 +217,10 @@
       "source_sha256": "648e22cb459c4ce93ce20ac8f3568cb05bbcdcc18c872a9fb668805060878904"
     },
     {
-      "package_file": "code/private/text_analysis/classify_manual.py",
+      "package_file": "code/python/question_sequence.py",
       "source": "python/text_analysis/classify_manual.py",
-      "source_sha256": "367b3c082c529be60cb29d4b992dd71b5373928ff98444076e6d5154f0849885"
+      "source_sha256": "ac39daa439b604f5bd1bd5f760ae1eb9b7d98bb4629dc4e679e5a0a249558e56",
+      "package_adjustment": "Functional public renderer from the source PANELS/CATEGORY_COLORS and plot function; removes the superseded transcript-dependent method and sequence input."
     },
     {
       "package_file": "code/private/text_analysis/keyness_wordclouds.py",
@@ -245,6 +247,24 @@
       "source": "python/bertopic_classification/fig_bertopic.py",
       "source_sha256": "9683e29988a9ea1009c15a00a40b31df7c5a7b874f7ee2e4e3217deb9229ffe7",
       "package_adjustment": "Offline function with explicit input/output paths; preserve the source outlier exclusion after fixing denominators."
+    },
+    {
+      "package_file": "code/python/pros_cons_plot.py",
+      "source": "python/fig_pros_cons.py",
+      "source_sha256": "ea08416437eaa14106def8665be931b834902afc02b8498e93c97f28288f19f8",
+      "package_adjustment": "Offline plotting from released integer counts, including the updated source mean labels. No transcript extraction or API calls."
+    },
+    {
+      "package_file": "code/python/miti_tables.py",
+      "source": "python/miti_scoring/build_campaign_exhibits.py",
+      "source_sha256": "9b3ee5b15691764f683a0e0f4b0f3616e3dcfb22e8a329bce9ce07213d548bd7",
+      "package_adjustment": "Public functions use the released cleaned survey to filter every experimental scoring run before computing exhibits. Reuse saved numeric scores only; omit API execution, IRR and other exhibits not used in the manuscript."
+    },
+    {
+      "package_file": "code/python/run_public.py",
+      "source": "python/miti_scoring/build_campaign_exhibits.py",
+      "source_sha256": "9b3ee5b15691764f683a0e0f4b0f3616e3dcfb22e8a329bce9ce07213d548bd7",
+      "package_adjustment": "Public functions use the released cleaned survey to filter every experimental scoring run before computing exhibits. Reuse saved numeric scores only; omit API execution, IRR and other exhibits not used in the manuscript."
     }
   ],
   "submission_validation_sources": [
@@ -259,5 +279,12 @@
       "retained": "Anonymous pair keys, dimension, numeric human/model scores only"
     }
   ],
-  "submission_archival_adaptations": "code/reproduce_submission.py; see SUBMISSION_TABLE_AUDIT.md. No default statistical specifications were altered."
+  "submission_archival_adaptations": "code/reproduce_submission.py; see SUBMISSION_TABLE_AUDIT.md. No default statistical specifications were altered.",
+  "interview_prompts": {
+    "source": "revision.tex, Appendix D.1--D.4",
+    "source_sha256": "6bd9383ea853c54419e664725e76fd9fe48981f0e1bae8ddf37d8ac6caf07e92",
+    "package_file": "code/prompts/parameters.py",
+    "validation": "manifest/prompt_validation.json",
+    "blocks": 69
+  }
 }
