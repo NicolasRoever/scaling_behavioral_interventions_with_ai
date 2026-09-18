@@ -57,7 +57,7 @@ def main(data_dir, output_dir):
     
     
     # ---------------------------------------------------------
-    # Figure 1: CDF of Importance Score
+    # Figure 2: CDF of Confidence Score
     # ---------------------------------------------------------
     # Filter: keep non-missing T and confidence_score, and confidence_score <= 10
     mask_imp = df["T"].notna() & df["confidence_score"].notna() & (df["confidence_score"] <= 10)
@@ -91,7 +91,7 @@ def main(data_dir, output_dir):
     )
     plt.gca().get_legend().get_frame().set_linewidth(0.1) # lwidth(0.1)
     
-    plt.xlabel("Importance Score")
+    plt.xlabel("Confidence Score")
     plt.ylabel("Proportion") # Standard CDF label
     plt.title("")
     finalize_plot(ax=plt.gca())

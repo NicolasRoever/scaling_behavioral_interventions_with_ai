@@ -1,0 +1,107 @@
+{
+  "scored_sessions": 2719,
+  "excluded_without_clean_survey": 0,
+  "eligible_sample": {
+    "file": "data/processed/main_social_media/clean_merged_with_scrshots.dta",
+    "sha256": "916e0f991e7f081e35a3d4866cefff3aadb2934fe6a89f6b356c8ca67d72c29b",
+    "runs": {
+      "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__benchmark": {
+        "scored_sessions": 2195,
+        "excluded_without_clean_survey": 147,
+        "eligible_sessions": 2048
+      },
+      "20260910T215439Z_9e5f325e__control__gpt-5.6-luna__benchmark": {
+        "scored_sessions": 737,
+        "excluded_without_clean_survey": 66,
+        "eligible_sessions": 671
+      },
+      "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-01": {
+        "scored_sessions": 2195,
+        "excluded_without_clean_survey": 147,
+        "eligible_sessions": 2048
+      },
+      "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-02": {
+        "scored_sessions": 2195,
+        "excluded_without_clean_survey": 147,
+        "eligible_sessions": 2048
+      },
+      "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-03": {
+        "scored_sessions": 2195,
+        "excluded_without_clean_survey": 147,
+        "eligible_sessions": 2048
+      },
+      "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-04": {
+        "scored_sessions": 2195,
+        "excluded_without_clean_survey": 147,
+        "eligible_sessions": 2048
+      },
+      "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__rerun-05": {
+        "scored_sessions": 2195,
+        "excluded_without_clean_survey": 147,
+        "eligible_sessions": 2048
+      },
+      "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__ablation": {
+        "scored_sessions": 2195,
+        "excluded_without_clean_survey": 147,
+        "eligible_sessions": 2048
+      },
+      "20260910T215439Z_9e5f325e__treated__gpt-5.5-2026-04-23__model_swap": {
+        "scored_sessions": 2195,
+        "excluded_without_clean_survey": 147,
+        "eligible_sessions": 2048
+      },
+      "20260910T215439Z_9e5f325e__treated__gpt-5.4-2026-03-05__model_swap": {
+        "scored_sessions": 2195,
+        "excluded_without_clean_survey": 147,
+        "eligible_sessions": 2048
+      }
+    }
+  },
+  "validated_at_unix": 1789693478,
+  "source_comparisons": [
+    {
+      "source": "python/miti_scoring/output/campaign_20260910_luna/exhibits/all/score_stability_table.csv",
+      "source_sha256": "f6550d8d33e439f28e6fdbfcfcabd16a1f94c94c0bd2da98b37e360229f37169",
+      "numeric_values_match": true,
+      "rtol": 1e-12,
+      "atol": 1e-12
+    },
+    {
+      "source": "python/miti_scoring/output/campaign_20260910_luna/exhibits/all/robustness_summary_table.csv",
+      "source_sha256": "2bc6e6009067419cb1391dfa8dac508c34cfddcc6a95722823fcbe0066f7cdd9",
+      "numeric_values_match": true,
+      "rtol": 1e-12,
+      "atol": 1e-12
+    },
+    {
+      "source": "python/miti_scoring/output/campaign_20260910_luna/exhibits/all/miti_means_by_treatment.csv",
+      "source_sha256": "cb04c9db8953af96b924b6a05b4bbd7b8dffbf1453498ad8ba8a6bb0bd0162f4",
+      "numeric_values_match": true,
+      "rtol": 1e-12,
+      "atol": 1e-12
+    },
+    {
+      "source": "python/miti_scoring/output/campaign_20260910_luna/exhibits/all/miti_global_means_by_treatment.csv",
+      "source_sha256": "24db7aaa58a0d2f08c39464811d7aeb8d18142fa28bf779a37e91fa454351b22",
+      "numeric_values_match": true,
+      "rtol": 1e-12,
+      "atol": 1e-12
+    },
+    {
+      "source": "python/miti_scoring/output/campaign_20260910_luna/exhibits/all/robustness_summary_table_handcoded.csv",
+      "source_sha256": "2af43ac6d711648b1d92c9822ef3633957d825eaf33efa2e3f6ea9b44e731a11",
+      "numeric_values_match": true,
+      "rtol": 1e-12,
+      "atol": 1e-12
+    },
+    {
+      "source": "python/miti_scoring/output/campaign_20260910_luna/exhibits/all/validation_global_scores_results.csv",
+      "source_sha256": "468e18e45a0af28e81dde6502e7a02e9b16be70a94f845fe1bbeef65e5b6d6cc",
+      "numeric_values_match": true,
+      "rtol": 1e-12,
+      "atol": 1e-12
+    }
+  ],
+  "source_stability_table_exact_match": true,
+  "human_validation_unique_sessions": 14
+}
