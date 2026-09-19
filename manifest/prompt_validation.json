@@ -1,9 +1,9 @@
 {
-  "validated_at_unix": 1789692991,
-  "manuscript_sha256": "6bd9383ea853c54419e664725e76fd9fe48981f0e1bae8ddf37d8ac6caf07e92",
+  "validated_at_unix": 1789840554,
+  "manuscript_sha256": "2553dd0d740830a9155b8b214b2b02c4c412ae0f751565cb23a9e035e7def131",
   "parameters_sha256": "da0c0786f33ae43596aad2a15a5417a1a2410e766edd22ca095bb9a8b0f0e53f",
   "text_normalization": "Remove alltt Copy/linebreak wrappers and collapse whitespace only; preserve literal punctuation and ---END---.",
-  "blocks_checked": 69,
+  "blocks_checked": 68,
   "arms": 4,
   "checks_passed": true,
   "blocks": [
@@ -530,15 +530,8 @@
     {
       "arm": "TIME_USE",
       "section": "D.4",
-      "field": "termination_message",
-      "sha256": "cc76ef4eb5336a8b94a65880941dfdf2a82e318295c11efec25e29b6c1d03757"
-    },
-    {
-      "arm": "TIME_USE",
-      "section": "D.4",
       "field": "end_of_interview_message",
       "sha256": "d0d2bbeb690fb11763a68c5149f7e2264709b5b8df1ba4098efd50e797e165b5"
     }
-  ],
-  "routing_metadata_preserved": true
+  ]
 }

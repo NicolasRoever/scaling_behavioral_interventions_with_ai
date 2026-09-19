@@ -14,17 +14,19 @@ sequences from the manually specified appendix stages; wording similarity and
 word clouds from aggregate inputs; and the
 30-minute table from saved Boolean chat-level indicators.
 
-MITI tables and figures use only the explicitly named September 2026 campaign.
-All experimental scoring runs are filtered to the cleaned survey before any
-robustness/stability calculations: 2,048 treated participants and 671 controls.
-The runner reads treatment assignments directly from the released
-`clean_merged_with_scrshots.dta` and checks complete eligible-session coverage.
-`reproduced/audit/survey_sample_audit.json` records included/excluded counts.
-The validation benchmark contains 14 sessions and 56 dimension-level ratings.
-Five stochastic runs are additional ratings of those same sessions, not 70
-independent interviews. Stability ranges are empirical score percentiles,
-not confidence intervals for a mean. The existing behavioral-count validation
-panel is reproduced from its saved aggregate statistics.
+MITI study-sample exhibits use the September 10 experimental campaign and
+filter every run to the cleaned survey: 2,048 treated participants and 671
+controls. Treatment assignments come directly from the released survey, and
+each run must cover the complete eligible sample. Counts are recorded in
+`reproduced/audit/survey_sample_audit.json`.
+
+Tables C.1/C.2 instead use the corrected September 18 validation via
+`miti_validation.py`: 504 scores from 14 interviews, four dimensions and nine
+conditions. Luna uses low reasoning; GPT-5.4 and GPT-5.5 use none. Five stochastic
+runs repeat the same 14 interviews; they are not 70 independent interviews.
+The behavioral-count panel remains the saved historical summary. The old
+September 10 human-validation scores and unused inputs have been removed.
+See the package's `MITI_REPLICATION.md` for exact inputs and audit outputs.
 
 Actual transcript extraction, labeling, model fitting and LLM scoring require
 the withheld data; see `../private/README.md`.

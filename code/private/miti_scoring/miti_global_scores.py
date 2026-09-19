@@ -1,14 +1,16 @@
 raise RuntimeError("Restricted-input source only. Raw interview data are not distributed. API execution is disabled in this $0-API replication package; use code/python/run_public.py for saved-result reproduction.")
 # Prompt and coding instructions for the MITI 4.2.1 Global Scores.
 
-MAIN_PROMPT = """
+_CHANGE_GOAL_PASSAGE = """
+# Change Goal
+The session's change goal is to help the client reduce their social media time.
+""".strip()
+
+_MAIN_PROMPT_TEMPLATE = """
 # Task Overview
 You are an expert in evaluating motivational interviewing (MI) sessions. Your task is to rate a clinical session transcript based on a global component--{component_name}--from the Motivational Interviewing Treatment Integrity (MITI) 4.2.1 coding system.
 
-# Change Goal
-The session's change goal is to help the client reduce their social media time.
-
-# Coding Manual: {component_name}
+{change_goal_passage}# Coding Manual: {component_name}
 {coding_instructions}
 
 # Session Transcript
@@ -23,6 +25,12 @@ The session's change goal is to help the client reduce their social media time.
 # Output Format
 {{"score": <integer from 1 to 5>, "justification": "<1-2 sentence justification>"}}
 """.strip()
+
+# Validation interviews cover different topics, so omit the whole passage.
+VALIDATION_PROMPT = _MAIN_PROMPT_TEMPLATE.replace("{change_goal_passage}", "")
+MAIN_PROMPT = _MAIN_PROMPT_TEMPLATE.replace(
+    "{change_goal_passage}", _CHANGE_GOAL_PASSAGE + "\n\n"
+)
 
 _change_talk = """
 This scale is intended to measure the extent to which the clinician actively encourages the client's own language in favor of the change goal, and confidence for making that change. To achieve higher ratings on the Cultivating Change Talk scale, the change goal must be obvious in the session and the conversation must be largely focused on change, with the clinician actively cultivating change talk when possible. Low scores on this scale occur when the clinician is inattentive to the client's language about change, either by failing to recognize and follow up on it, or by prioritizing other aspects of the interaction (such as history-taking, assessment or non-directive listening). Interactions low in Cultivating Change Talk may still be highly empathic and clinically appropriate.
@@ -177,6 +185,5 @@ MITI_GUIDE = {
     "Partnership": _partnership,
     "Empathy": _empathy,
 }
-
 
 

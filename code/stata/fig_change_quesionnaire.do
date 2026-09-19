@@ -21,21 +21,21 @@ eststo clear
 foreach y of local mechanisms {
     reg `y' i.T $controls, r
     eststo `y'
-    
+
     * Add control mean
     qui summ `y' if control
     estadd scalar controlmean = r(mean)
-    
+
     * Add controls indicator
     estadd local controls "Yes"
-	
+
 	*Add tests
 	test 1.T = 2.T
     estadd scalar p_12 = r(p)
-	
+
 	test 2.T = 3.T
     estadd scalar p_23 = r(p)
-	
+
 	test 1.T = 3.T
     estadd scalar p_13 = r(p)
 }
@@ -45,12 +45,12 @@ foreach y of local mechanisms {
 *-------------------------------
 esttab * , se b(3) keep(*T) nobase noomitted label starlevel(* 0.1 ** 0.05 *** 0.01)
 
-esttab `mechanisms' ///
 
-	   
-	   
+
+
+
 *-------------------------------
-* 3. Coefplot 
+* 3. Coefplot
 *-------------------------------
 
 eststo clear
@@ -82,12 +82,12 @@ coefplot ///
 		model_CQ_want_change_mean = "Want change" ///
 		model_CQ_could_change_mean="Could change" ///
 		model_CQ_good_reasons_mean = "Good reasons" ///
-		model_CQ_have_to_reduce_mean = "Have to reduce" /// 
+		model_CQ_have_to_reduce_mean = "Have to reduce" ///
 		model_CQ_intend_to_reduce_mean = "Intent to reduce" ///
 		model_CQ_trying_to_reduce_mean = "Try to reduce", ///
 		     wrap(10) labsize(medsmall) ///
     ) ///
-    xtitle("Treatment effect (in standard deviations)") ///
+    xtitle("Treatment effect (in raw scale points)") ///
     xmtick(##2)  ///
 	ysize(6) ///
 	xsize(9) ///
@@ -101,8 +101,8 @@ coefplot ///
         region(lcolor(black) lwidth(0.1) fcolor(white)) ///
         size(small) ///
     ) ///
-	 xline(0, lpattern(dash) lcolor(gs8) lwidth(0.4) noextend) 
-		
+	 xline(0, lpattern(dash) lcolor(gs8) lwidth(0.4) noextend)
+
 
 graph export "${overleaf}/figures/fig_change_questionnaire.pdf", replace
 

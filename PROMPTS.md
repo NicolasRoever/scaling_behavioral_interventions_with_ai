@@ -2,9 +2,9 @@
 
 `code/prompts/parameters.py` contains the interview prompts in Appendix D.1--D.4
 of the inspected `revision.tex`. The appendix is the authority for their text.
-All **69 blocks** were checked: four global prompts, four fixed opening
-messages, 59 turn-specific prompts, and the two control-arm closing/navigation
-messages printed in the appendix.
+All **68 blocks** were checked: four global prompts, four fixed opening
+messages, 59 turn-specific prompts, and the control-arm end-of-interview
+message printed in the current appendix.
 
 | Appendix | Arm | Configuration key | Generated turns |
 |---|---|---|---:|
@@ -23,7 +23,9 @@ retained, including their quote/dash notation and the `---END---` sentinel.
 The existing routing keys, history windows, global-prompt overrides, fallback
 settings and other engine metadata for the four retained arms are preserved.
 Those metadata are not inferred from the appendix's prose. The control
-termination and end-of-interview messages are taken directly from D.4.
+end-of-interview message is taken directly from D.4. The existing control
+`termination_message` is retained as routing metadata; the current appendix
+no longer prints it, so it is excluded from the 68 verified appendix blocks.
 
 The file contains configuration data only. Its API-key value remains empty;
 no client is loaded and no interviews or model requests are run. Updating the
@@ -48,6 +50,7 @@ the manuscript/configuration hashes, block hashes and successful checks.
 | Purpose | Source |
 |---|---|
 | Experimental interviews | `code/prompts/parameters.py` |
+| MITI corrected validation preparation | `code/private/miti_scoring/miti_benmchmarking/prepare_validation_batch.py` |
 | MITI global scoring | `code/private/miti_scoring/miti_global_scores.py` |
 | MITI behavioral counts | `code/private/miti_scoring/miti_behavioral_counts.py` |
 | MITI model/replicate/ablation orchestration | `code/private/miti_scoring/run_campaign.py` |
@@ -60,3 +63,10 @@ the manuscript/configuration hashes, block hashes and successful checks.
 Only reusable instructions are distributed. Per-interview rendered prompts,
 payloads, model explanations and transcripts remain withheld. No restricted
 scoring workflow is called by the public runners.
+
+MITI global-scoring definitions now distinguish `MAIN_PROMPT` (the study's
+social-media goal) from `VALIDATION_PROMPT` (topic-neutral, with the Change Goal
+passage removed). The corrected September 18 validation uses the latter.
+This change does not rescore the frozen experimental campaign. Its conservative
+sentence ablation and model reasoning settings are documented in
+`MITI_REPLICATION.md`.

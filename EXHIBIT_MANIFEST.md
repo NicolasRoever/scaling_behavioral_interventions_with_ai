@@ -51,7 +51,7 @@ Extracted from active `revision.tex` content, excluding `%` comments and `commen
 | `figures/fig_scrtime_validation_binned_scatter.pdf` | `code/stata/fig_verify_scrtime.do` | Current public survey data |
 | `figures/fig_llm_exp_demand.pdf` | `code/stata/fig_expdemand.do` | Current public survey data |
 | `figures/fig_prior_posterior_exactly_30_panel.pdf` | `code/stata/fig_posterior_exactly_30_by_arm.do` | Current public survey data |
-| `tables/mi_validation_results_table.tex` | `code/python/miti_tables.py` | Saved numeric/categorical results; run via `code/python/run_public.py` |
-| `tables/robustness_handcoded_latex_table.tex` | `code/python/miti_tables.py` | Saved numeric/categorical results; run via `code/python/run_public.py` |
+| `tables/mi_validation_results_table.tex` | `code/python/miti_validation.py` | Saved numeric/categorical results; run via `code/python/run_public.py` |
+| `tables/robustness_handcoded_latex_table.tex` | `code/python/miti_validation.py` | Saved numeric/categorical results; run via `code/python/run_public.py` |
 | `figures/score_stability_violin_plot.pdf` | `code/python/miti_tables.py` | Saved numeric/categorical results; run via `code/python/run_public.py` |
 | `tables/score_stability_latex_table.tex` | `code/python/miti_tables.py` | Saved numeric/categorical results; run via `code/python/run_public.py` |

@@ -1,5 +1,5 @@
 {
-  "recorded_at_unix": 1789692991,
+  "recorded_at_unix": 1789840758,
   "source_files": [
     {
       "package_file": "code/stata/fig_baseline_sm_use.do",
@@ -55,7 +55,7 @@
     {
       "package_file": "code/stata/stats_quoted_in_text.do",
       "source": "stata/stats_quoted_in_text.do",
-      "source_sha256": "590db7d306fd2d35f7b194d45ec6b9b00407b934be1ba19d1719669f703735ed",
+      "source_sha256": "0095adb6cf005b50384f965230305710c871b3a58cea83ba3d0046d710b93e32",
       "package_adjustment": "Join released ID/category-only demand classifications onto active cleaned survey data; do not rely on the original full private classification merge."
     },
     {
@@ -127,12 +127,14 @@
     {
       "package_file": "code/stata/tab_treatment_effects_closetoideal_followup.do",
       "source": "stata/tab_treatment_effects_closetoideal_followup.do",
-      "source_sha256": "d22cd1002ba4f68058230ca6164eb278afc7db4149508cf0a20037c2a2bd8ab6"
+      "source_sha256": "d22cd1002ba4f68058230ca6164eb278afc7db4149508cf0a20037c2a2bd8ab6",
+      "package_adjustment": "Correct the fourth outcome label to Within 30 min, matching its absolute-gap definition and the current manuscript; calculations unchanged."
     },
     {
       "package_file": "code/stata/fig_change_quesionnaire.do",
       "source": "stata/fig_change_quesionnaire.do",
-      "source_sha256": "60f15c4735ef12934351591c1ccde350804591a35fc8794c5cf3852822688591"
+      "source_sha256": "755ac649aa3443f95ffe39b49b3763daf2f9c150762588d3c2eefe92ce585b5d",
+      "package_adjustment": "Retain raw-scale-points axis correction; omit tab_sm_change.tex, which is not used by the manuscript."
     },
     {
       "package_file": "code/stata/tab_main_treatment_effect_duration_control.do",
@@ -229,18 +231,18 @@
     },
     {
       "package_file": "code/private/miti_scoring/miti_behavioral_counts.py",
-      "source": "python/miti_scoring/miti_behavioral_counts.py",
+      "source": "python/miti_scoring/archive/miti_behavioral_counts.py",
       "source_sha256": "07d7952b59ec7ac00f83e0985e14cb1150f4cc75d094d43c5b71b0da854eb664"
     },
     {
       "package_file": "code/private/miti_scoring/run_campaign.py",
       "source": "python/miti_scoring/run_campaign.py",
-      "source_sha256": "9b5bc7b3992de3dbd90ad78222d60008261827c707713a5dd049e9d107f7666f"
+      "source_sha256": "e24a64c10886eaa6706f23bcd1bd12830123a81ed515c430b0ec6729acaf0d46"
     },
     {
       "package_file": "code/private/miti_scoring/miti_global_scores.py",
       "source": "python/miti_scoring/miti_global_scores.py",
-      "source_sha256": "aae2d5c4b669df48401fc0d5e6eb7a76f54c8dd00247f11d48aefa7f3fa34dd9"
+      "source_sha256": "fffdb5c3db54d382312a1dc04e8007fec54f44912548b613f9ba6d7334898ab2"
     },
     {
       "package_file": "code/python/bertopic_plot.py",
@@ -257,14 +259,56 @@
     {
       "package_file": "code/python/miti_tables.py",
       "source": "python/miti_scoring/build_campaign_exhibits.py",
-      "source_sha256": "9b3ee5b15691764f683a0e0f4b0f3616e3dcfb22e8a329bce9ce07213d548bd7",
-      "package_adjustment": "Public functions use the released cleaned survey to filter every experimental scoring run before computing exhibits. Reuse saved numeric scores only; omit API execution, IRR and other exhibits not used in the manuscript."
+      "source_sha256": "6d7b1437b0e29544ab30d41b19267c969d7c6c1d35d75b3ee60b39f0a26e4fca",
+      "package_adjustment": "Offline experimental exhibits with exactly 2,048 eligible treated participants. Human-validation tables are built separately from the corrected September 18 benchmark. Shared renderer supports the revised panel headings. Use manuscript treatment names and a two-column all-arm legend."
     },
     {
       "package_file": "code/python/run_public.py",
       "source": "python/miti_scoring/build_campaign_exhibits.py",
-      "source_sha256": "9b3ee5b15691764f683a0e0f4b0f3616e3dcfb22e8a329bce9ce07213d548bd7",
-      "package_adjustment": "Public functions use the released cleaned survey to filter every experimental scoring run before computing exhibits. Reuse saved numeric scores only; omit API execution, IRR and other exhibits not used in the manuscript."
+      "source_sha256": "6d7b1437b0e29544ab30d41b19267c969d7c6c1d35d75b3ee60b39f0a26e4fca",
+      "package_adjustment": "Offline experimental exhibits with exactly 2,048 eligible treated participants. Human-validation tables are built separately from the corrected September 18 benchmark. Shared renderer supports the revised panel headings."
+    },
+    {
+      "package_file": "code/private/miti_scoring/miti_benmchmarking/validation_transcripts.py",
+      "source": "python/miti_scoring/miti_benmchmarking/validation_transcripts.py",
+      "source_sha256": "7a895fdc509114e9c9047ef77c42a293920e7064b9eac40b95c7984190190102",
+      "package_adjustment": "Restricted-input method reference with an execution guard. No private inputs or credentials distributed; public reproduction uses anonymous numeric scores."
+    },
+    {
+      "package_file": "code/private/miti_scoring/miti_benmchmarking/prepare_validation_batch.py",
+      "source": "python/miti_scoring/miti_benmchmarking/prepare_validation_batch.py",
+      "source_sha256": "248769a29e3572b6c970988d0c713280ab756c437087f7b93a40201a5137f168",
+      "package_adjustment": "Restricted-input method reference with an execution guard. No private inputs or credentials distributed; public reproduction uses anonymous numeric scores."
+    },
+    {
+      "package_file": "code/private/miti_scoring/miti_benmchmarking/run_validation_batch.py",
+      "source": "python/miti_scoring/miti_benmchmarking/run_validation_batch.py",
+      "source_sha256": "204ffa4a4538f57fcaad943fa761a703c4277ee7acc9f0c815a9c2bfdf9cb24f",
+      "package_adjustment": "Restricted-input method reference with an execution guard. No private inputs or credentials distributed; public reproduction uses anonymous numeric scores."
+    },
+    {
+      "package_file": "code/private/miti_scoring/miti_benmchmarking/build_benchmark_tables.py",
+      "source": "python/miti_scoring/miti_benmchmarking/build_benchmark_tables.py",
+      "source_sha256": "7973120de36da36c39773bb032f2abd2ef2ed025b6bbea19d9465128ef4226e7",
+      "package_adjustment": "Restricted-input method reference with an execution guard. No private inputs or credentials distributed; public reproduction uses anonymous numeric scores."
+    },
+    {
+      "package_file": "code/python/miti_validation.py",
+      "source": "python/miti_scoring/miti_benmchmarking/build_benchmark_tables.py",
+      "source_sha256": "7973120de36da36c39773bb032f2abd2ef2ed025b6bbea19d9465128ef4226e7",
+      "package_adjustment": "Reuse the original condition definitions, statistics and table rendering; replace private raw-response joining with the checked deidentified numeric input."
+    },
+    {
+      "package_file": "code/python/miti_validation.py",
+      "source": "python/miti_scoring/miti_benmchmarking/prepare_validation_batch.py",
+      "source_sha256": "248769a29e3572b6c970988d0c713280ab756c437087f7b93a40201a5137f168",
+      "package_adjustment": "Reuse the original condition definitions, statistics and table rendering; replace private raw-response joining with the checked deidentified numeric input."
+    },
+    {
+      "package_file": "code/python/cdf_scores.py",
+      "source": "python/fig_cdf_interview_scores.ipynb",
+      "source_sha256": "b944adeae414d55f0c867d15786f1e22e26d5a22597d22de294a56f0560f9d7b",
+      "package_adjustment": "Retain source observations and labels; assign colors explicitly by numeric T to avoid unused-category/reversed-legend errors, and share one plotting function. Notebook outputs are not distributed."
     }
   ],
   "submission_validation_sources": [
@@ -279,12 +323,19 @@
       "retained": "Anonymous pair keys, dimension, numeric human/model scores only"
     }
   ],
-  "submission_archival_adaptations": "code/reproduce_submission.py; see SUBMISSION_TABLE_AUDIT.md. No default statistical specifications were altered.",
+  "submission_archival_adaptations": "code/reproduce_submission.py uses the three frozen deidentified inputs in manifest/submission_survey_snapshot.json and the specifications documented in SUBMISSION_TABLE_AUDIT.md.",
   "interview_prompts": {
     "source": "revision.tex, Appendix D.1--D.4",
-    "source_sha256": "6bd9383ea853c54419e664725e76fd9fe48981f0e1bae8ddf37d8ac6caf07e92",
+    "source_sha256": "2553dd0d740830a9155b8b214b2b02c4c412ae0f751565cb23a9e035e7def131",
     "package_file": "code/prompts/parameters.py",
     "validation": "manifest/prompt_validation.json",
-    "blocks": 69
-  }
+    "blocks": 68
+  },
+  "package_local_changes": [
+    {
+      "package_file": "code/python/cdf_scores.py",
+      "description": "Preserved the user's Confidence Score axis label and made treatment colors/legend handles explicit for correct CDF identification.",
+      "sha256": "2de109a39cc2b3b85d5b94f90acd6837750bd45dc152fa29ddd885ce3f5e2151"
+    }
+  ]
 }

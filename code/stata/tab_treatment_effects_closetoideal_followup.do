@@ -55,7 +55,7 @@ foreach y in close_to_ideal_5 close_to_ideal_10 close_to_ideal_20 close_to_ideal
 
 esttab * , se b(3) starlevel(* 0.1 ** 0.05 *** 0.01) keep(*T) label nobase noomitted
 
-esttab * using "${overleaf}/tables/tab_treatment_effects_closetoideal_followup.tex",  se b(3) nobase noomitted keep(*T) label starlevels(* 0.10 ** 0.05 *** 0.01) mtitles("\makecell{Within \\ 5 min}" "\makecell{Within \\ 10 min}" "\makecell{Within \\ 20 min}" "\makecell{Below \\ 30 min}") coeflabel(1.T "Change Talk (a)" 2.T "Decisional Balance (b)" 3.T "Direct Persuasion (c)") stats(N r2 controlmean controls p_amb_cha p_cha_per p_amb_per, fmt(%9.0fc %9.3f %9.3f %9.3f %9.3f %9.3f %9.3f) labels("Observations" "R\textsuperscript{2}" "Control group mean" "Controls" "p-value: a=b" "p-value: a=c" "p-value: b=c")) prehead("&\multicolumn{@M}{c}{Actual time is close to ideal social media time (0/1)}\\\cmidrule(lr){2-@span}") booktabs fragment replace
+esttab * using "${overleaf}/tables/tab_treatment_effects_closetoideal_followup.tex",  se b(3) nobase noomitted keep(*T) label starlevels(* 0.10 ** 0.05 *** 0.01) mtitles("\makecell{Within \\ 5 min}" "\makecell{Within \\ 10 min}" "\makecell{Within \\ 20 min}" "\makecell{Within \\ 30 min}") coeflabel(1.T "Change Talk (a)" 2.T "Decisional Balance (b)" 3.T "Direct Persuasion (c)") stats(N r2 controlmean controls p_amb_cha p_cha_per p_amb_per, fmt(%9.0fc %9.3f %9.3f %9.3f %9.3f %9.3f %9.3f) labels("Observations" "R\textsuperscript{2}" "Control group mean" "Controls" "p-value: a=b" "p-value: a=c" "p-value: b=c")) prehead("&\multicolumn{@M}{c}{Actual time is close to ideal social media time (0/1)}\\\cmidrule(lr){2-@span}") booktabs fragment replace
 
 
 

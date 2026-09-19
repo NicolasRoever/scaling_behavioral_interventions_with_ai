@@ -27,7 +27,7 @@
   },
   {
     "file": "data/raw/main_socialmedia/follow_up_raw.dta",
-    "rows": 2176,
+    "rows": 2351,
     "columns": 90,
     "removed_or_blanked": [
       "screenshot_upload_1_id",
@@ -79,7 +79,7 @@
   },
   {
     "file": "data/processed/main_social_media/follow_up_clean.dta",
-    "rows": 2132,
+    "rows": 2304,
     "columns": 57,
     "removed_or_blanked": [
       "screenshot_upload_1_id",
@@ -142,7 +142,7 @@
   {
     "file": "data/processed/main_social_media/clean_merged_with_scrshots.dta",
     "rows": 2719,
-    "columns": 350,
+    "columns": 347,
     "removed_or_blanked": [
       "w2_screenshot_upload_1_id",
       "w2_screenshot_upload_1_name",
@@ -184,8 +184,104 @@
   },
   {
     "file": "data/processed/main_social_media/clean_scr_data.dta",
-    "rows": 582,
-    "columns": 40,
+    "rows": 465,
+    "columns": 37,
     "removed_or_blanked": []
+  },
+  {
+    "file": "data/archival/original_submission/clean_data.dta",
+    "rows": 2719,
+    "columns": 237,
+    "removed_or_blanked": [
+      "meta_data_browser (blanked)",
+      "meta_data_version (blanked)",
+      "meta_data_operating_system (blanked)",
+      "meta_data_resolution (blanked)",
+      "writing (blanked)",
+      "election_uk_14_text (blanked)",
+      "experimenterdemand (blanked)",
+      "feedback (blanked)",
+      "study_id_raw (blanked)",
+      "keystrokes (blanked)",
+      "typing_time (blanked)",
+      "interview_topic (blanked)"
+    ],
+    "unchanged_previously_deidentified_release": true
+  },
+  {
+    "file": "data/archival/original_submission/clean_merged.dta",
+    "rows": 2719,
+    "columns": 301,
+    "removed_or_blanked": [
+      "w2_screenshot_upload_1_id",
+      "w2_screenshot_upload_1_name",
+      "w2_screenshot_upload_1_size",
+      "w2_screenshot_upload_1_type",
+      "w2_scr_upload_2_id",
+      "w2_scr_upload_2_name",
+      "w2_scr_upload_2_size",
+      "w2_scr_upload_2_type",
+      "w2_q228_id",
+      "w2_q228_name",
+      "w2_q228_size",
+      "w2_q228_type",
+      "w2_feedback (blanked)",
+      "w2_study_id_raw (blanked)",
+      "w2_session_id (blanked)",
+      "w2_scrshot_dates_3 (blanked)",
+      "w2_scrshot_dates_2 (blanked)",
+      "w2_scrshot_dates_1 (blanked)",
+      "meta_data_browser (blanked)",
+      "meta_data_version (blanked)",
+      "meta_data_operating_system (blanked)",
+      "meta_data_resolution (blanked)",
+      "writing (blanked)",
+      "election_uk_14_text (blanked)",
+      "experimenterdemand (blanked)",
+      "feedback (blanked)",
+      "study_id_raw (blanked)",
+      "keystrokes (blanked)",
+      "typing_time (blanked)",
+      "interview_topic (blanked)"
+    ],
+    "unchanged_previously_deidentified_release": true
+  },
+  {
+    "file": "data/archival/original_submission/clean_merged_with_scrshots.dta",
+    "rows": 2719,
+    "columns": 350,
+    "removed_or_blanked": [
+      "w2_screenshot_upload_1_id",
+      "w2_screenshot_upload_1_name",
+      "w2_screenshot_upload_1_size",
+      "w2_screenshot_upload_1_type",
+      "w2_scr_upload_2_id",
+      "w2_scr_upload_2_name",
+      "w2_scr_upload_2_size",
+      "w2_scr_upload_2_type",
+      "w2_q228_id",
+      "w2_q228_name",
+      "w2_q228_size",
+      "w2_q228_type",
+      "w2_feedback (blanked)",
+      "w2_study_id_raw (blanked)",
+      "w2_session_id (blanked)",
+      "w2_scrshot_dates_3 (blanked)",
+      "w2_scrshot_dates_2 (blanked)",
+      "w2_scrshot_dates_1 (blanked)",
+      "meta_data_browser (blanked)",
+      "meta_data_version (blanked)",
+      "meta_data_operating_system (blanked)",
+      "meta_data_resolution (blanked)",
+      "writing (blanked)",
+      "election_uk_14_text (blanked)",
+      "experimenterdemand (blanked)",
+      "feedback (blanked)",
+      "study_id_raw (blanked)",
+      "keystrokes (blanked)",
+      "typing_time (blanked)",
+      "interview_topic (blanked)"
+    ],
+    "unchanged_previously_deidentified_release": true
   }
 ]

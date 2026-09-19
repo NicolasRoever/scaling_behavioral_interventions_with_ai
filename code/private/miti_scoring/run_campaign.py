@@ -1,10 +1,10 @@
+raise RuntimeError("Restricted-input source only. Raw interview data are not distributed. API execution is disabled in this $0-API replication package; use code/python/run_public.py for saved-result reproduction.")
 """Versioned MITI global-scoring campaigns. See README_campaign.md for commands.
 
 Inputs, prompts, settings and code are frozen before scoring. Each run has an
 append-only attempt journal and an atomically replaced, one-row-per-key CSV.
 No successful response is sampled again on resume. No automatic model fallback.
 """
-raise RuntimeError("Restricted-input source only. Raw interview data are not distributed. API execution is disabled in this $0-API replication package; use code/python/run_public.py for saved-result reproduction.")
 
 import argparse
 import asyncio
@@ -43,7 +43,8 @@ def read_json(path):
     return json.loads(path.read_text())
 
 
-def build_sessions(chats_path, transcript_path, human_path, subset_path, prefix):
+def build_sessions(chats_path, transcript_path, human_path, subset_path, prefix, corrections_path):
+    from miti_benmchmarking.validation_transcripts import load_validation_transcripts
     chats = pd.read_csv(chats_path, low_memory=False).sort_values(
         ["session_id", "order"], kind="stable")
     if chats[["session_id", "order"]].isna().any().any():
@@ -59,21 +60,13 @@ def build_sessions(chats_path, transcript_path, human_path, subset_path, prefix)
             for row in group.itertuples())
         sessions.append({"session_id": str(identifier), "transcript": transcript,
                          "dataset": "control" if transcript.startswith(prefix) else "treated"})
-    scripts = pd.read_csv(transcript_path)
     human = pd.read_csv(human_path)
     subset = set(pd.read_csv(subset_path, low_memory=False).source_pdf)
     if len(subset) != 14 or human.source_pdf.nunique() != 20:
         raise ValueError("Human validation sample changed")
-    # Preserve the extracted CSV row order used by the existing validation runner.
-    for identifier, group in scripts.groupby("source_pdf", sort=True):
-        if identifier not in set(human.source_pdf):
-            continue
-        if group.Content.isna().any():
-            raise ValueError("Missing human-validation content")
-        labels = {"P": "Client:", "C": "Clinician:"}
-        transcript = "\n".join(
-            f"{labels.get(row.P_or_C, '')} {row.Content}"
-            for row in group.itertuples())
+    validation, _ = load_validation_transcripts(transcript_path, set(human.source_pdf), corrections_path)
+    for session in validation:
+        identifier, transcript = session["source_pdf"], session["transcript"]
         sessions.append({"session_id": identifier, "source_pdf": identifier,
                          "dataset": "validation20", "transcript": transcript})
         if identifier in subset:
@@ -97,15 +90,16 @@ def campaign_matrix(benchmark_model, comparison_models):
 
 
 def initialize(root, output, chats, survey, benchmark_model, comparison_models):
-    from miti_global_scores import MAIN_PROMPT, MITI_GUIDE
+    from miti_global_scores import MAIN_PROMPT, MITI_GUIDE, VALIDATION_PROMPT
     from robustness_run_scoring import CONTROL_PREFIX, ABLATED_LINE
     files = {"chats": chats, "survey": survey,
              "transcripts": root / "output/validation_bheavioral_scores_extracted.csv",
              "human": root / "output/validation_global_scores_extracted.csv",
              "subset": root / "output/behavioral_counts_validation_2025-11-25.csv",
+             "transcript_corrections": root / "miti_benmchmarking/validation_transcript_corrections.json",
              "behavioral_results": root / "output/behavioral_scores_validation_results.csv"}
     sessions = build_sessions(files["chats"], files["transcripts"], files["human"],
-                              files["subset"], CONTROL_PREFIX)
+                              files["subset"], CONTROL_PREFIX, files["transcript_corrections"])
     counts = {dataset: sum(s["dataset"] == dataset for s in sessions)
               for dataset in ["treated", "control", "validation14", "validation20"]}
     if counts != dict(treated=2195, control=737, validation14=14, validation20=20):
@@ -119,7 +113,10 @@ def initialize(root, output, chats, survey, benchmark_model, comparison_models):
     if MAIN_PROMPT.count(ABLATED_LINE) != 1:
         raise ValueError("Expected exactly one conservative-scoring instruction")
     prompts = {"standard": MAIN_PROMPT,
-               "ablation": MAIN_PROMPT.replace(ABLATED_LINE, ""), "guide": MITI_GUIDE}
+               "ablation": MAIN_PROMPT.replace(ABLATED_LINE, ""),
+               "validation": {"standard": VALIDATION_PROMPT,
+                              "ablation": VALIDATION_PROMPT.replace(ABLATED_LINE, "")},
+               "guide": MITI_GUIDE}
     output.mkdir(parents=True, exist_ok=False)
     (output / "inputs").mkdir()
     (output / "code").mkdir()
@@ -127,7 +124,7 @@ def initialize(root, output, chats, survey, benchmark_model, comparison_models):
     atomic_json(output / "inputs/prompts.json", prompts)
     inputs = {name: {"source": str(path), "sha256": digest(path.read_bytes())}
               for name, path in files.items()}
-    for name in ["human", "subset", "survey", "behavioral_results"]:
+    for name in ["human", "subset", "survey", "behavioral_results", "transcript_corrections"]:
         path = files[name]
         destination = output / "inputs" / (name + path.suffix)
         shutil.copy2(path, destination)
@@ -136,9 +133,14 @@ def initialize(root, output, chats, survey, benchmark_model, comparison_models):
         path = output / "inputs" / (name + ".json")
         inputs[name] = {"snapshot": str(path.relative_to(output)), "sha256": digest(path.read_bytes())}
     code_hashes = {}
-    for path in sorted(root.glob("*.py")):
-        shutil.copy2(path, output / "code" / path.name)
-        code_hashes[path.name] = digest(path.read_bytes())
+    code_paths = sorted(root.glob("*.py")) + [root / "miti_benmchmarking" / name
+                  for name in ["__init__.py", "validation_transcripts.py"]]
+    for path in code_paths:
+        relative = path.relative_to(root)
+        destination = output / "code" / relative
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(path, destination)
+        code_hashes[str(relative)] = digest(path.read_bytes())
     now = int(time.time())
     stamp = datetime.fromtimestamp(now, timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     campaign_id = f"{stamp}_{uuid.uuid4().hex[:8]}"
@@ -150,7 +152,7 @@ def initialize(root, output, chats, survey, benchmark_model, comparison_models):
                    expected_rows=counts[run["dataset"]] * len(MITI_GUIDE))
     manifest = dict(schema_version=1, campaign_id=campaign_id, created_at_unix=now,
                     benchmark_model=benchmark_model, comparison_models=comparison_models,
-                    transcript_note="Historical construction preserved: empty raw content becomes literal nan; extracted validation CSV order preserved.",
+                    transcript_note="Study construction preserved, including literal nan. Validation uses corrected P/I=Clinician and C=Client roles, source CSV order, and audited page continuations/annotation exclusions.",
                     dimensions=list(MITI_GUIDE), sample_counts=counts, inputs=inputs,
                     code_hashes=code_hashes, provider="openai", base_url="https://api.openai.com/v1",
                     settings={"reasoning": {"effort": "low"}, "text": {"verbosity": "medium"},
@@ -170,7 +172,9 @@ def verify_inputs(folder, manifest):
 
 
 def tasks_for_run(sessions, prompts, run):
-    template = prompts[run["prompt_variant"]]
+    # Older frozen campaigns retain their original prompts for reproducibility.
+    templates = prompts.get("validation", prompts) if run["dataset"].startswith("validation") else prompts
+    template = templates[run["prompt_variant"]]
     return [dict(session_id=s["session_id"], source_pdf=s.get("source_pdf", ""),
                  miti_dimension=dim,
                  prompt=template.format(transcript=s["transcript"], component_name=dim,

@@ -8,7 +8,7 @@ use "${data_folder}/processed/main_social_media/clean_merged.dta", clear
 
 
 **********************************************************************
-***************** Numbers quoted in section 2.1 ********************** 
+***************** Numbers quoted in section 2.1 **********************
 **********************************************************************
 
 *Income
@@ -24,7 +24,7 @@ display "Percentage of sample at least 1 hour on social media per day: " (r(N) /
 
 
 **********************************************************************
-***************** Numbers quoted in section 2.2.1********************** 
+***************** Numbers quoted in section 2.2.1**********************
 **********************************************************************
 
 *Interview Time
@@ -42,7 +42,7 @@ display "Percentage of sample revising their WTP upwards " (r(N) / _N) * 100
 
 
 **********************************************************************
-***************** Numbers quoted in section 2.2.2********************** 
+***************** Numbers quoted in section 2.2.2**********************
 **********************************************************************
 
 summarize followup_responded
@@ -59,7 +59,7 @@ display "Finished w2 out of total sample: `finished' / `total' (" ///
 
 
 **********************************************************************
-***************** Numbers quoted in section 3.1 ********************** 
+***************** Numbers quoted in section 3.1 **********************
 **********************************************************************
 
 
@@ -77,7 +77,7 @@ display as text "On average, participants spend `mean_str_av' minutes on social 
 
 
 *Ideal Time
-summarize baseline_ideal_social_min 
+summarize baseline_ideal_social_min
 local mean_val = r(mean)
 local mean_str_ideal : di %3.0f `mean_val'
 
@@ -124,11 +124,11 @@ display as text "Overall, `mean_tiktok' report being at least somewhat addicted 
 
 
 *Use Data Tiktok Insta YouTube
-summ baseline_tiktok_min_midpoint 
+summ baseline_tiktok_min_midpoint
 local mean_val = r(mean)
 local mean_tiktok: di %3.0f `mean_val'
 
-summ baseline_instagram_min_midpoint 
+summ baseline_instagram_min_midpoint
 local mean_val = r(mean)
 local mean_instagram: di %3.0f `mean_val'
 
@@ -142,16 +142,16 @@ display as text "Average usage of Tiktok is `mean_tiktok', if Instagram is `mean
 
 *Descriptive Interview Length
  summ time_interview_minutes
- 
- 
- 
+
+
+
 *People Who Use Audio
 count if audio_count > 0
 display "Percentage > 0: " (r(N) / _N) * 100
 
 
 **********************************************************************
-***************** Numbers quoted in section 4.4.1********************** 
+***************** Numbers quoted in section 4.4.1**********************
 **********************************************************************
 
 
@@ -195,7 +195,7 @@ display "Reduction of predicted posterior time is " %9.0f `perc_diff_change' " p
 
 
 **********************************************************************
-***************** Numbers quoted in section 4.4.2********************** 
+***************** Numbers quoted in section 4.4.2**********************
 **********************************************************************
 
 use "${data_folder}/processed/main_social_media/clean_merged_with_scrshots.dta", clear
@@ -220,7 +220,7 @@ display as text "Valid screenshots for both previous weeks were uploaded by " //
 
 
 *SUR Regression
-eststo clear 
+eststo clear
 qui eststo reg1: reg verified_prefered_time_w $controls_followup i.T
 qui eststo reg2: reg w2_actual_social_min_w $controls_followup i.T if !missing(verified_prefered_time_w)
 qui suest reg1 reg2,r
@@ -228,9 +228,9 @@ qui suest reg1 reg2,r
 test ([reg1_mean]1.T = [reg2_mean]1.T) ///
      ([reg1_mean]2.T = [reg2_mean]2.T) ///
      ([reg1_mean]3.T = [reg2_mean]3.T)
-	 
+
 local pval = r(p)
-display as text "The p-value of no differences in treatment effects is  " as result round(`pval',0.01)
+display as text "The p-value of no differences in treatment effects is  " as result `pval'
 
 * 1. Run pwcorr to get the coefficient and sample size
 pwcorr verified_prefered_time_w w2_actual_social_min_w
@@ -250,14 +250,14 @@ display "The correlation is " %4.3f `corr_val' " (p=" %5.4f `p_val' ")"
 
 
 **********************************************************************
-***************** Numbers quoted in section 4.4.5********************** 
+***************** Numbers quoted in section 4.4.5**********************
 **********************************************************************
-clear 
+clear
 
 do "${code_folder}/Helpers/load_expdemand_data.do" "${data_folder}"
 
 *Motivation
-eststo clear 
+eststo clear
 eststo reg1: reg z_motivation i.T $controls if inlist(llm_category_expdemand, 1,2) &!missing(llm_category_expdemand)
 eststo reg2: reg z_motivation i.T $controls if inlist(llm_category_expdemand, 3,4,5) &!missing(llm_category_expdemand)
 
@@ -266,12 +266,12 @@ qui suest reg1 reg2,r
 test ([reg1_mean]1.T = [reg2_mean]1.T) ///
      ([reg1_mean]2.T = [reg2_mean]2.T) ///
      ([reg1_mean]3.T = [reg2_mean]3.T)
-	 
+
 	local pval = r(p)
 display as text "The p-value of no differences in treatment effects on motivation between experimenter demand prone and not prone is  " as result round(`pval',0.01)
 
 *Cost-Benefits
-eststo clear 
+eststo clear
 eststo reg1: reg z_costbenefits i.T $controls if inlist(llm_category_expdemand, 1,2) &!missing(llm_category_expdemand)
 eststo reg2: reg z_costbenefits i.T $controls if inlist(llm_category_expdemand, 3,4,5) &!missing(llm_category_expdemand)
 
@@ -280,12 +280,13 @@ qui suest reg1 reg2,r
 test ([reg1_mean]1.T = [reg2_mean]1.T) ///
      ([reg1_mean]2.T = [reg2_mean]2.T) ///
      ([reg1_mean]3.T = [reg2_mean]3.T)
-	 
+
 	local pval = r(p)
 display as text "The p-value of no differences in treatment effects on cost-benefits between experimenter demand prone and not prone is  " as result round(`pval',0.01)
 
+
 **********************************************************************
-***************** Unused Variables ********************** 
+***************** Unused Variables **********************
 **********************************************************************
 //
 //

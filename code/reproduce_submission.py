@@ -5,6 +5,7 @@ in SUBMISSION_TABLE_AUDIT.md. It does not alter the corrected default scripts.
 No API requests are made. Requires Stata 17 and the public Python dependencies.
 """
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import shutil
@@ -29,8 +30,6 @@ def submission_script(name, text):
         # The published "control group mean" was the overall completion mean.
         text = replace_checked(text, 'summarize followup_finished if e(sample) & T == 0, meanonly',
                                'summarize followup_finished if e(sample), meanonly')
-    elif name == 'tab_treatment_effects_closetoideal_followup.do':
-        text = replace_checked(text, r'\makecell{Below \\ 30 min}', r'\makecell{Within \\ 30 min}')
     elif name == 'tab_heterogeneity_timeuse_by_basetime.do':
         # Published split used follow-up use, including missing values in high.
         text = replace_checked(text, 'summ baseline_actual_social_min, de', 'summ w2_actual_social_min, de')
@@ -54,8 +53,20 @@ def run_stata_tables(package, stata, output):
         work = Path(directory)
         code = work / 'code/stata'
         shutil.copytree(package / 'code/stata', code)
-        # Read shared inputs; no cleaning or mutation of these files is invoked.
-        (work / 'data').symlink_to(package / 'data', target_is_directory=True)
+        # The original submission predates the fully updated follow-up export.
+        # Use only its explicitly frozen deidentified analysis inputs.
+        snapshot = json.loads((package / 'manifest/submission_survey_snapshot.json').read_text())
+        data = work / 'data/processed/main_social_media'
+        data.mkdir(parents=True)
+        expected = {'clean_data.dta', 'clean_merged.dta', 'clean_merged_with_scrshots.dta'}
+        if {row['analysis_filename'] for row in snapshot['files']} != expected:
+            raise ValueError('Incomplete original-submission survey snapshot')
+        for row in snapshot['files']:
+            source = package / row['file']
+            if hashlib.sha256(source.read_bytes()).hexdigest() != row['sha256']:
+                raise ValueError('Original-submission input changed: ' + row['file'])
+            (data / row['analysis_filename']).symlink_to(source)
+
         (work / 'ado').mkdir()
         for generator in generators:
             name = Path(generator).name

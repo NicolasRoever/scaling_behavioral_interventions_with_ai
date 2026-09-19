@@ -1,6 +1,6 @@
 # Scaling Behavioral Interventions with AI: replication package
 
-This release uses the follow-up snapshot supplied on September 17, 2026. It
+This release uses the fully updated follow-up data supplied on September 19, 2026. It
 covers the revised manuscript's active exhibits and every table in the original
 submission (`ssrn-6081126.pdf`). All 11 original numerical tables reproduce at
 printed precision through the documented archival route; the static Table 1 is
@@ -35,10 +35,11 @@ To reconstruct the current survey analysis files from the supplied survey
 exports, run `do 01_clean_data.do` first. It uses the supplied, adjudicated
 numeric screenshot measures and extracted scaling-question scores; it does
 not require raw screenshot images or transcript text. The follow-up export has
-2,176 records; the baseline merge has 2,130 nonmissing motivation responses and
-2,119 nonmissing time-use responses. Every survey table uses this active
-snapshot; there is no separate historical survey file. See
-`REPRODUCIBILITY_NOTES.md` for the remaining interpretation/prose discrepancies.
+2,351 records, of which 2,304 remain after cleaning. The baseline merge has
+2,302 nonmissing motivation responses and 2,290 nonmissing time-use responses.
+Every default survey analysis uses these updated inputs. The original-submission
+runner alone uses the separate frozen survey inputs described below. See
+`REPRODUCIBILITY_NOTES.md` for input versions and validation.
 
 ### Python
 
@@ -57,6 +58,11 @@ No OpenAI client, key, embedding download or network service is required.
 PDF appearance can vary slightly with platform, fonts and rendering libraries.
 The figures use Arial, as in the manuscript.
 
+Tables C.1/C.2 use the corrected September 18 human-validation benchmark
+(504 saved scores; 14 interviews; nine conditions). Study-sample exhibits retain
+the September 10 campaign and the 2,048-participant eligibility filter. See
+`MITI_REPLICATION.md` for the two input versions and their provenance.
+
 ### Reproduce the original-submission tables
 
 After installing the same dependencies, run from the package root:
@@ -70,8 +76,11 @@ For macOS Stata/SE, the executable is commonly
 `/Applications/Stata/StataSE.app/Contents/MacOS/stata-se`. The original-table
 runner works independently of the default runners and writes to
 `reproduced/submission/`. Its reference tables are in `submission_results/`.
-It reconstructs the published specifications, including documented reporting
-errors, without changing the corrected default scripts. No API calls occur.
+It uses the three deidentified analysis files frozen under
+`data/archival/original_submission/` and checks their hashes before reconstructing
+the published specifications, including documented reporting errors. These
+inputs preserve the original tables after the default follow-up update. No API
+calls occur.
 
 ### Verify the distribution
 
@@ -102,9 +111,10 @@ original binary hashes of the four reconstructed survey files.
 | `code/stata/` | Public survey cleaning, tables, figures, and supporting statistics |
 | `code/python/` | Offline plotting and tabulation from saved derived results |
 | `code/private/` | Restricted-input methods and prompts; never invoked by public runners |
-| `code/prompts/parameters.py` | All four appendix protocols; 69 checked prompt blocks |
+| `code/prompts/parameters.py` | All four appendix protocols; 68 checked prompt blocks |
 | `data/raw/` | Deidentified baseline and follow-up survey exports |
 | `data/processed/` | Current survey files and text-free screenshot measures |
+| `data/archival/original_submission/` | Frozen deidentified inputs used only for the original-submission tables |
 | `data/derived/` | Numeric/categorical inputs for transcript-derived exhibits |
 | `results/` | Current-analysis reference exhibits refreshed for the supplied snapshot |
 | `submission_results/` | Original-submission tables reconstructed with the documented archival specifications |
@@ -124,6 +134,5 @@ Balance (called Ambivalence in some source data); `T=3` is Direct Persuasion.
 Read `PROMPTS.md` for the appendix prompt text and verification command,
 `EXHIBIT_MANIFEST.md` for every exhibit's generating code,
 `DATA_AVAILABILITY.md` for the privacy boundary, and
-`REPRODUCIBILITY_NOTES.md` for manuscript/code inconsistencies discovered during
-replication. The manuscript itself is not distributed because its appendices
+`REPRODUCIBILITY_NOTES.md` for input-version details and remaining presentation differences. The manuscript itself is not distributed because its appendices
 include example interviews.

@@ -23,6 +23,7 @@ import language_similarity
 import mentions_table
 import miti_metrics
 import miti_tables
+import miti_validation
 import pros_cons_plot
 import question_sequence
 import strategies_plot
@@ -48,6 +49,9 @@ def build_miti(folder, survey_path, out):
                 raise ValueError(f'Mixed metadata: {key}')
         frames[run['run_id']] = frame
     arms = miti_tables.arm_assignments(survey_path)
+    treated_n = int(arms['T'].isin([1, 2, 3]).sum())
+    if treated_n != 2048:
+        raise ValueError(f'Expected 2,048 eligible treated participants; found {treated_n:,}')
     sample_audit = {
         'file': 'data/processed/main_social_media/clean_merged_with_scrshots.dta',
         'sha256': hashlib.sha256(survey_path.read_bytes()).hexdigest(),
@@ -66,7 +70,6 @@ def build_miti(folder, survey_path, out):
             frames[run['run_id']] = eligible[frame.columns].copy()
             sample_audit['runs'][run['run_id']] = dict(
                 audit, eligible_sessions=eligible.session_id.nunique())
-    miti_tables.build_validation(folder, manifest, runs, frames, out, miti_metrics.score_metrics)
     plt.rcParams.update({'font.family': 'Arial', 'font.size': 10,
                          'axes.spines.top': False, 'axes.spines.right': False})
     procedures = miti_tables.procedure_frames(runs, frames, 'treated')
@@ -136,6 +139,7 @@ def build_all(package, out):
     plt.rcdefaults()
     build_miti(derived / 'miti',
                package / 'data/processed/main_social_media/clean_merged_with_scrshots.dta', out)
+    miti_validation.build_validation(package, out)
 
 
 def main():

@@ -1,5 +1,5 @@
 {
-  "validated_at_unix": 1789692991,
+  "validated_at_unix": 1789840553,
   "checks_passed": true,
   "no_notebooks": true,
   "unchanged_derived_files_rechecked": true,
@@ -14,7 +14,7 @@
     },
     {
       "file": "data/raw/main_socialmedia/follow_up_raw.dta",
-      "rows": 2176,
+      "rows": 2351,
       "numeric_columns": 70,
       "identifier_mapping_consistent": true,
       "free_text_absent_or_blank": true,
@@ -30,7 +30,7 @@
     },
     {
       "file": "data/processed/main_social_media/follow_up_clean.dta",
-      "rows": 2132,
+      "rows": 2304,
       "numeric_columns": 45,
       "identifier_mapping_consistent": true,
       "free_text_absent_or_blank": true,
@@ -47,7 +47,7 @@
     {
       "file": "data/processed/main_social_media/clean_merged_with_scrshots.dta",
       "rows": 2719,
-      "numeric_columns": 321,
+      "numeric_columns": 318,
       "identifier_mapping_consistent": true,
       "free_text_absent_or_blank": true,
       "screenshot_upload_metadata_absent": true
@@ -62,8 +62,8 @@
     },
     {
       "file": "data/processed/main_social_media/clean_scr_data.dta",
-      "rows": 582,
-      "numeric_columns": 39,
+      "rows": 465,
+      "numeric_columns": 36,
       "identifier_mapping_consistent": true,
       "free_text_absent_or_blank": true,
       "screenshot_upload_metadata_absent": true
@@ -75,6 +75,21 @@
       "identifier_mapping_consistent": true,
       "free_text_absent_or_blank": true,
       "screenshot_upload_metadata_absent": true
+    },
+    {
+      "file": "data/archival/original_submission/clean_data.dta",
+      "rows": 2719,
+      "unchanged_previously_deidentified_release": true
+    },
+    {
+      "file": "data/archival/original_submission/clean_merged.dta",
+      "rows": 2719,
+      "unchanged_previously_deidentified_release": true
+    },
+    {
+      "file": "data/archival/original_submission/clean_merged_with_scrshots.dta",
+      "rows": 2719,
+      "unchanged_previously_deidentified_release": true
     },
     {
       "file": "data/derived/bertopic_labeled.csv",
@@ -238,132 +253,6 @@
       ]
     },
     {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.4-2026-03-05__model_swap.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.5-2026-04-23__model_swap.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__ablation.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-01.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-02.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-03.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-04.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation14__gpt-5.6-luna__rerun-05.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
-      "file": "data/derived/miti/20260910T215439Z_9e5f325e__validation20__gpt-5.6-luna__benchmark.csv",
-      "columns": [
-        "session_id",
-        "miti_dimension",
-        "run_id",
-        "dataset",
-        "model",
-        "condition",
-        "replicate",
-        "prompt_variant",
-        "score"
-      ]
-    },
-    {
       "file": "data/derived/miti/inputs/behavioral_results.csv",
       "columns": [
         "Category",
@@ -372,19 +261,18 @@
       ]
     },
     {
-      "file": "data/derived/miti/inputs/human.csv",
+      "file": "data/derived/miti_validation_20260918/scores.csv",
       "columns": [
-        "CCT",
-        "SST",
-        "PAR",
-        "EMP",
-        "source_pdf"
-      ]
-    },
-    {
-      "file": "data/derived/miti/inputs/subset.csv",
-      "columns": [
-        "source_pdf"
+        "session_id",
+        "condition_id",
+        "condition",
+        "replicate",
+        "model",
+        "reasoning_effort",
+        "prompt_variant",
+        "miti_dimension",
+        "score",
+        "human_score"
       ]
     },
     {
@@ -482,8 +370,5 @@
         "stable"
       ]
     }
-  ],
-  "prompt_blocks_checked": 69,
-  "removed_unused_sequence_input": true,
-  "removed_redundant_miti_arm_input": true
+  ]
 }

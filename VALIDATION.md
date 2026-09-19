@@ -1,64 +1,55 @@
 # Release validation
 
-Completed September 17, 2026 using local saved inputs only. Additional
-API/compute cost was $0; model requests: zero. The original manuscript and
-analysis directories were not modified.
+Updated September 19, 2026 using local saved inputs only. Additional API/compute
+cost was $0; model requests were zero. Original analysis code and manuscript
+files were read-only inputs.
 
-- The Stata/SE 17 and Python 3.9.12 public runners completed and regenerated
-  all **48 computed exhibits**: 27 PDFs and 21 LaTeX table fragments.
-- The separate original-submission runner completed and reproduced **all 11
-  numerical tables and all 742 checked entries** in `ssrn-6081126.pdf`.
-  All 12 table pages were visually inspected. The static protocol table is
-  supplied with its original wording restored. Published reporting errors are
-  explicitly documented in `SUBMISSION_TABLE_AUDIT.md`.
-- The prior cleaning validation was run in an isolated copy from the supplied
-  deidentified raw exports. The survey files and cleaning scripts are unchanged
-  in this synchronization, and their hashes were rechecked. All four rebuilt analysis datasets match all numeric variables and
-  row counts of the released files (`rtol=1e-6, atol=1e-8`).
-- All nine released Stata datasets match the active source files in row count
-  and retained numeric values at those tolerances. Writing-task byte lengths
-  match the original text lengths; saved demand classifications match; release
-  identifier mappings are consistent across files. Follow-up counts are
-  2,176 raw, 2,132 cleaned, 2,130 matched motivation and 2,119 matched time use.
-- All 21 default table fragments match the released references after
-  whitespace normalization. Twenty agree numerically with the inspected
-  manuscript; the updated MITI stability table instead matches today's source
-  output exactly. The package also corrects “Technolgy-based” to “Technology-based.”
-  PDF text matches all 27 manuscript figures; 23 are pixel-identical at 1,000
-  pixels. Topic-count diagnostics, topic seed stability and pros/cons counts
-  retain equivalent plotted values with minor rendering differences. The
-  updated MITI violin differs from the earlier manuscript figure and is
-  pixel-identical to today's source output. All four differences were reviewed.
-- Every experimental MITI run covers the complete eligible survey sample:
-  2,048 treated participants and 671 controls. Stability/robustness summaries
-  and treatment means match six current source CSVs at `rtol=atol=1e-12`.
-  The human-validation sample remains 14 sessions. See
-  `manifest/miti_sample_validation.json` and `REPRODUCIBILITY_NOTES.md`.
-- All 69 Appendix D prompt blocks match after removing wrapping and alltt
-  typesetting wrappers. The four-arm configuration and all routing links pass
-  verification; existing routing metadata is preserved. The configuration has
-  an empty API key and contains no executable model client.
-- The updated question-sequence figure matches its manuscript reference
-  pixel-for-pixel. The source's new pros/cons mean labels were verified visually.
-- All distributed Python sources parse. Public execution paths do not import
-  API/HTTP clients or restricted-input scripts. The archival runner uses
-  local Stata and saved numeric validation scores only.
-- The release excludes raw transcripts, participant excerpts, model
-  explanations, external participant IDs and screenshot-upload metadata.
-  Required open-text fields are blanked. Previously checked derived files are
-  unchanged; the added original-validation input has only anonymous session
-  keys, four named score dimensions and numeric model/human scores.
-- All 151 original-code files inventoried before this synchronization remain
-  byte-for-byte unchanged. Only the replication package is updated.
-- `.env` is ignored. Release checksums cover code, documentation, data and both
-  sets of reference results. Regenerated outputs, caches and logs are excluded.
+- Stata/SE 17 and Python 3.9.12 public runners completed: **48 computed exhibits**
+  (27 PDFs and 21 LaTeX fragments), plus supporting audit summaries. Completion
+  markers and Stata logs were checked, as well as process exit codes.
+- All **21 generated table fragments match the revised manuscript** after
+  whitespace normalization. References were refreshed where outputs changed.
+  The nine changed tables were compiled into a local preview for visual review.
+- All **27 released figures match their regenerated renderings**. Eighteen
+  are pixel-identical to the manuscript at 1,000 pixels; nine comparisons were
+  visually reviewed. Differences concern rendering/layout and MITI treatment
+  labels/axis ticks. Both CDFs additionally match all three manuscript curves
+  at normalized PDF-vector tolerance 1e-7. The five changed figures were reviewed.
+- The archival runner reproduced **11/11 original numerical tables and 742/742
+  checked entries**. All 12 archived reference tables are unchanged. Three
+  already deidentified prior-release survey files are frozen for this route;
+  their hashes are checked before each archival run. Default runners use the
+  fully updated data. See `SUBMISSION_TABLE_AUDIT.md`.
+- All nine current survey datasets were checked against original source numeric
+  values (`rtol=1e-6`, `atol=1e-8`), with consistent anonymous participant/response
+  IDs and privacy exclusions. All derived CSV inputs retain their validated hashes.
+- Running the public cleaning pipeline from deidentified raw data reproduced
+  all numeric variables in four cleaned files at the same tolerance. Counts are
+  **2,351 raw follow-up, 2,304 cleaned follow-up, 2,302 matched motivation and
+  2,290 matched time-use responses**. The baseline sample remains 2,719.
+- Corrected MITI validation inputs retain all 504 paired scores on 14 interviews
+  across nine conditions. Both table fragments match the source builder and
+  manuscript byte-for-byte; three full-precision audit CSVs match source results
+  at `rtol=atol=1e-12`. Existing saved-response provenance checks remain valid.
+- All ten experimental scoring runs match their frozen source scores. Each
+  treated run covers 2,048 eligible participants; the control run covers 671.
+  Four summary CSVs match current source outputs at `rtol=atol=1e-12`.
+  The stability table and violin now agree with the manuscript's updated sample.
+- All **68 current Appendix D prompt blocks** and four-arm routing links were
+  rechecked. The control termination message is no longer printed in the appendix;
+  it is retained as existing routing metadata, outside the 68-block claim.
+- Python files parse; public paths process local inputs only. Restricted methods
+  retain execution guards. Raw transcripts, participant excerpts, screenshot
+  uploads, payloads, explanations, external IDs and credentials are excluded.
+  The three archived survey files are byte-for-byte copies of previously verified
+  deidentified files. `.env` remains ignored.
+- The active manuscript inventory remains 51 external references: 48 computed,
+  two static assets and one withheld dialogue screenshot. Unused source outputs
+  such as `tab_sm_change.tex` and commented-out robustness analyses are excluded.
+- Release checksums cover code, documentation, data and references. Rerun outputs,
+  logs and caches are excluded. Installation also checks for concurrent edits.
 
-`manifest/` contains source-data, raw-to-clean, privacy, exhibit comparison,
-original-submission and checksum reports. Exhibit comparison reports clearly
-separate the inspected manuscript files from refreshed released references.
-
-Transcript-derived measures can be reproduced only downstream from saved
-measurements. Their extraction requires the withheld interviews. Behavioral
-validation starts from saved aggregate statistics. Static assets are supplied,
-not estimated. Table matching establishes numerical reproduction; it does not
-endorse reporting errors retained solely for the archival reconstruction.
+The manifests record numeric, privacy, input-version, prompt, figure and table
+comparisons. `REPRODUCIBILITY_NOTES.md` explains the updated follow-up data;
+`MITI_REPLICATION.md` documents the distinct saved MITI campaigns. These checks
+cover the supplied analyses and exhibits, not every statement in the manuscript.

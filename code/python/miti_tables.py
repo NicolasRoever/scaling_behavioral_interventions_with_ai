@@ -8,15 +8,11 @@ def label_for(run):
     return {"benchmark": "Benchmark", "rerun": "Stochastic reruns", "ablation": "Prompt ablation"}[run["condition"]]
 
 
-def procedure_frames(runs, frames, dataset, subset_ids=None):
-    chosen = [r for r in runs if r["dataset"] == dataset or (
-        dataset == "validation14" and r["dataset"] == "validation20" and r["condition"] == "benchmark")]
+def procedure_frames(runs, frames, dataset):
     groups = {}
-    for run in chosen:
-        frame = frames[run["run_id"]]
-        if subset_ids is not None:
-            frame = frame[frame.session_id.isin(subset_ids)]
-        groups.setdefault(label_for(run), []).append(frame)
+    for run in runs:
+        if run["dataset"] == dataset:
+            groups.setdefault(label_for(run), []).append(frames[run["run_id"]])
     return {label: pd.concat(parts, ignore_index=True) for label, parts in groups.items()}
 
 
@@ -54,7 +50,7 @@ def tex_escape(value):
     return str(value).replace("\\", r"\textbackslash{}").replace("&", r"\&").replace("%", r"\%").replace("_", r"\_")
 
 
-def latex_table(headers, rows, path, spec=None, section_headings=False):
+def latex_table(headers, rows, path, spec=None, section_headings=False, letter_sections=True):
     lines = [r"\begin{tabular}{" + (spec or "l" + "r" * (len(headers) - 1)) + "}", r"\toprule",
              " & ".join(tex_escape(x) for x in headers) + r" \\", r"\midrule"]
     section_index = 0
@@ -62,7 +58,7 @@ def latex_table(headers, rows, path, spec=None, section_headings=False):
         if section_headings and all(value == "" for value in row[1:]):
             if section_index:
                 lines.append(r"\addlinespace[1em]")
-            label = f"{chr(ord('a') + section_index)}. {row[0]}"
+            label = f"{chr(ord('a') + section_index)}. {row[0]}" if letter_sections else row[0]
             lines.append(r"\multicolumn{" + str(len(headers)) + r"}{l}{\textit{" + tex_escape(label) + r"}} \\[0.25em]")
             section_index += 1
         else:
@@ -75,59 +71,8 @@ def fmt_number(value):
     return "--" if pd.isna(value) else f"{value:.2f}"
 
 
-def human_scores(folder, subset_ids, dimensions):
-    human = pd.read_csv(folder / "inputs/human.csv")
-    dim_map = dict(zip(["CCT", "SST", "PAR", "EMP"],
-                       ["Cultivating Change Talk", "Softening Sustain Talk", "Partnership", "Empathy"]))
-    human = human.melt(id_vars="source_pdf", value_vars=list(dim_map), var_name="short", value_name="score")
-    human["miti_dimension"] = human["short"].map(dim_map)
-    human["session_id"] = human["source_pdf"]
-    if subset_ids is not None:
-        human = human[human.session_id.isin(subset_ids)]
-    if human.duplicated(["session_id", "miti_dimension"]).any() or not human.score.isin([1, 2, 3, 4, 5]).all():
-        raise ValueError("Invalid human scores")
-    return human
 
 
-def build_validation(folder, manifest, runs, frames, out, metric_fn):
-    ids = set(pd.read_csv(folder / "inputs/subset.csv", usecols=["source_pdf"]).source_pdf)
-    procedures = procedure_frames(runs, frames, "validation14", ids)
-    human = human_scores(folder, ids, manifest["dimensions"])
-    baseline = procedures["Benchmark"]
-    rows = []
-    for label, comparison in procedures.items():
-        rows += comparison_rows(human, comparison, label, "Human", manifest["dimensions"], metric_fn)
-        if label != "Benchmark":
-            rows += comparison_rows(baseline, comparison, label, "Luna benchmark", manifest["dimensions"], metric_fn)
-    for run in runs:
-        if run["dataset"] == "validation14" and run["condition"] == "rerun":
-            for reference_label, reference in [("Human", human), ("Luna benchmark", baseline)]:
-                rows += comparison_rows(reference, frames[run["run_id"]], f'Stochastic rerun {run["replicate"]}',
-                                        reference_label, manifest["dimensions"], metric_fn)
-    summary = pd.DataFrame(rows)
-    write_table(summary, out, "robustness_summary_table_handcoded")
-    global_metrics = summary[summary.Analysis.eq("Benchmark") & summary.Reference.eq("Human")].rename(
-        columns={"MITI outcome": "Dimension", "Mean difference": "Bias"})[["Dimension", "Bias", "Correlation"]]
-    global_metrics.to_csv(out / "validation_global_scores_results.csv", index=False)
-    behavioral = pd.read_csv(folder / "inputs/behavioral_results.csv")
-    behavioral = behavioral.assign(_last=behavioral.Category.eq("Reflection Correlation")).sort_values("_last", kind="stable").drop(columns="_last")
-    table_rows = [["A. Global metrics (Luna)", "", ""]]
-    table_rows += [[r.Dimension, f"{r.Bias:.2f}", f"{r.Correlation:.2f}"] for r in global_metrics.itertuples()]
-    table_rows += [["B. Behavioral counts (existing results)", "", ""]]
-    table_rows += [[r.Category, f"{r.Bias:.2f}" if pd.notna(r.Bias) else "",
-                    f"{r.Correlation:.2f}" if pd.notna(r.Correlation) else ""] for r in behavioral.itertuples()]
-    latex_table(["Score category", "Bias", "Correlation"], table_rows,
-                out / "mi_validation_results_table.tex", "p{10cm}rr")
-    table_rows = []
-    for label in procedures:
-        selected = summary[summary.Analysis.eq(label) & summary.Reference.eq("Human")]
-        table_rows.append([label, "", "", ""])
-        for _, row in selected.iterrows():
-            table_rows.append([row["MITI outcome"], str(row["Unique sessions"]),
-                               fmt_number(row["Mean difference"]), fmt_number(row["Correlation"])])
-    latex_table(["Procedure / score", "Sessions", "Bias", "Correlation"], table_rows,
-                out / "robustness_handcoded_latex_table.tex", "p{9cm}rrr", section_headings=True)
-    return summary
 
 
 def arm_assignments(survey_path):
@@ -156,7 +101,7 @@ def save_figure(fig, out, name):
 
 def build_main_figures(data, dimensions, out):
     import matplotlib.pyplot as plt
-    arms = {0: "Control", 1: "Change Talk", 2: "Ambivalence", 3: "Persuasion"}
+    arms = {0: "Control", 1: "Change Talk", 2: "Decisional Balance", 3: "Direct Persuasion"}
     colors = {0: "#8a8a8a", 1: "#b83232", 2: "#4c4c86", 3: "#4c8a4c"}
     means = data.groupby(["T", "miti_dimension"]).agg(Mean=("score", "mean"), N=("session_id", "nunique")).reset_index()
     means.to_csv(out / "miti_means_by_treatment.csv", index=False)
@@ -173,7 +118,11 @@ def build_main_figures(data, dimensions, out):
                 ax.bar(np.arange(1, 6) + (i - (len(selected_arms) - 1) / 2) * width,
                        percentages, width=width, color=colors[arm], label=f'{arms[arm]} (mean {values.mean():.2f})')
             ax.set(title=dim, xticks=range(1, 6), xlabel="MITI score", ylabel="Percent")
-            ax.legend(fontsize=8)
+            if len(selected_arms) == 4:
+                ax.set_ylim(0, max(bar.get_height() for bar in ax.patches) * 1.22)
+                ax.legend(fontsize=8, ncol=2, loc="upper center")
+            else:
+                ax.legend(fontsize=8)
         save_figure(fig, out, filename)
 
 

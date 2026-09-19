@@ -10,16 +10,15 @@ Required community packages: `estout`, `coefplot`, `binscatter`, `grstyle`,
 deidentified raw survey exports and supplied numeric screenshot/scaling-score
 inputs. It does not invoke the private transcript or screenshot-image steps.
 
-All follow-up tables use `clean_merged.dta` from the current cleaning
-pipeline, now using the September 17 snapshot (2,130 matched motivation
-responses and 2,119 matched time-use responses). No separate historical survey
-snapshot is used. The root
-`REPRODUCIBILITY_NOTES.md` records the corrected baseline split and coefficient tests, and identifies
-remaining manuscript prose/interpretation discrepancies.
+All default follow-up tables use `clean_merged.dta` from the current cleaning
+pipeline and the fully updated September 19 data (2,302 matched motivation
+responses and 2,290 matched time-use responses). The root
+`REPRODUCIBILITY_NOTES.md` records the input versions and validation.
 
 The separate `../reproduce_submission.py` runner constructs the original
-submission specifications in temporary copies. It leaves these corrected
-default scripts intact; see `../../SUBMISSION_TABLE_AUDIT.md`.
+submission specifications in temporary copies using the three frozen
+`../../data/archival/original_submission/` analysis files. It leaves these
+corrected default scripts intact; see `../../SUBMISSION_TABLE_AUDIT.md`.
 
 `stats_quoted_in_text.do` logs the original supporting numerical calculations.
 Its demand calculation uses the same current survey merge and saved categories

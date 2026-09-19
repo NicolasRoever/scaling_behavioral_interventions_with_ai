@@ -4,15 +4,21 @@
 
 - Baseline and follow-up survey exports (`main_raw.dta`, `follow_up_raw.dta`).
   These are **deidentified exports**, not unmodified Qualtrics exports.
-- The current cleaned baseline file (2,719 participants), follow-up file (2,132
-  records), and merged survey/screen-time files.
+- The current cleaned baseline file (2,719 participants), follow-up file (2,304
+  records), and merged survey/screen-time files. The raw follow-up export has
+  2,351 rows; the baseline merge has 2,302 motivation and 2,290 time-use responses.
+- Three previously released deidentified analysis files under
+  `data/archival/original_submission/`, used only to reproduce the original
+  submission. Their older sample has 2,130 motivation and 2,119 time-use responses;
+  `manifest/submission_survey_snapshot.json` identifies their versions and hashes.
 - `clean_scr_data.dta`: structured screenshot measures and week-level validity
   indicators. Raw images, upload metadata and screenshot filenames are absent.
 - `interview_scores_extracted.dta`: numeric importance/confidence ratings.
-- Numeric MITI scores for the actual September 2026 campaign, including its
-  benchmark, five stochastic replicates, prompt ablation and two comparison
-  models. Only the 14 validation sessions used in the revised paper are released for
-  this campaign.
+- Numeric experimental MITI scores from the September 10 campaign: benchmark,
+  five stochastic replicates, prompt ablation and two comparison models.
+- The corrected September 18 human-validation input: 504 numeric LLM/human
+  pairs, 14 anonymous interview keys and fixed scoring-condition metadata.
+  Superseded September 10 validation scores are omitted.
 - The 80 human/model score pairs from the original 20-session global-score
   validation (November 2025), with anonymous keys and no text, used only to
   reconstruct original-submission Table C.1.
@@ -52,8 +58,9 @@ manifest timestamps are Unix seconds.
 
 Study-internal numeric participant IDs and `MI-MAINEXP-<number>` session keys
 remain in derived score files to allow audit joins; these are not external
-recruitment-platform identifiers. Training-material session labels identify
-MITI benchmark sessions, not study participants.
+recruitment-platform identifiers. Corrected human-validation interviews use
+anonymous `VALIDATION-0001` through `VALIDATION-0014` keys. These are separate
+from study participants and the archival validation keys.
 
 ## What cannot be regenerated without restricted data
 
@@ -65,6 +72,6 @@ The MITI behavioral-count validation panel starts from saved aggregate results;
 it does not redo utterance-level coding or validation.
 
 The restricted-input methods are included under `code/private/` with their
-required filenames documented in its README. No private upstream workflow was
-executed while preparing this release. API-capable Python sources are disabled
+required filenames documented in its README. Saved local responses were checked offline while preparing this release;
+no interviews were rescored and no model calls were made. API-capable Python sources are disabled
 at import/execution in this package under the project's $0 OpenAI API policy.

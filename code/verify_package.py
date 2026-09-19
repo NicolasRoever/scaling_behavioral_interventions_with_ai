@@ -67,6 +67,12 @@ def verify(package, check_reproduced, allow_rebuilt_data, check_submission=False
                 if re.sub(r'\s+', '', (root / relative).read_text()) != re.sub(r'\s+', '', (package / 'submission_results' / relative).read_text()):
                     errors.append('Archival reference differs from generated table: ' + relative)
     from prompts.check_appendix import load_configuration
+    sys.path.insert(0, str(package / 'code/python'))
+    from miti_validation import load_inputs
+    try:
+        load_inputs(package)
+    except (ValueError, KeyError, OSError) as exc:
+        errors.append('Corrected MITI validation input: ' + str(exc))
     prompt_report = json.loads((package / 'manifest/prompt_validation.json').read_text())
     parameters = package / 'code/prompts/parameters.py'
     configurations = load_configuration(parameters)
@@ -74,8 +80,8 @@ def verify(package, check_reproduced, allow_rebuilt_data, check_submission=False
         errors.append('Prompt configuration changed after appendix validation')
     if set(configurations) != {'T1_MI_CHANGE', 'T2_MI_AMBIVALENCE', 'T4_CLEAR_PERSUASION', 'TIME_USE'}:
         errors.append('Expected only the four appendix protocols')
-    if len(prompt_report['blocks']) != 69:
-        errors.append('Expected 69 appendix prompt blocks')
+    if len(prompt_report['blocks']) != 68:
+        errors.append('Expected 68 appendix prompt blocks')
     for block in prompt_report['blocks']:
         configuration = configurations[block['arm']]
         if 'turn' in block:
@@ -106,7 +112,8 @@ def verify(package, check_reproduced, allow_rebuilt_data, check_submission=False
     computed = sum(bool(r['generator']) for r in manifest['exhibits'])
     print(f'PASS: {len(checksums["files"])} release files; {len(refs)} reference exhibits; '
           f'{computed} computed exhibits; 1 explicitly withheld image.')
-    print('PASS: 69 prompt blocks in four arms match the appendix validation record.')
+    print('PASS: 68 prompt blocks in four arms match the appendix validation record.')
+    print('PASS: corrected MITI benchmark has 504 valid paired scores, 14 interviews and all nine conditions.')
     print('PASS: all 12 original-submission reference tables supplied; 11/11 numerical tables match the PDF.')
     if check_submission:
         print('PASS: original-submission rerun matches PDF numbers and released table references.')

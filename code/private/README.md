@@ -33,3 +33,14 @@ included; unrelated exploratory scripts are omitted.
 The updated question-sequence figure is public and manual: see
 `../python/question_sequence.py`. Its former transcript-based classifier and
 sequence input are no longer part of this release.
+
+The September 18 MITI methods are in `miti_scoring/miti_benmchmarking/`:
+`validation_transcripts.py` documents P/I as clinician and C as client, and
+content-checked continuation/correction handling. `prepare_validation_batch.py`
+defines the topic-neutral prompt design. `run_validation_batch.py` records the
+request/response workflow; `build_benchmark_tables.py` records the original
+saved-response joining and table calculations. All remain disabled reference
+sources. The raw transcripts, correction records, batch payloads, response
+JSONLs and human-reference source files required by those methods are withheld.
+The supported public entry point is `code/python/run_public.py`, using the
+anonymous saved numeric scores. See `MITI_REPLICATION.md` at the package root.
