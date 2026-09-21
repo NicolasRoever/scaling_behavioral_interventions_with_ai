@@ -1,0 +1,43 @@
+{
+  "updated_at_unix": 1789846892,
+  "source_file": "data/processed/main_social_media/df_merged_llm_category_expdemand_luna_v002.dta",
+  "source_sha256": "37da828efe7b7576a3412f13ba002a9f7889040d3710551e34fde45726b95f6f",
+  "release_file": "data/processed/main_social_media/df_merged_llm_category_expdemand_luna_v002.dta",
+  "release_sha256": "c4a5c72beb16a95e15b369e70221a0eecdca11675423a95f65381bfd5545bf26",
+  "rows": 2719,
+  "columns": [
+    "prolific_id",
+    "llm_category_expdemand"
+  ],
+  "changed_classifications": 192,
+  "category_counts": {
+    "1": 253,
+    "2": 787,
+    "3": 286,
+    "4": 1106,
+    "5": 287
+  },
+  "categories_1_and_2_identify_reduction": true,
+  "real_prolific_ids_replaced": true,
+  "crosswalk_distributed": false,
+  "api_requests": 0,
+  "subgroup_tests": [
+    {
+      "outcome": "z_motivation",
+      "n_identified": 1040,
+      "n_not_identified": 1679,
+      "chi2": 2.427507773580809,
+      "p": 0.4885346
+    },
+    {
+      "outcome": "z_costbenefits",
+      "n_identified": 1040,
+      "n_not_identified": 1679,
+      "chi2": 4.995384761142287,
+      "p": 0.17213541
+    }
+  ],
+  "raw_classification_source_columns_withheld": true,
+  "source_survey_inputs_unchanged": true,
+  "manuscript_exhibits_match": true
+}

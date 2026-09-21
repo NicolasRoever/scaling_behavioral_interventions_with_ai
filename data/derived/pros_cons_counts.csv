@@ -1,0 +1,2049 @@
+user_id_raw,T,number_positive_aspects,number_negative_aspects
+1149265,Ambivalence,4,4
+1185451,Change Talk,0,5
+1197171,Persuasion,2,3
+1197916,Ambivalence,6,6
+1231929,Ambivalence,7,3
+1394310,Persuasion,5,3
+1406048,Persuasion,1,5
+1424032,Ambivalence,8,5
+1480148,Ambivalence,4,2
+1531824,Persuasion,10,5
+1576948,Persuasion,3,4
+1590210,Ambivalence,9,0
+1601263,Ambivalence,4,5
+1625457,Ambivalence,5,5
+1758850,Ambivalence,9,1
+1802539,Persuasion,3,0
+1827030,Persuasion,4,3
+1837041,Ambivalence,3,5
+1932396,Ambivalence,5,4
+1985326,Ambivalence,5,7
+2041438,Change Talk,1,4
+2094609,Persuasion,4,4
+2160156,Persuasion,7,6
+2338145,Change Talk,0,4
+2446850,Persuasion,2,1
+2480213,Change Talk,0,8
+2555784,Ambivalence,8,6
+2764093,Ambivalence,0,4
+2813523,Ambivalence,7,6
+2820614,Change Talk,0,10
+2837871,Change Talk,5,0
+2914772,Ambivalence,3,3
+3014004,Persuasion,3,2
+3112946,Change Talk,1,8
+3171438,Change Talk,4,4
+3259792,Change Talk,2,7
+3273034,Persuasion,2,4
+3307479,Change Talk,1,7
+3321057,Persuasion,5,5
+3394922,Ambivalence,4,4
+3414846,Persuasion,5,9
+3448095,Persuasion,2,3
+3487380,Persuasion,9,4
+3487483,Change Talk,2,4
+3518165,Persuasion,4,5
+3591504,Persuasion,9,5
+3648651,Ambivalence,6,5
+3762277,Change Talk,0,8
+3838778,Persuasion,1,1
+3890466,Ambivalence,4,3
+3960619,Persuasion,4,3
+4026400,Persuasion,3,3
+4034562,Change Talk,6,9
+4038137,Change Talk,0,6
+4072619,Persuasion,3,11
+4145474,Persuasion,4,9
+4173126,Persuasion,3,2
+4232145,Persuasion,3,2
+4306578,Change Talk,6,13
+4319049,Persuasion,1,3
+4330667,Ambivalence,5,9
+4334456,Ambivalence,5,7
+4343951,Ambivalence,0,4
+4344466,Persuasion,11,3
+4498818,Persuasion,1,4
+4525725,Ambivalence,0,3
+4555733,Ambivalence,10,13
+4557830,Change Talk,2,11
+4574740,Ambivalence,5,5
+4740164,Change Talk,4,4
+4745673,Ambivalence,4,7
+4819312,Ambivalence,5,7
+4890541,Ambivalence,4,2
+4926431,Ambivalence,3,8
+4929090,Ambivalence,7,0
+4993845,Ambivalence,8,2
+5042599,Persuasion,4,3
+5093294,Ambivalence,4,4
+5124532,Persuasion,0,3
+5124650,Change Talk,7,11
+5190361,Ambivalence,2,3
+5216444,Ambivalence,4,3
+5264971,Change Talk,4,13
+5311691,Ambivalence,7,3
+5366217,Persuasion,0,2
+5377631,Ambivalence,6,6
+5381186,Persuasion,1,0
+5412457,Ambivalence,6,7
+5420936,Persuasion,2,2
+5575560,Persuasion,3,3
+5597520,Persuasion,1,2
+5616562,Change Talk,1,6
+5720006,Change Talk,3,6
+5727058,Persuasion,6,4
+5785992,Persuasion,2,0
+5793794,Change Talk,1,10
+5817157,Ambivalence,8,3
+6067096,Persuasion,3,5
+6077676,Ambivalence,6,4
+6191351,Persuasion,5,3
+6229713,Persuasion,5,5
+6235340,Change Talk,1,4
+6246093,Change Talk,0,4
+6561966,Persuasion,4,3
+6630403,Change Talk,3,4
+6635117,Ambivalence,5,3
+6654032,Ambivalence,6,12
+6658537,Persuasion,2,2
+6667957,Ambivalence,6,8
+6683280,Ambivalence,4,4
+6724122,Ambivalence,7,4
+6727803,Persuasion,4,0
+6739338,Persuasion,4,0
+6811016,Persuasion,2,1
+6812013,Ambivalence,3,3
+6822384,Persuasion,1,0
+6829333,Persuasion,1,5
+6992331,Ambivalence,3,2
+7050126,Ambivalence,3,6
+7063203,Change Talk,6,7
+7079657,Persuasion,3,6
+7113383,Ambivalence,11,11
+7132643,Change Talk,2,6
+7269762,Change Talk,7,7
+7505615,Persuasion,1,3
+7509030,Change Talk,3,5
+7524866,Change Talk,0,6
+7534920,Ambivalence,3,6
+7602368,Change Talk,4,5
+7635713,Persuasion,5,4
+7641852,Persuasion,6,3
+7747181,Change Talk,5,4
+7812435,Ambivalence,6,2
+7813155,Ambivalence,6,5
+7847124,Persuasion,1,9
+7871884,Change Talk,3,6
+7904771,Ambivalence,4,5
+7949597,Ambivalence,6,9
+7977253,Change Talk,3,5
+7998657,Ambivalence,5,4
+8052091,Ambivalence,5,9
+8093695,Persuasion,5,11
+8124008,Ambivalence,6,6
+8164886,Change Talk,0,4
+8208542,Persuasion,3,5
+8234675,Change Talk,3,4
+8244058,Change Talk,4,6
+8256639,Ambivalence,5,6
+8271624,Ambivalence,4,3
+8281137,Persuasion,4,6
+8353025,Change Talk,2,4
+8396731,Ambivalence,2,0
+8480160,Ambivalence,6,3
+8595190,Ambivalence,4,5
+8692213,Persuasion,7,9
+8727306,Change Talk,2,2
+8784234,Change Talk,0,11
+8785685,Persuasion,1,1
+8793327,Persuasion,3,9
+8818507,Ambivalence,0,12
+8820431,Persuasion,2,4
+8824830,Change Talk,7,6
+8906837,Persuasion,2,6
+8908810,Ambivalence,4,5
+8933680,Persuasion,1,4
+8963594,Ambivalence,11,10
+8980784,Ambivalence,5,6
+9011507,Persuasion,6,15
+9043583,Ambivalence,8,12
+9079671,Ambivalence,5,6
+9091403,Change Talk,0,14
+9148219,Ambivalence,6,4
+9175120,Change Talk,10,8
+9196502,Ambivalence,5,8
+9296004,Ambivalence,19,14
+9314269,Persuasion,2,6
+9373719,Ambivalence,5,6
+9399834,Persuasion,4,6
+9425988,Persuasion,2,8
+9562521,Change Talk,3,5
+9588980,Change Talk,3,5
+9658055,Ambivalence,7,10
+9682298,Ambivalence,5,4
+9698935,Change Talk,3,8
+9756910,Ambivalence,4,5
+9808934,Persuasion,0,2
+9840110,Ambivalence,4,6
+9886346,Change Talk,3,5
+9891168,Ambivalence,4,4
+10045242,Persuasion,2,2
+10085027,Change Talk,0,9
+10127525,Ambivalence,5,10
+10162360,Ambivalence,4,3
+10221599,Change Talk,2,4
+10306466,Persuasion,6,7
+10435735,Persuasion,3,1
+10444833,Ambivalence,4,9
+10482787,Change Talk,4,4
+10493164,Ambivalence,10,9
+10502045,Ambivalence,3,3
+10558473,Change Talk,1,8
+10585753,Change Talk,4,6
+10639097,Ambivalence,3,8
+10639762,Change Talk,0,7
+10723367,Change Talk,1,4
+10724474,Persuasion,4,8
+10759219,Ambivalence,8,2
+10864599,Persuasion,3,2
+10895598,Persuasion,3,4
+10896618,Change Talk,2,4
+10937565,Persuasion,3,6
+10947517,Change Talk,10,12
+10970181,Ambivalence,5,5
+10976243,Ambivalence,5,3
+10986543,Change Talk,2,3
+11035990,Change Talk,1,8
+11066912,Persuasion,3,6
+11131873,Change Talk,0,6
+11143467,Change Talk,2,2
+11149407,Persuasion,3,3
+11182037,Ambivalence,4,7
+11200117,Persuasion,1,1
+11218425,Ambivalence,4,2
+11313941,Ambivalence,4,3
+11333184,Ambivalence,2,5
+11371884,Change Talk,0,7
+11600331,Ambivalence,3,9
+11712357,Persuasion,10,10
+11805287,Ambivalence,4,2
+11838976,Change Talk,1,3
+11938344,Ambivalence,3,3
+11949697,Persuasion,2,5
+11955877,Persuasion,1,5
+12106834,Persuasion,2,2
+12196807,Change Talk,6,6
+12198678,Ambivalence,6,3
+12217184,Ambivalence,4,3
+12265147,Ambivalence,5,6
+12289411,Ambivalence,5,1
+12289539,Change Talk,7,9
+12326891,Ambivalence,2,10
+12402023,Ambivalence,8,16
+12406233,Change Talk,0,3
+12594213,Persuasion,6,2
+12711427,Change Talk,0,6
+12729718,Ambivalence,8,3
+12778409,Persuasion,4,1
+12818095,Ambivalence,4,7
+12832490,Persuasion,2,4
+12862934,Ambivalence,9,1
+12870284,Change Talk,0,5
+12938274,Persuasion,2,2
+13074710,Persuasion,4,4
+13151625,Persuasion,1,3
+13196760,Change Talk,0,7
+13232338,Change Talk,0,5
+13302699,Change Talk,0,7
+13307205,Change Talk,2,10
+13324932,Ambivalence,3,6
+13343799,Ambivalence,4,8
+13417589,Ambivalence,6,4
+13424765,Ambivalence,4,6
+13426078,Ambivalence,2,3
+13577953,Change Talk,0,3
+13616174,Ambivalence,5,4
+13656121,Change Talk,8,7
+13666019,Change Talk,5,4
+13765248,Persuasion,5,5
+13911298,Ambivalence,5,8
+13954244,Change Talk,4,5
+13994730,Ambivalence,4,12
+13995410,Ambivalence,3,4
+14028825,Ambivalence,2,8
+14056709,Ambivalence,8,5
+14088416,Ambivalence,2,7
+14152635,Ambivalence,4,4
+14260829,Change Talk,2,0
+14317302,Change Talk,2,4
+14335610,Ambivalence,5,9
+14341498,Persuasion,5,5
+14362695,Ambivalence,5,9
+14467416,Persuasion,6,6
+14531858,Ambivalence,6,4
+14637463,Ambivalence,6,4
+14713011,Change Talk,1,12
+14955932,Persuasion,3,12
+14961825,Persuasion,2,9
+14970410,Ambivalence,4,4
+14985338,Persuasion,3,7
+15061229,Ambivalence,5,6
+15216083,Ambivalence,4,1
+15222831,Ambivalence,7,7
+15242387,Change Talk,1,11
+15258308,Persuasion,4,2
+15302384,Ambivalence,8,6
+15311298,Persuasion,8,8
+15329413,Ambivalence,4,5
+15378897,Persuasion,3,6
+15540880,Persuasion,3,3
+15587177,Persuasion,2,0
+15631066,Ambivalence,10,7
+15775116,Persuasion,2,4
+15775152,Change Talk,5,1
+15777572,Persuasion,1,4
+15816453,Ambivalence,2,3
+15934284,Change Talk,0,3
+15947500,Persuasion,8,8
+16021745,Change Talk,0,5
+16052425,Ambivalence,0,6
+16137558,Persuasion,4,6
+16192025,Change Talk,1,4
+16234891,Ambivalence,8,4
+16236052,Persuasion,4,6
+16236448,Ambivalence,6,6
+16250072,Ambivalence,9,8
+16386813,Persuasion,3,2
+16590100,Persuasion,9,8
+16646023,Persuasion,1,4
+16678770,Change Talk,7,8
+16753516,Persuasion,6,0
+16793630,Ambivalence,6,7
+16806672,Persuasion,4,10
+16913077,Ambivalence,5,2
+16921776,Persuasion,5,1
+16925383,Ambivalence,4,8
+16950502,Change Talk,2,5
+17016195,Persuasion,5,8
+17018826,Persuasion,1,0
+17080535,Change Talk,0,9
+17082210,Persuasion,1,2
+17084595,Persuasion,3,9
+17088241,Change Talk,3,6
+17155638,Ambivalence,9,10
+17189455,Persuasion,2,5
+17312665,Persuasion,6,13
+17383011,Ambivalence,6,3
+17423091,Change Talk,0,6
+17477149,Persuasion,4,4
+17483628,Change Talk,12,11
+17552490,Change Talk,1,5
+17574198,Change Talk,0,7
+17600923,Ambivalence,4,2
+17624341,Change Talk,5,5
+17718275,Ambivalence,8,2
+17718432,Ambivalence,5,6
+17863867,Persuasion,2,8
+17918700,Persuasion,2,3
+17957435,Ambivalence,2,5
+17969204,Ambivalence,5,10
+18037615,Ambivalence,6,7
+18076045,Persuasion,3,5
+18146057,Change Talk,2,4
+18179143,Persuasion,3,4
+18262974,Change Talk,0,6
+18296398,Ambivalence,5,7
+18298374,Ambivalence,6,7
+18315693,Change Talk,0,6
+18475067,Persuasion,2,3
+18556794,Ambivalence,4,1
+18584480,Ambivalence,4,5
+18588814,Persuasion,7,5
+18612871,Persuasion,2,3
+18651835,Change Talk,5,8
+18711634,Ambivalence,5,2
+18739947,Ambivalence,8,0
+18748870,Ambivalence,5,7
+18754108,Ambivalence,4,5
+18867355,Change Talk,3,7
+18867880,Change Talk,0,9
+18888007,Change Talk,2,2
+19014682,Ambivalence,10,9
+19029592,Persuasion,0,0
+19058579,Persuasion,3,2
+19111570,Persuasion,0,2
+19184528,Ambivalence,4,1
+19202461,Persuasion,3,4
+19267826,Change Talk,1,6
+19326009,Change Talk,5,6
+19337813,Persuasion,7,7
+19375711,Change Talk,3,9
+19399108,Change Talk,3,0
+19473906,Persuasion,2,8
+19553160,Ambivalence,4,4
+19759079,Persuasion,6,4
+19782205,Ambivalence,4,8
+19828723,Ambivalence,3,8
+19840889,Change Talk,1,5
+19848590,Ambivalence,3,1
+19966578,Ambivalence,1,11
+19967229,Persuasion,5,3
+20011079,Persuasion,4,9
+20020906,Change Talk,8,10
+20136979,Persuasion,5,4
+20148682,Persuasion,3,5
+20162785,Persuasion,7,5
+20270522,Ambivalence,5,3
+20273028,Ambivalence,3,0
+20287832,Ambivalence,3,5
+20290386,Ambivalence,5,3
+20391964,Ambivalence,3,12
+20397977,Ambivalence,5,4
+20451569,Persuasion,0,5
+20491381,Ambivalence,5,10
+20498742,Ambivalence,8,3
+20567796,Ambivalence,6,8
+20583114,Change Talk,1,4
+20685022,Persuasion,1,1
+20747992,Change Talk,3,6
+20761597,Persuasion,7,8
+20775581,Change Talk,12,21
+20796330,Change Talk,0,5
+20937948,Persuasion,2,3
+20939203,Ambivalence,3,4
+20998473,Persuasion,2,5
+21001762,Ambivalence,6,8
+21066821,Persuasion,1,6
+21097321,Persuasion,12,10
+21184960,Ambivalence,1,3
+21202731,Persuasion,5,3
+21444153,Ambivalence,6,10
+21513193,Change Talk,7,4
+21523886,Persuasion,1,0
+21561078,Ambivalence,7,4
+21611899,Persuasion,2,4
+21629832,Persuasion,1,1
+21639632,Ambivalence,4,7
+21659888,Change Talk,0,3
+21664272,Change Talk,2,5
+21679967,Persuasion,4,6
+21697615,Persuasion,2,3
+21714839,Change Talk,0,10
+21788296,Persuasion,6,1
+21833377,Persuasion,3,5
+21861581,Ambivalence,5,4
+21872563,Ambivalence,8,11
+21958466,Ambivalence,5,7
+21966530,Ambivalence,7,4
+21982165,Change Talk,4,6
+21991802,Persuasion,4,1
+21994046,Persuasion,1,3
+22063576,Ambivalence,4,1
+22176206,Ambivalence,9,3
+22257117,Change Talk,2,4
+22297862,Change Talk,0,4
+22339485,Ambivalence,3,3
+22350764,Persuasion,13,10
+22409510,Change Talk,3,3
+22487342,Persuasion,2,9
+22544335,Ambivalence,3,3
+22546092,Ambivalence,4,0
+22552857,Ambivalence,7,10
+22559150,Change Talk,0,4
+22578933,Ambivalence,8,8
+22579011,Change Talk,1,13
+22610803,Change Talk,1,2
+22699407,Ambivalence,4,3
+22820592,Change Talk,5,7
+22880573,Persuasion,3,8
+22908938,Ambivalence,4,3
+22910626,Ambivalence,5,6
+22995312,Ambivalence,4,7
+23150615,Change Talk,1,4
+23223540,Persuasion,3,3
+23299390,Ambivalence,4,4
+23354446,Change Talk,5,5
+23398424,Change Talk,1,6
+23400567,Change Talk,0,11
+23443349,Change Talk,1,3
+23561314,Change Talk,2,4
+23738046,Persuasion,1,2
+23772438,Ambivalence,6,13
+23845880,Ambivalence,4,6
+23867184,Persuasion,2,4
+23984649,Change Talk,6,2
+24161231,Change Talk,3,7
+24164851,Persuasion,4,4
+24176039,Ambivalence,9,5
+24226645,Ambivalence,5,2
+24301045,Change Talk,3,7
+24329295,Change Talk,5,7
+24353361,Ambivalence,7,3
+24389010,Change Talk,0,5
+24394933,Persuasion,0,5
+24461108,Persuasion,2,4
+24477696,Persuasion,2,1
+24501181,Persuasion,5,6
+24555218,Persuasion,3,2
+24557944,Change Talk,0,5
+24591001,Ambivalence,11,6
+24621209,Ambivalence,6,3
+24625845,Persuasion,3,8
+24830241,Ambivalence,7,8
+24895320,Ambivalence,5,6
+24976894,Change Talk,3,4
+24990583,Persuasion,2,1
+25021525,Change Talk,8,7
+25024449,Change Talk,12,10
+25117011,Persuasion,2,7
+25274183,Ambivalence,7,4
+25300174,Persuasion,3,7
+25360886,Ambivalence,4,5
+25404911,Change Talk,4,3
+25604099,Change Talk,3,6
+25663239,Change Talk,4,6
+25713460,Change Talk,3,7
+25738540,Ambivalence,6,8
+25754865,Ambivalence,6,6
+25755432,Persuasion,3,4
+25828521,Change Talk,0,7
+25870007,Ambivalence,7,7
+25910945,Ambivalence,7,8
+26016594,Ambivalence,2,3
+26032482,Ambivalence,6,8
+26079610,Ambivalence,6,5
+26084987,Ambivalence,2,8
+26130618,Change Talk,0,8
+26135189,Ambivalence,3,4
+26160738,Ambivalence,3,3
+26249443,Persuasion,1,4
+26293200,Ambivalence,2,9
+26339108,Ambivalence,7,5
+26364441,Ambivalence,8,15
+26365240,Persuasion,0,4
+26437058,Ambivalence,2,6
+26441619,Persuasion,0,4
+26502628,Ambivalence,6,3
+26549330,Ambivalence,3,5
+26580100,Ambivalence,5,5
+26716432,Ambivalence,2,1
+26743031,Persuasion,1,1
+26751803,Change Talk,2,3
+26784986,Change Talk,4,6
+26928315,Persuasion,2,2
+26939983,Change Talk,2,7
+27000384,Change Talk,1,1
+27021599,Change Talk,4,6
+27137171,Persuasion,5,6
+27219187,Persuasion,2,6
+27247292,Change Talk,3,4
+27248664,Persuasion,2,5
+27306634,Change Talk,0,9
+27416356,Persuasion,4,6
+27436427,Ambivalence,8,8
+27450514,Change Talk,3,7
+27633603,Change Talk,6,6
+27637568,Persuasion,0,5
+27733835,Ambivalence,6,5
+27774790,Ambivalence,4,3
+27904502,Ambivalence,6,0
+27905527,Change Talk,2,8
+27910276,Ambivalence,4,5
+27991973,Ambivalence,13,9
+28101048,Ambivalence,4,3
+28130686,Persuasion,2,9
+28202873,Ambivalence,6,7
+28285692,Ambivalence,6,5
+28367157,Persuasion,2,2
+28386505,Change Talk,6,8
+28460599,Change Talk,5,0
+28532680,Ambivalence,8,8
+28598923,Ambivalence,8,10
+28617349,Persuasion,6,8
+28653663,Persuasion,3,5
+28702005,Change Talk,0,4
+28787805,Persuasion,4,3
+28799272,Change Talk,2,6
+28874009,Change Talk,0,12
+28896168,Ambivalence,5,7
+28941069,Ambivalence,4,8
+28972082,Ambivalence,6,7
+29057789,Ambivalence,4,3
+29075491,Persuasion,2,8
+29100432,Ambivalence,5,5
+29115958,Persuasion,3,7
+29149131,Ambivalence,4,6
+29251294,Persuasion,4,4
+29291152,Persuasion,1,2
+29311031,Change Talk,0,11
+29340235,Persuasion,5,6
+29347386,Change Talk,0,4
+29410048,Change Talk,5,11
+29477268,Change Talk,0,8
+29497853,Persuasion,6,6
+29535207,Persuasion,4,5
+29553857,Change Talk,0,7
+29566157,Change Talk,1,7
+29589091,Change Talk,2,5
+29723499,Persuasion,5,0
+29817725,Persuasion,4,4
+29940517,Persuasion,1,2
+29943691,Ambivalence,3,2
+29953832,Ambivalence,7,4
+29975011,Ambivalence,5,4
+30026694,Change Talk,2,11
+30123449,Persuasion,2,4
+30226184,Ambivalence,3,4
+30251996,Ambivalence,1,5
+30259482,Change Talk,0,8
+30343039,Persuasion,5,4
+30367354,Ambivalence,5,2
+30459785,Ambivalence,6,5
+30505406,Change Talk,0,5
+30532153,Change Talk,0,7
+30555742,Persuasion,2,0
+30618390,Change Talk,2,2
+30620916,Change Talk,0,4
+30739346,Change Talk,1,10
+30742868,Change Talk,0,3
+30797946,Ambivalence,5,5
+30838572,Persuasion,0,4
+30872038,Change Talk,0,6
+30949973,Persuasion,2,4
+30987216,Persuasion,3,19
+31029850,Persuasion,3,0
+31036647,Persuasion,2,4
+31066754,Persuasion,2,3
+31127526,Persuasion,6,4
+31221484,Change Talk,9,10
+31229595,Persuasion,3,8
+31231668,Persuasion,2,4
+31286784,Change Talk,1,2
+31331063,Persuasion,4,9
+31344177,Ambivalence,3,9
+31354493,Change Talk,3,6
+31367321,Change Talk,1,5
+31420170,Persuasion,2,7
+31427062,Change Talk,2,5
+31505282,Persuasion,2,7
+31547379,Persuasion,2,3
+31563533,Persuasion,1,5
+31571935,Change Talk,1,4
+31648577,Change Talk,0,3
+31812567,Change Talk,2,5
+31883067,Ambivalence,3,2
+31884719,Ambivalence,6,5
+31991500,Persuasion,2,5
+32009894,Ambivalence,3,8
+32015629,Persuasion,2,6
+32025646,Ambivalence,3,7
+32085500,Change Talk,3,6
+32107453,Ambivalence,4,6
+32221700,Persuasion,3,8
+32277027,Persuasion,4,10
+32325591,Change Talk,2,1
+32353939,Persuasion,1,2
+32402932,Ambivalence,7,9
+32420390,Persuasion,2,2
+32447130,Persuasion,1,9
+32448181,Persuasion,0,4
+32469320,Persuasion,1,6
+32489284,Ambivalence,8,8
+32685069,Persuasion,3,0
+32698687,Ambivalence,5,3
+32811896,Change Talk,1,4
+32937484,Ambivalence,4,5
+32962630,Persuasion,7,5
+33009038,Ambivalence,5,6
+33019672,Change Talk,0,5
+33035761,Ambivalence,3,2
+33040054,Change Talk,0,5
+33088970,Change Talk,0,9
+33143683,Ambivalence,4,6
+33163530,Ambivalence,8,7
+33206796,Persuasion,1,3
+33239660,Ambivalence,7,6
+33246912,Persuasion,4,4
+33325334,Ambivalence,4,8
+33335955,Change Talk,4,5
+33349448,Change Talk,3,2
+33397043,Persuasion,8,12
+33456350,Persuasion,1,4
+33482225,Persuasion,2,7
+33576930,Persuasion,4,6
+33668335,Persuasion,8,14
+33745779,Change Talk,7,7
+33786585,Change Talk,1,8
+33806960,Ambivalence,4,4
+33875628,Ambivalence,4,5
+34116899,Change Talk,0,5
+34182661,Change Talk,0,5
+34183778,Persuasion,6,9
+34259659,Ambivalence,5,9
+34278797,Ambivalence,4,4
+34300295,Ambivalence,3,7
+34385015,Persuasion,2,6
+34433641,Ambivalence,7,8
+34483131,Persuasion,6,3
+34564594,Persuasion,3,1
+34603443,Ambivalence,4,5
+34604423,Ambivalence,7,5
+34631927,Change Talk,1,9
+34648713,Change Talk,1,5
+34671863,Change Talk,2,4
+34731123,Ambivalence,6,10
+34751776,Change Talk,0,1
+34810928,Change Talk,0,6
+34818306,Persuasion,3,6
+34822315,Persuasion,2,7
+35045180,Ambivalence,6,7
+35056740,Change Talk,2,7
+35089872,Ambivalence,5,6
+35093359,Change Talk,3,3
+35096983,Ambivalence,6,6
+35108144,Change Talk,5,8
+35240470,Persuasion,1,8
+35241220,Ambivalence,8,3
+35251836,Change Talk,4,8
+35261977,Ambivalence,7,1
+35263931,Persuasion,3,3
+35303903,Change Talk,2,8
+35321604,Change Talk,4,13
+35341521,Change Talk,3,9
+35475198,Ambivalence,8,8
+35510486,Change Talk,0,9
+35590821,Ambivalence,4,5
+35591321,Change Talk,3,4
+35645924,Change Talk,9,5
+35698413,Change Talk,2,5
+35698940,Persuasion,2,1
+35826981,Change Talk,0,6
+35829300,Change Talk,0,4
+35839758,Change Talk,0,8
+35932913,Ambivalence,5,4
+35948474,Persuasion,4,6
+35966952,Persuasion,2,1
+35981972,Ambivalence,4,1
+36073650,Ambivalence,7,2
+36087360,Ambivalence,7,2
+36130172,Change Talk,2,6
+36139806,Change Talk,4,6
+36213007,Change Talk,4,3
+36230602,Ambivalence,2,7
+36410889,Persuasion,6,5
+36423210,Ambivalence,6,7
+36528417,Persuasion,5,8
+36534848,Persuasion,4,2
+36546230,Persuasion,2,2
+36554180,Ambivalence,7,8
+36567212,Persuasion,3,8
+36569510,Change Talk,0,3
+36601694,Persuasion,1,3
+36612260,Ambivalence,4,5
+36632928,Persuasion,1,7
+36648538,Change Talk,2,3
+36656880,Change Talk,2,3
+36695754,Persuasion,3,7
+36720522,Ambivalence,4,8
+36837603,Ambivalence,8,10
+36854376,Ambivalence,5,4
+36916707,Persuasion,3,9
+36983888,Persuasion,3,2
+36990814,Persuasion,5,7
+37044050,Ambivalence,12,7
+37115501,Ambivalence,6,6
+37126671,Persuasion,3,5
+37265217,Ambivalence,6,9
+37265866,Change Talk,1,12
+37362963,Persuasion,1,2
+37397584,Change Talk,3,1
+37488683,Persuasion,2,4
+37513803,Change Talk,0,3
+37572076,Ambivalence,3,3
+37603741,Ambivalence,8,5
+37672857,Persuasion,4,6
+37736991,Change Talk,2,2
+37768950,Ambivalence,12,5
+37799785,Ambivalence,2,5
+37819018,Persuasion,8,0
+37819132,Change Talk,0,5
+37829261,Change Talk,6,8
+37833465,Change Talk,4,14
+37838903,Ambivalence,6,5
+37882335,Ambivalence,7,9
+37885092,Ambivalence,3,8
+37904221,Change Talk,1,3
+37914988,Change Talk,0,11
+37925998,Persuasion,5,3
+37936336,Change Talk,1,6
+37946742,Persuasion,5,3
+38047749,Change Talk,4,3
+38058779,Change Talk,6,8
+38124802,Persuasion,8,8
+38190019,Ambivalence,2,4
+38222163,Ambivalence,4,6
+38359500,Ambivalence,3,5
+38370419,Change Talk,4,1
+38381765,Persuasion,4,8
+38398010,Persuasion,1,5
+38483696,Persuasion,3,3
+38545335,Change Talk,4,9
+38554362,Ambivalence,5,5
+38623681,Persuasion,4,2
+38643996,Persuasion,1,0
+38739328,Change Talk,0,6
+38743445,Ambivalence,4,3
+38822098,Ambivalence,3,6
+38891617,Change Talk,6,7
+38905362,Change Talk,7,10
+38910290,Change Talk,12,8
+38920681,Ambivalence,5,4
+38968743,Persuasion,4,3
+39175319,Persuasion,2,6
+39179846,Change Talk,0,11
+39299191,Ambivalence,13,0
+39607837,Persuasion,2,2
+39637114,Change Talk,2,0
+39656481,Change Talk,1,3
+39715508,Persuasion,11,1
+39781318,Change Talk,0,2
+39810566,Ambivalence,5,8
+39911385,Persuasion,1,2
+39968293,Change Talk,2,3
+40042260,Change Talk,1,4
+40084889,Change Talk,0,3
+40108241,Change Talk,4,2
+40145721,Persuasion,3,5
+40173118,Change Talk,1,1
+40188814,Ambivalence,3,5
+40220952,Ambivalence,0,8
+40300830,Ambivalence,4,6
+40359687,Persuasion,7,3
+40413035,Persuasion,4,1
+40543436,Persuasion,5,6
+40576544,Change Talk,1,3
+40630105,Persuasion,3,8
+40630400,Ambivalence,3,8
+40699425,Ambivalence,3,3
+40732288,Change Talk,5,6
+40749163,Persuasion,2,8
+40750016,Persuasion,3,11
+40768241,Persuasion,5,4
+40787974,Change Talk,3,6
+40863339,Change Talk,2,2
+40865353,Persuasion,6,2
+40893802,Change Talk,2,4
+40966815,Persuasion,2,3
+41060165,Ambivalence,5,2
+41089649,Change Talk,3,5
+41148463,Change Talk,0,3
+41244024,Ambivalence,6,2
+41295873,Change Talk,0,5
+41333731,Ambivalence,5,5
+41433028,Change Talk,1,2
+41483135,Persuasion,0,3
+41493111,Persuasion,5,10
+41496997,Change Talk,3,7
+41523008,Ambivalence,4,7
+41688651,Persuasion,2,4
+41700157,Change Talk,2,11
+41716591,Persuasion,1,0
+41750532,Persuasion,2,5
+41801436,Change Talk,9,10
+41845889,Change Talk,2,7
+41921672,Ambivalence,1,5
+41952487,Persuasion,10,5
+41990411,Change Talk,1,6
+42033947,Ambivalence,7,6
+42063387,Persuasion,1,3
+42074756,Change Talk,5,8
+42157027,Ambivalence,8,10
+42167271,Persuasion,8,9
+42193099,Ambivalence,5,8
+42272933,Persuasion,6,8
+42318907,Change Talk,2,3
+42448000,Change Talk,6,4
+42448212,Ambivalence,2,4
+42470155,Change Talk,2,3
+42510134,Change Talk,3,3
+42567326,Ambivalence,3,6
+42588090,Persuasion,5,6
+42677266,Persuasion,3,6
+42690260,Ambivalence,3,6
+42715019,Ambivalence,4,7
+42806693,Change Talk,3,6
+42878233,Persuasion,2,4
+42886514,Change Talk,2,3
+42890298,Change Talk,5,4
+42891013,Change Talk,5,8
+42988984,Persuasion,4,3
+43009377,Change Talk,3,2
+43043476,Persuasion,2,5
+43088475,Ambivalence,3,9
+43118757,Change Talk,2,5
+43140018,Ambivalence,6,5
+43238811,Ambivalence,5,4
+43280925,Change Talk,1,6
+43340022,Change Talk,3,4
+43370502,Persuasion,1,3
+43379350,Ambivalence,4,4
+43428379,Ambivalence,3,6
+43450337,Ambivalence,6,3
+43486418,Ambivalence,5,10
+43497190,Ambivalence,2,3
+43581931,Ambivalence,3,9
+43599864,Change Talk,4,7
+43605818,Change Talk,5,7
+43709196,Persuasion,6,6
+43726957,Change Talk,1,8
+43784001,Persuasion,2,8
+43806862,Ambivalence,3,6
+43856286,Ambivalence,7,8
+43893202,Change Talk,3,6
+43911204,Persuasion,5,3
+43936247,Ambivalence,5,4
+44064032,Ambivalence,6,3
+44156368,Change Talk,2,7
+44176472,Persuasion,3,4
+44363234,Persuasion,5,5
+44514067,Change Talk,0,4
+44527883,Persuasion,3,12
+44605682,Change Talk,0,5
+44608841,Ambivalence,14,6
+44648579,Persuasion,3,3
+44669101,Ambivalence,6,4
+44788258,Ambivalence,3,3
+44878546,Ambivalence,4,6
+44957003,Persuasion,4,8
+44968109,Change Talk,4,6
+45007794,Persuasion,3,6
+45015620,Change Talk,2,2
+45066005,Persuasion,7,4
+45070859,Change Talk,0,3
+45165333,Persuasion,6,1
+45435345,Persuasion,4,7
+45583339,Change Talk,0,10
+45628866,Persuasion,4,3
+45651852,Persuasion,2,3
+45741223,Change Talk,0,5
+45772711,Change Talk,3,5
+45799149,Ambivalence,5,19
+45859836,Persuasion,5,2
+45862536,Ambivalence,5,7
+45866980,Ambivalence,6,7
+46026559,Persuasion,2,2
+46043937,Persuasion,3,4
+46045109,Ambivalence,6,2
+46086029,Persuasion,3,2
+46112183,Ambivalence,1,4
+46210656,Ambivalence,3,8
+46287748,Ambivalence,7,2
+46303700,Persuasion,1,4
+46444557,Change Talk,0,7
+46531114,Persuasion,2,1
+46640312,Ambivalence,7,6
+46650158,Ambivalence,2,3
+46776353,Persuasion,3,8
+46845498,Persuasion,1,4
+46945630,Change Talk,3,2
+46979198,Ambivalence,7,4
+47069862,Change Talk,1,3
+47107307,Ambivalence,5,5
+47149639,Ambivalence,6,7
+47150011,Change Talk,0,2
+47274935,Ambivalence,6,5
+47280827,Change Talk,10,8
+47359529,Ambivalence,8,9
+47359682,Persuasion,2,3
+47387139,Change Talk,0,6
+47432401,Change Talk,0,4
+47536665,Ambivalence,8,10
+47585476,Persuasion,4,5
+47586770,Persuasion,5,10
+47639915,Persuasion,6,3
+47651519,Persuasion,2,5
+47707699,Change Talk,4,4
+47710161,Change Talk,2,7
+47753200,Change Talk,3,3
+47775132,Ambivalence,6,3
+47784996,Persuasion,2,2
+47797215,Ambivalence,7,4
+47806422,Ambivalence,5,5
+47951946,Ambivalence,2,1
+48023283,Persuasion,4,6
+48025053,Persuasion,3,0
+48039501,Ambivalence,6,0
+48091499,Persuasion,3,1
+48092351,Persuasion,2,3
+48096562,Change Talk,1,2
+48165696,Ambivalence,4,7
+48172874,Change Talk,6,5
+48181409,Persuasion,4,3
+48279129,Change Talk,6,6
+48286667,Change Talk,0,5
+48375917,Ambivalence,3,5
+48397989,Persuasion,4,11
+48400297,Persuasion,1,7
+48411036,Ambivalence,6,9
+48509285,Persuasion,3,2
+48526698,Persuasion,1,6
+48568070,Ambivalence,5,7
+48581192,Ambivalence,4,5
+48587745,Change Talk,0,6
+48800951,Change Talk,3,1
+48859169,Change Talk,0,9
+49013856,Change Talk,1,5
+49108961,Change Talk,5,8
+49129094,Change Talk,0,2
+49174608,Persuasion,1,2
+49358880,Ambivalence,3,4
+49367711,Change Talk,0,6
+49502137,Ambivalence,2,6
+49516810,Ambivalence,4,6
+49602034,Change Talk,0,3
+49637726,Ambivalence,5,7
+49661123,Persuasion,1,5
+49720325,Change Talk,0,6
+49751917,Change Talk,0,4
+49800864,Ambivalence,6,6
+49820445,Change Talk,1,8
+49877568,Change Talk,0,4
+49935902,Persuasion,2,8
+49953811,Ambivalence,4,5
+49996190,Persuasion,1,5
+50038044,Change Talk,0,5
+50040810,Persuasion,1,5
+50093772,Persuasion,4,6
+50118912,Change Talk,4,7
+50137937,Change Talk,2,2
+50386992,Ambivalence,6,6
+50469412,Persuasion,1,7
+50549216,Persuasion,6,4
+50562358,Persuasion,7,0
+50702181,Persuasion,2,3
+50703913,Change Talk,3,0
+50748870,Change Talk,0,4
+50761537,Ambivalence,2,4
+50794213,Ambivalence,6,3
+50909259,Ambivalence,8,1
+50930583,Persuasion,0,2
+50952297,Change Talk,4,10
+50962492,Ambivalence,7,14
+51005130,Change Talk,6,4
+51015282,Persuasion,4,5
+51140144,Persuasion,4,3
+51199141,Change Talk,0,4
+51233705,Ambivalence,1,4
+51285202,Persuasion,2,3
+51399394,Ambivalence,10,22
+51407570,Ambivalence,2,3
+51414187,Persuasion,3,2
+51579874,Ambivalence,7,10
+51605810,Ambivalence,3,5
+51634917,Change Talk,0,8
+51656142,Ambivalence,4,5
+51677639,Persuasion,3,2
+51690994,Persuasion,4,9
+51703577,Ambivalence,3,8
+51732995,Change Talk,5,4
+51746472,Persuasion,5,11
+51788745,Ambivalence,3,3
+51862378,Persuasion,0,4
+51875318,Change Talk,3,2
+51944304,Ambivalence,4,6
+52055478,Persuasion,6,11
+52108006,Ambivalence,3,7
+52339792,Persuasion,3,2
+52365455,Persuasion,4,7
+52366006,Persuasion,1,8
+52427303,Change Talk,0,5
+52461778,Persuasion,4,8
+52482550,Ambivalence,8,5
+52520973,Change Talk,3,8
+52596039,Persuasion,7,4
+52678705,Ambivalence,4,7
+52719743,Ambivalence,9,8
+52735233,Change Talk,4,1
+52751122,Ambivalence,7,5
+52794429,Ambivalence,3,2
+52798989,Ambivalence,5,2
+52835836,Persuasion,1,3
+52929364,Persuasion,4,9
+53006592,Change Talk,5,6
+53019459,Change Talk,4,4
+53118516,Ambivalence,2,3
+53224160,Persuasion,3,3
+53252042,Persuasion,4,3
+53261304,Ambivalence,5,5
+53373219,Change Talk,0,10
+53383731,Change Talk,1,9
+53528377,Ambivalence,6,6
+53536963,Change Talk,7,4
+53547764,Persuasion,1,4
+53570745,Change Talk,3,3
+53657696,Change Talk,1,1
+53698604,Change Talk,3,4
+53785978,Ambivalence,8,6
+53849763,Change Talk,3,4
+53850427,Ambivalence,7,4
+53862520,Change Talk,0,11
+53877090,Persuasion,2,1
+53898552,Ambivalence,4,7
+53968073,Change Talk,0,3
+53981358,Ambivalence,6,6
+53985606,Persuasion,2,5
+53986384,Persuasion,2,1
+54131572,Ambivalence,2,6
+54163948,Ambivalence,5,6
+54183115,Persuasion,6,2
+54183283,Change Talk,3,6
+54195277,Persuasion,3,2
+54239954,Persuasion,2,5
+54279681,Persuasion,0,7
+54309977,Persuasion,6,2
+54335634,Persuasion,8,8
+54348040,Persuasion,4,0
+54348690,Change Talk,3,4
+54406469,Ambivalence,3,1
+54466784,Persuasion,5,4
+54481462,Change Talk,3,1
+54810924,Change Talk,2,5
+54821071,Ambivalence,4,14
+54874902,Change Talk,6,7
+54978132,Change Talk,7,5
+55097489,Persuasion,3,4
+55109090,Change Talk,0,6
+55231635,Ambivalence,8,6
+55264629,Ambivalence,4,4
+55272599,Ambivalence,5,7
+55285855,Persuasion,3,4
+55376290,Persuasion,6,6
+55417609,Persuasion,12,2
+55423294,Ambivalence,9,14
+55430988,Ambivalence,8,10
+55465565,Ambivalence,3,5
+55529842,Persuasion,5,0
+55741501,Change Talk,2,5
+55747636,Change Talk,4,7
+55751506,Persuasion,1,6
+55788479,Persuasion,1,1
+55814604,Ambivalence,1,4
+55895010,Persuasion,5,0
+55903061,Change Talk,0,4
+55913160,Change Talk,0,4
+55983577,Ambivalence,4,5
+56010960,Ambivalence,7,4
+56085656,Persuasion,4,6
+56177768,Change Talk,0,7
+56214902,Persuasion,0,6
+56330807,Ambivalence,5,4
+56348509,Ambivalence,5,9
+56480363,Ambivalence,4,5
+56483963,Persuasion,1,5
+56518804,Ambivalence,3,3
+56592182,Persuasion,5,8
+56634874,Change Talk,6,4
+56721237,Persuasion,2,0
+56773930,Persuasion,3,5
+56783020,Persuasion,2,4
+56912254,Change Talk,2,4
+56942487,Ambivalence,5,7
+56955631,Change Talk,1,3
+57000212,Change Talk,0,3
+57029054,Ambivalence,7,6
+57054209,Ambivalence,7,5
+57054799,Persuasion,0,5
+57190978,Persuasion,2,2
+57301789,Persuasion,1,5
+57335236,Change Talk,2,2
+57355260,Ambivalence,5,4
+57450874,Change Talk,3,7
+57508376,Ambivalence,3,4
+57532963,Ambivalence,6,5
+57605160,Persuasion,5,7
+57624918,Persuasion,3,10
+57642916,Ambivalence,3,6
+57675857,Persuasion,2,2
+57678645,Persuasion,6,6
+57695554,Change Talk,4,2
+57737929,Ambivalence,7,7
+57766650,Persuasion,4,3
+57779293,Persuasion,2,4
+57881074,Persuasion,2,6
+57930699,Change Talk,2,4
+57956762,Persuasion,6,4
+57970636,Change Talk,4,5
+57994696,Persuasion,5,4
+57996303,Change Talk,1,6
+58008852,Ambivalence,9,9
+58049763,Change Talk,1,7
+58154044,Ambivalence,7,4
+58166503,Change Talk,0,7
+58192543,Persuasion,3,3
+58261374,Persuasion,2,5
+58289556,Ambivalence,6,4
+58300048,Ambivalence,3,4
+58377344,Change Talk,4,5
+58391092,Persuasion,6,4
+58406559,Persuasion,3,9
+58419415,Ambivalence,3,4
+58448259,Change Talk,0,6
+58543845,Ambivalence,11,16
+58615788,Change Talk,0,4
+58694830,Change Talk,5,4
+58698686,Change Talk,1,6
+58841972,Change Talk,1,4
+59028410,Change Talk,1,11
+59030228,Persuasion,3,2
+59129265,Persuasion,11,10
+59249506,Change Talk,4,8
+59284920,Persuasion,3,3
+59292319,Change Talk,1,5
+59353154,Persuasion,0,4
+59365488,Change Talk,0,5
+59399102,Change Talk,1,7
+59408108,Ambivalence,7,5
+59495371,Persuasion,3,1
+59509013,Ambivalence,5,8
+59541160,Persuasion,0,3
+59615859,Ambivalence,6,10
+59637277,Ambivalence,6,4
+59708063,Change Talk,2,9
+59723800,Change Talk,0,6
+59734126,Persuasion,3,4
+59750951,Persuasion,2,4
+59760382,Persuasion,1,7
+59893995,Ambivalence,12,12
+59915806,Change Talk,0,7
+59965801,Persuasion,6,8
+60090130,Persuasion,0,4
+60093156,Ambivalence,5,3
+60152047,Change Talk,3,3
+60191407,Change Talk,0,5
+60329988,Ambivalence,3,11
+60396849,Change Talk,2,4
+60406124,Ambivalence,5,3
+60444342,Change Talk,3,0
+60476328,Persuasion,3,6
+60645899,Change Talk,1,5
+60661224,Ambivalence,0,6
+60755840,Persuasion,2,7
+60855479,Change Talk,3,4
+60871152,Change Talk,0,6
+60881235,Change Talk,0,7
+60930050,Change Talk,0,6
+61000802,Ambivalence,5,4
+61082652,Ambivalence,3,6
+61138653,Change Talk,2,7
+61161803,Ambivalence,3,7
+61215180,Persuasion,6,0
+61236302,Change Talk,3,5
+61252928,Change Talk,2,4
+61254504,Change Talk,1,2
+61254576,Persuasion,2,1
+61260212,Change Talk,3,6
+61285110,Ambivalence,4,5
+61335078,Change Talk,0,7
+61368173,Ambivalence,3,7
+61526386,Persuasion,2,1
+61604427,Change Talk,1,7
+61654848,Change Talk,4,11
+61673433,Change Talk,1,8
+61708507,Change Talk,2,6
+61734180,Persuasion,2,3
+61738618,Ambivalence,3,5
+61751343,Change Talk,13,14
+61889251,Change Talk,0,8
+61936340,Change Talk,3,5
+61956348,Ambivalence,2,2
+62032687,Change Talk,3,3
+62053410,Persuasion,3,11
+62059744,Change Talk,0,5
+62072487,Persuasion,2,3
+62074140,Ambivalence,3,7
+62131656,Ambivalence,4,6
+62158964,Persuasion,5,8
+62235773,Change Talk,0,6
+62284385,Ambivalence,4,1
+62332635,Change Talk,1,3
+62354514,Persuasion,5,7
+62366572,Change Talk,4,3
+62385850,Ambivalence,3,8
+62395546,Ambivalence,6,10
+62404162,Persuasion,6,2
+62433467,Ambivalence,2,3
+62437606,Change Talk,0,7
+62513436,Persuasion,4,10
+62522668,Change Talk,1,5
+62588090,Change Talk,1,3
+62733452,Change Talk,0,5
+62778481,Persuasion,2,5
+62802972,Change Talk,1,6
+62855884,Persuasion,7,10
+62915727,Persuasion,1,4
+63099516,Ambivalence,5,6
+63103084,Persuasion,3,5
+63107318,Persuasion,5,4
+63182836,Persuasion,4,0
+63360057,Ambivalence,3,2
+63413269,Persuasion,2,7
+63432194,Ambivalence,3,5
+63503172,Change Talk,3,7
+63513354,Persuasion,3,5
+63530149,Persuasion,2,3
+63530891,Persuasion,0,3
+63587671,Persuasion,3,7
+63623817,Ambivalence,4,9
+63644782,Ambivalence,5,8
+63654715,Change Talk,0,10
+63680367,Change Talk,4,4
+63712271,Persuasion,5,3
+63716026,Ambivalence,8,10
+63750110,Persuasion,0,10
+63761963,Change Talk,2,7
+63768690,Ambivalence,2,7
+63854663,Ambivalence,5,6
+63873811,Persuasion,3,4
+63905393,Persuasion,2,2
+63914462,Persuasion,3,5
+63920949,Persuasion,4,3
+63943881,Persuasion,7,8
+64001716,Change Talk,4,4
+64018690,Persuasion,2,1
+64083284,Ambivalence,3,6
+64107459,Ambivalence,1,3
+64256031,Ambivalence,5,2
+64257097,Ambivalence,5,4
+64326327,Change Talk,0,10
+64415021,Change Talk,8,9
+64489391,Change Talk,1,1
+64598152,Persuasion,7,1
+64632107,Change Talk,7,4
+64663304,Ambivalence,15,13
+64702496,Persuasion,5,4
+64773130,Change Talk,4,7
+64815573,Persuasion,8,6
+64886283,Persuasion,4,9
+64952709,Change Talk,3,9
+64955510,Persuasion,2,7
+65008489,Ambivalence,5,9
+65092035,Persuasion,3,3
+65168664,Ambivalence,6,9
+65170178,Persuasion,6,4
+65233106,Persuasion,8,10
+65234287,Persuasion,8,5
+65288867,Persuasion,9,8
+65334006,Ambivalence,3,2
+65347848,Change Talk,3,6
+65409494,Ambivalence,9,1
+65462647,Persuasion,0,5
+65626022,Change Talk,0,1
+65681871,Change Talk,0,4
+65685801,Persuasion,3,3
+65740105,Change Talk,8,8
+65752839,Ambivalence,3,3
+65787799,Change Talk,4,8
+65790026,Ambivalence,4,4
+65800441,Persuasion,10,2
+65823011,Change Talk,2,3
+65837055,Change Talk,1,5
+65861037,Change Talk,6,7
+66056615,Change Talk,1,6
+66137740,Persuasion,2,2
+66139069,Change Talk,5,8
+66181228,Ambivalence,6,9
+66285421,Change Talk,0,5
+66327932,Persuasion,4,6
+66398734,Persuasion,1,1
+66425264,Change Talk,0,8
+66427216,Change Talk,3,3
+66429769,Persuasion,1,6
+66472401,Change Talk,0,4
+66540253,Change Talk,3,8
+66578099,Persuasion,5,7
+66609974,Persuasion,4,2
+66798514,Persuasion,1,4
+66844870,Change Talk,1,10
+66884107,Ambivalence,1,2
+66896805,Change Talk,5,0
+66896931,Change Talk,3,1
+66948625,Ambivalence,3,4
+67029227,Change Talk,0,4
+67083733,Ambivalence,6,7
+67092093,Ambivalence,6,6
+67187002,Persuasion,3,3
+67381812,Change Talk,2,4
+67420118,Change Talk,1,6
+67447686,Ambivalence,2,6
+67460824,Change Talk,0,9
+67513028,Persuasion,1,8
+67552889,Persuasion,2,5
+67670878,Persuasion,5,5
+67732767,Ambivalence,3,6
+67744650,Change Talk,0,8
+67782285,Change Talk,1,4
+67933062,Change Talk,7,5
+68024721,Persuasion,2,1
+68033030,Persuasion,2,2
+68049820,Change Talk,0,2
+68114769,Change Talk,0,8
+68143025,Ambivalence,7,6
+68173432,Ambivalence,2,5
+68247723,Change Talk,0,5
+68338310,Persuasion,0,5
+68410976,Persuasion,6,3
+68471945,Change Talk,0,5
+68476972,Ambivalence,3,4
+68603466,Change Talk,2,6
+68608259,Ambivalence,5,8
+68636750,Change Talk,2,2
+68728502,Persuasion,6,4
+68732727,Ambivalence,5,3
+68842690,Persuasion,7,7
+68884239,Ambivalence,8,8
+68918500,Persuasion,5,5
+68919971,Persuasion,2,5
+68942135,Change Talk,0,7
+68963155,Persuasion,1,4
+68996316,Ambivalence,4,3
+69010166,Change Talk,3,3
+69072337,Ambivalence,4,7
+69115784,Ambivalence,7,9
+69118858,Persuasion,2,3
+69163441,Persuasion,6,0
+69213942,Change Talk,4,6
+69347922,Change Talk,2,5
+69358937,Ambivalence,5,14
+69411779,Persuasion,4,7
+69531757,Change Talk,3,8
+69704756,Change Talk,0,5
+69811021,Change Talk,0,8
+69847664,Ambivalence,3,1
+69872646,Persuasion,4,5
+69935489,Change Talk,0,5
+69988128,Ambivalence,2,5
+70005348,Change Talk,1,4
+70081473,Change Talk,0,2
+70155780,Ambivalence,6,0
+70205637,Persuasion,4,2
+70215756,Persuasion,4,8
+70225802,Change Talk,4,10
+70238045,Ambivalence,6,3
+70292058,Persuasion,4,2
+70357434,Ambivalence,4,9
+70394962,Ambivalence,3,8
+70398420,Persuasion,3,3
+70548468,Persuasion,1,5
+70619438,Change Talk,2,7
+70633849,Change Talk,0,6
+70639475,Change Talk,1,5
+70718506,Change Talk,5,6
+70730555,Persuasion,7,8
+70767194,Change Talk,2,8
+70797792,Change Talk,4,5
+70940442,Ambivalence,8,8
+70951543,Persuasion,4,4
+70954597,Persuasion,1,3
+70996910,Persuasion,5,5
+71012130,Ambivalence,14,15
+71075688,Persuasion,4,7
+71109115,Change Talk,5,5
+71184333,Ambivalence,5,5
+71408320,Persuasion,4,9
+71418062,Persuasion,3,4
+71429386,Persuasion,6,3
+71443808,Persuasion,4,7
+71456335,Persuasion,3,3
+71521289,Ambivalence,5,4
+71648484,Change Talk,4,3
+71805988,Change Talk,4,1
+71951559,Ambivalence,2,5
+72024462,Change Talk,3,1
+72132107,Persuasion,3,4
+72169972,Ambivalence,3,13
+72203823,Ambivalence,5,1
+72368318,Ambivalence,3,4
+72378313,Ambivalence,3,3
+72464843,Ambivalence,4,10
+72473852,Ambivalence,4,2
+72505091,Persuasion,2,3
+72517803,Ambivalence,7,7
+72556945,Persuasion,0,4
+72590897,Persuasion,0,16
+72607583,Persuasion,1,4
+72618969,Ambivalence,14,4
+72710041,Persuasion,7,5
+72766283,Persuasion,4,4
+72830916,Change Talk,2,5
+72949393,Change Talk,0,4
+72988667,Change Talk,2,2
+73019935,Ambivalence,3,6
+73153759,Change Talk,2,4
+73194716,Change Talk,1,6
+73212814,Change Talk,1,3
+73220843,Change Talk,6,4
+73275913,Ambivalence,1,1
+73363170,Change Talk,3,4
+73364606,Persuasion,2,3
+73502972,Ambivalence,2,4
+73519534,Persuasion,6,5
+73587102,Change Talk,0,6
+73642632,Persuasion,1,8
+73674744,Persuasion,4,3
+73679302,Ambivalence,8,10
+73682177,Change Talk,4,4
+73742707,Change Talk,2,6
+73787448,Change Talk,1,4
+73837298,Ambivalence,10,8
+73848514,Change Talk,1,7
+73900420,Ambivalence,4,4
+73981914,Ambivalence,4,5
+73999531,Ambivalence,4,5
+74030806,Persuasion,8,1
+74090005,Change Talk,0,5
+74099764,Change Talk,3,0
+74138342,Change Talk,4,1
+74204423,Ambivalence,3,6
+74255323,Change Talk,0,1
+74376391,Persuasion,0,4
+74401939,Ambivalence,11,7
+74405626,Change Talk,5,4
+74685857,Persuasion,7,7
+74723096,Change Talk,1,3
+74756141,Change Talk,1,4
+74882335,Change Talk,2,12
+74939272,Persuasion,5,13
+74981786,Persuasion,4,7
+74991543,Change Talk,6,5
+75023404,Ambivalence,6,7
+75024163,Persuasion,3,7
+75070896,Persuasion,1,7
+75144977,Change Talk,1,7
+75258705,Persuasion,5,6
+75313251,Persuasion,6,12
+75340530,Ambivalence,4,4
+75343273,Change Talk,4,4
+75372760,Change Talk,0,3
+75431803,Change Talk,1,6
+75437094,Ambivalence,3,4
+75559878,Persuasion,4,6
+75572375,Ambivalence,4,15
+75682217,Ambivalence,3,6
+75701257,Change Talk,5,6
+75748705,Ambivalence,1,4
+75763464,Persuasion,3,3
+75764278,Ambivalence,5,1
+75768258,Change Talk,2,4
+75838934,Change Talk,0,6
+75866246,Persuasion,5,9
+75967511,Change Talk,1,8
+76022442,Ambivalence,10,7
+76176987,Ambivalence,2,4
+76368687,Change Talk,4,5
+76408922,Ambivalence,4,5
+76455616,Change Talk,3,4
+76485355,Change Talk,2,5
+76547267,Change Talk,4,8
+76561142,Change Talk,1,1
+76606210,Change Talk,0,8
+76636642,Change Talk,0,4
+76684834,Change Talk,0,11
+76737843,Ambivalence,9,6
+76798194,Ambivalence,8,15
+76814407,Persuasion,6,3
+76940378,Change Talk,0,11
+77031973,Change Talk,0,5
+77064982,Persuasion,4,4
+77070993,Ambivalence,6,2
+77081871,Change Talk,1,4
+77257957,Ambivalence,7,12
+77325137,Change Talk,8,8
+77343440,Persuasion,2,4
+77388223,Persuasion,11,9
+77416385,Ambivalence,3,12
+77433360,Change Talk,2,5
+77458956,Change Talk,0,8
+77473223,Persuasion,0,5
+77507573,Change Talk,0,9
+77510154,Persuasion,3,5
+77639613,Ambivalence,6,7
+77759533,Persuasion,4,3
+77829110,Persuasion,1,6
+77893100,Ambivalence,3,0
+77906440,Ambivalence,7,9
+77915217,Persuasion,4,5
+77981987,Change Talk,3,5
+78007472,Change Talk,4,7
+78068821,Ambivalence,4,5
+78111180,Persuasion,6,2
+78126396,Ambivalence,4,6
+78153051,Change Talk,3,4
+78171938,Persuasion,2,3
+78241451,Change Talk,0,5
+78247574,Persuasion,2,5
+78363721,Persuasion,4,5
+78426653,Change Talk,0,3
+78488712,Ambivalence,5,3
+78548838,Ambivalence,3,7
+78556945,Persuasion,3,4
+78617062,Ambivalence,5,6
+78681084,Change Talk,7,5
+78714419,Change Talk,0,5
+78767546,Persuasion,10,1
+78809736,Ambivalence,5,0
+78832977,Change Talk,6,5
+78862088,Ambivalence,9,8
+78879093,Change Talk,2,3
+78894770,Ambivalence,3,11
+78951899,Ambivalence,2,3
+78961637,Ambivalence,2,2
+79050810,Persuasion,5,5
+79053884,Change Talk,10,9
+79098637,Change Talk,1,11
+79126774,Persuasion,4,6
+79190693,Change Talk,3,7
+79198286,Change Talk,4,4
+79199524,Persuasion,2,0
+79206277,Persuasion,2,7
+79248693,Change Talk,0,9
+79287037,Persuasion,1,6
+79304243,Change Talk,1,2
+79323120,Change Talk,0,6
+79333189,Change Talk,7,5
+79361902,Persuasion,0,7
+79481718,Change Talk,1,5
+79511870,Change Talk,4,8
+79561429,Persuasion,4,6
+79615422,Persuasion,3,10
+79671319,Ambivalence,3,6
+79672345,Change Talk,5,8
+79732711,Ambivalence,8,4
+79757730,Persuasion,7,0
+79772136,Change Talk,2,2
+79774815,Persuasion,7,7
+79796109,Change Talk,3,4
+79815538,Persuasion,3,0
+79859636,Change Talk,0,4
+79929270,Change Talk,3,5
+80038969,Change Talk,3,5
+80042235,Change Talk,1,5
+80110328,Persuasion,2,3
+80144020,Persuasion,6,5
+80168986,Persuasion,2,7
+80180388,Persuasion,5,0
+80202246,Change Talk,4,8
+80218327,Persuasion,5,5
+80257136,Persuasion,6,3
+80358469,Ambivalence,4,1
+80491595,Ambivalence,2,2
+80516091,Change Talk,4,4
+80567340,Change Talk,3,4
+80581864,Ambivalence,7,9
+80608403,Change Talk,4,3
+80656772,Persuasion,2,3
+80662232,Change Talk,0,5
+80721606,Change Talk,2,6
+80738581,Change Talk,1,6
+80946731,Change Talk,0,7
+81012267,Ambivalence,8,6
+81032192,Change Talk,4,5
+81062978,Persuasion,5,6
+81074228,Ambivalence,5,7
+81077663,Change Talk,0,12
+81166420,Change Talk,5,5
+81183483,Persuasion,4,3
+81191268,Persuasion,2,3
+81210858,Ambivalence,6,7
+81266716,Change Talk,8,9
+81412239,Persuasion,10,7
+81527218,Persuasion,1,6
+81550193,Persuasion,1,7
+81607188,Persuasion,0,8
+81615809,Change Talk,0,8
+81679924,Ambivalence,2,6
+81793620,Change Talk,1,4
+81833277,Persuasion,1,8
+81866450,Persuasion,2,4
+81942889,Change Talk,0,3
+81994516,Ambivalence,4,6
+81998577,Ambivalence,7,12
+82048769,Ambivalence,5,4
+82107404,Persuasion,2,4
+82144178,Persuasion,4,4
+82205832,Persuasion,2,3
+82273717,Persuasion,1,6
+82277198,Change Talk,0,6
+82304103,Ambivalence,4,8
+82338576,Change Talk,1,7
+82371667,Change Talk,0,7
+82382382,Change Talk,0,8
+82406634,Persuasion,0,5
+82431886,Ambivalence,5,3
+82447591,Persuasion,2,3
+82490431,Change Talk,4,1
+82506993,Change Talk,6,5
+82618917,Ambivalence,5,4
+82622402,Ambivalence,2,5
+82636312,Persuasion,1,3
+82746453,Persuasion,0,5
+82764912,Change Talk,0,5
+82785189,Change Talk,3,5
+82819439,Persuasion,3,4
+82823850,Ambivalence,5,9
+82887723,Persuasion,8,2
+82915051,Change Talk,5,5
+82925197,Change Talk,0,12
+82935680,Change Talk,1,2
+82947425,Change Talk,2,2
+83033735,Persuasion,5,14
+83097641,Persuasion,0,5
+83173953,Ambivalence,2,2
+83174607,Persuasion,4,6
+83207121,Ambivalence,4,10
+83209655,Ambivalence,8,8
+83213599,Change Talk,1,2
+83253055,Ambivalence,4,6
+83274718,Persuasion,4,2
+83298413,Change Talk,1,5
+83349444,Change Talk,0,8
+83373105,Ambivalence,6,5
+83391707,Persuasion,5,3
+83391920,Persuasion,0,4
+83440665,Change Talk,1,6
+83455285,Change Talk,2,4
+83456426,Change Talk,6,3
+83558140,Change Talk,8,8
+83675723,Ambivalence,4,5
+83683815,Ambivalence,3,5
+83684704,Change Talk,2,6
+83748074,Change Talk,0,9
+83854215,Change Talk,1,8
+83876795,Change Talk,2,10
+83912433,Change Talk,0,6
+83928547,Change Talk,0,4
+84018095,Change Talk,0,3
+84060145,Ambivalence,6,10
+84164096,Persuasion,0,5
+84216284,Change Talk,0,5
+84238611,Change Talk,9,8
+84250892,Ambivalence,7,4
+84260732,Persuasion,0,1
+84290575,Change Talk,1,2
+84331013,Change Talk,0,7
+84368344,Persuasion,2,5
+84378396,Persuasion,2,6
+84412699,Change Talk,3,3
+84419569,Change Talk,0,2
+84479039,Ambivalence,6,5
+84505627,Change Talk,0,6
+84568329,Ambivalence,6,0
+84652900,Change Talk,1,5
+84670884,Persuasion,2,7
+84753099,Ambivalence,5,4
+84772451,Persuasion,1,7
+84788186,Ambivalence,6,6
+84812547,Ambivalence,4,2
+84819796,Change Talk,2,4
+84831700,Change Talk,0,2
+84861485,Persuasion,2,3
+84861667,Persuasion,6,9
+84871292,Persuasion,0,4
+84945319,Persuasion,3,9
+84987978,Ambivalence,5,4
+85196325,Ambivalence,3,8
+85273425,Ambivalence,7,12
+85292120,Ambivalence,5,7
+85306659,Persuasion,3,8
+85328104,Ambivalence,8,7
+85386951,Change Talk,4,4
+85524530,Persuasion,5,7
+85543568,Persuasion,7,0
+85557399,Change Talk,5,8
+85588104,Ambivalence,7,13
+85627477,Change Talk,0,5
+85672762,Ambivalence,3,9
+85674054,Persuasion,3,6
+85755801,Ambivalence,5,2
+85825958,Change Talk,1,4
+85832559,Change Talk,0,5
+85878474,Persuasion,4,7
+85997104,Change Talk,3,5
+86068297,Persuasion,0,2
+86121606,Ambivalence,4,7
+86201601,Change Talk,0,4
+86209023,Persuasion,1,2
+86219227,Change Talk,0,8
+86221443,Change Talk,3,6
+86285467,Change Talk,2,1
+86317909,Ambivalence,2,8
+86319974,Persuasion,2,4
+86366366,Ambivalence,6,8
+86419672,Change Talk,0,2
+86421187,Persuasion,1,5
+86446977,Persuasion,3,5
+86484599,Change Talk,3,6
+86494280,Change Talk,1,7
+86604486,Change Talk,0,6
+86611547,Ambivalence,7,7
+86617461,Persuasion,5,6
+86646163,Persuasion,2,4
+86686417,Ambivalence,5,7
+86780543,Ambivalence,3,5
+86784433,Persuasion,3,13
+86863776,Ambivalence,4,6
+86910018,Persuasion,1,5
+86911327,Change Talk,1,1
+86998652,Persuasion,2,0
+87030848,Change Talk,9,9
+87089209,Ambivalence,5,6
+87091607,Ambivalence,7,4
+87228820,Ambivalence,10,3
+87263489,Change Talk,2,4
+87376491,Change Talk,0,1
+87431419,Change Talk,0,4
+87484043,Persuasion,5,4
+87495979,Persuasion,3,2
+87583710,Change Talk,0,7
+87673173,Change Talk,3,7
+87782142,Change Talk,1,4
+87808398,Change Talk,5,6
+87926807,Ambivalence,7,1
+87964068,Change Talk,0,2
+88004322,Ambivalence,5,4
+88029944,Persuasion,3,5
+88097263,Ambivalence,6,6
+88120841,Ambivalence,13,4
+88127621,Persuasion,5,5
+88148248,Change Talk,1,4
+88172034,Persuasion,2,2
+88190019,Ambivalence,4,7
+88320591,Ambivalence,3,12
+88519021,Ambivalence,3,2
+88599948,Change Talk,1,0
+88603703,Ambivalence,6,6
+88638210,Change Talk,6,7
+88679549,Persuasion,4,3
+88836872,Ambivalence,10,6
+88844782,Change Talk,0,3
+88870963,Ambivalence,2,3
+88953582,Persuasion,3,6
+88992908,Ambivalence,3,0
+89011630,Persuasion,1,2
+89036267,Change Talk,0,11
+89048034,Ambivalence,4,4
+89088124,Persuasion,9,2
+89123229,Ambivalence,2,5
+89144573,Ambivalence,6,16
+89172838,Ambivalence,4,8
+89302243,Persuasion,2,0
+89325146,Ambivalence,4,4
+89345206,Ambivalence,3,3
+89491027,Persuasion,5,6
+89561597,Ambivalence,6,10
+89585121,Ambivalence,1,6
+89687082,Persuasion,2,4
+89750363,Change Talk,3,5
+89852470,Change Talk,1,8
+89897268,Persuasion,2,7
+89951969,Change Talk,2,3
+90004191,Persuasion,5,5
+90137182,Change Talk,2,8
+90219557,Persuasion,1,5
+90273906,Change Talk,0,13
+90382363,Ambivalence,3,4
+90411316,Ambivalence,7,5
+90447289,Ambivalence,2,6
+90484495,Ambivalence,3,4
+90500087,Persuasion,2,3
+90500184,Change Talk,1,3
+90514876,Ambivalence,4,8
+90585191,Ambivalence,5,6
+90606633,Ambivalence,5,4
+90616368,Ambivalence,6,3
+90700453,Ambivalence,5,7
+90775215,Change Talk,2,6
+90788757,Ambivalence,7,4
+90802251,Persuasion,3,8
+90861022,Change Talk,1,3
+90877943,Persuasion,2,8
+90907413,Persuasion,3,3
+90969364,Persuasion,6,6
+91052870,Change Talk,5,4
+91063287,Persuasion,3,0
+91138016,Persuasion,2,3
+91171078,Persuasion,5,6
+91193463,Persuasion,3,7
+91202226,Change Talk,8,5
+91206762,Persuasion,6,0
+91216801,Ambivalence,8,10
+91218758,Change Talk,1,6
+91254079,Change Talk,4,7
+91430859,Ambivalence,5,8
+91489130,Change Talk,0,5
+91543508,Change Talk,2,3
+91593252,Persuasion,5,5
+91617082,Ambivalence,7,2
+91642195,Persuasion,3,4
+91748756,Persuasion,4,6
+91805187,Persuasion,2,1
+91834923,Ambivalence,7,5
+91911845,Ambivalence,2,5
+91932477,Persuasion,5,5
+91956813,Ambivalence,5,5
+91992796,Persuasion,0,3
+92046265,Ambivalence,4,5
+92058761,Ambivalence,6,7
+92160200,Change Talk,0,4
+92257650,Ambivalence,8,3
+92327372,Ambivalence,4,3
+92384710,Ambivalence,5,4
+92413923,Ambivalence,5,7
+92418459,Change Talk,3,12
+92451715,Change Talk,5,1
+92479012,Change Talk,2,7
+92493828,Persuasion,0,9
+92495994,Persuasion,1,7
+92497927,Ambivalence,5,8
+92599820,Persuasion,3,8
+92704012,Change Talk,6,6
+92709768,Change Talk,0,9
+92746254,Change Talk,2,5
+92783732,Change Talk,4,3
+92856103,Change Talk,0,4
+92927022,Change Talk,5,4
+92985500,Persuasion,1,4
+93036761,Ambivalence,5,5
+93175303,Persuasion,2,4
+93195554,Change Talk,1,4
+93200722,Ambivalence,10,3
+93225575,Persuasion,1,3
+93238409,Persuasion,4,2
+93238665,Change Talk,2,5
+93301285,Persuasion,1,5
+93360217,Ambivalence,4,8
+93472081,Ambivalence,4,4
+93479469,Ambivalence,6,8
+93512296,Ambivalence,4,5
+93584357,Change Talk,0,4
+93616544,Ambivalence,1,0
+93620106,Ambivalence,3,5
+93644382,Ambivalence,5,1
+93646290,Persuasion,6,5
+93693257,Ambivalence,7,7
+93772966,Ambivalence,4,4
+93852214,Ambivalence,2,6
+93866209,Ambivalence,2,2
+93912720,Ambivalence,5,6
+93945470,Persuasion,5,6
+94002473,Change Talk,6,8
+94008751,Change Talk,4,4
+94020548,Ambivalence,6,4
+94036655,Change Talk,2,2
+94048194,Persuasion,2,3
+94050630,Persuasion,1,7
+94067556,Persuasion,3,3
+94085117,Ambivalence,10,10
+94123304,Persuasion,4,1
+94148804,Persuasion,6,4
+94240376,Change Talk,5,5
+94310926,Change Talk,8,8
+94376496,Ambivalence,2,1
+94605433,Ambivalence,6,11
+94609387,Change Talk,1,4
+94691430,Change Talk,1,10
+94771740,Persuasion,0,7
+94786798,Persuasion,3,6
+94791182,Persuasion,3,1
+94944846,Change Talk,0,4
+94993789,Change Talk,0,7
+95012235,Change Talk,0,10
+95034990,Change Talk,0,5
+95039003,Change Talk,6,10
+95131184,Persuasion,2,2
+95157157,Ambivalence,6,6
+95173513,Ambivalence,4,6
+95180913,Ambivalence,4,4
+95256360,Change Talk,8,10
+95377116,Ambivalence,4,2
+95585802,Persuasion,2,1
+95657064,Change Talk,3,6
+95703799,Persuasion,4,5
+95769145,Ambivalence,6,8
+95795291,Change Talk,9,10
+95803875,Ambivalence,4,3
+95864008,Ambivalence,1,4
+95912897,Change Talk,7,4
+95918274,Change Talk,4,2
+95926233,Ambivalence,5,4
+95997293,Change Talk,2,2
+96032283,Change Talk,4,6
+96041718,Change Talk,1,9
+96051423,Persuasion,2,2
+96054038,Change Talk,0,8
+96251466,Ambivalence,8,8
+96261119,Ambivalence,6,6
+96315264,Persuasion,0,2
+96357707,Persuasion,10,9
+96409568,Persuasion,2,10
+96418737,Ambivalence,2,1
+96533676,Persuasion,4,7
+96540552,Ambivalence,4,6
+96654138,Ambivalence,2,2
+96662871,Change Talk,0,3
+96714444,Ambivalence,5,4
+96722414,Persuasion,2,4
+96729000,Ambivalence,6,7
+96769527,Persuasion,2,4
+96787393,Ambivalence,4,6
+96800325,Ambivalence,3,2
+96899331,Ambivalence,9,7
+96905193,Change Talk,0,7
+96979230,Change Talk,0,6
+97159036,Change Talk,0,4
+97352494,Persuasion,2,5
+97355055,Change Talk,5,6
+97366067,Persuasion,5,7
+97432233,Change Talk,2,4
+97455352,Ambivalence,4,3
+97611899,Change Talk,3,8
+97627536,Persuasion,5,6
+97728691,Persuasion,1,6
+97801637,Persuasion,2,8
+97900855,Persuasion,2,6
+97909655,Ambivalence,3,3
+97927179,Ambivalence,5,8
+98012665,Change Talk,2,0
+98028402,Persuasion,5,5
+98075999,Change Talk,2,3
+98122003,Change Talk,4,8
+98142856,Persuasion,8,8
+98144075,Persuasion,6,9
+98161750,Persuasion,1,3
+98178486,Persuasion,2,6
+98207725,Change Talk,2,5
+98263900,Ambivalence,2,3
+98275706,Persuasion,2,9
+98283318,Persuasion,3,5
+98298563,Change Talk,2,7
+98398411,Change Talk,6,16
+98559885,Ambivalence,6,4
+98657820,Change Talk,2,5
+98702811,Change Talk,6,5
+98864107,Change Talk,0,3
+98947393,Change Talk,2,6
+99021458,Persuasion,3,5
+99152603,Change Talk,2,3
+99196329,Persuasion,3,2
+99247466,Change Talk,5,13
+99360701,Persuasion,5,3
+99459518,Persuasion,4,3
+99651018,Ambivalence,6,2
+99685016,Ambivalence,4,4
+99715088,Ambivalence,3,6
+99725930,Persuasion,2,2
+99805913,Change Talk,3,7
+99861828,Ambivalence,4,4
+99864878,Ambivalence,4,2
+99903037,Ambivalence,7,6
+99963267,Change Talk,3,3

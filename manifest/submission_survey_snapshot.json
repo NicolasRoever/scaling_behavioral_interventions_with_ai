@@ -1,0 +1,31 @@
+{
+  "created_at_unix": 1789840278,
+  "snapshot": "Deidentified September 17 follow-up inputs used by original-submission tables",
+  "default_runner_uses_snapshot": false,
+  "baseline": 2719,
+  "motivation_followup": 2130,
+  "screen_time_followup": 2119,
+  "files": [
+    {
+      "file": "data/archival/original_submission/clean_data.dta",
+      "analysis_filename": "clean_data.dta",
+      "sha256": "a9b5d23062d1536e9092e77c3e346360c1a3c641bb6197f286d52228627518ec",
+      "original_source_sha256": "32fb7d31df8bc51709b52371fbc8cbf14824baf4b1a591baddce8e3de3c74710",
+      "rows": 2719
+    },
+    {
+      "file": "data/archival/original_submission/clean_merged.dta",
+      "analysis_filename": "clean_merged.dta",
+      "sha256": "482395056e580a4cbd7280c0d456dce4f026691d04385fd135b2e4c10456a086",
+      "original_source_sha256": "adf9da096045e0cf5b5e1ebf3a1c242203aae41b9c63087b2b296da2c4622219",
+      "rows": 2719
+    },
+    {
+      "file": "data/archival/original_submission/clean_merged_with_scrshots.dta",
+      "analysis_filename": "clean_merged_with_scrshots.dta",
+      "sha256": "916e0f991e7f081e35a3d4866cefff3aadb2934fe6a89f6b356c8ca67d72c29b",
+      "original_source_sha256": "92c41269f7ae1150c42250588e2284043f3e830d46aa2ff5db8b2406bacfb4ed",
+      "rows": 2719
+    }
+  ]
+}

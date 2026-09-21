@@ -1,0 +1,295 @@
+{
+  "validated_at_unix": 1789849513,
+  "original_prolific_ids_checked": 3264,
+  "original_response_ids_checked": 5662,
+  "source_identifier_files": [
+    {
+      "file": "data/raw/main_socialmedia/main_raw.dta",
+      "sha256": "1988a06532a79dc6146cb12d5fea02f34d6a8455586b1e1cd665531f740e3950"
+    },
+    {
+      "file": "data/raw/main_socialmedia/follow_up_raw.dta",
+      "sha256": "aeb7e5af89ec6bad830e4ea016d72e6dd244ac8a2eb0148c8cbaa6f0d7537373"
+    },
+    {
+      "file": "data/processed/main_social_media/clean_data.dta",
+      "sha256": "96ecd35e3451e14f337c7545b1ba4fc04ece9b2e4f7785dbb6250c4b8e5dc3e3"
+    },
+    {
+      "file": "data/processed/main_social_media/follow_up_clean.dta",
+      "sha256": "49d8f20904d1c02cfc4d4ba5bcc8a83418b96128172600e7a82cecba110c96e6"
+    },
+    {
+      "file": "data/processed/main_social_media/clean_merged.dta",
+      "sha256": "020140bc9954fd57f17be3ccec3ee5a4c38de17516e092ebc53f6b88bd440b44"
+    },
+    {
+      "file": "data/processed/main_social_media/clean_merged_with_scrshots.dta",
+      "sha256": "2a6e26e83abc0be2b0ff833e4fcb450ff1d921b59416a767ce0cbc60599ca2e9"
+    },
+    {
+      "file": "data/processed/main_social_media/interview_scores_extracted.dta",
+      "sha256": "2d87498f62485452b8767b9d6abcc24cc8e9e97791de428c93afa373887f5071"
+    },
+    {
+      "file": "data/processed/main_social_media/clean_scr_data.dta",
+      "sha256": "9ae1779e9096b90992d5f51d2a74ce6db84f0e1ba9aacae389fefa6b461ea214"
+    },
+    {
+      "file": "data/processed/main_social_media/df_merged_llm_category_expdemand_v001.dta",
+      "sha256": "05fd136c76ea483e4931b5058d8d16b6b1803c9c82fea23ef8a8cd3d0d71f79e"
+    },
+    {
+      "file": "data/processed/main_social_media/df_merged_llm_category_expdemand_luna_v002.dta",
+      "sha256": "37da828efe7b7576a3412f13ba002a9f7889040d3710551e34fde45726b95f6f"
+    }
+  ],
+  "original_identifiers_found": 0,
+  "datasets": [
+    {
+      "file": "data/archival/original_submission/clean_data.dta",
+      "rows": 2719,
+      "anonymous_identifier_columns": [
+        "prolific_id",
+        "response_id"
+      ],
+      "original_ids_found": 0
+    },
+    {
+      "file": "data/archival/original_submission/clean_merged.dta",
+      "rows": 2719,
+      "anonymous_identifier_columns": [
+        "prolific_id",
+        "w2_response_id",
+        "response_id"
+      ],
+      "original_ids_found": 0
+    },
+    {
+      "file": "data/archival/original_submission/clean_merged_with_scrshots.dta",
+      "rows": 2719,
+      "anonymous_identifier_columns": [
+        "prolific_id",
+        "w2_response_id",
+        "response_id"
+      ],
+      "original_ids_found": 0
+    },
+    {
+      "file": "data/processed/main_social_media/clean_data.dta",
+      "rows": 2719,
+      "anonymous_identifier_columns": [
+        "prolific_id",
+        "response_id"
+      ],
+      "original_ids_found": 0
+    },
+    {
+      "file": "data/processed/main_social_media/clean_merged.dta",
+      "rows": 2719,
+      "anonymous_identifier_columns": [
+        "prolific_id",
+        "w2_response_id",
+        "response_id"
+      ],
+      "original_ids_found": 0
+    },
+    {
+      "file": "data/processed/main_social_media/clean_merged_with_scrshots.dta",
+      "rows": 2719,
+      "anonymous_identifier_columns": [
+        "prolific_id",
+        "w2_response_id",
+        "response_id"
+      ],
+      "original_ids_found": 0
+    },
+    {
+      "file": "data/processed/main_social_media/clean_scr_data.dta",
+      "rows": 465,
+      "anonymous_identifier_columns": [
+        "response_id"
+      ],
+      "original_ids_found": 0
+    },
+    {
+      "file": "data/processed/main_social_media/df_merged_llm_category_expdemand_luna_v002.dta",
+      "rows": 2719,
+      "anonymous_identifier_columns": [
+        "prolific_id"
+      ],
+      "original_ids_found": 0
+    },
+    {
+      "file": "data/processed/main_social_media/follow_up_clean.dta",
+      "rows": 2304,
+      "anonymous_identifier_columns": [
+        "prolific_id",
+        "response_id"
+      ],
+      "original_ids_found": 0
+    },
+    {
+      "file": "data/processed/main_social_media/interview_scores_extracted.dta",
+      "rows": 2719,
+      "anonymous_identifier_columns": [
+        "prolific_id"
+      ],
+      "original_ids_found": 0
+    },
+    {
+      "file": "data/raw/main_socialmedia/follow_up_raw.dta",
+      "rows": 2351,
+      "anonymous_identifier_columns": [
+        "responseid",
+        "prolific_pid"
+      ],
+      "original_ids_found": 0
+    },
+    {
+      "file": "data/raw/main_socialmedia/main_raw.dta",
+      "rows": 3311,
+      "anonymous_identifier_columns": [
+        "responseid",
+        "prolific_pid"
+      ],
+      "original_ids_found": 0
+    }
+  ],
+  "local_git_blobs_checked": 507,
+  "local_git_object_hits": [
+    {
+      "object": "00c2f0cd43d68149f1d3e7c9ae5bc600b30028d5",
+      "kind": "blob",
+      "original_identifiers": 531,
+      "prolific_ids": 0,
+      "response_ids": 531,
+      "path": "data/processed/main_social_media/screenshot_data/social_time_week51_v001.csv",
+      "reachable": true
+    },
+    {
+      "object": "161362b267025ffc5a2e347653d5fb55e7a876e5",
+      "kind": "blob",
+      "original_identifiers": 2435,
+      "prolific_ids": 35,
+      "response_ids": 2400,
+      "path": "data/raw/main_socialmedia/follow_up_raw.dta",
+      "reachable": true
+    },
+    {
+      "object": "18a6942ccfc487030d8e04ce7ce8f4101d0d4321",
+      "kind": "blob",
+      "original_identifiers": 545,
+      "prolific_ids": 0,
+      "response_ids": 545,
+      "path": "data/processed/main_social_media/screenshot_data/social_apps_week52_clean_v003.csv",
+      "reachable": true
+    },
+    {
+      "object": "389626762a7f8d074e297dc23afd8e0bfae8d665",
+      "kind": "blob",
+      "original_identifiers": 563,
+      "prolific_ids": 0,
+      "response_ids": 563,
+      "path": "data/processed/main_social_media/screenshot_data/social_apps_week1_clean_v004.csv",
+      "reachable": true
+    },
+    {
+      "object": "41248fa77dce9c1587c0cd7da4cc4825ba03a6b1",
+      "kind": "blob",
+      "original_identifiers": 531,
+      "prolific_ids": 0,
+      "response_ids": 531,
+      "path": "data/processed/main_social_media/screenshot_data/social_apps_week51_clean_v004.csv",
+      "reachable": true
+    },
+    {
+      "object": "42f57c5f9e8f513a15cc03251a636976003ccec7",
+      "kind": "blob",
+      "original_identifiers": 563,
+      "prolific_ids": 0,
+      "response_ids": 563,
+      "path": "data/processed/main_social_media/screenshot_data/social_time_week1_v002.csv",
+      "reachable": true
+    },
+    {
+      "object": "783743ea03565c7d8b459933367a6cd1ae99b4f9",
+      "kind": "blob",
+      "original_identifiers": 5466,
+      "prolific_ids": 2719,
+      "response_ids": 2747,
+      "path": "data/processed/main_social_media/clean_data.dta",
+      "reachable": true
+    },
+    {
+      "object": "90c616ebb9e796aa7e2a042ff5f7556a1d4cde41",
+      "kind": "blob",
+      "original_identifiers": 7339,
+      "prolific_ids": 2308,
+      "response_ids": 5031,
+      "path": "data/processed/main_social_media/clean_merged.dta",
+      "reachable": true
+    },
+    {
+      "object": "a6bf3304ae57eb3967cddb8968ac57537422c0a5",
+      "kind": "blob",
+      "original_identifiers": 4659,
+      "prolific_ids": 2307,
+      "response_ids": 2352,
+      "path": "data/processed/main_social_media/follow_up_clean.dta",
+      "reachable": true
+    },
+    {
+      "object": "b7460615d233307db72bc52b4626b3f0bb094755",
+      "kind": "blob",
+      "original_identifiers": 2719,
+      "prolific_ids": 2719,
+      "response_ids": 0,
+      "path": "data/processed/main_social_media/interview_scores_extracted.dta",
+      "reachable": true
+    },
+    {
+      "object": "b7b8996748f0d2b065e18473f12cab1ea4cb38a2",
+      "kind": "blob",
+      "original_identifiers": 545,
+      "prolific_ids": 0,
+      "response_ids": 545,
+      "path": "data/processed/main_social_media/screenshot_data/social_time_week52_v001.csv",
+      "reachable": true
+    },
+    {
+      "object": "c6cb14b5f3b32ad277342c796ab5b6a8120ae315",
+      "kind": "blob",
+      "original_identifiers": 3312,
+      "prolific_ids": 1,
+      "response_ids": 3311,
+      "path": "data/raw/main_socialmedia/main_raw.dta",
+      "reachable": true
+    },
+    {
+      "object": "cea2525e42613f7b76fb19fd5fb37ad3d1bac254",
+      "kind": "blob",
+      "original_identifiers": 4664,
+      "prolific_ids": 2308,
+      "response_ids": 2356,
+      "path": "data/processed/main_social_media/clean_merged_with_scrshots.dta",
+      "reachable": true
+    },
+    {
+      "object": "f38ba966fd495bcaf675f5c6259baeb510b5b25b",
+      "kind": "blob",
+      "original_identifiers": 4850,
+      "prolific_ids": 1,
+      "response_ids": 4849,
+      "path": "data/processed/main_social_media/df_merged_llm_category_expdemand_v001.dta",
+      "reachable": true
+    }
+  ],
+  "crosswalk_distributed": false,
+  "values_disclosed": false,
+  "release_files_clean": true,
+  "pdf_text_checked": true,
+  "git_history_clean": false,
+  "git_history_modified": false,
+  "scope": "Working release files and readable local Git objects; remote server state was not inspected."
+}

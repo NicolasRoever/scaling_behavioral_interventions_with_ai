@@ -1,0 +1,505 @@
+session_id,condition_id,condition,replicate,model,reasoning_effort,prompt_variant,miti_dimension,score,human_score
+VALIDATION-0001,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,3
+VALIDATION-0001,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Softening Sustain Talk,3,3
+VALIDATION-0001,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0001,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0002,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,3
+VALIDATION-0002,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,3
+VALIDATION-0002,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Partnership,4,2
+VALIDATION-0002,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Empathy,3,2
+VALIDATION-0003,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,2
+VALIDATION-0003,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0003,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Partnership,2,2
+VALIDATION-0003,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Empathy,2,2
+VALIDATION-0004,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Cultivating Change Talk,1,1
+VALIDATION-0004,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,4
+VALIDATION-0004,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Partnership,1,1
+VALIDATION-0004,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Empathy,1,1
+VALIDATION-0005,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,2
+VALIDATION-0005,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,2
+VALIDATION-0005,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Partnership,3,2
+VALIDATION-0005,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Empathy,3,2
+VALIDATION-0006,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Cultivating Change Talk,4,4
+VALIDATION-0006,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0006,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0006,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Empathy,4,4
+VALIDATION-0007,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,1
+VALIDATION-0007,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0007,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Partnership,2,1
+VALIDATION-0007,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Empathy,2,1
+VALIDATION-0008,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,4
+VALIDATION-0008,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,3
+VALIDATION-0008,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0008,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0009,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,2
+VALIDATION-0009,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,2
+VALIDATION-0009,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Partnership,3,2
+VALIDATION-0009,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Empathy,2,3
+VALIDATION-0010,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,2
+VALIDATION-0010,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,1
+VALIDATION-0010,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Partnership,2,1
+VALIDATION-0010,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Empathy,2,2
+VALIDATION-0011,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,3
+VALIDATION-0011,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,3
+VALIDATION-0011,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Partnership,3,3
+VALIDATION-0011,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Empathy,3,4
+VALIDATION-0012,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,4
+VALIDATION-0012,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,3
+VALIDATION-0012,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Partnership,3,3
+VALIDATION-0012,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Empathy,3,3
+VALIDATION-0013,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Cultivating Change Talk,1,1
+VALIDATION-0013,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,1
+VALIDATION-0013,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Partnership,1,1
+VALIDATION-0013,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Empathy,1,1
+VALIDATION-0014,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,3
+VALIDATION-0014,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,2
+VALIDATION-0014,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0014,luna_benchmark,benchmark,0,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0001,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Cultivating Change Talk,4,3
+VALIDATION-0001,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Softening Sustain Talk,3,3
+VALIDATION-0001,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Partnership,5,5
+VALIDATION-0001,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0002,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,3
+VALIDATION-0002,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,3
+VALIDATION-0002,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Partnership,4,2
+VALIDATION-0002,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Empathy,3,2
+VALIDATION-0003,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,2
+VALIDATION-0003,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0003,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Partnership,2,2
+VALIDATION-0003,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Empathy,2,2
+VALIDATION-0004,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Cultivating Change Talk,1,1
+VALIDATION-0004,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,4
+VALIDATION-0004,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Partnership,1,1
+VALIDATION-0004,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Empathy,1,1
+VALIDATION-0005,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,2
+VALIDATION-0005,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,2
+VALIDATION-0005,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Partnership,3,2
+VALIDATION-0005,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Empathy,3,2
+VALIDATION-0006,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Cultivating Change Talk,4,4
+VALIDATION-0006,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0006,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0006,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Empathy,3,4
+VALIDATION-0007,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,1
+VALIDATION-0007,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0007,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Partnership,2,1
+VALIDATION-0007,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Empathy,2,1
+VALIDATION-0008,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,4
+VALIDATION-0008,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,3
+VALIDATION-0008,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0008,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0009,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,2
+VALIDATION-0009,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,2
+VALIDATION-0009,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Partnership,3,2
+VALIDATION-0009,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Empathy,3,3
+VALIDATION-0010,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,2
+VALIDATION-0010,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,1
+VALIDATION-0010,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Partnership,2,1
+VALIDATION-0010,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Empathy,2,2
+VALIDATION-0011,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,3
+VALIDATION-0011,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,3
+VALIDATION-0011,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Partnership,3,3
+VALIDATION-0011,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Empathy,3,4
+VALIDATION-0012,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,4
+VALIDATION-0012,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,3
+VALIDATION-0012,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Partnership,3,3
+VALIDATION-0012,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Empathy,3,3
+VALIDATION-0013,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Cultivating Change Talk,1,1
+VALIDATION-0013,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,1
+VALIDATION-0013,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Partnership,1,1
+VALIDATION-0013,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Empathy,1,1
+VALIDATION-0014,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,3
+VALIDATION-0014,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,2
+VALIDATION-0014,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0014,luna_rerun_01,rerun,1,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0001,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Cultivating Change Talk,4,3
+VALIDATION-0001,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Softening Sustain Talk,3,3
+VALIDATION-0001,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0001,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0002,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,3
+VALIDATION-0002,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,3
+VALIDATION-0002,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Partnership,4,2
+VALIDATION-0002,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Empathy,4,2
+VALIDATION-0003,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,2
+VALIDATION-0003,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0003,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Partnership,2,2
+VALIDATION-0003,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Empathy,2,2
+VALIDATION-0004,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Cultivating Change Talk,1,1
+VALIDATION-0004,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,4
+VALIDATION-0004,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Partnership,1,1
+VALIDATION-0004,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Empathy,1,1
+VALIDATION-0005,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,2
+VALIDATION-0005,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,2
+VALIDATION-0005,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Partnership,3,2
+VALIDATION-0005,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Empathy,4,2
+VALIDATION-0006,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Cultivating Change Talk,4,4
+VALIDATION-0006,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0006,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0006,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Empathy,4,4
+VALIDATION-0007,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,1
+VALIDATION-0007,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0007,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Partnership,2,1
+VALIDATION-0007,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Empathy,2,1
+VALIDATION-0008,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,4
+VALIDATION-0008,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,3
+VALIDATION-0008,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0008,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0009,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,2
+VALIDATION-0009,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,2
+VALIDATION-0009,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Partnership,2,2
+VALIDATION-0009,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Empathy,2,3
+VALIDATION-0010,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,2
+VALIDATION-0010,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,1
+VALIDATION-0010,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Partnership,2,1
+VALIDATION-0010,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Empathy,2,2
+VALIDATION-0011,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Cultivating Change Talk,4,3
+VALIDATION-0011,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,3
+VALIDATION-0011,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Partnership,3,3
+VALIDATION-0011,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Empathy,4,4
+VALIDATION-0012,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,4
+VALIDATION-0012,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,3
+VALIDATION-0012,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Partnership,3,3
+VALIDATION-0012,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Empathy,3,3
+VALIDATION-0013,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Cultivating Change Talk,1,1
+VALIDATION-0013,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,1
+VALIDATION-0013,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Partnership,1,1
+VALIDATION-0013,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Empathy,1,1
+VALIDATION-0014,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,3
+VALIDATION-0014,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,2
+VALIDATION-0014,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0014,luna_rerun_02,rerun,2,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0001,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Cultivating Change Talk,4,3
+VALIDATION-0001,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Softening Sustain Talk,3,3
+VALIDATION-0001,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Partnership,5,5
+VALIDATION-0001,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0002,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,3
+VALIDATION-0002,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,3
+VALIDATION-0002,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Partnership,3,2
+VALIDATION-0002,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Empathy,4,2
+VALIDATION-0003,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,2
+VALIDATION-0003,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0003,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Partnership,2,2
+VALIDATION-0003,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Empathy,2,2
+VALIDATION-0004,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Cultivating Change Talk,1,1
+VALIDATION-0004,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,4
+VALIDATION-0004,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Partnership,1,1
+VALIDATION-0004,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Empathy,1,1
+VALIDATION-0005,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,2
+VALIDATION-0005,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,2
+VALIDATION-0005,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Partnership,3,2
+VALIDATION-0005,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Empathy,3,2
+VALIDATION-0006,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Cultivating Change Talk,4,4
+VALIDATION-0006,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0006,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0006,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Empathy,3,4
+VALIDATION-0007,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,1
+VALIDATION-0007,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Softening Sustain Talk,3,4
+VALIDATION-0007,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Partnership,2,1
+VALIDATION-0007,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Empathy,2,1
+VALIDATION-0008,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,4
+VALIDATION-0008,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,3
+VALIDATION-0008,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0008,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0009,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,2
+VALIDATION-0009,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,2
+VALIDATION-0009,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Partnership,2,2
+VALIDATION-0009,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Empathy,2,3
+VALIDATION-0010,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,2
+VALIDATION-0010,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,1
+VALIDATION-0010,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Partnership,1,1
+VALIDATION-0010,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Empathy,2,2
+VALIDATION-0011,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,3
+VALIDATION-0011,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,3
+VALIDATION-0011,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Partnership,3,3
+VALIDATION-0011,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Empathy,3,4
+VALIDATION-0012,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,4
+VALIDATION-0012,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,3
+VALIDATION-0012,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Partnership,3,3
+VALIDATION-0012,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Empathy,3,3
+VALIDATION-0013,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,1
+VALIDATION-0013,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,1
+VALIDATION-0013,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Partnership,1,1
+VALIDATION-0013,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Empathy,1,1
+VALIDATION-0014,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,3
+VALIDATION-0014,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Softening Sustain Talk,3,2
+VALIDATION-0014,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0014,luna_rerun_03,rerun,3,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0001,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Cultivating Change Talk,4,3
+VALIDATION-0001,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Softening Sustain Talk,3,3
+VALIDATION-0001,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0001,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0002,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,3
+VALIDATION-0002,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,3
+VALIDATION-0002,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Partnership,3,2
+VALIDATION-0002,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Empathy,3,2
+VALIDATION-0003,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,2
+VALIDATION-0003,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0003,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Partnership,2,2
+VALIDATION-0003,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Empathy,2,2
+VALIDATION-0004,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Cultivating Change Talk,1,1
+VALIDATION-0004,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,4
+VALIDATION-0004,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Partnership,1,1
+VALIDATION-0004,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Empathy,1,1
+VALIDATION-0005,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,2
+VALIDATION-0005,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,2
+VALIDATION-0005,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Partnership,3,2
+VALIDATION-0005,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Empathy,3,2
+VALIDATION-0006,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Cultivating Change Talk,4,4
+VALIDATION-0006,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0006,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0006,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Empathy,4,4
+VALIDATION-0007,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,1
+VALIDATION-0007,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0007,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Partnership,2,1
+VALIDATION-0007,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Empathy,2,1
+VALIDATION-0008,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,4
+VALIDATION-0008,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,3
+VALIDATION-0008,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0008,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0009,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,2
+VALIDATION-0009,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,2
+VALIDATION-0009,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Partnership,2,2
+VALIDATION-0009,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Empathy,2,3
+VALIDATION-0010,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,2
+VALIDATION-0010,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,1
+VALIDATION-0010,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Partnership,2,1
+VALIDATION-0010,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Empathy,2,2
+VALIDATION-0011,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,3
+VALIDATION-0011,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,3
+VALIDATION-0011,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Partnership,3,3
+VALIDATION-0011,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Empathy,3,4
+VALIDATION-0012,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,4
+VALIDATION-0012,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,3
+VALIDATION-0012,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Partnership,3,3
+VALIDATION-0012,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Empathy,3,3
+VALIDATION-0013,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,1
+VALIDATION-0013,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,1
+VALIDATION-0013,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Partnership,1,1
+VALIDATION-0013,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Empathy,1,1
+VALIDATION-0014,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,3
+VALIDATION-0014,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,2
+VALIDATION-0014,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0014,luna_rerun_04,rerun,4,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0001,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Cultivating Change Talk,4,3
+VALIDATION-0001,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Softening Sustain Talk,3,3
+VALIDATION-0001,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0001,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0002,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,3
+VALIDATION-0002,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,3
+VALIDATION-0002,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Partnership,4,2
+VALIDATION-0002,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Empathy,4,2
+VALIDATION-0003,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,2
+VALIDATION-0003,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0003,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Partnership,2,2
+VALIDATION-0003,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Empathy,2,2
+VALIDATION-0004,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Cultivating Change Talk,1,1
+VALIDATION-0004,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,4
+VALIDATION-0004,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Partnership,1,1
+VALIDATION-0004,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Empathy,1,1
+VALIDATION-0005,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,2
+VALIDATION-0005,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,2
+VALIDATION-0005,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Partnership,3,2
+VALIDATION-0005,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Empathy,3,2
+VALIDATION-0006,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Cultivating Change Talk,4,4
+VALIDATION-0006,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0006,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0006,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Empathy,4,4
+VALIDATION-0007,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,1
+VALIDATION-0007,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Softening Sustain Talk,4,4
+VALIDATION-0007,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Partnership,2,1
+VALIDATION-0007,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Empathy,2,1
+VALIDATION-0008,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,4
+VALIDATION-0008,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,3
+VALIDATION-0008,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0008,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0009,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,2
+VALIDATION-0009,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,2
+VALIDATION-0009,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Partnership,2,2
+VALIDATION-0009,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Empathy,2,3
+VALIDATION-0010,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,2
+VALIDATION-0010,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,1
+VALIDATION-0010,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Partnership,2,1
+VALIDATION-0010,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Empathy,2,2
+VALIDATION-0011,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Cultivating Change Talk,3,3
+VALIDATION-0011,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,3
+VALIDATION-0011,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Partnership,3,3
+VALIDATION-0011,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Empathy,4,4
+VALIDATION-0012,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Cultivating Change Talk,4,4
+VALIDATION-0012,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,3
+VALIDATION-0012,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Partnership,3,3
+VALIDATION-0012,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Empathy,3,3
+VALIDATION-0013,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,1
+VALIDATION-0013,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Softening Sustain Talk,1,1
+VALIDATION-0013,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Partnership,1,1
+VALIDATION-0013,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Empathy,1,1
+VALIDATION-0014,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Cultivating Change Talk,2,3
+VALIDATION-0014,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Softening Sustain Talk,2,2
+VALIDATION-0014,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Partnership,4,5
+VALIDATION-0014,luna_rerun_05,rerun,5,gpt-5.6-luna,low,standard,Empathy,4,5
+VALIDATION-0001,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Cultivating Change Talk,3,3
+VALIDATION-0001,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Softening Sustain Talk,3,3
+VALIDATION-0001,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Partnership,4,5
+VALIDATION-0001,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Empathy,4,5
+VALIDATION-0002,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Cultivating Change Talk,3,3
+VALIDATION-0002,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Softening Sustain Talk,1,3
+VALIDATION-0002,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Partnership,4,2
+VALIDATION-0002,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Empathy,3,2
+VALIDATION-0003,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Cultivating Change Talk,2,2
+VALIDATION-0003,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Softening Sustain Talk,4,4
+VALIDATION-0003,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Partnership,2,2
+VALIDATION-0003,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Empathy,2,2
+VALIDATION-0004,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Cultivating Change Talk,1,1
+VALIDATION-0004,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Softening Sustain Talk,1,4
+VALIDATION-0004,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Partnership,1,1
+VALIDATION-0004,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Empathy,2,1
+VALIDATION-0005,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Cultivating Change Talk,3,2
+VALIDATION-0005,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Softening Sustain Talk,2,2
+VALIDATION-0005,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Partnership,3,2
+VALIDATION-0005,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Empathy,3,2
+VALIDATION-0006,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Cultivating Change Talk,4,4
+VALIDATION-0006,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Softening Sustain Talk,4,4
+VALIDATION-0006,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Partnership,4,5
+VALIDATION-0006,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Empathy,4,4
+VALIDATION-0007,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Cultivating Change Talk,2,1
+VALIDATION-0007,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Softening Sustain Talk,4,4
+VALIDATION-0007,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Partnership,2,1
+VALIDATION-0007,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Empathy,2,1
+VALIDATION-0008,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Cultivating Change Talk,3,4
+VALIDATION-0008,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Softening Sustain Talk,1,3
+VALIDATION-0008,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Partnership,4,5
+VALIDATION-0008,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Empathy,4,5
+VALIDATION-0009,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Cultivating Change Talk,3,2
+VALIDATION-0009,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Softening Sustain Talk,1,2
+VALIDATION-0009,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Partnership,2,2
+VALIDATION-0009,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Empathy,2,3
+VALIDATION-0010,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Cultivating Change Talk,2,2
+VALIDATION-0010,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Softening Sustain Talk,1,1
+VALIDATION-0010,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Partnership,1,1
+VALIDATION-0010,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Empathy,3,2
+VALIDATION-0011,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Cultivating Change Talk,4,3
+VALIDATION-0011,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Softening Sustain Talk,2,3
+VALIDATION-0011,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Partnership,3,3
+VALIDATION-0011,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Empathy,4,4
+VALIDATION-0012,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Cultivating Change Talk,3,4
+VALIDATION-0012,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Softening Sustain Talk,2,3
+VALIDATION-0012,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Partnership,3,3
+VALIDATION-0012,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Empathy,3,3
+VALIDATION-0013,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Cultivating Change Talk,2,1
+VALIDATION-0013,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Softening Sustain Talk,1,1
+VALIDATION-0013,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Partnership,1,1
+VALIDATION-0013,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Empathy,2,1
+VALIDATION-0014,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Cultivating Change Talk,3,3
+VALIDATION-0014,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Softening Sustain Talk,2,2
+VALIDATION-0014,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Partnership,5,5
+VALIDATION-0014,luna_ablation,ablation,0,gpt-5.6-luna,low,ablation,Empathy,4,5
+VALIDATION-0001,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Cultivating Change Talk,3,3
+VALIDATION-0001,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Softening Sustain Talk,4,3
+VALIDATION-0001,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Partnership,4,5
+VALIDATION-0001,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Empathy,4,5
+VALIDATION-0002,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Cultivating Change Talk,3,3
+VALIDATION-0002,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Softening Sustain Talk,2,3
+VALIDATION-0002,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Partnership,3,2
+VALIDATION-0002,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Empathy,4,2
+VALIDATION-0003,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Cultivating Change Talk,2,2
+VALIDATION-0003,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Softening Sustain Talk,4,4
+VALIDATION-0003,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Partnership,2,2
+VALIDATION-0003,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Empathy,2,2
+VALIDATION-0004,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Cultivating Change Talk,1,1
+VALIDATION-0004,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Softening Sustain Talk,1,4
+VALIDATION-0004,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Partnership,1,1
+VALIDATION-0004,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Empathy,1,1
+VALIDATION-0005,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Cultivating Change Talk,2,2
+VALIDATION-0005,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Softening Sustain Talk,3,2
+VALIDATION-0005,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Partnership,3,2
+VALIDATION-0005,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Empathy,3,2
+VALIDATION-0006,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Cultivating Change Talk,4,4
+VALIDATION-0006,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Softening Sustain Talk,4,4
+VALIDATION-0006,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Partnership,4,5
+VALIDATION-0006,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Empathy,4,4
+VALIDATION-0007,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Cultivating Change Talk,1,1
+VALIDATION-0007,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Softening Sustain Talk,4,4
+VALIDATION-0007,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Partnership,2,1
+VALIDATION-0007,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Empathy,2,1
+VALIDATION-0008,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Cultivating Change Talk,3,4
+VALIDATION-0008,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Softening Sustain Talk,2,3
+VALIDATION-0008,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Partnership,4,5
+VALIDATION-0008,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Empathy,4,5
+VALIDATION-0009,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Cultivating Change Talk,2,2
+VALIDATION-0009,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Softening Sustain Talk,2,2
+VALIDATION-0009,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Partnership,2,2
+VALIDATION-0009,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Empathy,2,3
+VALIDATION-0010,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Cultivating Change Talk,2,2
+VALIDATION-0010,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Softening Sustain Talk,1,1
+VALIDATION-0010,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Partnership,2,1
+VALIDATION-0010,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Empathy,2,2
+VALIDATION-0011,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Cultivating Change Talk,3,3
+VALIDATION-0011,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Softening Sustain Talk,2,3
+VALIDATION-0011,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Partnership,3,3
+VALIDATION-0011,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Empathy,3,4
+VALIDATION-0012,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Cultivating Change Talk,3,4
+VALIDATION-0012,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Softening Sustain Talk,3,3
+VALIDATION-0012,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Partnership,3,3
+VALIDATION-0012,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Empathy,3,3
+VALIDATION-0013,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Cultivating Change Talk,1,1
+VALIDATION-0013,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Softening Sustain Talk,1,1
+VALIDATION-0013,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Partnership,1,1
+VALIDATION-0013,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Empathy,1,1
+VALIDATION-0014,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Cultivating Change Talk,2,3
+VALIDATION-0014,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Softening Sustain Talk,2,2
+VALIDATION-0014,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Partnership,4,5
+VALIDATION-0014,gpt54_minimum,model_comparison,0,gpt-5.4-2026-03-05,none,standard,Empathy,4,5
+VALIDATION-0001,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Cultivating Change Talk,4,3
+VALIDATION-0001,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Softening Sustain Talk,4,3
+VALIDATION-0001,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Partnership,5,5
+VALIDATION-0001,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Empathy,5,5
+VALIDATION-0002,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Cultivating Change Talk,4,3
+VALIDATION-0002,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Softening Sustain Talk,2,3
+VALIDATION-0002,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Partnership,4,2
+VALIDATION-0002,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Empathy,4,2
+VALIDATION-0003,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Cultivating Change Talk,2,2
+VALIDATION-0003,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Softening Sustain Talk,4,4
+VALIDATION-0003,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Partnership,2,2
+VALIDATION-0003,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Empathy,2,2
+VALIDATION-0004,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Cultivating Change Talk,1,1
+VALIDATION-0004,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Softening Sustain Talk,3,4
+VALIDATION-0004,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Partnership,1,1
+VALIDATION-0004,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Empathy,1,1
+VALIDATION-0005,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Cultivating Change Talk,3,2
+VALIDATION-0005,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Softening Sustain Talk,3,2
+VALIDATION-0005,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Partnership,3,2
+VALIDATION-0005,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Empathy,4,2
+VALIDATION-0006,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Cultivating Change Talk,4,4
+VALIDATION-0006,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Softening Sustain Talk,4,4
+VALIDATION-0006,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Partnership,5,5
+VALIDATION-0006,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Empathy,4,4
+VALIDATION-0007,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Cultivating Change Talk,1,1
+VALIDATION-0007,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Softening Sustain Talk,4,4
+VALIDATION-0007,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Partnership,2,1
+VALIDATION-0007,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Empathy,2,1
+VALIDATION-0008,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Cultivating Change Talk,4,4
+VALIDATION-0008,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Softening Sustain Talk,2,3
+VALIDATION-0008,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Partnership,4,5
+VALIDATION-0008,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Empathy,5,5
+VALIDATION-0009,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Cultivating Change Talk,3,2
+VALIDATION-0009,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Softening Sustain Talk,3,2
+VALIDATION-0009,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Partnership,3,2
+VALIDATION-0009,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Empathy,3,3
+VALIDATION-0010,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Cultivating Change Talk,2,2
+VALIDATION-0010,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Softening Sustain Talk,1,1
+VALIDATION-0010,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Partnership,2,1
+VALIDATION-0010,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Empathy,3,2
+VALIDATION-0011,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Cultivating Change Talk,3,3
+VALIDATION-0011,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Softening Sustain Talk,3,3
+VALIDATION-0011,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Partnership,4,3
+VALIDATION-0011,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Empathy,3,4
+VALIDATION-0012,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Cultivating Change Talk,3,4
+VALIDATION-0012,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Softening Sustain Talk,3,3
+VALIDATION-0012,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Partnership,3,3
+VALIDATION-0012,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Empathy,3,3
+VALIDATION-0013,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Cultivating Change Talk,1,1
+VALIDATION-0013,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Softening Sustain Talk,4,1
+VALIDATION-0013,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Partnership,1,1
+VALIDATION-0013,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Empathy,2,1
+VALIDATION-0014,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Cultivating Change Talk,3,3
+VALIDATION-0014,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Softening Sustain Talk,4,2
+VALIDATION-0014,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Partnership,5,5
+VALIDATION-0014,gpt55_minimum,model_comparison,0,gpt-5.5-2026-04-23,none,standard,Empathy,5,5

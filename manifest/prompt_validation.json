@@ -1,0 +1,537 @@
+{
+  "validated_at_unix": 1789849502,
+  "manuscript_sha256": "c4076731a4ed61c3e4033fb8e289eb5b9bc980847006163b51686674a603ff45",
+  "parameters_sha256": "da0c0786f33ae43596aad2a15a5417a1a2410e766edd22ca095bb9a8b0f0e53f",
+  "text_normalization": "Remove alltt Copy/linebreak wrappers and collapse whitespace only; preserve literal punctuation and ---END---.",
+  "blocks_checked": 68,
+  "arms": 4,
+  "checks_passed": true,
+  "blocks": [
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "field": "global_mi_system_prompt",
+      "sha256": "a18cf5d3a895a64272d44dfe1c7e81fda981776f9d9ea831e2a8855e1bb30962"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "field": "first_question",
+      "sha256": "48689626816dff30f421396ae7b20f1934f9034b18014d5bd7ce9e22ae80d5ef"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 1,
+      "question_name": "followup_past_negatives",
+      "title": "Turn 1---Follow-up on past negatives.",
+      "sha256": "895a03ecc29b252a3e9866f353c1bab2a83721ae64d15eec6837da900a8455c7"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 2,
+      "question_name": "deepen_negative_impacts",
+      "title": "Turn 2---Deepening negative impacts.",
+      "sha256": "9264c8dc79edfb336996d7db076e335c63dae783861ec63159e8e7904fee9688"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 3,
+      "question_name": "followup_2_past_negatives",
+      "title": "Turn 3---Second follow-up on negatives.",
+      "sha256": "b47da7e07ae982c746ea2798b2ff558451430db3e066e0737b291341e0c8d872"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 4,
+      "question_name": "values_future_vision",
+      "title": "Turn 4---Values and future vision.",
+      "sha256": "391060a14b7d6fe2b6c82826dc9f20ba2865b1eb167b05748f269b95efc138e7"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 5,
+      "question_name": "summary_understanding",
+      "title": "Turn 5---Summary and understanding check.",
+      "sha256": "fbfbd7f727f9d20f78f9ac74091dbe890d617ebb33aa0bc9ad57f7e2a7a54bbf"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 6,
+      "question_name": "first_scaling_question",
+      "title": "Turn 6---First scaling question (importance).",
+      "sha256": "2d765068df0817f4a8c87148d9818074a017015056d0dbcff8ea50c72e0f7035"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 7,
+      "question_name": "followup_first_scaling_question",
+      "title": "Turn 7---Follow-up on importance rating.",
+      "sha256": "39d434cfcfdc943b7c45d3fb62275ecb3c3ec4c8bb6360a121436061c6635bb3"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 8,
+      "question_name": "dig_deeper_first_scaling_question",
+      "title": "Turn 8---Digging deeper on importance.",
+      "sha256": "0ce764e48af086943f53815ec10c3a7186f3f0bcea77f1203128562c2a379604"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 9,
+      "question_name": "second_scaling_question",
+      "title": "Turn 9---Second scaling question (confidence).",
+      "sha256": "eab3345bb13a4da488ce12a308ccdbeaec5020c676ebcd32e60fc8047ebd5edb"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 10,
+      "question_name": "followup_second_scaling_question",
+      "title": "Turn 10---Follow-up on confidence rating.",
+      "sha256": "db109c48f833db9b92732df890611cc6f2b6c7f69249bc0b6055b456251059ff"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 11,
+      "question_name": "ability_booster_strengths",
+      "title": "Turn 11---Strengths that support ability.",
+      "sha256": "b5322343069a84824402bf83fe15c099fd1c8d1c1aaa81ba88c98935769042ab"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 12,
+      "question_name": "confidence_past_success",
+      "title": "Turn 12---Past success and confidence.",
+      "sha256": "100e4fd8a387c3ac734e85d216cd23f487082fda63ed6c41a2d7d04b9dd8606e"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 13,
+      "question_name": "menu_of_choices_1",
+      "title": "Turn 13---Menu of options for change.",
+      "sha256": "b309ca48deaa89594e00dd169bd74763c8a2d5bcdefc4d2d66ec435d3ce0f237"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 14,
+      "question_name": "action_step",
+      "title": "Turn 14---Concrete action step.",
+      "sha256": "bbdea95225dcdb5871b6b7450b2f8a732a098e3dc21d7bd3bec4bcf725c1c640"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 15,
+      "question_name": "review_interview",
+      "title": "Turn 15---Review of the interview.",
+      "sha256": "0d725d1e60d6bab408a1ef2f80593c62bfed65dc357bb62cd783b80cc923faf3"
+    },
+    {
+      "arm": "T1_MI_CHANGE",
+      "section": "D.1",
+      "turn": 16,
+      "question_name": "wrap_up",
+      "title": "Turn 16---Wrap-up.",
+      "sha256": "c07a60081dfddc3d6170071331520f0f0cfe7017c54c6655b7285f4771a3987b"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "field": "global_mi_system_prompt",
+      "sha256": "5ff2be16465b363cf0b898ea5ff999b77ac371de04dacf75e7a8927544d6cbe3"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "field": "first_question",
+      "sha256": "48689626816dff30f421396ae7b20f1934f9034b18014d5bd7ce9e22ae80d5ef"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 1,
+      "question_name": "followup_past_positives",
+      "title": "Turn 1---Follow-up on positives.",
+      "sha256": "91362a0ae68009ac8c8bdbd39ce5d6aa78deb7ab932af328503a86a44de7cc08"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 2,
+      "question_name": "deepen_positives",
+      "title": "Turn 2---Deepening positives.",
+      "sha256": "e1cbbe3077edf9fe9088fdce358f0996e3edbd8c16225947e7ed524022b77066"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 3,
+      "question_name": "followup_past_negatives",
+      "title": "Turn 3---Follow-up on negatives.",
+      "sha256": "ae26e7cfa3c8599f5abc20503efcb3a6e36cc38ea276cff1c9d851e27ce86861"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 4,
+      "question_name": "deepen_negatives",
+      "title": "Turn 4---Deepening negatives.",
+      "sha256": "213a3b62ef914a2c7ba0744cb60e64051bf7547053d965bc6f1a73516467d891"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 5,
+      "question_name": "values_discrepancy",
+      "title": "Turn 5---Values discrepancy.",
+      "sha256": "d5bcc29be15741bb2796a054bc846e4452ba56e6f21808c89a7d144c3324b301"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 6,
+      "question_name": "summary_understanding",
+      "title": "Turn 6---Summary and understanding check.",
+      "sha256": "32797f57e472a2ac5141e520c3991ed1dbf110efa964af7ccc9f8a0b9d62a865"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 7,
+      "question_name": "first_scaling_question",
+      "title": "Turn 7---First scaling question (importance).",
+      "sha256": "d7281cea6f0c6c16398d92e324c9452f51d4a937f52f4aaeb992dd665f2529a1"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 8,
+      "question_name": "importance_followup_lower",
+      "title": "Turn 8---Importance follow-up (why not lower).",
+      "sha256": "9a6e65f04d6b1f956375e80eaf425c77237af923c6ab29c397fae3e08fbebf4a"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 9,
+      "question_name": "importance_followup_higher",
+      "title": "Turn 9---Importance follow-up (why not higher).",
+      "sha256": "a176488daa6a15c7d8604febd32bef87026f8833ea884433a517e43ab85df519"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 10,
+      "question_name": "imagine_consequences",
+      "title": "Turn 10---Imagining consequences of change.",
+      "sha256": "f9094157952bbd12583329698823f2b36db5a42f47b06b6e6cf951214fdfe317"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 11,
+      "question_name": "second_scaling_question",
+      "title": "Turn 11---Second scaling question (confidence).",
+      "sha256": "b078161e122e01bc2641b335c760a3482f98108b80e71edf41e291fa6968b683"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 12,
+      "question_name": "confidence_followup_lower",
+      "title": "Turn 12---Confidence follow-up (why not lower).",
+      "sha256": "5f24498b14578b81470e19fa120f66c3a2803d88e540c134cdb3fa21ba52571f"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 13,
+      "question_name": "confidence_followup_higher",
+      "title": "Turn 13---Confidence follow-up (why not higher).",
+      "sha256": "8fa1a046e4c0862ef6ab9d6a6bccab180bddd7df9bb2f54c00ef6cacd428bbad"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 14,
+      "question_name": "strengths_past_success",
+      "title": "Turn 14---Strengths and past success.",
+      "sha256": "64137a0d3695536eb3397d9aee1f83552c451b2a712a1a7860af2979fd949d14"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 15,
+      "question_name": "menu_of_choices_1",
+      "title": "Turn 15---Menu of options for change.",
+      "sha256": "7767af99c600e3fcfed6528ebac978402b2fbd14f8a4c55f12f237290dfa4c3f"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 16,
+      "question_name": "action_step",
+      "title": "Turn 16---Concrete action step.",
+      "sha256": "91f4cca5dbfe2ba96c3e94e2039b83c252430a6224f9296e7875359b5432e586"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 17,
+      "question_name": "review_interview",
+      "title": "Turn 17---Review of the interview.",
+      "sha256": "9f0d19e315f5c03752645e6f06be9ebf018ed4b076e1c127cf2ce2185499f7fe"
+    },
+    {
+      "arm": "T2_MI_AMBIVALENCE",
+      "section": "D.2",
+      "turn": 18,
+      "question_name": "wrap_up",
+      "title": "Turn 18---Wrap-up.",
+      "sha256": "c07a60081dfddc3d6170071331520f0f0cfe7017c54c6655b7285f4771a3987b"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "field": "global_mi_system_prompt",
+      "sha256": "101654e466d19615659815be93b60272d293a25180de6012d71665485dad93f2"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "field": "first_question",
+      "sha256": "d38587987067d546e1bd01625ffbbfd2452cd24feadd4dcc065d870819123cad"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "turn": 1,
+      "question_name": "t4_reaction_relevance",
+      "title": "Turn 1---Reaction to the opening evidence.",
+      "sha256": "4a5047ea534ebf923623d4688b9f3782b46e340acd99588c75f2f4e9a97fcdce"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "turn": 2,
+      "question_name": "t4_habits_map",
+      "title": "Turn 2---Mapping current habits.",
+      "sha256": "208ff3569e0a0c2563e6c930bfae0f30a027bf4a4d35b4fd26b39974151adf14"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "turn": 3,
+      "question_name": "t4_direct_harms",
+      "title": "Turn 3---Direct harms.",
+      "sha256": "7930c8af46e95a9b67be2c4b3a29ae890d88dcf92e8620b58fcb02ed0b13cbf4"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "turn": 4,
+      "question_name": "t4_benefits_ask",
+      "title": "Turn 4---Asking about benefits.",
+      "sha256": "d5b711c5980b327d0de9d8e49e63e86180475465b92e78c169897b84616e760e"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "turn": 5,
+      "question_name": "t4_benefits_counter",
+      "title": "Turn 5---Countering the benefits.",
+      "sha256": "9dd9c3d2d0bd42734dd4c7fe8dd05f78daf43b8280b2ef7174820267acafe5ad"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "turn": 6,
+      "question_name": "t4_importance_scale",
+      "title": "Turn 6---Importance scaling question.",
+      "sha256": "64ae18379865295778e003fae93353c8281b9957a536d1bfeb0eabe1bc2ef394"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "turn": 7,
+      "question_name": "t4_importance_to_plan",
+      "title": "Turn 7---From importance rating to a plan.",
+      "sha256": "f1f5d826896df47ee6873640b9a1d7d21825d0a11b1c92c2fc34d8eb0644904e"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "turn": 8,
+      "question_name": "t4_plan_or_benchmarks",
+      "title": "Turn 8---Plan or benchmark options.",
+      "sha256": "2f40505bff9eb32b432f73996538dbae759dbc359327f9cfcf8d680094867151"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "turn": 9,
+      "question_name": "t4_commitment_rule",
+      "title": "Turn 9---Commitment rule.",
+      "sha256": "c2599f1fe9887b2de1de1312fe31a30111327374e2fa29ef31850a5343ea654e"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "turn": 10,
+      "question_name": "t4_enforcement",
+      "title": "Turn 10---Enforcement.",
+      "sha256": "cad44a1ace79404770d5290bdab3f80ec84a4695750717ed62d38ec29ea04dfb"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "turn": 11,
+      "question_name": "t4_confidence_scale2",
+      "title": "Turn 11---Confidence scaling question.",
+      "sha256": "0e2d14286f58dfe95a960552bb1fea038f4bae417a81ea684e25e8f82b80cb58"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "turn": 12,
+      "question_name": "t4_confidence_strengthen",
+      "title": "Turn 12---Strengthening confidence.",
+      "sha256": "ec727db71070a549cf2dbe66056b2469a58d4bff2b2535ec673f9a00f49ad71f"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "turn": 13,
+      "question_name": "t4_barriers_solutions",
+      "title": "Turn 13---Barriers and solutions.",
+      "sha256": "9bcc9a49ee5a956b88f5926f661a522d6aaafb101042a0f2366a28050a550bf6"
+    },
+    {
+      "arm": "T4_CLEAR_PERSUASION",
+      "section": "D.3",
+      "turn": 14,
+      "question_name": "t4_closing_summary",
+      "title": "Turn 14---Closing summary.",
+      "sha256": "bdc7a45fc0dde6c4b995cb5196f2eab4d962c601fe1e1463edebdb7cf53ddda8"
+    },
+    {
+      "arm": "TIME_USE",
+      "section": "D.4",
+      "field": "global_mi_system_prompt",
+      "sha256": "b27d1f7c1266811e300c0853173e30550972710fd5411910f3dd471619900bbe"
+    },
+    {
+      "arm": "TIME_USE",
+      "section": "D.4",
+      "field": "first_question",
+      "sha256": "083caf8de42402f20abb318cedffdcd69f3ce8b5752b6c09731c753a18b26078"
+    },
+    {
+      "arm": "TIME_USE",
+      "section": "D.4",
+      "turn": 1,
+      "question_name": "followup_morning_routine",
+      "title": "Turn 1---Follow-up on morning routine.",
+      "sha256": "8f5b535429b46759b57e32629ecbd268a6a715ace802665726b6a09ff55a460e"
+    },
+    {
+      "arm": "TIME_USE",
+      "section": "D.4",
+      "turn": 2,
+      "question_name": "question_midday",
+      "title": "Turn 2---Midday routine.",
+      "sha256": "f35bac1da69c4368346c37655181a193d234f803577e4fb85b1b2183941d10e3"
+    },
+    {
+      "arm": "TIME_USE",
+      "section": "D.4",
+      "turn": 3,
+      "question_name": "question_evening",
+      "title": "Turn 3---Evening routine.",
+      "sha256": "aa8153a8000e9fc0b3ff18cf66a563b1ad1b9cbad446f0f794c763ef8322da4e"
+    },
+    {
+      "arm": "TIME_USE",
+      "section": "D.4",
+      "turn": 4,
+      "question_name": "follow_up_evening",
+      "title": "Turn 4---Follow-up on evening routine.",
+      "sha256": "f129b82c94cc753fb90d9bbc7e3a63d17b4c6101b9fc16df54391017df1294f1"
+    },
+    {
+      "arm": "TIME_USE",
+      "section": "D.4",
+      "turn": 5,
+      "question_name": "planning_question",
+      "title": "Turn 5---Planning.",
+      "sha256": "9d3dbca334f192e1750f70d779193e3b94a0b222089bdf3e47516b213e369478"
+    },
+    {
+      "arm": "TIME_USE",
+      "section": "D.4",
+      "turn": 6,
+      "question_name": "question_routines",
+      "title": "Turn 6---Daily routines.",
+      "sha256": "731c57e150f4ccba4f4d4031f9c84d1e8868b33e92125aff426b3506f871a13a"
+    },
+    {
+      "arm": "TIME_USE",
+      "section": "D.4",
+      "turn": 7,
+      "question_name": "seasonal_variation",
+      "title": "Turn 7---Seasonal variation.",
+      "sha256": "e7c9a94420b36ad1fba3c2ae57dbc02335d472b6780fab1d6bfc9c987d620279"
+    },
+    {
+      "arm": "TIME_USE",
+      "section": "D.4",
+      "turn": 8,
+      "question_name": "seasonal_variation_followup",
+      "title": "Turn 8---Follow-up on seasonal variation.",
+      "sha256": "dbcac9ee94f9c9939e4383159a86f81c36dea31ce8ff5114cdcd19b18054ea83"
+    },
+    {
+      "arm": "TIME_USE",
+      "section": "D.4",
+      "turn": 9,
+      "question_name": "question_differences",
+      "title": "Turn 9---Weekday versus weekend routines.",
+      "sha256": "7b4ae17882206198b03ead967e3ba7ba579220430a52756809da5b15c8395e95"
+    },
+    {
+      "arm": "TIME_USE",
+      "section": "D.4",
+      "turn": 10,
+      "question_name": "wrap_up",
+      "title": "Turn 10---Final reflection.",
+      "sha256": "da09434a2b74ddaa394ea02b3bcc6f451e6e116b961282eb8f8ab67e26b0fbf1"
+    },
+    {
+      "arm": "TIME_USE",
+      "section": "D.4",
+      "turn": 11,
+      "question_name": "summarizing_statement",
+      "title": "Turn 11---Closing summary.",
+      "sha256": "e6430f7fd5093cc460ecd96c077ffe270c56683923351bdb3f3c9686c460024d"
+    },
+    {
+      "arm": "TIME_USE",
+      "section": "D.4",
+      "field": "end_of_interview_message",
+      "sha256": "d0d2bbeb690fb11763a68c5149f7e2264709b5b8df1ba4098efd50e797e165b5"
+    }
+  ]
+}

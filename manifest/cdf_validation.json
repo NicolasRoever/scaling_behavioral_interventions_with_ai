@@ -1,0 +1,17 @@
+{
+  "validated_at_unix": 1789840827,
+  "checks": [
+    {
+      "file": "figures/fig_cdf_importance_score.pdf",
+      "all_three_treatment_curves_match_manuscript": true,
+      "max_normalized_coordinate_difference": 3.7418159681834595e-09,
+      "tolerance": 1e-07
+    },
+    {
+      "file": "figures/fig_cdf_confidence_score.pdf",
+      "all_three_treatment_curves_match_manuscript": true,
+      "max_normalized_coordinate_difference": 3.461548880867582e-09,
+      "tolerance": 1e-07
+    }
+  ]
+}

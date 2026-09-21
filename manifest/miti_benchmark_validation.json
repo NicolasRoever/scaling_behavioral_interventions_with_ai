@@ -1,0 +1,39 @@
+{
+  "validated_at_unix": 1789840604,
+  "raw_saved_responses_checked": 504,
+  "unique_interviews": 14,
+  "source_input_checksums_passed": true,
+  "source_join_reproduced": true,
+  "release_numeric_values_match": true,
+  "released_columns": [
+    "session_id",
+    "condition_id",
+    "condition",
+    "replicate",
+    "model",
+    "reasoning_effort",
+    "prompt_variant",
+    "miti_dimension",
+    "score",
+    "human_score"
+  ],
+  "source_batch_manifest_sha256": "9840abc6dc72f53672076650365c0f86d5cc762f11a0d4b3dd0475e21ead072e",
+  "source_analysis_manifest_sha256": "6cc07a84643eafbf5e2525a6072970d62532067d8d11a3f4e1d0fde78f7b7247",
+  "api_calls_made": 0,
+  "additional_api_compute_cost_usd": 0,
+  "source_table_fragments_exact_match": true,
+  "manuscript_table_fragments_exact_match": true,
+  "numeric_summaries_match": [
+    "table_c1.csv",
+    "table_c2.csv",
+    "summary_per_run.csv"
+  ],
+  "table_layout_reviewed": true,
+  "rejects_invalid_inputs": [
+    "missing score",
+    "duplicate key",
+    "inconsistent expert rating",
+    "wrong reasoning setting",
+    "invalid score"
+  ]
+}

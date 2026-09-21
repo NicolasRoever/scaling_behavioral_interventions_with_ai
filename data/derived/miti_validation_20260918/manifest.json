@@ -1,0 +1,103 @@
+{
+  "created_at_unix": 1789765503,
+  "source_batch": "validation_batch_20260918_1789755866",
+  "source_manifest_sha256": "9840abc6dc72f53672076650365c0f86d5cc762f11a0d4b3dd0475e21ead072e",
+  "dimensions": [
+    "Cultivating Change Talk",
+    "Softening Sustain Talk",
+    "Partnership",
+    "Empathy"
+  ],
+  "conditions": [
+    {
+      "id": "luna_benchmark",
+      "condition": "benchmark",
+      "replicate": 0,
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "low",
+      "ablation": false
+    },
+    {
+      "id": "luna_rerun_01",
+      "condition": "rerun",
+      "replicate": 1,
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "low",
+      "ablation": false
+    },
+    {
+      "id": "luna_rerun_02",
+      "condition": "rerun",
+      "replicate": 2,
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "low",
+      "ablation": false
+    },
+    {
+      "id": "luna_rerun_03",
+      "condition": "rerun",
+      "replicate": 3,
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "low",
+      "ablation": false
+    },
+    {
+      "id": "luna_rerun_04",
+      "condition": "rerun",
+      "replicate": 4,
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "low",
+      "ablation": false
+    },
+    {
+      "id": "luna_rerun_05",
+      "condition": "rerun",
+      "replicate": 5,
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "low",
+      "ablation": false
+    },
+    {
+      "id": "luna_ablation",
+      "condition": "ablation",
+      "replicate": 0,
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "low",
+      "ablation": true
+    },
+    {
+      "id": "gpt54_minimum",
+      "condition": "model_comparison",
+      "replicate": 0,
+      "model": "gpt-5.4-2026-03-05",
+      "reasoning_effort": "none",
+      "ablation": false
+    },
+    {
+      "id": "gpt55_minimum",
+      "condition": "model_comparison",
+      "replicate": 0,
+      "model": "gpt-5.5-2026-04-23",
+      "reasoning_effort": "none",
+      "ablation": false
+    }
+  ],
+  "expected_scores": 504,
+  "expected_interviews": 14,
+  "file": "scores.csv",
+  "sha256": "5a4f0df18e405e2ea794030c2d12cb85c1a92f4ca910f529fbc4b4dec8ebd140",
+  "behavioral_reference": "data/derived/miti/inputs/behavioral_results.csv",
+  "behavioral_reference_sha256": "17f23789d7291f6debafe8e40cd4035afb0b82e7f0f5ca6789dec536d4d52669",
+  "source_joined_scores_sha256": "2896bb52bee8d82d470a88401adadc48c4e15e3e0c2e4d08af5d8b2a4baced04",
+  "withheld": [
+    "Raw transcripts and transcript corrections",
+    "Per-interview prompts, request/response IDs and hashes",
+    "Raw JSONL requests/responses and model explanations"
+  ],
+  "design_notes": [
+    "Corrected transcript roles: P and I are clinician; C is client.",
+    "Topic-neutral validation prompt omits Change Goal.",
+    "Luna low reasoning; GPT-5.4 and GPT-5.5 none.",
+    "Five independent additional Luna runs; no new API requests in reproduction."
+  ]
+}
