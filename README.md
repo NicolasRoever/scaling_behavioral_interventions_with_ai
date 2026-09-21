@@ -4,7 +4,7 @@ This is the replication package for the paper:
 This repository contains the replication materials for:
 
 > **Felix Chopra, Ingar Haaland, Nicolas Roever, and Christopher Roth.**  
-> *Evaluating Behavioral Interventions at Scale with AI.*  
+> *Scaling Behavioral Interventions with AI.*  
 The manuscript hash and current exhibit inventory are in `manifest/exhibits.json`.
 
 To protect the privacy of our experimental subjects, we do not provide the raw interview transcripts. 
