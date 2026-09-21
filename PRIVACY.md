@@ -26,19 +26,3 @@ platform-ID patterns elsewhere, including binary DTA metadata. It does not
 inspect compressed PDF text or Git objects; those were checked separately
 when preparing this release. The full source-ID crosswalk is never required
 by or distributed with the public checks.
-
-## Git history requires separate cleanup
-
-The read-only local Git audit found **14 older data-file versions** containing
-original platform identifiers; **eight contain Prolific IDs** and the others
-contain Qualtrics response IDs. These versions remain reachable from repository
-history. They include older raw and cleaned surveys, extracted scores, the
-former classification merge and screenshot-data CSVs. Counts and affected
-paths are recorded in `manifest/identifier_validation.json`; no identifier
-values are included in that report.
-
-The working files are deidentified, but the repository history is not clean.
-A normal commit or deletion does not erase earlier committed file contents.
-Removing those historical versions changes commit hashes and requires a
-separate history rewrite. This package update does not rewrite history or push
-changes. The remote server was not inspected or altered.
