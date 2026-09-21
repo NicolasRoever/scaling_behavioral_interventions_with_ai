@@ -9,6 +9,11 @@ The manuscript hash and current exhibit inventory are in `manifest/exhibits.json
 
 To protect the privacy of our experimental subjects, we do not provide the raw interview transcripts. 
 
+## Prompts
+
+We release all interviewer prompts here, they are given in the file: ``code/prompts/parameters.py''. 
+The prompts for our MITI-scoring procedure are at: XXX
+
 
 
 ## Reproduce the results
