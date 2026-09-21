@@ -1,5 +1,5 @@
 {
-  "recorded_at_unix": 1789849693,
+  "recorded_at_unix": 1790021237,
   "source_files": [
     {
       "package_file": "code/stata/fig_baseline_sm_use.do",
@@ -234,7 +234,8 @@
     {
       "package_file": "code/private/miti_scoring/miti_behavioral_counts.py",
       "source": "python/miti_scoring/archive/miti_behavioral_counts.py",
-      "source_sha256": "07d7952b59ec7ac00f83e0985e14cb1150f4cc75d094d43c5b71b0da854eb664"
+      "source_sha256": "07d7952b59ec7ac00f83e0985e14cb1150f4cc75d094d43c5b71b0da854eb664",
+      "package_adjustment": "Guarded compatibility shim importing the canonical prompt definitions from code/prompts/miti_behavioral_counts.py; no duplicated prompt text."
     },
     {
       "package_file": "code/private/miti_scoring/run_campaign.py",
@@ -244,7 +245,8 @@
     {
       "package_file": "code/private/miti_scoring/miti_global_scores.py",
       "source": "python/miti_scoring/miti_global_scores.py",
-      "source_sha256": "fffdb5c3db54d382312a1dc04e8007fec54f44912548b613f9ba6d7334898ab2"
+      "source_sha256": "fffdb5c3db54d382312a1dc04e8007fec54f44912548b613f9ba6d7334898ab2",
+      "package_adjustment": "Guarded compatibility shim importing the canonical prompt definitions from code/prompts/miti_global_scores.py; no duplicated prompt text."
     },
     {
       "package_file": "code/python/bertopic_plot.py",
@@ -323,6 +325,18 @@
       "source": "stata/Helpers/test_expdemand_subgroups.do",
       "source_sha256": "abcf15bae872135fd6f402a7710f070902ad9252a0aa59328ab9eebf2ce678bf",
       "package_adjustment": "Local subgroup SUR tests with explicit inputs, as in current source. No API calls."
+    },
+    {
+      "package_file": "code/prompts/miti_behavioral_counts.py",
+      "source": "python/miti_scoring/archive/miti_behavioral_counts.py",
+      "source_sha256": "07d7952b59ec7ac00f83e0985e14cb1150f4cc75d094d43c5b71b0da854eb664",
+      "package_adjustment": "Public importable prompt definitions: active template text unchanged; removes the execution guard and inactive commented alternatives, and adds a usage docstring."
+    },
+    {
+      "package_file": "code/prompts/miti_global_scores.py",
+      "source": "python/miti_scoring/miti_global_scores.py",
+      "source_sha256": "fffdb5c3db54d382312a1dc04e8007fec54f44912548b613f9ba6d7334898ab2",
+      "package_adjustment": "Public importable prompt definitions: active template text unchanged; removes the execution guard and inactive commented alternatives, and adds a usage docstring."
     }
   ],
   "submission_validation_sources": [

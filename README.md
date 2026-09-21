@@ -11,8 +11,9 @@ To protect the privacy of our experimental subjects, we do not provide the raw i
 
 ## Prompts
 
-We release all interviewer prompts here, they are given in the file: ``code/prompts/parameters.py''. 
-The prompts for our MITI-scoring procedure are at: XXX
+We release all interviewer prompts here, they are given in the file: [`code/prompts/parameters.py`](code/prompts/parameters.py).
+The prompts for our MITI-scoring procedure are at: [`code/prompts/miti_global_scores.py`](code/prompts/miti_global_scores.py) (global scores) and [`code/prompts/miti_behavioral_counts.py`](code/prompts/miti_behavioral_counts.py) (behavioral counts).
+See the [prompt usage guide](code/prompts/README.md) for the scoring dimensions, study and validation variants, and examples.
 
 
 
@@ -74,6 +75,8 @@ the published specifications, including documented reporting errors.
 | `code/python/` | Offline plotting and tabulation from saved derived results |
 | `code/private/` | Restricted-input methods and prompts; never invoked by public runners |
 | `code/prompts/parameters.py` | All four appendix protocols; 68 checked prompt blocks |
+| [`code/prompts/miti_global_scores.py`](code/prompts/miti_global_scores.py) | Four MITI global scoring dimensions, study and validation templates |
+| [`code/prompts/miti_behavioral_counts.py`](code/prompts/miti_behavioral_counts.py) | MITI behavioral coding instructions and utterance-classification prompt |
 | `data/raw/` | Deidentified baseline and follow-up survey exports |
 | `data/processed/` | Current survey files and text-free screenshot measures |
 | `data/archival/original_submission/` | Frozen deidentified inputs used only for the original-submission tables |

@@ -4,6 +4,15 @@ Updated September 19, 2026. All public processing is offline: $0 additional
 API/compute cost and zero model requests. Raw transcripts, transcript correction
 records, request/response payloads and model explanations are not distributed.
 
+## Scoring prompts
+
+The reusable [global scoring templates and four coding rubrics](code/prompts/miti_global_scores.py)
+and [behavioral-count instructions](code/prompts/miti_behavioral_counts.py) are in
+`code/prompts/`. The [usage guide](code/prompts/README.md) explains how to render
+study, topic-neutral validation, and conservative-sentence ablation prompts.
+The standard and ablated global prompts and coding rubrics were checked against
+the frozen September 10 study campaign and September 18 validation inputs.
+
 ## Corrected human validation: Tables C.1 and C.2
 
 `data/derived/miti_validation_20260918/scores.csv` contains 504 saved score pairs

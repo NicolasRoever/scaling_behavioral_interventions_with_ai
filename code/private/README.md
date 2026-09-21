@@ -1,5 +1,12 @@
 # Restricted-input method sources
 
+Reusable MITI prompts are directly available in
+[`code/prompts/miti_global_scores.py`](../prompts/miti_global_scores.py) and
+[`code/prompts/miti_behavioral_counts.py`](../prompts/miti_behavioral_counts.py);
+see the [prompt usage guide](../prompts/README.md). These modules contain only
+prompt definitions and can be imported without restricted data or API access.
+The matching files here retain the execution guard and point to those shared definitions.
+
 These files document the upstream methods that produced the saved public
 measurements. They are not called by either public runner. Re-executing them
 requires the original restricted inputs, source dependencies and path
