@@ -2307,3 +2307,23 @@ data/archival/original_submission/clean_merged_with_scrshots.dta,actual_time,"Sc
 data/archival/original_submission/clean_merged_with_scrshots.dta,reported_time,"Actual social media time (minutes, winsorized)",float64,2719
 data/processed/main_social_media/df_merged_llm_category_expdemand_luna_v002.dta,prolific_id,Anonymous release participant identifier; not a Prolific ID,str,2719
 data/processed/main_social_media/df_merged_llm_category_expdemand_luna_v002.dta,llm_category_expdemand,Saved experimenter-demand category (Luna v002),str,2719
+data/derived/similarity_by_topic.csv,arm,Treatment arm label,str,63
+data/derived/similarity_by_topic.csv,arm_code,Protocol code,str,63
+data/derived/similarity_by_topic.csv,question_topic,Scripted question identifier; not participant text,str,63
+data/derived/similarity_by_topic.csv,question_number,Manual question order within arm,int64,63
+data/derived/similarity_by_topic.csv,question_name,Manual question label; not participant text,str,63
+data/derived/similarity_by_topic.csv,categories,Manual functional classification,str,63
+data/derived/similarity_by_topic.csv,position,Median interviewer turn position,float64,63
+data/derived/similarity_by_topic.csv,within_cosine,Mean distinct-turn-pair cosine within question,float64,63
+data/derived/similarity_by_topic.csv,n,Number of interviewer turns,int64,63
+data/derived/similarity_by_topic.csv,reference,Turn-pair-weighted different-question cosine,float64,63
+data/derived/similarity_by_topic_question_audit.csv,arm,Treatment arm label,str,65
+data/derived/similarity_by_topic_question_audit.csv,arm_code,Protocol code,str,65
+data/derived/similarity_by_topic_question_audit.csv,question_topic,Scripted question identifier; not participant text,str,65
+data/derived/similarity_by_topic_question_audit.csv,question_number,Manual question order within arm,float64,65
+data/derived/similarity_by_topic_question_audit.csv,question_name,Manual question label; not participant text,str,65
+data/derived/similarity_by_topic_question_audit.csv,categories,Manual functional classification,str,65
+data/derived/similarity_by_topic_question_audit.csv,n,Number of interviewer turns,int64,65
+data/derived/similarity_by_topic_question_audit.csv,n_sessions,Number of interviews,int64,65
+data/derived/similarity_by_topic_question_audit.csv,position,Median interviewer turn position,float64,65
+data/derived/similarity_by_topic_question_audit.csv,status,Aggregate inclusion status,str,65

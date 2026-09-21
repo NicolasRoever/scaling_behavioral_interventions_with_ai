@@ -14,6 +14,12 @@ sequences from the manually specified appendix stages; wording similarity and
 word clouds from aggregate inputs; and the
 30-minute table from saved Boolean chat-level indicators.
 
+The similarity summary and question-audit files use the current manual
+question definitions in `question_sequence.py`. `language_similarity.py`
+validates their labels, order, counts and cosine ranges before rendering the
+63 classified questions. Aggregate exclusion details are supplied in
+`data/derived/similarity_by_topic_audit.txt`; no transcript text is included.
+
 MITI study-sample exhibits use the September 10 experimental campaign and
 filter every run to the cleaned survey: 2,048 treated participants and 671
 controls. Treatment assignments come directly from the released survey, and

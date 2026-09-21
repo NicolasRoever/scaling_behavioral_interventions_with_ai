@@ -1,0 +1,54 @@
+{
+  "validated_at_unix": 1790026306,
+  "checks_passed": true,
+  "inputs": [
+    {
+      "source": "python/text_analysis/outputs/similarity_by_topic.csv",
+      "package_file": "data/derived/similarity_by_topic.csv",
+      "sha256": "74d247c9db4389e58e75095eb11246623cde8420016a4a2fb566226275792293"
+    },
+    {
+      "source": "python/text_analysis/outputs/similarity_by_topic_question_audit.csv",
+      "package_file": "data/derived/similarity_by_topic_question_audit.csv",
+      "sha256": "cb61a47818fd3f4d3826041c9e4305ffefd84915d454488ba7ba1869da874bdf"
+    },
+    {
+      "source": "python/text_analysis/outputs/similarity_by_topic_audit.txt",
+      "package_file": "data/derived/similarity_by_topic_audit.txt",
+      "sha256": "2740ca40da631af7fe0e6318d18cf63c8b6b28a02ed3bb1e4610694777a397d2"
+    }
+  ],
+  "source_manual_definitions_match": true,
+  "source_category_colors_match": true,
+  "aggregate_audit_matches_summary": true,
+  "transcript_content_distributed": false,
+  "participant_identifiers_distributed": false,
+  "minimum_turns": 5,
+  "plotted_questions_by_arm": {
+    "Change Talk": 17,
+    "Decisional Balance": 19,
+    "Direct Persuasion": 15,
+    "Control (Time Use)": 12
+  },
+  "unclassified_turns": 14,
+  "unclassified_interviews": 7,
+  "excluded_topics": [
+    "routine_change_followup",
+    "routine_change_wish"
+  ],
+  "excluded_unsupported_arm_turns": 155,
+  "excluded_unsupported_arm_interviews": 15,
+  "retained_zero_vector_turns": 11,
+  "retained_zero_vector_interviews": 1,
+  "references": {
+    "Change Talk": 0.1246092780897267,
+    "Decisional Balance": 0.1248028498281507,
+    "Direct Persuasion": 0.1182111464970574,
+    "Control (Time Use)": 0.1216730023027347
+  },
+  "self_pair_correction": "Subtract actual squared vector lengths, including zero vectors.",
+  "method": "Fit TF-IDF to manually classified interviewer turns in each arm; distinct-turn-pair within-topic cosine and turn-pair-weighted different-topic reference.",
+  "figure_comparison": "Both updated figures match current manuscript text and pixels at a 1000-pixel render dimension; PDF binary metadata need not match.",
+  "api_requests": 0,
+  "additional_cost_usd": 0
+}

@@ -45,17 +45,13 @@
     "file": "figures/fig_cdf_importance_score.pdf",
     "source_manuscript_pixel_equal": false,
     "released_pixel_equal_to_regenerated": true,
-    "render_dimension": 1000,
-    "visually_reviewed": true,
-    "assessment": "All three treatment curves match manuscript PDF vectors within normalized coordinate tolerance 1e-7; margins/rendering differ."
+    "render_dimension": 1000
   },
   {
     "file": "figures/fig_cdf_confidence_score.pdf",
     "source_manuscript_pixel_equal": false,
     "released_pixel_equal_to_regenerated": true,
-    "render_dimension": 1000,
-    "visually_reviewed": true,
-    "assessment": "All three treatment curves match manuscript PDF vectors within normalized coordinate tolerance 1e-7; margins/rendering differ."
+    "render_dimension": 1000
   },
   {
     "file": "figures/fig_actual_vs_ideal_social_time_binned.pdf",
@@ -73,9 +69,7 @@
     "file": "figures/fig_miti_score_histograms.pdf",
     "source_manuscript_pixel_equal": false,
     "released_pixel_equal_to_regenerated": true,
-    "render_dimension": 1000,
-    "visually_reviewed": true,
-    "assessment": "Underlying data match source summaries. Package uses Decisional Balance/Direct Persuasion labels; legend positions and axis ticks differ."
+    "render_dimension": 1000
   },
   {
     "file": "figures/qtype_shares_manual.pdf",
@@ -93,9 +87,7 @@
     "file": "figures/fig_miti_score_distributions_main_study.pdf",
     "source_manuscript_pixel_equal": false,
     "released_pixel_equal_to_regenerated": true,
-    "render_dimension": 1000,
-    "visually_reviewed": true,
-    "assessment": "Underlying data match source summaries. Package uses Decisional Balance/Direct Persuasion labels; legend positions and axis ticks differ."
+    "render_dimension": 1000
   },
   {
     "file": "figures/wordclouds_by_arm.pdf",
@@ -107,25 +99,19 @@
     "file": "figures/fig_topic_robustness_elbow.pdf",
     "source_manuscript_pixel_equal": false,
     "released_pixel_equal_to_regenerated": true,
-    "render_dimension": 1000,
-    "visually_reviewed": true,
-    "assessment": "Plotted results and labels agree; margins, positions or rendering differ."
+    "render_dimension": 1000
   },
   {
     "file": "figures/fig_topic_seed_stability.pdf",
     "source_manuscript_pixel_equal": false,
     "released_pixel_equal_to_regenerated": true,
-    "render_dimension": 1000,
-    "visually_reviewed": true,
-    "assessment": "Plotted results and labels agree; margins, positions or rendering differ."
+    "render_dimension": 1000
   },
   {
     "file": "figures/fig_number_pro_con_statements.pdf",
     "source_manuscript_pixel_equal": false,
     "released_pixel_equal_to_regenerated": true,
-    "render_dimension": 1000,
-    "visually_reviewed": true,
-    "assessment": "Plotted results and labels agree; margins, positions or rendering differ."
+    "render_dimension": 1000
   },
   {
     "file": "figures/fig_strategies.pdf",
@@ -135,19 +121,15 @@
   },
   {
     "file": "figures/fig_change_questionnaire.pdf",
-    "source_manuscript_pixel_equal": false,
+    "source_manuscript_pixel_equal": true,
     "released_pixel_equal_to_regenerated": true,
-    "render_dimension": 1000,
-    "visually_reviewed": true,
-    "assessment": "Plotted results and labels agree; margins, positions or rendering differ."
+    "render_dimension": 1000
   },
   {
     "file": "figures/fig_main_treatment_effects_sm_followup_v001.pdf",
-    "source_manuscript_pixel_equal": false,
+    "source_manuscript_pixel_equal": true,
     "released_pixel_equal_to_regenerated": true,
-    "render_dimension": 1000,
-    "visually_reviewed": true,
-    "assessment": "Plotted results and labels agree; margins, positions or rendering differ."
+    "render_dimension": 1000
   },
   {
     "file": "figures/fig_app_use_effects.pdf",

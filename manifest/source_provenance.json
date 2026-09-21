@@ -1,5 +1,5 @@
 {
-  "recorded_at_unix": 1790021237,
+  "recorded_at_unix": 1790029343,
   "source_files": [
     {
       "package_file": "code/stata/fig_baseline_sm_use.do",
@@ -166,7 +166,7 @@
     {
       "package_file": "code/stata/CleaningScripts/01_cleaning_baseline.do",
       "source": "stata/CleaningScripts/01_cleaning_baseline.do",
-      "source_sha256": "c4e71895a101869311eb8a716d15681b6d15f921a6a84bb42c5a4fc05f724a17"
+      "source_sha256": "d91b75bdbd4ef5aea23682c8f26c271226574c5576fd0a1c2c440b3812a28d20"
     },
     {
       "package_file": "code/stata/CleaningScripts/04_create_full_data.do",
@@ -213,7 +213,8 @@
     {
       "package_file": "code/private/text_analysis/similarity.py",
       "source": "python/text_analysis/similarity.py",
-      "source_sha256": "e157e4b5dd82df33c942b074aa68b517f3812c7033eee2f3fe3b441b4eead80a"
+      "source_sha256": "8cce29bc6a6935a9f2cf349a042e58298bec11e942aa1295862feeecfb36bcc1",
+      "package_adjustment": "Keep restricted-input execution guard; share arm mapping, manual labels and plotting with the public offline modules. Source analysis formulas and exclusions retained."
     },
     {
       "package_file": "code/private/text_analysis/thirty_minute_mentions.py",
@@ -223,7 +224,7 @@
     {
       "package_file": "code/python/question_sequence.py",
       "source": "python/text_analysis/classify_manual.py",
-      "source_sha256": "ac39daa439b604f5bd1bd5f760ae1eb9b7d98bb4629dc4e679e5a0a249558e56",
+      "source_sha256": "f9f05347462301f1570e174f54ae0160b0ce3d8fba4dccc6bb702c2f14ac3ea7",
       "package_adjustment": "Functional public renderer from the source PANELS/CATEGORY_COLORS and plot function; removes the superseded transcript-dependent method and sequence input."
     },
     {
@@ -337,6 +338,12 @@
       "source": "python/miti_scoring/miti_global_scores.py",
       "source_sha256": "fffdb5c3db54d382312a1dc04e8007fec54f44912548b613f9ba6d7334898ab2",
       "package_adjustment": "Public importable prompt definitions: active template text unchanged; removes the execution guard and inactive commented alternatives, and adds a usage docstring."
+    },
+    {
+      "package_file": "code/python/language_similarity.py",
+      "source": "python/text_analysis/similarity.py",
+      "source_sha256": "8cce29bc6a6935a9f2cf349a042e58298bec11e942aa1295862feeecfb36bcc1",
+      "package_adjustment": "Source arm_definitions, question_definitions and make_figure, with an offline aggregate-input validator; manual display definitions are shared with question_sequence.py."
     }
   ],
   "submission_validation_sources": [
@@ -354,10 +361,10 @@
   "submission_archival_adaptations": "code/reproduce_submission.py uses the three frozen deidentified inputs in manifest/submission_survey_snapshot.json and the specifications documented in SUBMISSION_TABLE_AUDIT.md.",
   "interview_prompts": {
     "source": "revision.tex, Appendix D.1--D.4",
-    "source_sha256": "c4076731a4ed61c3e4033fb8e289eb5b9bc980847006163b51686674a603ff45",
+    "source_sha256": "a58a446e5d010bd92c5b7ccd16b5ef87de1ca0091930b5f9754841fee0af1ecd",
     "package_file": "code/prompts/parameters.py",
     "validation": "manifest/prompt_validation.json",
-    "blocks": 68
+    "blocks": 67
   },
   "package_local_changes": [
     {
@@ -366,5 +373,7 @@
       "sha256": "2de109a39cc2b3b85d5b94f90acd6837750bd45dc152fa29ddd885ce3f5e2151"
     }
   ],
-  "experimenter_demand": "manifest/expdemand_validation.json"
+  "experimenter_demand": "manifest/expdemand_validation.json",
+  "language_similarity": "manifest/similarity_validation.json",
+  "app_use_controls": "manifest/app_use_controls_validation.json"
 }

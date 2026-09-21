@@ -1,0 +1,66 @@
+arm,arm_code,question_topic,question_number,question_name,categories,n,n_sessions,position,status
+Change Talk,T1_MI_CHANGE,opener,1.0,Opening question,Opener/Conclusion,730,730,1.0,included
+Change Talk,T1_MI_CHANGE,followup_past_negatives,2.0,Follow-up: past negatives,Change-Eliciting,723,723,3.0,included
+Change Talk,T1_MI_CHANGE,deepen_negative_impacts,3.0,Deepen: negative impacts,Change-Eliciting,722,722,5.0,included
+Change Talk,T1_MI_CHANGE,followup_2_past_negatives,4.0,Follow-up 2: past negatives,Change-Eliciting,721,721,7.0,included
+Change Talk,T1_MI_CHANGE,values_future_vision,5.0,Values & future vision,Change-Eliciting,716,716,9.0,included
+Change Talk,T1_MI_CHANGE,summary_understanding,6.0,Summary check-in,Reflective Summary,704,704,11.0,included
+Change Talk,T1_MI_CHANGE,first_scaling_question,7.0,First scaling question,Scaling,696,696,13.0,included
+Change Talk,T1_MI_CHANGE,followup_first_scaling_question,8.0,Follow-up: first scaling question,Change-Eliciting,687,687,15.0,included
+Change Talk,T1_MI_CHANGE,dig_deeper_first_scaling_question,9.0,Dig deeper: first scaling question,Change-Eliciting,674,674,17.0,included
+Change Talk,T1_MI_CHANGE,second_scaling_question,10.0,Second scaling question,Scaling,648,648,19.0,included
+Change Talk,T1_MI_CHANGE,followup_second_scaling_question,11.0,Follow-up: second scaling question,Change-Eliciting,634,634,21.0,included
+Change Talk,T1_MI_CHANGE,ability_booster_strengths,12.0,Strengths & abilities,Plan Commitment,626,626,23.0,included
+Change Talk,T1_MI_CHANGE,confidence_past_success,13.0,Confidence: past success,Change-Eliciting,598,598,25.0,included
+Change Talk,T1_MI_CHANGE,menu_of_choices_1,14.0,Menu of choices,Plan Commitment,577,577,27.0,included
+Change Talk,T1_MI_CHANGE,action_step,15.0,Action step,Plan Commitment,556,556,29.0,included
+Change Talk,T1_MI_CHANGE,review_interview,16.0,Interview review,Reflective Summary,535,535,31.0,included
+Change Talk,T1_MI_CHANGE,wrap_up,17.0,Wrap-up,Opener/Conclusion,528,528,33.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,opener,1.0,Opening question,Opener/Conclusion,724,724,1.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,followup_past_positives,2.0,Follow-up: past positives,Ambivalence-Balancing,715,715,3.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,deepen_positives,3.0,Deepen: positives,Ambivalence-Balancing,710,710,5.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,followup_past_negatives,4.0,Follow-up: past negatives,Ambivalence-Balancing,708,708,7.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,deepen_negatives,5.0,Deepen: negatives,Change-Eliciting,703,703,9.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,values_discrepancy,6.0,Values discrepancy,Change-Eliciting,691,691,11.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,summary_understanding,7.0,Summary check-in,Reflective Summary,668,668,13.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,first_scaling_question,8.0,First scaling question,Scaling,646,646,15.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,importance_followup_lower,9.0,Follow-up: lower importance,Change-Eliciting,639,639,17.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,importance_followup_higher,10.0,Follow-up: higher importance,Ambivalence-Balancing,633,633,19.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,imagine_consequences,11.0,Imagine consequences,Ambivalence-Balancing,615,615,21.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,second_scaling_question,12.0,Second scaling question,Scaling,590,590,23.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,confidence_followup_lower,13.0,Follow-up: lower confidence,Change-Eliciting,581,581,25.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,confidence_followup_higher,14.0,Follow-up: higher confidence,Ambivalence-Balancing,571,571,27.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,strengths_past_success,15.0,Strengths & past success,Change-Eliciting,566,566,29.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,menu_of_choices_1,16.0,Menu of choices,Plan Commitment,539,539,31.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,action_step,17.0,Action step,Plan Commitment,526,526,33.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,review_interview,18.0,Interview review,Reflective Summary,511,511,35.0,included
+Decisional Balance,T2_MI_AMBIVALENCE,wrap_up,19.0,Wrap-up,Opener/Conclusion,500,500,37.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,opener,1.0,Opening question,Opener/Conclusion + Information Provision,731,731,1.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_reaction_relevance,2.0,Reaction & relevance,Change-Eliciting,718,718,3.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_habits_map,3.0,Habits mapping,Change-Eliciting,717,717,5.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_direct_harms,4.0,Direct harms,Change-Eliciting,711,711,7.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_benefits_ask,5.0,Perceived benefits,Ambivalence-Balancing,704,704,9.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_benefits_counter,6.0,Counter benefits,Change-Eliciting,694,694,11.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_importance_scale,7.0,Importance scale,Scaling,673,673,13.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_importance_to_plan,8.0,Importance to plan,Plan Commitment,663,663,15.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_plan_or_benchmarks,9.0,Plan / benchmarks,Plan Commitment,648,648,17.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_commitment_rule,10.0,Commitment rule,Plan Commitment,636,636,19.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_enforcement,11.0,Enforcement,Plan Commitment,624,624,21.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_confidence_scale2,12.0,Confidence scale,Scaling,610,610,23.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_confidence_strengthen,13.0,Strengthen confidence,Change-Eliciting,602,602,25.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_barriers_solutions,14.0,Barriers & solutions,Information Provision,591,591,27.0,included
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_closing_summary,15.0,Closing summary,Opener/Conclusion,575,575,29.0,included
+Control (Time Use),TIME_USE,opener,1.0,Opening question: morning routine,Opener/Conclusion,732,732,1.0,included
+Control (Time Use),TIME_USE,followup_morning_routine,2.0,Follow-up on morning routine,Other,714,714,3.0,included
+Control (Time Use),TIME_USE,question_midday,3.0,Midday routine,Other,713,713,5.0,included
+Control (Time Use),TIME_USE,question_evening,4.0,Evening routine,Other,711,711,7.0,included
+Control (Time Use),TIME_USE,follow_up_evening,5.0,Follow-up on evening routine,Other,706,706,9.0,included
+Control (Time Use),TIME_USE,planning_question,6.0,Planning,Other,692,692,11.0,included
+Control (Time Use),TIME_USE,question_routines,7.0,Daily routines,Other,684,684,13.0,included
+Control (Time Use),TIME_USE,seasonal_variation,8.0,Seasonal variation,Other,654,654,15.0,included
+Control (Time Use),TIME_USE,seasonal_variation_followup,9.0,Follow-up on seasonal variation,Other,630,630,17.0,included
+Control (Time Use),TIME_USE,question_differences,10.0,Weekday versus weekend routines,Other,624,624,19.0,included
+Control (Time Use),TIME_USE,wrap_up,11.0,Final reflection,Opener/Conclusion,606,606,21.0,included
+Control (Time Use),TIME_USE,summarizing_statement,12.0,Closing summary,Opener/Conclusion,592,592,23.0,included
+Control (Time Use),TIME_USE,routine_change_followup,,,,7,7,17.0,unclassified
+Control (Time Use),TIME_USE,routine_change_wish,,,,7,7,15.0,unclassified

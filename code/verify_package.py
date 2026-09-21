@@ -81,8 +81,8 @@ def verify(package, check_reproduced, allow_rebuilt_data, check_submission=False
         errors.append('Prompt configuration changed after appendix validation')
     if set(configurations) != {'T1_MI_CHANGE', 'T2_MI_AMBIVALENCE', 'T4_CLEAR_PERSUASION', 'TIME_USE'}:
         errors.append('Expected only the four appendix protocols')
-    if len(prompt_report['blocks']) != 68:
-        errors.append('Expected 68 appendix prompt blocks')
+    if len(prompt_report['blocks']) != 67:
+        errors.append('Expected 67 appendix prompt blocks')
     for block in prompt_report['blocks']:
         configuration = configurations[block['arm']]
         if 'turn' in block:
@@ -114,7 +114,7 @@ def verify(package, check_reproduced, allow_rebuilt_data, check_submission=False
     print(f'PASS: {len(checksums["files"])} release files; {len(refs)} reference exhibits; '
           f'{computed} computed exhibits; 1 explicitly withheld image.')
     print('PASS: anonymous survey identifiers and platform-ID checks.')
-    print('PASS: 68 prompt blocks in four arms match the appendix validation record.')
+    print('PASS: 67 prompt blocks in four arms match the appendix validation record.')
     print('PASS: corrected MITI benchmark has 504 valid paired scores, 14 interviews and all nine conditions.')
     print('PASS: all 12 original-submission reference tables supplied; 11/11 numerical tables match the PDF.')
     if check_submission:

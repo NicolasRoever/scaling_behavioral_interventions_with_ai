@@ -74,7 +74,7 @@ the published specifications, including documented reporting errors.
 | `code/stata/` | Public survey cleaning, tables, figures, and supporting statistics |
 | `code/python/` | Offline plotting and tabulation from saved derived results |
 | `code/private/` | Restricted-input methods and prompts; never invoked by public runners |
-| `code/prompts/parameters.py` | All four appendix protocols; 68 checked prompt blocks |
+| `code/prompts/parameters.py` | All four appendix protocols; 67 checked prompt blocks |
 | [`code/prompts/miti_global_scores.py`](code/prompts/miti_global_scores.py) | Four MITI global scoring dimensions, study and validation templates |
 | [`code/prompts/miti_behavioral_counts.py`](code/prompts/miti_behavioral_counts.py) | MITI behavioral coding instructions and utterance-classification prompt |
 | `data/raw/` | Deidentified baseline and follow-up survey exports |
@@ -108,12 +108,12 @@ python code/verify_package.py --reproduced
 python code/verify_package.py --submission
 ```
 
-The first command verifies the reference-file hashes, release checksums and
-restricted-file exclusions. The second additionally requires every generated
-exhibit and compares all regenerated LaTeX table bodies with the released
-references. The third checks the freshly regenerated archival tables against
-the original PDF entries. The initial check also verifies the supplied archival
-reference tables against the PDF entries.
+The first command checks working files for exposed participant identifiers.
+The second verifies reference-file hashes, release checksums, restricted-file
+exclusions, and archival reference tables against the original PDF entries.
+The third additionally requires every generated exhibit and compares all
+regenerated LaTeX table bodies with the released references. The fourth checks
+freshly regenerated archival tables against the original PDF entries.
 See `VALIDATION.md` for the completed release checks and their limits.
 
 Run the initial checksum check before cleaning. Stata rewrites binary metadata

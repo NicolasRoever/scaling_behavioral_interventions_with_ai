@@ -1,66 +1,64 @@
-arm,question_topic,position,within_cosine,n,reference
-Change Talk,opener,1.0,0.9999999999999998,730,0.12460927808972676
-Change Talk,followup_past_negatives,3.0,0.26958516958525874,723,0.12460927808972676
-Change Talk,deepen_negative_impacts,5.0,0.1807524498188889,722,0.12460927808972676
-Change Talk,followup_2_past_negatives,7.0,0.28279971225839023,721,0.12460927808972676
-Change Talk,values_future_vision,9.0,0.3539486485989306,716,0.12460927808972676
-Change Talk,summary_understanding,11.0,0.18705210884934553,704,0.12460927808972676
-Change Talk,first_scaling_question,13.0,0.5242565498576679,696,0.12460927808972676
-Change Talk,followup_first_scaling_question,15.0,0.7690806119822315,687,0.12460927808972676
-Change Talk,dig_deeper_first_scaling_question,17.0,0.3191586912975582,674,0.12460927808972676
-Change Talk,second_scaling_question,19.0,0.5196552503633401,648,0.12460927808972676
-Change Talk,followup_second_scaling_question,21.0,0.6083075650223625,634,0.12460927808972676
-Change Talk,ability_booster_strengths,23.0,0.3276291381035908,626,0.12460927808972676
-Change Talk,confidence_past_success,25.0,0.37453984342390173,598,0.12460927808972676
-Change Talk,menu_of_choices_1,27.0,0.2795442834730611,577,0.12460927808972676
-Change Talk,action_step,29.0,0.190985370074181,556,0.12460927808972676
-Change Talk,review_interview,31.0,0.279184867915805,535,0.12460927808972676
-Change Talk,wrap_up,33.0,0.23679813128423982,528,0.12460927808972676
-Decisional Balance,opener,1.0,1.0000000000000002,724,0.12480284982815079
-Decisional Balance,followup_past_positives,3.0,0.36112200717426546,715,0.12480284982815079
-Decisional Balance,deepen_positives,5.0,0.18400771424585652,710,0.12480284982815079
-Decisional Balance,followup_past_negatives,7.0,0.28089065827529586,708,0.12480284982815079
-Decisional Balance,deepen_negatives,9.0,0.19438993077141378,703,0.12480284982815079
-Decisional Balance,values_discrepancy,11.0,0.30790619500057925,691,0.12480284982815079
-Decisional Balance,summary_understanding,13.0,0.2444870267632264,668,0.12480284982815079
-Decisional Balance,first_scaling_question,15.0,0.728913951059127,646,0.12480284982815079
-Decisional Balance,importance_followup_lower,17.0,0.849245860395901,639,0.12480284982815079
-Decisional Balance,importance_followup_higher,19.0,0.2666389079002185,633,0.12480284982815079
-Decisional Balance,imagine_consequences,21.0,0.3584071797927907,615,0.12480284982815079
-Decisional Balance,second_scaling_question,23.0,0.49556945816012515,590,0.12480284982815079
-Decisional Balance,confidence_followup_lower,25.0,0.9416381624935871,581,0.12480284982815079
-Decisional Balance,confidence_followup_higher,27.0,0.2440538838379133,571,0.12480284982815079
-Decisional Balance,strengths_past_success,29.0,0.28692244869303773,566,0.12480284982815079
-Decisional Balance,menu_of_choices_1,31.0,0.3077712143110678,539,0.12480284982815079
-Decisional Balance,action_step,33.0,0.196370853519915,526,0.12480284982815079
-Decisional Balance,review_interview,35.0,0.2582932360054742,511,0.12480284982815079
-Decisional Balance,wrap_up,37.0,0.23505009544276423,500,0.12480284982815079
-Direct Persuasion,opener,1.0,0.9999999999999998,731,0.11821114649705737
-Direct Persuasion,t4_reaction_relevance,3.0,0.36421620723296644,718,0.11821114649705737
-Direct Persuasion,t4_habits_map,5.0,0.473850283062991,717,0.11821114649705737
-Direct Persuasion,t4_direct_harms,7.0,0.47892046783025366,711,0.11821114649705737
-Direct Persuasion,t4_benefits_ask,9.0,0.26422163626593004,704,0.11821114649705737
-Direct Persuasion,t4_benefits_counter,11.0,0.49265730024272697,694,0.11821114649705737
-Direct Persuasion,t4_importance_scale,13.0,0.5398038317900223,673,0.11821114649705737
-Direct Persuasion,t4_importance_to_plan,15.0,0.3162944012245841,663,0.11821114649705737
-Direct Persuasion,t4_plan_or_benchmarks,17.0,0.30472398250721205,648,0.11821114649705737
-Direct Persuasion,t4_commitment_rule,19.0,0.25188228315197253,636,0.11821114649705737
-Direct Persuasion,t4_enforcement,21.0,0.48149572713403965,624,0.11821114649705737
-Direct Persuasion,t4_confidence_scale2,23.0,0.516753660921415,610,0.11821114649705737
-Direct Persuasion,t4_confidence_strengthen,25.0,0.23252322004635098,602,0.11821114649705737
-Direct Persuasion,t4_barriers_solutions,27.0,0.2965042145092622,591,0.11821114649705737
-Direct Persuasion,t4_closing_summary,29.0,0.2528255655177266,575,0.11821114649705737
-Control (Time Use),opener,1.0,0.993147783313928,732,0.12161458378443245
-Control (Time Use),followup_morning_routine,3.0,0.20904343707225134,714,0.12161458378443245
-Control (Time Use),question_midday,5.0,0.2898764284913935,713,0.12161458378443245
-Control (Time Use),question_evening,7.0,0.24735609036899736,711,0.12161458378443245
-Control (Time Use),follow_up_evening,9.0,0.21748404900330126,706,0.12161458378443245
-Control (Time Use),planning_question,11.0,0.4198110863533458,692,0.12161458378443245
-Control (Time Use),question_routines,13.0,0.39606493695149425,684,0.12161458378443245
-Control (Time Use),seasonal_variation,15.0,0.28579551435611644,654,0.12161458378443245
-Control (Time Use),routine_change_wish,15.0,0.5258717792558937,7,0.12161458378443245
-Control (Time Use),seasonal_variation_followup,17.0,0.3570965548871423,630,0.12161458378443245
-Control (Time Use),routine_change_followup,17.0,0.4717046832265754,7,0.12161458378443245
-Control (Time Use),question_differences,19.0,0.2710008456801219,624,0.12161458378443245
-Control (Time Use),wrap_up,21.0,0.310147581210508,606,0.12161458378443245
-Control (Time Use),summarizing_statement,23.0,0.2436982413666423,592,0.12161458378443245
+arm,arm_code,question_topic,question_number,question_name,categories,position,within_cosine,n,reference
+Change Talk,T1_MI_CHANGE,opener,1,Opening question,Opener/Conclusion,1.0,0.9999999999999948,730,0.12460927808972679
+Change Talk,T1_MI_CHANGE,followup_past_negatives,2,Follow-up: past negatives,Change-Eliciting,3.0,0.2695851695852587,723,0.12460927808972679
+Change Talk,T1_MI_CHANGE,deepen_negative_impacts,3,Deepen: negative impacts,Change-Eliciting,5.0,0.18075244981888902,722,0.12460927808972679
+Change Talk,T1_MI_CHANGE,followup_2_past_negatives,4,Follow-up 2: past negatives,Change-Eliciting,7.0,0.2827997122583903,721,0.12460927808972679
+Change Talk,T1_MI_CHANGE,values_future_vision,5,Values & future vision,Change-Eliciting,9.0,0.3539486485989306,716,0.12460927808972679
+Change Talk,T1_MI_CHANGE,summary_understanding,6,Summary check-in,Reflective Summary,11.0,0.18705210884934542,704,0.12460927808972679
+Change Talk,T1_MI_CHANGE,first_scaling_question,7,First scaling question,Scaling,13.0,0.5242565498576678,696,0.12460927808972679
+Change Talk,T1_MI_CHANGE,followup_first_scaling_question,8,Follow-up: first scaling question,Change-Eliciting,15.0,0.7690806119822415,687,0.12460927808972679
+Change Talk,T1_MI_CHANGE,dig_deeper_first_scaling_question,9,Dig deeper: first scaling question,Change-Eliciting,17.0,0.3191586912975581,674,0.12460927808972679
+Change Talk,T1_MI_CHANGE,second_scaling_question,10,Second scaling question,Scaling,19.0,0.5196552503633401,648,0.12460927808972679
+Change Talk,T1_MI_CHANGE,followup_second_scaling_question,11,Follow-up: second scaling question,Change-Eliciting,21.0,0.6083075650223617,634,0.12460927808972679
+Change Talk,T1_MI_CHANGE,ability_booster_strengths,12,Strengths & abilities,Plan Commitment,23.0,0.3276291381035911,626,0.12460927808972679
+Change Talk,T1_MI_CHANGE,confidence_past_success,13,Confidence: past success,Change-Eliciting,25.0,0.37453984342390123,598,0.12460927808972679
+Change Talk,T1_MI_CHANGE,menu_of_choices_1,14,Menu of choices,Plan Commitment,27.0,0.2795442834730612,577,0.12460927808972679
+Change Talk,T1_MI_CHANGE,action_step,15,Action step,Plan Commitment,29.0,0.19098537007418095,556,0.12460927808972679
+Change Talk,T1_MI_CHANGE,review_interview,16,Interview review,Reflective Summary,31.0,0.279184867915805,535,0.12460927808972679
+Change Talk,T1_MI_CHANGE,wrap_up,17,Wrap-up,Opener/Conclusion,33.0,0.2367981312842396,528,0.12460927808972679
+Decisional Balance,T2_MI_AMBIVALENCE,opener,1,Opening question,Opener/Conclusion,1.0,0.9999999999999951,724,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,followup_past_positives,2,Follow-up: past positives,Ambivalence-Balancing,3.0,0.36112396599975366,715,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,deepen_positives,3,Deepen: positives,Ambivalence-Balancing,5.0,0.1840097007771741,710,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,followup_past_negatives,4,Follow-up: past negatives,Ambivalence-Balancing,7.0,0.2808926560537664,708,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,deepen_negatives,5,Deepen: negatives,Change-Eliciting,9.0,0.19439195708922946,703,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,values_discrepancy,6,Values discrepancy,Change-Eliciting,11.0,0.30790829236000367,691,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,summary_understanding,7,Summary check-in,Reflective Summary,13.0,0.2444892711500151,668,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,first_scaling_question,8,First scaling question,Scaling,15.0,0.7289139510591267,646,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,importance_followup_lower,9,Follow-up: lower importance,Change-Eliciting,17.0,0.8492458603958963,639,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,importance_followup_higher,10,Follow-up: higher importance,Ambivalence-Balancing,19.0,0.26663890790021855,633,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,imagine_consequences,11,Imagine consequences,Ambivalence-Balancing,21.0,0.358409828027742,615,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,second_scaling_question,12,Second scaling question,Scaling,23.0,0.49556945816012504,590,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,confidence_followup_lower,13,Follow-up: lower confidence,Change-Eliciting,25.0,0.9416411300287633,581,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,confidence_followup_higher,14,Follow-up: higher confidence,Ambivalence-Balancing,27.0,0.24405388383791338,571,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,strengths_past_success,15,Strengths & past success,Change-Eliciting,29.0,0.2869255757451657,566,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,menu_of_choices_1,16,Menu of choices,Plan Commitment,31.0,0.3077746628009741,539,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,action_step,17,Action step,Plan Commitment,33.0,0.1963744747402663,526,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,review_interview,18,Interview review,Reflective Summary,35.0,0.25829323600547427,511,0.12480284982815076
+Decisional Balance,T2_MI_AMBIVALENCE,wrap_up,19,Wrap-up,Opener/Conclusion,37.0,0.2350500954427641,500,0.12480284982815076
+Direct Persuasion,T4_CLEAR_PERSUASION,opener,1,Opening question,Opener/Conclusion + Information Provision,1.0,0.999999999999998,731,0.1182111464970574
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_reaction_relevance,2,Reaction & relevance,Change-Eliciting,3.0,0.3642162072329665,718,0.1182111464970574
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_habits_map,3,Habits mapping,Change-Eliciting,5.0,0.47385028306299076,717,0.1182111464970574
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_direct_harms,4,Direct harms,Change-Eliciting,7.0,0.47892046783025366,711,0.1182111464970574
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_benefits_ask,5,Perceived benefits,Ambivalence-Balancing,9.0,0.26422163626593015,704,0.1182111464970574
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_benefits_counter,6,Counter benefits,Change-Eliciting,11.0,0.4926573002427268,694,0.1182111464970574
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_importance_scale,7,Importance scale,Scaling,13.0,0.5398038317900222,673,0.1182111464970574
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_importance_to_plan,8,Importance to plan,Plan Commitment,15.0,0.3162944012245841,663,0.1182111464970574
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_plan_or_benchmarks,9,Plan / benchmarks,Plan Commitment,17.0,0.3047239825072122,648,0.1182111464970574
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_commitment_rule,10,Commitment rule,Plan Commitment,19.0,0.25188228315197264,636,0.1182111464970574
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_enforcement,11,Enforcement,Plan Commitment,21.0,0.48149572713403965,624,0.1182111464970574
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_confidence_scale2,12,Confidence scale,Scaling,23.0,0.5167536609214148,610,0.1182111464970574
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_confidence_strengthen,13,Strengthen confidence,Change-Eliciting,25.0,0.23252322004635093,602,0.1182111464970574
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_barriers_solutions,14,Barriers & solutions,Information Provision,27.0,0.2965042145092622,591,0.1182111464970574
+Direct Persuasion,T4_CLEAR_PERSUASION,t4_closing_summary,15,Closing summary,Opener/Conclusion,29.0,0.25282556551772667,575,0.1182111464970574
+Control (Time Use),TIME_USE,opener,1,Opening question: morning routine,Opener/Conclusion,1.0,0.9931484646395717,732,0.12167300230273473
+Control (Time Use),TIME_USE,followup_morning_routine,2,Follow-up on morning routine,Other,3.0,0.20898713397786756,714,0.12167300230273473
+Control (Time Use),TIME_USE,question_midday,3,Midday routine,Other,5.0,0.289722310721776,713,0.12167300230273473
+Control (Time Use),TIME_USE,question_evening,4,Evening routine,Other,7.0,0.2472334805462937,711,0.12167300230273473
+Control (Time Use),TIME_USE,follow_up_evening,5,Follow-up on evening routine,Other,9.0,0.2174516006008385,706,0.12167300230273473
+Control (Time Use),TIME_USE,planning_question,6,Planning,Other,11.0,0.41975148621048325,692,0.12167300230273473
+Control (Time Use),TIME_USE,question_routines,7,Daily routines,Other,13.0,0.3959821461042294,684,0.12167300230273473
+Control (Time Use),TIME_USE,seasonal_variation,8,Seasonal variation,Other,15.0,0.28566134740939664,654,0.12167300230273473
+Control (Time Use),TIME_USE,seasonal_variation_followup,9,Follow-up on seasonal variation,Other,17.0,0.3569327411809515,630,0.12167300230273473
+Control (Time Use),TIME_USE,question_differences,10,Weekday versus weekend routines,Other,19.0,0.27096360292462546,624,0.12167300230273473
+Control (Time Use),TIME_USE,wrap_up,11,Final reflection,Opener/Conclusion,21.0,0.31014644389212953,606,0.12167300230273473
+Control (Time Use),TIME_USE,summarizing_statement,12,Closing summary,Opener/Conclusion,23.0,0.24367129918364777,592,0.12167300230273473

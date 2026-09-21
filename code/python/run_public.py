@@ -120,14 +120,8 @@ def build_all(package, out):
     panels, category_colors = question_sequence.configuration()
     question_sequence.plot_question_sequence(panels, category_colors, out / 'qtype_shares_manual.pdf')
     table = pd.read_csv(derived / 'similarity_by_topic.csv')
-    config = language_similarity.configuration()
-    results, references = {}, {}
-    for arm, label in config['ARM_LABELS'].items():
-        sub = table[table.arm.eq(label)].sort_values('position')
-        results[arm] = sub.to_dict('records')
-        references[arm] = sub.reference.iloc[0]
     plt.rcdefaults()
-    language_similarity.make_figure(results, references, out / 'similarity_by_topic.pdf', config)
+    language_similarity.build(table, panels, out / 'similarity_by_topic.pdf')
     plt.rcdefaults()
     wordcloud_plot.make_figure(pd.read_csv(derived / 'keyness_by_arm.csv'), out / 'wordclouds_by_arm.pdf', wordcloud_plot.configuration())
     mentions = pd.read_csv(derived / 'thirty_minute_mentions_by_chat.csv')

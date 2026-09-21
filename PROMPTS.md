@@ -9,9 +9,8 @@
 
 `code/prompts/parameters.py` contains the interview prompts in Appendix D.1--D.4
 of the inspected `revision.tex`. The appendix is the authority for their text.
-All **68 blocks** were checked: four global prompts, four fixed opening
-messages, 59 turn-specific prompts, and the control-arm end-of-interview
-message printed in the current appendix.
+All **67 blocks** were checked: four global prompts, four fixed opening
+messages and 59 turn-specific prompts printed in the current appendix.
 
 | Appendix | Arm | Configuration key | Generated turns |
 |---|---|---|---:|
@@ -29,10 +28,11 @@ Only line wrapping/spacing and the `alltt` typesetting wrappers (`\Copy` and
 retained, including their quote/dash notation and the `---END---` sentinel.
 The existing routing keys, history windows, global-prompt overrides, fallback
 settings and other engine metadata for the four retained arms are preserved.
-Those metadata are not inferred from the appendix's prose. The control
-end-of-interview message is taken directly from D.4. The existing control
-`termination_message` is retained as routing metadata; the current appendix
-no longer prints it, so it is excluded from the 68 verified appendix blocks.
+Those metadata are not inferred from the appendix's prose. The existing control
+`termination_message` and `end_of_interview_message` are retained as routing
+metadata. The current appendix no longer prints either, so both are outside
+the 67 verified appendix blocks. The latter matched the prior appendix version;
+none of the remaining printed prompt text changed in this update.
 
 The file contains configuration data only. Its API-key value remains empty;
 no client is loaded and no interviews or model requests are run. Updating the

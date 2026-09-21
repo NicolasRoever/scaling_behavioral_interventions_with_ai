@@ -1,8 +1,67 @@
 # Reproducibility notes
 
-Updated September 19, 2026 for the fully updated follow-up data. Original
+Updated September 21, 2026 for the current source code and manuscript. Original
 analysis code and manuscript files were read-only inputs. Release provenance
 and validation records use Unix timestamps and SHA-256 hashes.
+
+## Latest app-use control correction
+
+The baseline app-use indicators now equal one when the app-minute midpoint
+is greater than 2.5, matching the latest source. Previously the cutoff was zero.
+Only these seven controls changed in `clean_data.dta`, `clean_merged.dta` and
+`clean_merged_with_scrshots.dta`. Raw survey outcomes, participant/response keys,
+follow-up sample sizes, screenshot values and saved classifications are unchanged.
+Several other source DTA files were resaved but have identical released values.
+The public cleaning pipeline reproduces all four cleaned files numerically.
+The original-submission inputs remain frozen and reproduce the published tables.
+
+Fourteen table fragments and eight figures have been refreshed. Every current
+computed table has matching numeric entries and significance marks. Eighteen
+fragments also match the manuscript text after whitespace normalization; three
+retain existing package corrections to labels: “Technology-based”, escaped
+currency notation, and “Within 30 min”. All eight refreshed figures match the
+manuscript's rendered pixels and were visually checked.
+
+Some manuscript prose still quotes estimates from before this correction:
+
+| Statement | Manuscript prose | Current result, rounded |
+|---|---:|---:|
+| Baseline motivation, Change Talk | 0.52 | 0.51 |
+| Baseline motivation, Decisional Balance | 0.21 | 0.20 |
+| Follow-up motivation, Direct Persuasion | 0.14 | 0.13 |
+| Demand SUR p-value, motivation | 0.49 | 0.54 |
+| Demand SUR p-value, cost-benefits | 0.17 | 0.19 |
+| Screenshot versus self-report SUR p-value | 0.458 | 0.375 |
+
+The original manuscript has not been edited. This checks selected statements
+affected by the revised controls, not every sentence. Exact values, per-app
+change counts and exhibit comparisons are in
+`manifest/app_use_controls_validation.json`.
+
+## Earlier September 21 source update
+
+The baseline writing filter now drops responses shorter than 20 characters
+(`writing_chars < 20`), matching the source correction. The package continues
+to use the supplied byte lengths instead of distributing the writing text.
+The writing-cutoff correction alone leaves the participant keys, sample sizes
+and numeric results unchanged. The later app-use correction above changes
+covariates and adjusted estimates.
+
+The manual question figure now places mixed-category labels inside their
+respective colored segments and uses the source question labels. Language
+similarity uses those same labels, sequence and categories. Its saved summary
+now contains 63 classified questions (17/19/15/12 across the four arms).
+Fourteen turns with `routine_change_wish` or `routine_change_followup` identifiers
+from seven control interviews are excluded from TF-IDF and similarity;
+other classified turns from those interviews remain. The source also corrects
+self-pair removal for 11 zero-vector turns. The control different-topic reference
+is 0.1216730023. This is an analysis correction, not only a rendering change.
+
+The updated aggregate summary, question audit and audit text are distributed
+under `data/derived/similarity_by_topic*`. Re-extracting them requires withheld
+transcripts and the private survey arm mapping. Both refreshed figures match
+the current manuscript's text and rendered pixels; binary PDF metadata can
+differ. See `manifest/similarity_validation.json`.
 
 ## Experimenter-demand update
 
@@ -14,8 +73,9 @@ source columns, including the open-ended answers, are omitted.
 
 The shared data loader, pooled figure and conditional-outcome tables follow
 the updated source. `stats_expdemand.do` and its shared helper reproduce the
-subgroup SUR tests: p=0.488535 for motivation and p=0.172135 for cost-benefit
-beliefs, matching the manuscript's rounded 0.49 and 0.17. Current category
+subgroup SUR tests with the corrected controls: p=0.539266 for motivation and
+p=0.194554 for cost-benefit beliefs. The manuscript prose still quotes the earlier
+0.49 and 0.17; see the discrepancy table above. Current category
 counts are 253, 787, 286, 1,106 and 287. The binary reduction-hypothesis split
 still totals 1,040 versus 1,679 participants, although membership has changed.
 The unused by-arm figure and auxiliary demand table remain excluded.
@@ -39,8 +99,8 @@ cleaned survey, merged survey and adjudicated screenshot-measure files.
 All nine distributed current survey inputs were checked against their source
 numeric values. Running the public cleaning pipeline reproduced all numeric
 variables in its four cleaned outputs at Stata storage precision
-(`rtol=1e-6`, `atol=1e-8`). The cleaning specifications and baseline numeric
-observations are unchanged. Existing anonymous release IDs are preserved.
+(`rtol=1e-6`, `atol=1e-8`). The corrected writing cutoff does not change the rebuilt baseline numeric
+observations. Existing anonymous release IDs are preserved.
 
 Every default survey analysis uses the current cleaned data. There is no
 `manuscript_followup_snapshot.dta` override. The file named
@@ -66,11 +126,12 @@ issues. The archive is needed only when reconstructing the original submission.
 
 ## Current manuscript and code
 
-All 21 computed LaTeX fragments agree with the revised manuscript after
-whitespace normalization. All 48 computed exhibits regenerate successfully.
-The refreshed persistence estimates are 0.137 for Change Talk and 0.141 for
-Direct Persuasion (both p<0.05), and 0.063 for Decisional Balance (not significant
-at 10%). The manuscript's rounded 0.14/0.14/0.06 motivation effects agree.
+All 21 computed tables agree numerically with the current manuscript exhibits;
+three retain the label corrections documented above. All 48 computed exhibits
+regenerate successfully. The persistence estimates are now 0.136 for Change Talk
+and 0.133 for Direct Persuasion (both p<0.05), and 0.055 for Decisional Balance
+(not significant at 10%). The manuscript figure/table have updated values, but
+the prose still gives 0.14 for Direct Persuasion.
 
 The questionnaire-change figure now labels effects in **raw scale points**,
 matching the source correction. Its newly added source-only `tab_sm_change.tex`
@@ -86,13 +147,13 @@ eligible treated participants as the package. The earlier MITI prose and
 full-corpus discrepancy notes are therefore removed. Saved scoring inputs
 are unchanged; no interviews were rescored. See `MITI_REPLICATION.md`.
 
-The manuscript appendix now has **68 prompt blocks**, all verified against
-`code/prompts/parameters.py`. The control termination/navigation message is no
-longer printed in the appendix and is retained only as existing routing
-metadata. See `PROMPTS.md` for the exact verification scope.
+The manuscript appendix now has **67 prompt blocks**, all verified against
+`code/prompts/parameters.py`. The control termination and end-of-interview
+messages are no longer printed in the appendix; both are retained only as
+existing routing metadata. See `PROMPTS.md` for the exact verification scope.
 
-All 27 released figures match their regenerated renderings. Eighteen are
-pixel-identical to the manuscript at 1,000 pixels; nine differ in layout,
+All 27 released figures match their regenerated renderings. Twenty are
+pixel-identical to the manuscript at 1,000 pixels; seven differ in layout,
 axis ticks, margins or rendering. Numeric table results agree. CDF colors and
 legend handles remain tied explicitly to numeric treatment codes; the
 Confidence Score label is preserved. No claim is made here to have audited

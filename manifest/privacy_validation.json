@@ -1,5 +1,5 @@
 {
-  "validated_at_unix": 1789849693,
+  "validated_at_unix": 1790029663,
   "checks_passed": true,
   "no_notebooks": true,
   "unchanged_derived_files_rechecked": true,
@@ -376,5 +376,8 @@
   ],
   "checks_scope": "Current release files; local Git history has separate unresolved identifier exposures",
   "identifier_validation": "manifest/identifier_validation.json",
-  "local_git_history_clean": false
+  "local_git_history_clean": false,
+  "identifier_audit_rechecked_at_unix": 1790029507,
+  "similarity_aggregate_inputs": "manifest/similarity_validation.json",
+  "app_use_controls_update": "manifest/app_use_controls_validation.json"
 }

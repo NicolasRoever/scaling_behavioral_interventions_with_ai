@@ -1,9 +1,9 @@
 {
-  "validated_at_unix": 1789849502,
-  "manuscript_sha256": "c4076731a4ed61c3e4033fb8e289eb5b9bc980847006163b51686674a603ff45",
+  "validated_at_unix": 1790029395,
+  "manuscript_sha256": "a58a446e5d010bd92c5b7ccd16b5ef87de1ca0091930b5f9754841fee0af1ecd",
   "parameters_sha256": "da0c0786f33ae43596aad2a15a5417a1a2410e766edd22ca095bb9a8b0f0e53f",
   "text_normalization": "Remove alltt Copy/linebreak wrappers and collapse whitespace only; preserve literal punctuation and ---END---.",
-  "blocks_checked": 68,
+  "blocks_checked": 67,
   "arms": 4,
   "checks_passed": true,
   "blocks": [
@@ -526,12 +526,6 @@
       "question_name": "summarizing_statement",
       "title": "Turn 11---Closing summary.",
       "sha256": "e6430f7fd5093cc460ecd96c077ffe270c56683923351bdb3f3c9686c460024d"
-    },
-    {
-      "arm": "TIME_USE",
-      "section": "D.4",
-      "field": "end_of_interview_message",
-      "sha256": "d0d2bbeb690fb11763a68c5149f7e2264709b5b8df1ba4098efd50e797e165b5"
     }
   ]
 }

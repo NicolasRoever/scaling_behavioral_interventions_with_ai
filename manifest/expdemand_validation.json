@@ -1,5 +1,5 @@
 {
-  "updated_at_unix": 1789846892,
+  "updated_at_unix": 1790029603,
   "source_file": "data/processed/main_social_media/df_merged_llm_category_expdemand_luna_v002.dta",
   "source_sha256": "37da828efe7b7576a3412f13ba002a9f7889040d3710551e34fde45726b95f6f",
   "release_file": "data/processed/main_social_media/df_merged_llm_category_expdemand_luna_v002.dta",
@@ -26,18 +26,21 @@
       "outcome": "z_motivation",
       "n_identified": 1040,
       "n_not_identified": 1679,
-      "chi2": 2.427507773580809,
-      "p": 0.4885346
+      "chi2": 2.163036965355364,
+      "p": 0.53926557
     },
     {
       "outcome": "z_costbenefits",
       "n_identified": 1040,
       "n_not_identified": 1679,
-      "chi2": 4.995384761142287,
-      "p": 0.17213541
+      "chi2": 4.706990404753073,
+      "p": 0.19455378
     }
   ],
   "raw_classification_source_columns_withheld": true,
-  "source_survey_inputs_unchanged": true,
-  "manuscript_exhibits_match": true
+  "source_survey_inputs_unchanged": false,
+  "manuscript_exhibits_match": true,
+  "classification_inputs_unchanged_since_previous_release": true,
+  "controls_update": "manifest/app_use_controls_validation.json",
+  "manuscript_prose_p_values_match": false
 }

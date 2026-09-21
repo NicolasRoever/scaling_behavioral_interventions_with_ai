@@ -51,3 +51,10 @@ sources. The raw transcripts, correction records, batch payloads, response
 JSONLs and human-reference source files required by those methods are withheld.
 The supported public entry point is `code/python/run_public.py`, using the
 anonymous saved numeric scores. See `MITI_REPLICATION.md` at the package root.
+
+The similarity method now imports question definitions and plotting from the
+shared public modules. Its execution guard remains in place. The updated source
+excludes unclassified raw question identifiers from TF-IDF and corrects
+self-pair removal for zero vectors. Aggregate results and the exclusion audit
+are supplied; reproducing extraction still requires the restricted transcripts
+and survey arm mapping.

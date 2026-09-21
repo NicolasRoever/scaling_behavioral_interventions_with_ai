@@ -1,5 +1,5 @@
 {
-  "validated_at_unix": 1789849513,
+  "validated_at_unix": 1790029507,
   "original_prolific_ids_checked": 3264,
   "original_response_ids_checked": 5662,
   "source_identifier_files": [
@@ -9,23 +9,23 @@
     },
     {
       "file": "data/raw/main_socialmedia/follow_up_raw.dta",
-      "sha256": "aeb7e5af89ec6bad830e4ea016d72e6dd244ac8a2eb0148c8cbaa6f0d7537373"
+      "sha256": "e793da0f33203cba4b9edb77f7f6b5ecd71f1167b6a59fcb078d3d0db63747ed"
     },
     {
       "file": "data/processed/main_social_media/clean_data.dta",
-      "sha256": "96ecd35e3451e14f337c7545b1ba4fc04ece9b2e4f7785dbb6250c4b8e5dc3e3"
+      "sha256": "142b361699fd421ffe4b2bfe6a23119e7f45c7f414a006cf78f3a06e737ceb34"
     },
     {
       "file": "data/processed/main_social_media/follow_up_clean.dta",
-      "sha256": "49d8f20904d1c02cfc4d4ba5bcc8a83418b96128172600e7a82cecba110c96e6"
+      "sha256": "9fb3cd653f74daf5d5ccce9efc09f73aeafcedeba0bfb87a4e795a2ff78ba419"
     },
     {
       "file": "data/processed/main_social_media/clean_merged.dta",
-      "sha256": "020140bc9954fd57f17be3ccec3ee5a4c38de17516e092ebc53f6b88bd440b44"
+      "sha256": "9c93b25f0060235dd014cfc0b650cbcddf80d1b63cb7457d9507106e320ce3e6"
     },
     {
       "file": "data/processed/main_social_media/clean_merged_with_scrshots.dta",
-      "sha256": "2a6e26e83abc0be2b0ff833e4fcb450ff1d921b59416a767ce0cbc60599ca2e9"
+      "sha256": "558ec547876b16ae124d965397f0476a32be19881016e0b9998f3875f71be17d"
     },
     {
       "file": "data/processed/main_social_media/interview_scores_extracted.dta",
@@ -33,11 +33,7 @@
     },
     {
       "file": "data/processed/main_social_media/clean_scr_data.dta",
-      "sha256": "9ae1779e9096b90992d5f51d2a74ce6db84f0e1ba9aacae389fefa6b461ea214"
-    },
-    {
-      "file": "data/processed/main_social_media/df_merged_llm_category_expdemand_v001.dta",
-      "sha256": "05fd136c76ea483e4931b5058d8d16b6b1803c9c82fea23ef8a8cd3d0d71f79e"
+      "sha256": "5715b1670ecc4ac95d8b8ca496fcb8e536e9f89d817f7ced32c066d1ee28bad2"
     },
     {
       "file": "data/processed/main_social_media/df_merged_llm_category_expdemand_luna_v002.dta",
@@ -156,7 +152,7 @@
       "original_ids_found": 0
     }
   ],
-  "local_git_blobs_checked": 507,
+  "local_git_blobs_checked": 564,
   "local_git_object_hits": [
     {
       "object": "00c2f0cd43d68149f1d3e7c9ae5bc600b30028d5",
@@ -165,7 +161,7 @@
       "prolific_ids": 0,
       "response_ids": 531,
       "path": "data/processed/main_social_media/screenshot_data/social_time_week51_v001.csv",
-      "reachable": true
+      "reachable": false
     },
     {
       "object": "161362b267025ffc5a2e347653d5fb55e7a876e5",
@@ -174,7 +170,7 @@
       "prolific_ids": 35,
       "response_ids": 2400,
       "path": "data/raw/main_socialmedia/follow_up_raw.dta",
-      "reachable": true
+      "reachable": false
     },
     {
       "object": "18a6942ccfc487030d8e04ce7ce8f4101d0d4321",
@@ -183,7 +179,7 @@
       "prolific_ids": 0,
       "response_ids": 545,
       "path": "data/processed/main_social_media/screenshot_data/social_apps_week52_clean_v003.csv",
-      "reachable": true
+      "reachable": false
     },
     {
       "object": "389626762a7f8d074e297dc23afd8e0bfae8d665",
@@ -192,7 +188,7 @@
       "prolific_ids": 0,
       "response_ids": 563,
       "path": "data/processed/main_social_media/screenshot_data/social_apps_week1_clean_v004.csv",
-      "reachable": true
+      "reachable": false
     },
     {
       "object": "41248fa77dce9c1587c0cd7da4cc4825ba03a6b1",
@@ -201,7 +197,7 @@
       "prolific_ids": 0,
       "response_ids": 531,
       "path": "data/processed/main_social_media/screenshot_data/social_apps_week51_clean_v004.csv",
-      "reachable": true
+      "reachable": false
     },
     {
       "object": "42f57c5f9e8f513a15cc03251a636976003ccec7",
@@ -210,7 +206,7 @@
       "prolific_ids": 0,
       "response_ids": 563,
       "path": "data/processed/main_social_media/screenshot_data/social_time_week1_v002.csv",
-      "reachable": true
+      "reachable": false
     },
     {
       "object": "783743ea03565c7d8b459933367a6cd1ae99b4f9",
@@ -219,7 +215,7 @@
       "prolific_ids": 2719,
       "response_ids": 2747,
       "path": "data/processed/main_social_media/clean_data.dta",
-      "reachable": true
+      "reachable": false
     },
     {
       "object": "90c616ebb9e796aa7e2a042ff5f7556a1d4cde41",
@@ -228,7 +224,7 @@
       "prolific_ids": 2308,
       "response_ids": 5031,
       "path": "data/processed/main_social_media/clean_merged.dta",
-      "reachable": true
+      "reachable": false
     },
     {
       "object": "a6bf3304ae57eb3967cddb8968ac57537422c0a5",
@@ -237,7 +233,7 @@
       "prolific_ids": 2307,
       "response_ids": 2352,
       "path": "data/processed/main_social_media/follow_up_clean.dta",
-      "reachable": true
+      "reachable": false
     },
     {
       "object": "b7460615d233307db72bc52b4626b3f0bb094755",
@@ -246,7 +242,7 @@
       "prolific_ids": 2719,
       "response_ids": 0,
       "path": "data/processed/main_social_media/interview_scores_extracted.dta",
-      "reachable": true
+      "reachable": false
     },
     {
       "object": "b7b8996748f0d2b065e18473f12cab1ea4cb38a2",
@@ -255,7 +251,7 @@
       "prolific_ids": 0,
       "response_ids": 545,
       "path": "data/processed/main_social_media/screenshot_data/social_time_week52_v001.csv",
-      "reachable": true
+      "reachable": false
     },
     {
       "object": "c6cb14b5f3b32ad277342c796ab5b6a8120ae315",
@@ -264,7 +260,7 @@
       "prolific_ids": 1,
       "response_ids": 3311,
       "path": "data/raw/main_socialmedia/main_raw.dta",
-      "reachable": true
+      "reachable": false
     },
     {
       "object": "cea2525e42613f7b76fb19fd5fb37ad3d1bac254",
@@ -273,7 +269,7 @@
       "prolific_ids": 2308,
       "response_ids": 2356,
       "path": "data/processed/main_social_media/clean_merged_with_scrshots.dta",
-      "reachable": true
+      "reachable": false
     },
     {
       "object": "f38ba966fd495bcaf675f5c6259baeb510b5b25b",
@@ -282,7 +278,7 @@
       "prolific_ids": 1,
       "response_ids": 4849,
       "path": "data/processed/main_social_media/df_merged_llm_category_expdemand_v001.dta",
-      "reachable": true
+      "reachable": false
     }
   ],
   "crosswalk_distributed": false,

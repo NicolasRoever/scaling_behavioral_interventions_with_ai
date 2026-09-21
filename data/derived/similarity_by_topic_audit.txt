@@ -1,0 +1,20 @@
+Question classification audit
+Source: classify_manual.py PANELS
+Minimum interviewer turns per plotted topic: 5
+
+Change Talk: 17 manual statements; 17 observed statement positions; 17 distinct topic identifiers; 17 plotted.
+Decisional Balance: 19 manual statements; 19 observed statement positions; 19 distinct topic identifiers; 19 plotted.
+Direct Persuasion: 15 manual statements; 15 observed statement positions; 15 distinct topic identifiers; 15 plotted.
+Control (Time Use): 12 manual statements; 12 observed statement positions; 14 distinct topic identifiers; 12 plotted.
+  unclassified: routine_change_followup (7 turns in 7 interviews)
+  unclassified: routine_change_wish (7 turns in 7 interviews)
+
+Unclassified topics: 14 turns in 7 interviews; excluded from TF-IDF, bars, and reference.
+Alternative topic identifiers at the same position are not additional interview statements.
+Other classified turns in those interviews are retained.
+No supported survey arm: 155 turns in 15 interviews; excluded (as in the original script).
+No tokens under the original English-letter tokenizer: 11 turns in 1 interviews; retained as zero vectors.
+Self-pair removal uses actual squared vector lengths, including zero vectors.
+
+Names, sequence, and categories in the results CSV come directly from PANELS.
+Bars retain the original arm colors; functional categories are recorded in the CSV.

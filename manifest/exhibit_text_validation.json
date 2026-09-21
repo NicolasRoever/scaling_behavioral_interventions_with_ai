@@ -26,7 +26,7 @@
   },
   {
     "file": "tables/tab_strategies_followup.tex",
-    "source_manuscript_text_equal": true,
+    "source_manuscript_text_equal": false,
     "released_text_equal_to_regenerated": true
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "file": "tables/tab_main_treatment_effects_sm_mechanisms_duration_control.tex",
-    "source_manuscript_text_equal": true,
+    "source_manuscript_text_equal": false,
     "released_text_equal_to_regenerated": true
   },
   {
@@ -81,7 +81,7 @@
   },
   {
     "file": "tables/tab_treatment_effects_closetoideal_followup.tex",
-    "source_manuscript_text_equal": true,
+    "source_manuscript_text_equal": false,
     "released_text_equal_to_regenerated": true
   },
   {

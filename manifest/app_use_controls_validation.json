@@ -1,0 +1,326 @@
+{
+  "validated_at_unix": 1790029603,
+  "checks_passed": true,
+  "definition": "baseline app-minute midpoint > 2.5",
+  "prior_definition": "baseline app-minute midpoint > 0",
+  "source": "stata/CleaningScripts/01_cleaning_baseline.do",
+  "current_survey_files": [
+    {
+      "file": "data/raw/main_socialmedia/main_raw.dta",
+      "rows": 3311,
+      "source_file_changed": false,
+      "released_values_changed": {},
+      "anonymous_keys_preserved": true,
+      "released_file_changed": false
+    },
+    {
+      "file": "data/raw/main_socialmedia/follow_up_raw.dta",
+      "rows": 2351,
+      "source_file_changed": true,
+      "released_values_changed": {},
+      "anonymous_keys_preserved": true,
+      "released_file_changed": false
+    },
+    {
+      "file": "data/processed/main_social_media/clean_data.dta",
+      "rows": 2719,
+      "source_file_changed": true,
+      "released_values_changed": {
+        "tiktok_use_dummy": 255,
+        "instagram_use_dummy": 402,
+        "snapchat_use_dummy": 332,
+        "facebook_use_dummy": 452,
+        "youtube_use_dummy": 299,
+        "reddit_use_dummy": 371,
+        "twitter_use_dummy": 357
+      },
+      "anonymous_keys_preserved": true,
+      "released_file_changed": true
+    },
+    {
+      "file": "data/processed/main_social_media/follow_up_clean.dta",
+      "rows": 2304,
+      "source_file_changed": true,
+      "released_values_changed": {},
+      "anonymous_keys_preserved": true,
+      "released_file_changed": false
+    },
+    {
+      "file": "data/processed/main_social_media/clean_merged.dta",
+      "rows": 2719,
+      "source_file_changed": true,
+      "released_values_changed": {
+        "tiktok_use_dummy": 255,
+        "instagram_use_dummy": 402,
+        "snapchat_use_dummy": 332,
+        "facebook_use_dummy": 452,
+        "youtube_use_dummy": 299,
+        "reddit_use_dummy": 371,
+        "twitter_use_dummy": 357
+      },
+      "anonymous_keys_preserved": true,
+      "released_file_changed": true
+    },
+    {
+      "file": "data/processed/main_social_media/clean_merged_with_scrshots.dta",
+      "rows": 2719,
+      "source_file_changed": true,
+      "released_values_changed": {
+        "tiktok_use_dummy": 255,
+        "instagram_use_dummy": 402,
+        "snapchat_use_dummy": 332,
+        "facebook_use_dummy": 452,
+        "youtube_use_dummy": 299,
+        "reddit_use_dummy": 371,
+        "twitter_use_dummy": 357
+      },
+      "anonymous_keys_preserved": true,
+      "released_file_changed": true
+    },
+    {
+      "file": "data/processed/main_social_media/interview_scores_extracted.dta",
+      "rows": 2719,
+      "source_file_changed": false,
+      "released_values_changed": {},
+      "anonymous_keys_preserved": true,
+      "released_file_changed": false
+    },
+    {
+      "file": "data/processed/main_social_media/clean_scr_data.dta",
+      "rows": 465,
+      "source_file_changed": true,
+      "released_values_changed": {},
+      "anonymous_keys_preserved": true,
+      "released_file_changed": false
+    },
+    {
+      "file": "data/processed/main_social_media/df_merged_llm_category_expdemand_luna_v002.dta",
+      "rows": 2719,
+      "source_file_changed": false,
+      "released_values_changed": {},
+      "anonymous_keys_preserved": true,
+      "released_file_changed": false
+    }
+  ],
+  "raw_outcomes_unchanged": true,
+  "participant_and_response_keys_unchanged": true,
+  "archival_data_unchanged": true,
+  "changed_reference_exhibits": [
+    "figures/fig_client_counseling.pdf",
+    "figures/fig_main_treatment_effects_sm_v001.pdf",
+    "figures/fig_minutes_treatment_effects.pdf",
+    "figures/fig_sm_followup_mechanisms.pdf",
+    "tables/tab_strategies_followup.tex",
+    "tables/tab_main_treatment_effects_sm_mechanisms_duration_control.tex",
+    "tables/tab_secondary_outcomes_holm_panel_a.tex",
+    "tables/tab_secondary_outcomes_holm_panel_b.tex",
+    "tables/tab_main_treatment_effects_sm_mechanisms.tex",
+    "tables/tab_treatment_effects_motivation_followup.tex",
+    "tables/tab_wtp_perceived_cost_mapping.tex",
+    "tables/tab_main_treatment_effects_sm_minutes.tex",
+    "tables/tab_treatment_effects_closetoideal_followup.tex",
+    "tables/tab_heterogeneity_timeuse_by_wedge.tex",
+    "tables/tab_heterogeneity_timeuse_by_basetime.tex",
+    "tables/tab_differences_strategies.tex",
+    "tables/tab_outcomes_expdemand_additive.tex",
+    "tables/tab_outcomes_expdemand_interacted.tex",
+    "figures/fig_emotions.pdf",
+    "figures/fig_change_questionnaire.pdf",
+    "figures/fig_main_treatment_effects_sm_followup_v001.pdf",
+    "figures/fig_app_use_effects.pdf"
+  ],
+  "table_comparisons": [
+    {
+      "file": "tables/tab_strategies_followup.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": false,
+      "package_label_corrections": [
+        [
+          "Technolgy-based",
+          "Technology-based"
+        ]
+      ]
+    },
+    {
+      "file": "tables/tab_balance.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/tab_attrition_analysis_sm.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/tab_balance_followup.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/tab_main_treatment_effects_sm_mechanisms_duration_control.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": false,
+      "package_label_corrections": [
+        [
+          "($)",
+          "(\\$)"
+        ]
+      ]
+    },
+    {
+      "file": "tables/tab_secondary_outcomes_holm_panel_a.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/tab_secondary_outcomes_holm_panel_b.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/tab_main_treatment_effects_sm_mechanisms.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/tab_treatment_effects_motivation_followup.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/tab_wtp_perceived_cost_mapping.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/tab_main_treatment_effects_sm_minutes.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/tab_treatment_effects_closetoideal_followup.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": false,
+      "package_label_corrections": [
+        [
+          "Below \\\\ 30 min",
+          "Within \\\\ 30 min"
+        ]
+      ]
+    },
+    {
+      "file": "tables/tab_heterogeneity_timeuse_by_wedge.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/tab_heterogeneity_timeuse_by_basetime.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/tab_differences_strategies.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/tab_outcomes_expdemand_additive.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/tab_outcomes_expdemand_interacted.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "figures/tab_thirty_minute_mentions.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/mi_validation_results_table.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/robustness_handcoded_latex_table.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    },
+    {
+      "file": "tables/score_stability_latex_table.tex",
+      "numeric_and_significance_entries_match": true,
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
+    }
+  ],
+  "changed_figures_visually_reviewed": [
+    "figures/fig_client_counseling.pdf",
+    "figures/fig_main_treatment_effects_sm_v001.pdf",
+    "figures/fig_minutes_treatment_effects.pdf",
+    "figures/fig_sm_followup_mechanisms.pdf",
+    "figures/fig_emotions.pdf",
+    "figures/fig_change_questionnaire.pdf",
+    "figures/fig_main_treatment_effects_sm_followup_v001.pdf",
+    "figures/fig_app_use_effects.pdf"
+  ],
+  "manuscript_prose_discrepancies": [
+    {
+      "item": "Baseline motivation, Change Talk",
+      "manuscript": "0.52",
+      "current_table": "0.514",
+      "current_rounded": "0.51"
+    },
+    {
+      "item": "Baseline motivation, Decisional Balance",
+      "manuscript": "0.21",
+      "current_table": "0.202",
+      "current_rounded": "0.20"
+    },
+    {
+      "item": "Follow-up motivation, Direct Persuasion",
+      "manuscript": "0.14",
+      "current_table": "0.133",
+      "current_rounded": "0.13"
+    },
+    {
+      "item": "Demand SUR, motivation p-value",
+      "manuscript": "0.49",
+      "current_value": 0.53926557,
+      "current_rounded": "0.54"
+    },
+    {
+      "item": "Demand SUR, cost-benefit p-value",
+      "manuscript": "0.17",
+      "current_value": 0.19455378,
+      "current_rounded": "0.19"
+    },
+    {
+      "item": "Screenshot versus self-report SUR p-value",
+      "manuscript": "0.458",
+      "current_value": 0.3749004,
+      "current_rounded": "0.375"
+    }
+  ],
+  "prose_audit_scope": "Selected statements directly affected by the revised controls; not a complete audit of the manuscript text.",
+  "api_requests": 0,
+  "additional_cost_usd": 0
+}

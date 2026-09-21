@@ -3,7 +3,7 @@
   "excluded_without_clean_survey": 0,
   "eligible_sample": {
     "file": "data/processed/main_social_media/clean_merged_with_scrshots.dta",
-    "sha256": "3c6e841cce059889d8ab804dfb3004581ee0ea3445d96dc464c8ada6157446ea",
+    "sha256": "51aaf49d8b5454dcd1bd5164ef4b45d5e075d02dba4c2d43348257758e9bed40",
     "runs": {
       "20260910T215439Z_9e5f325e__treated__gpt-5.6-luna__benchmark": {
         "scored_sessions": 2195,
@@ -57,7 +57,7 @@
       }
     }
   },
-  "validated_at_unix": 1789840604,
+  "validated_at_unix": 1790029495,
   "source_comparisons": [
     {
       "source": "python/miti_scoring/output/campaign_20260910_luna/exhibits/all/score_stability_table.csv",

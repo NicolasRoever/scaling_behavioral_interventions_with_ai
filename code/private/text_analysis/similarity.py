@@ -1,36 +1,30 @@
+"""Measure consistency of interviewer wording using saved transcripts only.
+
+Question names, order, and functional categories come from the shared public
+question_sequence.configuration(), matching source classify_manual.py PANELS. Raw transcript identifiers are linked to those ordered rows
+by arm_definitions(). No API calls are made.
+
+The logged question_name identifies the NEXT question, so each interviewer
+turn is assigned the preceding question row's identifier (or 'opener'). Topics
+absent from the manual classification are reported and excluded, never silently
+renamed. All other turns from the affected interviews remain in the analysis.
+
+Within each arm, fit word-level TF-IDF on the classified turns. Report the mean
+cosine over distinct turn pairs for each topic, and a turn-pair-weighted mean
+over different topics as the reference. Only topics with at least five turns
+enter the bars and reference. The audit also includes rarer and unknown topics.
+
+Run: python text_analysis/similarity.py
+     python text_analysis/similarity.py --output /path/to/similarity_by_topic.pdf
+The PDF, numeric CSV, question-audit CSV, and audit text share an output stem.
 """
-How consistently does the AI word each interviewer question across interviews?
 
-Every scripted question gets re-worded a little in each interview. This script
-measures how similar those wordings are, per arm, and compares that against how
-similar two *different* questions are (a baseline).
-
-The measure has three steps, one function each:
-
-1. TF-IDF. Turn each interviewer turn into a vector, one entry per word, weighting
-   common words down (inverse document frequency) and scaling to unit length. Two
-   turns are then compared with the cosine (dot product) of their vectors: 1 means
-   identical wording, 0 means no shared words.
-
-2. Within-topic similarity. For one question, average the cosine over every pair of
-   its turns. That is the "same question, different interviews" number. A high value
-   means the AI words that question almost the same way every time, i.e. it is
-   basically templated.
-
-3. Across-topic reference. The baseline: the average cosine between turns of
-   different questions in the same arm. If step 2 sits well above this, the
-   question really is templated rather than just sharing generic words.
-
-Topics are the content-corrected question names (a turn's text is really the
-previous interviewer question). Each interview is tagged with its arm from the
-survey. Output goes to outputs/similarity_by_topic.{png,csv}.
-
-Run it with:  python similarity.py
-"""
 raise RuntimeError("Restricted-input source only. Raw interview data are not distributed. API execution is disabled in this $0-API replication package; use code/python/run_public.py for saved-result reproduction.")
 
-import getpass
+import argparse
+import sys
 import re
+from collections import Counter
 from pathlib import Path
 
 import matplotlib
@@ -39,247 +33,200 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import pyreadstat
+from scipy.sparse import csr_matrix
 
-# Data in, results out.
-# repo root (.../MI) is five dirs up: text_analysis -> python -> main_social_media -> analysis -> code -> MI
-DATA = Path(__file__).resolve().parents[5] / "data" / "raw" / "main_socialmedia"
-CHATS_CSV = DATA / "chats_raw.csv"
-MAIN_SAV = DATA / "main_raw.sav"
-
-# On Nico's machine, write outputs to his personal analysis folder instead of the repo.
-OUT = Path(__file__).resolve().parent / "outputs"
-if getpass.getuser() == "nicolasroever":
-    OUT = Path("/Users/nicolasroever/Dropbox/MI/code/analysis_NR/6731ca401220dcd3b28dc2ec/figures")
-OUT.mkdir(parents=True, exist_ok=True)
-
-# Skip any question with fewer turns than this: too few pairs to average over.
-MIN_TURNS_PER_TOPIC = 5
-
-# Arms, their chart labels, and colours picked to match the paper.
-ARMS = ["T1_MI_CHANGE", "T2_MI_AMBIVALENCE", "T4_CLEAR_PERSUASION", "TIME_USE"]
-ARM_LABELS = {"T1_MI_CHANGE": "Change Talk", "T2_MI_AMBIVALENCE": "Decisional Balance",
-              "T4_CLEAR_PERSUASION": "Direct Persuasion", "TIME_USE": "Control (Time Use)"}
-ARM_COLORS = {"T1_MI_CHANGE": "#b83232", "T2_MI_AMBIVALENCE": "#777777",
-              "T4_CLEAR_PERSUASION": "#4c4c86", "TIME_USE": "#bdbdbd"}
-
-# Raw question_topic strings -> human-readable labels, for the figure's y-axis.
-TOPIC_LABELS = {
-    "opener": "Opening question",
-    "wrap_up": "Wrap-up",
-    "summary_understanding": "Summary check-in",
-    "first_scaling_question": "First scaling question",
-    "second_scaling_question": "Second scaling question",
-    "menu_of_choices_1": "Menu of choices",
-    "action_step": "Action step",
-    "review_interview": "Interview review",
-    # Change Talk
-    "followup_past_negatives": "Follow-up: past negatives",
-    "deepen_negative_impacts": "Deepen: negative impacts",
-    "followup_2_past_negatives": "Follow-up 2: past negatives",
-    "values_future_vision": "Values & future vision",
-    "followup_first_scaling_question": "Follow-up: first scaling question",
-    "dig_deeper_first_scaling_question": "Dig deeper: first scaling question",
-    "followup_second_scaling_question": "Follow-up: second scaling question",
-    "ability_booster_strengths": "Strengths & abilities",
-    "confidence_past_success": "Confidence: past success",
-    # Control (Time Use)
-    "followup_morning_routine": "Follow-up: morning routine",
-    "question_midday": "Midday routine",
-    "question_evening": "Evening routine",
-    "follow_up_evening": "Follow-up: evening routine",
-    "planning_question": "Planning question",
-    "question_routines": "Daily routines",
-    "seasonal_variation": "Seasonal variation",
-    "routine_change_wish": "Wish to change routine",
-    "seasonal_variation_followup": "Follow-up: seasonal variation",
-    "routine_change_followup": "Follow-up: routine change",
-    "question_differences": "Weekday/weekend differences",
-    "summarizing_statement": "Summary statement",
-    # Decisional Balance
-    "followup_past_positives": "Follow-up: past positives",
-    "deepen_positives": "Deepen: positives",
-    "deepen_negatives": "Deepen: negatives",
-    "values_discrepancy": "Values discrepancy",
-    "importance_followup_lower": "Follow-up: lower importance",
-    "importance_followup_higher": "Follow-up: higher importance",
-    "imagine_consequences": "Imagine consequences",
-    "confidence_followup_lower": "Follow-up: lower confidence",
-    "confidence_followup_higher": "Follow-up: higher confidence",
-    "strengths_past_success": "Strengths & past success",
-    # Direct Persuasion
-    "t4_reaction_relevance": "Reaction & relevance",
-    "t4_habits_map": "Habits mapping",
-    "t4_direct_harms": "Direct harms",
-    "t4_benefits_ask": "Perceived benefits",
-    "t4_benefits_counter": "Counter benefits",
-    "t4_importance_scale": "Importance scale",
-    "t4_importance_to_plan": "Importance to plan",
-    "t4_plan_or_benchmarks": "Plan / benchmarks",
-    "t4_commitment_rule": "Commitment rule",
-    "t4_enforcement": "Enforcement",
-    "t4_confidence_scale2": "Confidence scale",
-    "t4_confidence_strengthen": "Strengthen confidence",
-    "t4_barriers_solutions": "Barriers & solutions",
-    "t4_closing_summary": "Closing summary",
-}
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "python"))
+from language_similarity import arm_definitions, question_definitions, make_figure
+from question_sequence import configuration
 
 
-# Step 1: turns -> vectors.
-def tfidf_matrix(texts):
-    """
-    Turn each interviewer turn into a TF-IDF vector (one row per turn).
-
-    TF-IDF ("term frequency x inverse document frequency") gives every word a weight that is
-    high when the word is used a lot in this turn but is rare across all turns, so distinctive
-    words carry more weight than common filler ("the", "you", "social"). The five steps below:
-
-      1. Tokenise each turn into lowercase words (letters/apostrophes only; punctuation and
-         digits are dropped).
-      2. Build the shared vocabulary - every distinct word - and give each word a fixed column.
-      3. Count how often each word appears in each turn: counts[i, j] is the term frequency of
-         word j in turn i.
-      4. Down-weight common words by their inverse document frequency: idf = log(total turns /
-         turns containing the word). The +1s smooth it so nothing divides by zero or explodes;
-         a word that shows up in every turn gets idf near 1, a rare word gets a large idf.
-      5. Multiply counts by idf to get the TF-IDF weights, then rescale each row to unit length.
-         After that, the dot product of two rows IS their cosine similarity (1 = identical
-         direction/wording, 0 = no shared words), independent of how long each turn is.
-    """
-    # 1. tokenise: lowercase, keep only runs of letters and apostrophes.
-    tokenised = [re.findall(r"[a-z']+", str(t).lower()) for t in texts]
-    # 2. vocabulary: every distinct word, each pinned to a column index.
-    vocab = sorted({word for words in tokenised for word in words})
-    column = {word: i for i, word in enumerate(vocab)}
-
-    # 3. term frequency: how many times each word occurs in each turn.
-    counts = np.zeros((len(texts), len(vocab)))
-    for row, words in enumerate(tokenised):
-        for word in words:
-            counts[row, column[word]] += 1
-
-    # 4. inverse document frequency: (counts > 0).sum(axis=0) is the number of turns each word
-    #    appears in; rarer words get a larger idf.
-    idf = np.log((1 + len(texts)) / (1 + (counts > 0).sum(axis=0))) + 1
-    # 5. tf-idf, then L2-normalise each row so a dot product equals the cosine similarity
-    #    (clip guards the divide against an empty turn with no vocabulary words).
-    vectors = counts * idf
-    lengths = np.linalg.norm(vectors, axis=1, keepdims=True)
-    return vectors / np.clip(lengths, 1e-9, None)
 
 
-# Step 2: how similar are turns of the same question?
-def within_topic_similarity(vectors):
-    """Average cosine similarity over every pair of turns that share a topic."""
-    similarities = vectors @ vectors.T          # cosine of every pair; the diagonal is all 1s
-    n = len(vectors)
-    off_diagonal_sum = similarities.sum() - n   # subtract the n self-pairs on the diagonal
-    return off_diagonal_sum / (n * n - n)       # divide by the number of genuine pairs
 
 
-# Step 3: how similar are turns of different questions (the baseline)?
-def across_topic_reference(topic_means, topic_sizes):
-    """
-    Average cosine similarity between turns of different topics.
-
-    A handy shortcut: the average cosine between all turns of topic a and all turns
-    of topic b is just mean_vector(a) . mean_vector(b). So we take the dot product of
-    the topic mean vectors and average it over all topic pairs a != b, weighting each
-    pair by the number of turn-pairs it stands for (size_a * size_b).
-    """
-    means = np.vstack(topic_means)                       # one mean vector per topic
-    pair_similarity = means @ means.T                    # mean_a . mean_b for every topic pair
-    pair_weight = np.outer(topic_sizes, topic_sizes)     # how many turn-pairs each stands for
-    np.fill_diagonal(pair_similarity, 0.0)               # keep only the different-topic pairs
-    np.fill_diagonal(pair_weight, 0.0)
-    return float((pair_similarity * pair_weight).sum() / pair_weight.sum())
 
 
-# Put the three steps together for one arm.
-def analyse_arm(turns):
-    """Return (per-topic rows in interview order, across-topic reference) for one arm."""
-    vectors = tfidf_matrix(turns["content"].tolist())
-    topics = turns["question_topic"].to_numpy()
-    interview_position = turns.groupby("question_topic")["order"].median()
-
-    rows, topic_means, topic_sizes = [], [], []
-    for topic in pd.unique(topics):
-        idx = np.where(topics == topic)[0]
-        if len(idx) < MIN_TURNS_PER_TOPIC:
-            continue
-        block = vectors[idx]
-        rows.append({"question_topic": topic,
-                     "position": float(interview_position[topic]),
-                     "within_cosine": within_topic_similarity(block),
-                     "n": len(idx)})
-        topic_means.append(block.mean(axis=0))
-        topic_sizes.append(len(idx))
-
-    reference = across_topic_reference(topic_means, topic_sizes)
-    rows.sort(key=lambda r: r["position"])               # first question ends up at the top
-    return rows, reference
-
-
-# Load the transcripts, tag the arm, and content-correct the topic.
-def load_interviewer_turns():
-    chats = pd.read_csv(CHATS_CSV, dtype=str)
-    chats["order"] = pd.to_numeric(chats["order"], errors="coerce")
-    chats = chats.sort_values(["session_id", "order"])
-
-    survey, _ = pyreadstat.read_sav(MAIN_SAV, usecols=["user_id", "interview_id"])
+def load_interviewer_turns(chats_csv, main_sav):
+    """Read local data; recover the topic of the current text from the log."""
+    chats = pd.read_csv(chats_csv, dtype=str, usecols=[
+        "session_id", "order", "type", "content", "question_name"])
+    chats["order"] = pd.to_numeric(chats["order"], errors="raise")
+    turns = chats.loc[chats["type"].eq("question")].copy()
+    turns = turns.sort_values(["session_id", "order"])
+    if turns.duplicated(["session_id", "order"]).any():
+        raise ValueError("Duplicate interviewer positions make topic alignment ambiguous.")
+    survey, _ = pyreadstat.read_sav(main_sav, usecols=["user_id", "interview_id"])
+    if survey["user_id"].duplicated().any():
+        raise ValueError("Survey user IDs must be unique for the arm lookup.")
     arm_of_user = dict(zip(survey["user_id"].astype(str), survey["interview_id"]))
-    chats["arm"] = chats["session_id"].str.extract(r"(\d+)$")[0].map(arm_of_user)
-
-    turns = chats[chats["type"] == "question"].copy()
-    # A turn's text is really the previous interviewer question (see the note up top).
-    turns["question_topic"] = turns.groupby("session_id")["question_name"].shift(1).fillna("opener")
+    turns["arm_code"] = turns["session_id"].str.extract(r"(\d+)$")[0].map(arm_of_user)
+    turns["question_topic"] = turns.groupby("session_id")["question_name"].shift(1)
+    first = turns.groupby("session_id").cumcount().eq(0)
+    if not turns.loc[first, "order"].eq(1).all():
+        raise ValueError("Some transcripts lack an opening row; topic alignment needs review.")
+    turns.loc[first, "question_topic"] = "opener"
+    turns["question_topic"] = turns["question_topic"].fillna("<missing identifier>")
+    turns["content"] = turns["content"].fillna("")
+    if turns["content"].str.strip().eq("").any():
+        raise ValueError("Empty interviewer text needs review.")
     return turns
 
 
-# The figure, styled to sit next to the paper.
-def make_figure(results, references):
-    plt.rcParams.update({"font.family": "Arial", "font.size": 10})
-    fig, axes = plt.subplots(2, 2, figsize=(12, 9.5))
-
-    for ax, arm in zip(axes.ravel(), ARMS):
-        rows = results[arm]
-        y = np.arange(len(rows))[::-1]                   # first topic at the top
-        ax.barh(y, [r["within_cosine"] for r in rows], color=ARM_COLORS[arm],
-                height=0.72, zorder=3)
-
-        ax.axvline(references[arm], color="#333333", linestyle="--", linewidth=1.1, zorder=4)
-        ax.set_yticks(y)
-        ax.set_yticklabels([TOPIC_LABELS.get(r["question_topic"], r["question_topic"]) for r in rows],
-                           fontsize=7.5)
-        ax.set_xlim(0, 1)
-        ax.set_title(ARM_LABELS[arm], fontsize=12, loc="left", pad=6)
-        # show the reference (different-question baseline) value next to its dashed line
-        ax.text(0.98, 1.02, f"reference = {references[arm]:.2f}", transform=ax.transAxes,
-                va="bottom", ha="right", fontsize=8, color="#333333")
-        ax.tick_params(length=0)
-        ax.grid(axis="x", color="#e8e8e8", linewidth=0.8, zorder=0)
-        for side in ("top", "right", "left"):
-            ax.spines[side].set_visible(False)
-
-    for ax in axes[1]:                                   # x-label only on the bottom row
-        ax.set_xlabel("Mean cosine similarity of wording across interviews", fontsize=9)
-
-    fig.tight_layout()
-    fig.savefig(OUT / "similarity_by_topic.pdf", dpi=200, bbox_inches="tight", facecolor="white")
+def audit_questions(turns, definitions, min_turns):
+    """Compare all observed topics, including low-count topics, to manual rows."""
+    observed = turns.groupby(["arm_code", "question_topic"]).agg(
+        n=("content", "size"), n_sessions=("session_id", "nunique"),
+        position=("order", "median")).reset_index()
+    audit = definitions.merge(observed, on=["arm_code", "question_topic"],
+                              how="outer", validate="one_to_one")
+    code_to_arm = definitions.drop_duplicates("arm_code").set_index("arm_code")["arm"]
+    audit["arm"] = audit["arm"].fillna(audit["arm_code"].map(code_to_arm))
+    audit[["n", "n_sessions"]] = audit[["n", "n_sessions"]].fillna(0).astype(int)
+    audit["status"] = np.select(
+        [audit["question_number"].isna(), audit["n"].eq(0), audit["n"].lt(min_turns)],
+        ["unclassified", "missing", "below_minimum"], default="included")
+    return audit
 
 
-def main():
-    turns = load_interviewer_turns()
+def audit_report(turns, definitions, audit, min_turns):
+    """Produce an aggregate audit without copying participant transcript content."""
+    lines = ["Question classification audit", "Source: classify_manual.py PANELS",
+             f"Minimum interviewer turns per plotted topic: {min_turns}", ""]
+    for arm in definitions["arm"].drop_duplicates():
+        block = audit.loc[audit["arm"].eq(arm)]
+        expected = block["question_number"].notna().sum()
+        observed = block["n"].gt(0).sum()
+        arm_code = definitions.loc[definitions["arm"].eq(arm), "arm_code"].iloc[0]
+        arm_turns = turns.loc[turns["arm_code"].eq(arm_code)]
+        positions = arm_turns["order"].nunique()
+        lines.append(f"{arm}: {expected} manual statements; {positions} observed statement "
+                     f"positions; {observed} distinct topic identifiers; "
+                     f"{block['status'].eq('included').sum()} plotted.")
+        for row in block.loc[~block["status"].eq("included")].itertuples():
+            lines.append(f"  {row.status}: {row.question_topic} "
+                         f"({row.n} turns in {row.n_sessions} interviews)")
+    unmatched = turns.loc[~turns["arm_code"].isin(definitions["arm_code"])]
+    extras = audit.loc[audit["status"].eq("unclassified"), ["arm_code", "question_topic"]]
+    excluded = turns.merge(extras, on=["arm_code", "question_topic"], how="inner")
+    classified = turns.merge(definitions[["arm_code", "question_topic"]],
+                             on=["arm_code", "question_topic"], how="inner")
+    zero_vectors = classified.loc[~classified["content"].str.lower().str.contains(r"[a-z']")]
+    lines.extend([
+        "", f"Unclassified topics: {len(excluded)} turns in "
+        f"{excluded['session_id'].nunique()} interviews; excluded from TF-IDF, bars, and reference.",
+        "Alternative topic identifiers at the same position are not additional interview statements.",
+        "Other classified turns in those interviews are retained.",
+        f"No supported survey arm: {len(unmatched)} turns in "
+        f"{unmatched['session_id'].nunique()} interviews; excluded (as in the original script).",
+        f"No tokens under the original English-letter tokenizer: {len(zero_vectors)} turns in "
+        f"{zero_vectors['session_id'].nunique()} interviews; retained as zero vectors.",
+        "Self-pair removal uses actual squared vector lengths, including zero vectors.",
+        "", "Names, sequence, and categories in the results CSV come directly from PANELS.",
+        "Bars retain the original arm colors; functional categories are recorded in the CSV.",
+    ])
+    return "\n".join(lines) + "\n"
+
+
+def tfidf_matrix(texts):
+    """Original word tokenization, smoothed IDF, and L2 scaling, stored sparsely."""
+    token_counts = [Counter(re.findall(r"[a-z']+", text.lower())) for text in texts]
+    vocabulary = sorted({word for counts in token_counts for word in counts})
+    columns = {word: index for index, word in enumerate(vocabulary)}
+    row_ids, column_ids, values = [], [], []
+    for row, counts in enumerate(token_counts):
+        for word, count in counts.items():
+            row_ids.append(row)
+            column_ids.append(columns[word])
+            values.append(count)
+    counts = csr_matrix((values, (row_ids, column_ids)),
+                        shape=(len(texts), len(vocabulary)), dtype=float)
+    idf = np.log((1 + len(texts)) / (1 + np.asarray((counts > 0).sum(axis=0)).ravel())) + 1
+    vectors = counts.multiply(idf).tocsr()
+    lengths = np.sqrt(np.asarray(vectors.multiply(vectors).sum(axis=1)).ravel())
+    return vectors.multiply((1 / np.clip(lengths, 1e-9, None))[:, None]).tocsr()
+
+
+def within_topic_similarity(vectors):
+    """Mean pairwise cosine without allocating the full turn-by-turn matrix."""
+    n = vectors.shape[0]
+    if n < 2:
+        raise ValueError("Pairwise similarity requires at least two turns.")
+    total = np.asarray(vectors.sum(axis=0)).ravel()
+    diagonal = float(vectors.multiply(vectors).sum())
+    return float(np.clip((total @ total - diagonal) / (n * (n - 1)), 0, 1))
+
+
+def across_topic_reference(topic_means, topic_sizes):
+    """Mean cosine between different topics, weighted by the number of turn pairs."""
+    if len(topic_means) < 2:
+        raise ValueError("The across-topic reference requires at least two topics.")
+    means = np.vstack(topic_means)
+    similarities = means @ means.T
+    weights = np.outer(topic_sizes, topic_sizes).astype(float)
+    np.fill_diagonal(weights, 0)
+    return float((similarities * weights).sum() / weights.sum())
+
+
+def analyse_arm(turns, definitions, min_turns):
+    """Analyze classified turns and return rows in the exact manual sequence."""
+    turns = turns.loc[turns["question_topic"].isin(definitions["question_topic"])]
+    if turns.duplicated(["session_id", "question_topic"]).any():
+        raise ValueError("Repeated topics in an interview need review before cross-interview comparison.")
+    vectors = tfidf_matrix(turns["content"].tolist())
+    topics = turns["question_topic"].to_numpy()
+    rows, means, sizes = [], [], []
+    for definition in definitions.to_dict("records"):
+        indices = np.flatnonzero(topics == definition["question_topic"])
+        if len(indices) < min_turns:
+            continue
+        positions = turns.iloc[indices]["order"]
+        if not positions.eq(2 * definition["question_number"] - 1).all():
+            raise ValueError(f"Unexpected transcript position for {definition['question_topic']}.")
+        block = vectors[indices]
+        rows.append({**definition, "position": float(positions.median()),
+                     "within_cosine": within_topic_similarity(block), "n": len(indices)})
+        means.append(np.asarray(block.mean(axis=0)).ravel())
+        sizes.append(len(indices))
+    return rows, across_topic_reference(means, sizes)
+
+
+
+
+
+def main(panels, script_path):
+    data_dir = script_path.parents[5] / "data/raw/main_socialmedia"
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--chats", type=Path, default=data_dir / "chats_raw.csv")
+    parser.add_argument("--survey", type=Path, default=data_dir / "main_raw.sav")
+    parser.add_argument("--output", type=Path,
+                        default=script_path.parent / "outputs/similarity_by_topic.pdf")
+    parser.add_argument("--min-turns", type=int, default=5)
+    args = parser.parse_args()
+    if args.min_turns < 2:
+        parser.error("--min-turns must be at least 2")
+    if args.output.suffix.lower() != ".pdf":
+        parser.error("--output must be a PDF path")
+    arms = arm_definitions()
+    definitions = question_definitions(panels, arms)
+    turns = load_interviewer_turns(args.chats, args.survey)
+    audit = audit_questions(turns, definitions, args.min_turns)
+    report = audit_report(turns, definitions, audit, args.min_turns)
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    audit.to_csv(args.output.with_name(args.output.stem + "_question_audit.csv"), index=False)
+    args.output.with_name(args.output.stem + "_audit.txt").write_text(report)
+    print(report)
 
     results, references, table = {}, {}, []
-    for arm in ARMS:
-        rows, reference = analyse_arm(turns[turns["arm"] == arm])
+    for arm in panels:
+        rows, reference = analyse_arm(turns.loc[turns["arm_code"].eq(arms[arm]["code"])],
+                                      definitions.loc[definitions["arm"].eq(arm)], args.min_turns)
         results[arm], references[arm] = rows, reference
-        for r in rows:
-            table.append({"arm": ARM_LABELS[arm], **r, "reference": reference})
-
-    pd.DataFrame(table).to_csv(OUT / "similarity_by_topic.csv", index=False)
-    make_figure(results, references)
+        table.extend({**row, "reference": reference} for row in rows)
+    pd.DataFrame(table).to_csv(args.output.with_suffix(".csv"), index=False)
+    make_figure(results, references, arms, args.output)
+    print(f"Saved {args.output}")
 
 
 if __name__ == "__main__":
-    main()
+    panels, _ = configuration()
+    main(panels, Path(__file__).resolve())

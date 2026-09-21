@@ -49,7 +49,7 @@ drop if missing(motivation)
 * 4.Drop people with less than 20 characters in writing task
 * Original writing text is withheld; its exact byte length is supplied.
 confirm variable writing_chars
-drop if writing_chars <= 20
+drop if writing_chars < 20
 
 * 5. Drop 1% tails based on speed
 gen duration_pretreatment = 0
@@ -234,9 +234,9 @@ label var baseline_youtube_min_midpoint   "YouTube time (midpoint minutes)"
 label var baseline_reddit_min_midpoint    "Reddit time (midpoint minutes)"
 label var baseline_twitter_min_midpoint    "Twitter time (midpoint minutes)"
 
-* Dummies: 1 if app minutes > 0, 0 otherwise
+* Dummies: 1 if app-minute midpoint > 2.5, 0 otherwise (source definition)
 foreach app in tiktok instagram snapchat facebook youtube reddit twitter {
-    gen byte `app'_use_dummy = (baseline_`app'_min_midpoint > 0)
+    gen byte `app'_use_dummy = (baseline_`app'_min_midpoint > 2.5)
     label var `app'_use_dummy "`=proper("`app'")' use dummy (1=uses app)"
 }
 

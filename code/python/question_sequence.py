@@ -104,13 +104,12 @@ def plot_question_sequence(panels, category_colors, out_path):
                 for segment, category in enumerate(assigned):
                     ax.barh(yi, width, left=segment * width, height=0.72,
                             color=category_colors[category], edgecolor="white", linewidth=1.2)
-                ax.text(0.5, yi, " +\n".join(assigned), ha="center", va="center",
-                        color="white", fontsize=7.5 if len(assigned) > 1 else 8.5,
-                        fontweight="bold")
+                    ax.text((segment + 0.5) * width, yi, category, ha="center", va="center",
+                            color="white", fontsize=7.5 if len(assigned) > 1 else 8.5,
+                            fontweight="bold")
 
             ax.set_yticks(y)
-            ax.set_yticklabels([f"{i}. {name}" for i, (name, _) in enumerate(questions, 1)],
-                               fontsize=8)
+            ax.set_yticklabels([name for name, _ in questions], fontsize=8)
             ax.set_xlim(0, 1)
             ax.set_xticks([])
             ax.set_title(arm, fontsize=12, fontweight="bold", loc="left", pad=6)
