@@ -133,13 +133,8 @@
     {
       "file": "tables/tab_strategies_followup.tex",
       "numeric_and_significance_entries_match": true,
-      "full_text_matches_after_whitespace": false,
-      "package_label_corrections": [
-        [
-          "Technolgy-based",
-          "Technology-based"
-        ]
-      ]
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
     },
     {
       "file": "tables/tab_balance.tex",
@@ -162,13 +157,8 @@
     {
       "file": "tables/tab_main_treatment_effects_sm_mechanisms_duration_control.tex",
       "numeric_and_significance_entries_match": true,
-      "full_text_matches_after_whitespace": false,
-      "package_label_corrections": [
-        [
-          "($)",
-          "(\\$)"
-        ]
-      ]
+      "full_text_matches_after_whitespace": true,
+      "package_label_corrections": []
     },
     {
       "file": "tables/tab_secondary_outcomes_holm_panel_a.tex",
@@ -330,6 +320,7 @@
       "matches_current_result": true
     }
   ],
-  "manuscript_sha256": "143e0f869cc5cb4f12c27600f9c3cbba96b530ce310341bf4ef48f5afe98713f",
-  "prose_rechecked_at_unix": 1790034212
+  "manuscript_sha256": "014a381aa0d4607845acbbb794efc74ba2e3d2d177f8b4829e851cd14ae20d24",
+  "prose_rechecked_at_unix": 1790038075,
+  "table_comparisons_rechecked_at_unix": 1790038075
 }

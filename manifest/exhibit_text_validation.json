@@ -26,7 +26,7 @@
   },
   {
     "file": "tables/tab_strategies_followup.tex",
-    "source_manuscript_text_equal": false,
+    "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "file": "tables/tab_main_treatment_effects_sm_mechanisms_duration_control.tex",
-    "source_manuscript_text_equal": false,
+    "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "file": "figures/fig_miti_score_distributions_main_study.pdf",
-    "source_manuscript_text_equal": false,
+    "source_manuscript_text_equal": true,
     "released_text_equal_to_regenerated": true
   },
   {

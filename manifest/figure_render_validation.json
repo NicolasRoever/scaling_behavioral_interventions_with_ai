@@ -85,7 +85,7 @@
   },
   {
     "file": "figures/fig_miti_score_distributions_main_study.pdf",
-    "source_manuscript_pixel_equal": false,
+    "source_manuscript_pixel_equal": true,
     "released_pixel_equal_to_regenerated": true,
     "render_dimension": 1000
   },

@@ -4,7 +4,25 @@ Updated September 21, 2026 for the current source code and manuscript. Original
 analysis code and manuscript files were read-only inputs. Release provenance
 and validation records use Unix timestamps and SHA-256 hashes.
 
-## Latest app-use control correction
+## Latest MITI presentation and table-label update
+
+The four-arm MITI score distribution now follows the current source and
+manuscript colors, treatment labels and compact legend. Its regenerated PDF
+matches the manuscript pixels at a 1,000-pixel rendering. The two-arm histogram
+retains its existing styling, matching the separate manuscript exhibit; its
+unhyphenated package label remains a documented presentation difference.
+The saved scores, all seven checked numeric summaries and the three MITI table
+fragments agree with current source outputs. No interviews were rescored.
+
+The source now includes the Technology-based spelling and escaped currency
+label fixes already present in the package. Both Stata scripts and their table
+fragments are byte-identical to the source. Twenty of the 21 current table
+fragments now match the manuscript text after whitespace normalization; only
+the existing Within 30 min label correction remains. All 21 agree numerically.
+Survey inputs, demand classifications and original-submission materials are
+unchanged. See `manifest/latest_refresh_validation.json`.
+
+## Earlier app-use control correction
 
 The baseline app-use indicators now equal one when the app-minute midpoint
 is greater than 2.5, matching the latest source. Previously the cutoff was zero.
@@ -16,11 +34,10 @@ The public cleaning pipeline reproduces all four cleaned files numerically.
 The original-submission inputs remain frozen and reproduce the published tables.
 
 Fourteen table fragments and eight figures have been refreshed. Every current
-computed table has matching numeric entries and significance marks. Eighteen
-fragments also match the manuscript text after whitespace normalization; three
-retain existing package corrections to labels: “Technology-based”, escaped
-currency notation, and “Within 30 min”. All eight refreshed figures match the
-manuscript's rendered pixels and were visually checked.
+computed table has matching numeric entries and significance marks. The latest
+source incorporates two earlier package label corrections; only “Within 30 min”
+remains different, as described above. All eight figures refreshed for the
+app-use correction match the manuscript pixels and were visually checked.
 
 The six previously flagged manuscript prose discrepancies have been corrected.
 The revised baseline and follow-up motivation effects, demand SUR p-values
@@ -29,11 +46,9 @@ with the package. Exact comparisons are in
 `manifest/app_use_controls_validation.json`. This checks the selected statements
 affected by the corrected controls, not every sentence in the manuscript.
 
-The latest MITI source was also reviewed. Its calculations and relevant plotting
-functions match the public implementation after the documented presentation
-adaptations. The manuscript's two-arm legend now uses “Decisional-Balance”;
-the package already uses “Decisional Balance”. No score inputs, estimates or
-analysis-code changes were needed for this refresh.
+The manuscript's two-arm legend uses “Decisional-Balance”; the package retains
+“Decisional Balance”. The later four-arm figure update is described above.
+Score inputs and estimates remain unchanged.
 
 ## Earlier September 21 source update
 
@@ -124,7 +139,7 @@ issues. The archive is needed only when reconstructing the original submission.
 ## Current manuscript and code
 
 All 21 computed tables agree numerically with the current manuscript exhibits;
-three retain the label corrections documented above. All 48 computed exhibits
+one retains the label correction documented above. All 48 computed exhibits
 regenerate successfully. The persistence estimates are now 0.136 for Change Talk
 and 0.133 for Direct Persuasion (both p<0.05), and 0.055 for Decisional Balance
 (not significant at 10%). The current manuscript prose, figure and table now
@@ -149,8 +164,8 @@ The manuscript appendix now has **67 prompt blocks**, all verified against
 messages are no longer printed in the appendix; both are retained only as
 existing routing metadata. See [PROMPTS.md](PROMPTS.md) for the exact verification scope.
 
-All 27 released figures match their regenerated renderings. Twenty are
-pixel-identical to the manuscript at 1,000 pixels; seven differ in layout,
+All 27 released figures match their validated regenerated renderings. Twenty-one
+are pixel-identical to the manuscript at 1,000 pixels; six differ in layout,
 axis ticks, margins or rendering. Numeric table results agree. CDF colors and
 legend handles remain tied explicitly to numeric treatment codes; the
 Confidence Score label is preserved. No claim is made here to have audited

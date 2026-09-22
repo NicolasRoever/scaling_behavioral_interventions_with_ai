@@ -1,6 +1,6 @@
 {
-  "validated_at_unix": 1790034375,
-  "manuscript_sha256": "143e0f869cc5cb4f12c27600f9c3cbba96b530ce310341bf4ef48f5afe98713f",
+  "validated_at_unix": 1790037883,
+  "manuscript_sha256": "014a381aa0d4607845acbbb794efc74ba2e3d2d177f8b4829e851cd14ae20d24",
   "parameters_sha256": "6aa6f82e2cb394ff63dd3e8ac437258d6a409e0854d4ee32bac02139c03e197f",
   "text_normalization": "Remove alltt Copy/linebreak wrappers and collapse whitespace only; preserve literal punctuation and ---END---.",
   "blocks_checked": 67,

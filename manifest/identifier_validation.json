@@ -1,5 +1,5 @@
 {
-  "validated_at_unix": 1790029507,
+  "validated_at_unix": 1790037935,
   "original_prolific_ids_checked": 3264,
   "original_response_ids_checked": 5662,
   "source_identifier_files": [
@@ -287,5 +287,6 @@
   "pdf_text_checked": true,
   "git_history_clean": false,
   "git_history_modified": false,
-  "scope": "Working release files and readable local Git objects; remote server state was not inspected."
+  "scope": "Current release files including extracted PDF text; prior local Git-object findings retained with their separate timestamp. Git history and the remote were not inspected or altered in this refresh.",
+  "git_history_last_checked_at_unix": 1790029507
 }

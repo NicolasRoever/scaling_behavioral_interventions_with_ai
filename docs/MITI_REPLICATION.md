@@ -79,11 +79,16 @@ and the 2,048-person eligible experimental sample, so the earlier discrepancy
 notes are obsolete. The saved scoring inputs are unchanged by the survey update.
 The new cleaned merge retains the same 2,048 treated participants and 671 controls.
 
-The latest two-arm manuscript histogram changes the legend from “Ambivalence”
-to “Decisional-Balance”; the package already uses “Decisional Balance”. The
-all-arm export retains the documented label and legend-layout adaptations.
-Underlying scores, treatment means and shares agree. The latest source review
-required no changes to the public calculations, score inputs or renderer.
+The all-arm score distribution now follows the latest source palette: light
+gray Control, red Change Talk, gray Decisional balance and purple Persuasion.
+The labels, compact legend and layout match the current manuscript; its
+regenerated rendering is pixel-identical at 1,000 pixels. The two-arm histogram
+retains the separate manuscript exhibit's red/purple styling and the package
+label “Decisional Balance” (the manuscript prints “Decisional-Balance”).
+The source and manuscript all-arm update does not change scores or estimates.
+All seven numeric summaries and three MITI table fragments were rebuilt locally
+and agree with the saved source outputs. The stability violin and two-arm
+histogram regenerate unchanged. No API or transcript-processing runs were made.
 Source manuscript hashes and rendering comparisons are recorded separately.
 Only the replication package is updated; original analysis and manuscript files
 are read-only inputs.

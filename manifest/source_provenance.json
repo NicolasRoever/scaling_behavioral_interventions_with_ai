@@ -1,5 +1,5 @@
 {
-  "recorded_at_unix": 1790034212,
+  "recorded_at_unix": 1790038075,
   "source_files": [
     {
       "package_file": "code/stata/fig_baseline_sm_use.do",
@@ -19,8 +19,8 @@
     {
       "package_file": "code/stata/tab_mechanism_strategies_followup.do",
       "source": "stata/tab_mechanism_strategies_followup.do",
-      "source_sha256": "24b64467d1ff6423891daac16ffbd5f2d7afd8ed51ac5c8b136d82e18054bcd4",
-      "package_adjustment": "Correct Technology-based column-label spelling for valid presentation; calculations unchanged."
+      "source_sha256": "60398d47f76976084d1d222fecbe4328d05edb32ab44bd3fd0e9ff12999b72ed",
+      "package_adjustment": "None: the latest source includes the previous package label correction and is byte-identical to the released script."
     },
     {
       "package_file": "code/stata/tab_differences_strategies.do",
@@ -140,8 +140,8 @@
     {
       "package_file": "code/stata/tab_main_treatment_effect_duration_control.do",
       "source": "stata/tab_main_treatment_effect_duration_control.do",
-      "source_sha256": "71f37c731f6ea17250632fe61237b91fff9906fc97a9099aa6d02c90f3164a58",
-      "package_adjustment": "Escape the WTP dollar sign through Stata in the emitted LaTeX; calculations unchanged."
+      "source_sha256": "6d967e0b3e5c2059c40d186a6593ef7376af82a48de85ead95b7d0354d3e7e5a",
+      "package_adjustment": "None: the latest source includes the previous package label correction and is byte-identical to the released script."
     },
     {
       "package_file": "code/stata/tab_main_treatment_effect.do",
@@ -264,13 +264,13 @@
     {
       "package_file": "code/python/miti_tables.py",
       "source": "python/miti_scoring/build_campaign_exhibits.py",
-      "source_sha256": "fe6f37ebbde42e3760e92e1e5e813e531407504d2f128b06d45b832a6660878f",
-      "package_adjustment": "Offline experimental exhibits with exactly 2,048 eligible treated participants. Human-validation tables are built separately from the corrected September 18 benchmark. Shared renderer supports the revised panel headings. Use manuscript treatment names and a two-column all-arm legend."
+      "source_sha256": "452f0d06ea27ba6659cf3ae96f26b37b0fe4f1d27ccbc11ff63ffa330aeef8ff",
+      "package_adjustment": "Offline experimental exhibits with 2,048 eligible treated participants. The four-arm distribution uses the current source labels, colors and legend. Preserve the manuscript two-arm histogram styling, including the existing unhyphenated package label. Omit unused average-score and forest plots; save PDF only. Human-validation tables use the separate corrected September 18 benchmark."
     },
     {
       "package_file": "code/python/run_public.py",
       "source": "python/miti_scoring/build_campaign_exhibits.py",
-      "source_sha256": "fe6f37ebbde42e3760e92e1e5e813e531407504d2f128b06d45b832a6660878f",
+      "source_sha256": "452f0d06ea27ba6659cf3ae96f26b37b0fe4f1d27ccbc11ff63ffa330aeef8ff",
       "package_adjustment": "Offline experimental exhibits with exactly 2,048 eligible treated participants. Human-validation tables are built separately from the corrected September 18 benchmark. Shared renderer supports the revised panel headings."
     },
     {
@@ -361,7 +361,7 @@
   "submission_archival_adaptations": "code/reproduce_submission.py uses the three frozen deidentified inputs in manifest/submission_survey_snapshot.json and the specifications documented in docs/SUBMISSION_TABLE_AUDIT.md.",
   "interview_prompts": {
     "source": "revision.tex, Appendix D.1--D.4",
-    "source_sha256": "143e0f869cc5cb4f12c27600f9c3cbba96b530ce310341bf4ef48f5afe98713f",
+    "source_sha256": "014a381aa0d4607845acbbb794efc74ba2e3d2d177f8b4829e851cd14ae20d24",
     "package_file": "code/prompts/parameters.py",
     "validation": "manifest/prompt_validation.json",
     "blocks": 67

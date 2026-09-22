@@ -1,0 +1,32 @@
+{
+  "validated_at_unix": 1790038075,
+  "manuscript_sha256": "014a381aa0d4607845acbbb794efc74ba2e3d2d177f8b4829e851cd14ae20d24",
+  "source_changes": [
+    "python/miti_scoring/build_campaign_exhibits.py",
+    "stata/tab_main_treatment_effect_duration_control.do",
+    "stata/tab_mechanism_strategies_followup.do"
+  ],
+  "changed_reference_exhibits": [
+    "figures/fig_miti_score_distributions_main_study.pdf"
+  ],
+  "unchanged_data": true,
+  "numeric_tables_matching_manuscript": 21,
+  "tables_matching_full_text": 20,
+  "figures_matching_manuscript_pixels": 21,
+  "figure_count": 27,
+  "render_dimension": 1000,
+  "refreshed_figure_visually_reviewed": true,
+  "miti_outputs_regenerated": [
+    "figures/fig_miti_score_distributions_main_study.pdf",
+    "figures/fig_miti_score_histograms.pdf",
+    "figures/score_stability_violin_plot.pdf",
+    "tables/mi_validation_results_table.tex",
+    "tables/robustness_handcoded_latex_table.tex",
+    "tables/score_stability_latex_table.tex"
+  ],
+  "saved_scores_validated_against_source": true,
+  "model_requests": 0,
+  "additional_api_compute_cost_usd": 0,
+  "existing_privacy_document_preserved": true,
+  "submission_inputs_and_runner_unchanged": true
+}

@@ -1,5 +1,5 @@
 {
-  "manuscript_sha256": "143e0f869cc5cb4f12c27600f9c3cbba96b530ce310341bf4ef48f5afe98713f",
+  "manuscript_sha256": "014a381aa0d4607845acbbb794efc74ba2e3d2d177f8b4829e851cd14ae20d24",
   "created_at_unix": 1789592732,
   "exhibits": [
     {
@@ -61,7 +61,7 @@
       "sha256": "19b3b134ec9ee996891c9d3cae826f62c88ce654ea1ebca9092686d8d8969911",
       "generator": "code/stata/tab_mechanism_strategies_followup.do",
       "replication_level": "Current public survey data",
-      "source_manuscript_sha256": "728c7090f484b1720dae0617aea3c7b85c356544a90d1bab61046f07e1a2147c",
+      "source_manuscript_sha256": "19b3b134ec9ee996891c9d3cae826f62c88ce654ea1ebca9092686d8d8969911",
       "reference_origin": "refreshed current public runner"
     },
     {
@@ -97,7 +97,7 @@
       "sha256": "82663a02ef964b89d47c1a0bf17437a0f812d7aafdd86143a44ed72b422f4c6d",
       "generator": "code/stata/tab_main_treatment_effect_duration_control.do",
       "replication_level": "Current public survey data",
-      "source_manuscript_sha256": "97f08b0e2c9305578be52431f0fe6eebf72064dde0455d01724a6f51460964b5",
+      "source_manuscript_sha256": "82663a02ef964b89d47c1a0bf17437a0f812d7aafdd86143a44ed72b422f4c6d",
       "reference_origin": "refreshed current public runner"
     },
     {
@@ -317,11 +317,11 @@
     {
       "manuscript_path": "figures/fig_miti_score_distributions_main_study.pdf",
       "status": "included",
-      "sha256": "9b432acc1c15c26b7e824f0bde92b127bae590c9ae54cfdb069d72cc309ad264",
+      "sha256": "6d0e49ea63587e4740215dbfc74a04cff9ece435cf142ba5732ac23e2440fa0c",
       "generator": "code/python/miti_tables.py",
       "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
-      "source_manuscript_sha256": "146f85facc9de184fa0fe2cc3fbe8599160cbb5cf68edb23a89aef26bf340e64",
-      "reference_origin": "unchanged equivalent reference"
+      "source_manuscript_sha256": "02f3c770020ecb3d9899fb13f1e896bf2dad0c3bc31793a83473e9515357fe00",
+      "reference_origin": "refreshed current public MITI renderer"
     },
     {
       "manuscript_path": "figures/wordclouds_by_arm.pdf",
@@ -459,6 +459,6 @@
       "reference_origin": "unchanged equivalent reference"
     }
   ],
-  "updated_at_unix": 1790034212,
+  "updated_at_unix": 1790038075,
   "reference_policy": "Computed results refreshed from the active survey snapshot and current code; source_manuscript_sha256 identifies the separately inspected manuscript exhibit."
 }

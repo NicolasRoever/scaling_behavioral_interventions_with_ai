@@ -101,14 +101,17 @@ def save_figure(fig, out, name):
 
 def build_main_figures(data, dimensions, out):
     import matplotlib.pyplot as plt
-    arms = {0: "Control", 1: "Change Talk", 2: "Decisional Balance", 3: "Direct Persuasion"}
-    colors = {0: "#8a8a8a", 1: "#b83232", 2: "#4c4c86", 3: "#4c8a4c"}
+    arms = {0: "Control", 1: "Change Talk", 2: "Decisional balance", 3: "Persuasion"}
+    colors = {0: "#bdbdbd", 1: "#b83232", 2: "#777777", 3: "#4c4c86"}
     means = data.groupby(["T", "miti_dimension"]).agg(Mean=("score", "mean"), N=("session_id", "nunique")).reset_index()
     means.to_csv(out / "miti_means_by_treatment.csv", index=False)
     pooled = data.groupby("T").agg(Mean=("score", "mean"), N=("session_id", "nunique")).reset_index()
     pooled.to_csv(out / "miti_global_means_by_treatment.csv", index=False)
     for selected_arms, filename in [(list(arms), "fig_miti_score_distributions_main_study"),
                                     ([1, 2], "fig_miti_score_histograms")]:
+        # The manuscript retains its earlier two-arm histogram styling.
+        plot_arms = arms if len(selected_arms) == 4 else {1: "Change Talk", 2: "Decisional Balance"}
+        plot_colors = colors if len(selected_arms) == 4 else {1: "#b83232", 2: "#4c4c86"}
         fig, axes = plt.subplots(2, 2, figsize=(10, 7), constrained_layout=True)
         for ax, dim in zip(axes.flat, dimensions):
             width = .8 / len(selected_arms)
@@ -116,13 +119,9 @@ def build_main_figures(data, dimensions, out):
                 values = data.loc[data["T"].eq(arm) & data.miti_dimension.eq(dim), "score"]
                 percentages = values.value_counts(normalize=True).reindex(range(1, 6), fill_value=0) * 100
                 ax.bar(np.arange(1, 6) + (i - (len(selected_arms) - 1) / 2) * width,
-                       percentages, width=width, color=colors[arm], label=f'{arms[arm]} (mean {values.mean():.2f})')
+                       percentages, width=width, color=plot_colors[arm], label=f'{plot_arms[arm]} (mean {values.mean():.2f})')
             ax.set(title=dim, xticks=range(1, 6), xlabel="MITI score", ylabel="Percent")
-            if len(selected_arms) == 4:
-                ax.set_ylim(0, max(bar.get_height() for bar in ax.patches) * 1.22)
-                ax.legend(fontsize=8, ncol=2, loc="upper center")
-            else:
-                ax.legend(fontsize=8)
+            ax.legend(fontsize=7 if len(selected_arms) == 4 else 8)
         save_figure(fig, out, filename)
 
 

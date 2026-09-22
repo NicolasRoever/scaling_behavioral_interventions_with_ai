@@ -8,11 +8,13 @@ files were read-only inputs.
   `README.md` at the root. All 45 local Markdown links resolve. The duplicate
   archival output folder was removed, and the original-submission workflow was
   rerun successfully with numeric checks and fingerprints for all 12 outputs.
-- Latest manuscript/MITI refresh: all six previously flagged numerical prose
-  statements now agree with the current results. The current MITI builder's
-  shared calculations and plotting functions match the public implementation
-  after the documented presentation adaptations. Score inputs, source numeric
-  summaries and analysis code are unchanged; no analysis rerun was needed.
+- Latest MITI refresh: regenerated the current four-arm distribution with the
+  source colors, labels and compact legend; it matches the manuscript pixels.
+  The two-arm histogram and stability violin regenerate unchanged. Three MITI
+  table fragments and seven numeric summaries agree with source outputs. Scores
+  were checked against all ten frozen experimental runs and the corrected
+  benchmark. All six previously flagged numerical prose statements still agree
+  with the results. Survey data and original-submission materials are unchanged.
 - Latest app-use correction: all seven baseline use controls follow the source
   midpoint cutoff `> 2.5`. Three deidentified analysis datasets changed; raw
   outcomes, anonymous keys and sample sizes did not. The 14 affected table
@@ -40,15 +42,16 @@ files were read-only inputs.
   (27 PDFs and 21 LaTeX fragments), plus supporting audit summaries. Completion
   markers and Stata logs were checked, as well as process exit codes.
 - All **21 generated table fragments match the manuscript numerically**,
-  including significance marks. Eighteen match after whitespace normalization;
-  three retain documented label corrections. References were refreshed for
-  all 14 changed table fragments.
-- All **27 released figures match their regenerated renderings**. Twenty
-  are pixel-identical to the manuscript at 1,000 pixels; seven retain the
-  previously reviewed presentation differences in layout and MITI treatment
-  labels/axis ticks. Both CDFs additionally match all three manuscript curves
-  at normalized PDF-vector tolerance 1e-7. All eight figures changed by this
-  update were visually reviewed.
+  including significance marks. Twenty match after whitespace normalization;
+  only the existing Within 30 min label correction remains. The latest source
+  incorporates the other two previous label corrections. No numeric table
+  results or table references changed in this refresh.
+- All **27 released figures match their validated regenerated renderings**.
+  Twenty-one are pixel-identical to the current manuscript at 1,000 pixels; six
+  retain reviewed presentation differences in layout, labels or axis ticks.
+  All 27 manuscript comparisons were refreshed. The newly updated MITI figure
+  was visually inspected; both CDFs retain their earlier three-curve comparison
+  at normalized PDF-vector tolerance 1e-7.
 - The archival runner reproduced **11/11 original numerical tables and 742/742
   checked entries**. The optional archival runner generates all 12 tables; the
   redundant output folder is removed. Expected table entries and normalized
