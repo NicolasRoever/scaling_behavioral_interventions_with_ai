@@ -3,7 +3,7 @@
   "algorithm": "sha256",
   "files": {
     ".gitignore": "a29c5fcbd17b7a71f37bddd0baff5955b2deac0aa7494815f1b85a387b2bcbdd",
-    "README.md": "1953a72eea9cb5c1f03727d1cc57fa1820fefc84dd0d465b3c6826e3341c93cd",
+    "README.md": "58720234a8152a74dce84dce6ce6f0c7088040ab39edf6fd97cf29dfe0099def",
     "code/check_privacy.py": "2ab5256e46e29136c8e2f7ae62dc7db4aafedb8ddad4e1e38628f86d77872926",
     "code/compare_submission.py": "75dc4532373616f111ee3dd66beab23bbad864d101f9d55829ef0680faa1ba0b",
     "code/private/README.md": "d44b718b0ff769e906c4e1145352f9f7b43fafc87e284eda982336cb5833fc6b",

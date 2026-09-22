@@ -98,7 +98,7 @@ Balance (called Ambivalence in some source data); `T=3` is Direct Persuasion.
 Read [PROMPTS.md](docs/PROMPTS.md) for the appendix prompt text and verification command,
 [EXHIBIT_MANIFEST.md](docs/EXHIBIT_MANIFEST.md) for every exhibit's generating code,
 [DATA_AVAILABILITY.md](docs/DATA_AVAILABILITY.md) for the privacy boundary, and
-[REPRODUCIBILITY_NOTES.md](docs/REPRODUCIBILITY_NOTES.md) for input-version details and remaining presentation differences. 
+[REPRODUCIBILITY_NOTES.md](docs/REPRODUCIBILITY_NOTES.md) for input-version details and remaining presentation differences.
 
 
 ### Note for Developer: How to Verify the distribution
