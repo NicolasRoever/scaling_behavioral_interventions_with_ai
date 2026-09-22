@@ -3,7 +3,7 @@
 Only appendix instructions are included; no interviews or API execution.
 Wrapping and alltt typesetting wrappers are removed. Literal punctuation is
 preserved, including ---END---. Routing metadata is retained from the package.
-See PROMPTS.md and check_appendix.py for provenance and verification.
+See docs/PROMPTS.md and check_appendix.py for provenance and verification.
 """
 
 OPENAI_API_KEY = ""

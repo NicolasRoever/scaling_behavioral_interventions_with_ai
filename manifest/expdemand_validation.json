@@ -42,5 +42,6 @@
   "manuscript_exhibits_match": true,
   "classification_inputs_unchanged_since_previous_release": true,
   "controls_update": "manifest/app_use_controls_validation.json",
-  "manuscript_prose_p_values_match": false
+  "manuscript_prose_p_values_match": true,
+  "manuscript_prose_rechecked_at_unix": 1790034212
 }

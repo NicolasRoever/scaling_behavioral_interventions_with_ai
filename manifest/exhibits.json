@@ -1,5 +1,5 @@
 {
-  "manuscript_sha256": "a58a446e5d010bd92c5b7ccd16b5ef87de1ca0091930b5f9754841fee0af1ecd",
+  "manuscript_sha256": "143e0f869cc5cb4f12c27600f9c3cbba96b530ce310341bf4ef48f5afe98713f",
   "created_at_unix": 1789592732,
   "exhibits": [
     {
@@ -293,7 +293,7 @@
       "sha256": "31919f0037955deb1e266a211db390a272c1412abe33136b1769e8cbfbbe8983",
       "generator": "code/python/miti_tables.py",
       "replication_level": "Saved numeric/categorical results; run via `code/python/run_public.py`",
-      "source_manuscript_sha256": "ec932879d0df4165b89fed78b72ed87f61d95538f0003b74cfeee4bf221c0009",
+      "source_manuscript_sha256": "5cc8487b0aa7d30bfcf690ec971d036ad3e9dd4fa5cf40c86db465f271363b85",
       "reference_origin": "unchanged equivalent reference"
     },
     {
@@ -459,6 +459,6 @@
       "reference_origin": "unchanged equivalent reference"
     }
   ],
-  "updated_at_unix": 1790029425,
+  "updated_at_unix": 1790034212,
   "reference_policy": "Computed results refreshed from the active survey snapshot and current code; source_manuscript_sha256 identifies the separately inspected manuscript exhibit."
 }

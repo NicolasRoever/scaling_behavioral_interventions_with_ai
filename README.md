@@ -61,7 +61,9 @@ python code/compare_submission.py --submission
 For macOS Stata/SE, the executable is commonly
 `/Applications/Stata/StataSE.app/Contents/MacOS/stata-se`. The original-table
 runner works independently of the default runners and writes to
-`reproduced/submission/`. Its reference tables are in `submission_results/`.
+`reproduced/submission/`. Expected PDF entries and normalized output hashes
+are stored in `manifest/submission_tables.json`; no duplicate output folder
+is distributed.
 It uses the three deidentified analysis files frozen under
 `data/archival/original_submission/` and checks their hashes before reconstructing
 the published specifications, including documented reporting errors. 
@@ -82,7 +84,7 @@ the published specifications, including documented reporting errors.
 | `data/archival/original_submission/` | Frozen deidentified inputs used only for the original-submission tables |
 | `data/derived/` | Numeric/categorical inputs for transcript-derived exhibits |
 | `results/` | Current-analysis reference exhibits refreshed for the supplied snapshot |
-| `submission_results/` | Original-submission tables reconstructed with the documented archival specifications |
+| `docs/` | Supporting documentation, reproducibility notes and validation reports |
 | `reproduced/` | Fresh outputs written by the public runners; not part of the release |
 | `manifest/` | Exhibit crosswalk, data dictionary, redaction record and checksums |
 
@@ -93,10 +95,10 @@ The two static assets are supplied as-is.
 `T=0` is Control (time-use interview); `T=1` is Change Talk; `T=2` is Decisional
 Balance (called Ambivalence in some source data); `T=3` is Direct Persuasion.
 
-Read `PROMPTS.md` for the appendix prompt text and verification command,
-`EXHIBIT_MANIFEST.md` for every exhibit's generating code,
-`DATA_AVAILABILITY.md` for the privacy boundary, and
-`REPRODUCIBILITY_NOTES.md` for input-version details and remaining presentation differences. 
+Read [PROMPTS.md](docs/PROMPTS.md) for the appendix prompt text and verification command,
+[EXHIBIT_MANIFEST.md](docs/EXHIBIT_MANIFEST.md) for every exhibit's generating code,
+[DATA_AVAILABILITY.md](docs/DATA_AVAILABILITY.md) for the privacy boundary, and
+[REPRODUCIBILITY_NOTES.md](docs/REPRODUCIBILITY_NOTES.md) for input-version details and remaining presentation differences. 
 
 
 ### Note for Developer: How to Verify the distribution
@@ -110,11 +112,12 @@ python code/verify_package.py --submission
 
 The first command checks working files for exposed participant identifiers.
 The second verifies reference-file hashes, release checksums, restricted-file
-exclusions, and archival reference tables against the original PDF entries.
+exclusions, and the original-submission specification and output fingerprints.
 The third additionally requires every generated exhibit and compares all
 regenerated LaTeX table bodies with the released references. The fourth checks
-freshly regenerated archival tables against the original PDF entries.
-See `VALIDATION.md` for the completed release checks and their limits.
+freshly regenerated archival tables against the original PDF entries and
+verified output fingerprints.
+See [VALIDATION.md](docs/VALIDATION.md) for the completed release checks and their limits.
 
 Run the initial checksum check before cleaning. Stata rewrites binary metadata
 when saving rebuilt datasets, so after running `01_clean_data.do` use

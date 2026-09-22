@@ -7,8 +7,8 @@
       "table": "1",
       "pdf_page": 11,
       "result": "tables/manual/tab_treatment_description.tex",
-      "reference_path": "submission_results/tables/manual/tab_treatment_description.tex",
-      "reference_sha256": "f87285ab2774e7527fb547b1e6bbf4f3ee8bfc4b661de190469e560653b1fb93"
+      "generated_path": "reproduced/submission/tables/manual/tab_treatment_description.tex",
+      "expected_text_sha256": "bf823a59aee43ff4c6fbdaefaac2dddefd5b834fd6cc5257bf82221297a96a58"
     },
     {
       "table": "2",
@@ -81,8 +81,8 @@
           "0.089"
         ]
       },
-      "reference_path": "submission_results/tables/tab_strategies_followup.tex",
-      "reference_sha256": "b0fb98e32a58cf798c294c11e7415cf3911ee14b7667d6ca069e6af22440c0e2"
+      "generated_path": "reproduced/submission/tables/tab_strategies_followup.tex",
+      "expected_text_sha256": "e8c549ddb7d68b5eeb9b6ff3794986119fd3bc744901f8816abec2f2f7fd63e5"
     },
     {
       "table": "A.1",
@@ -323,8 +323,8 @@
           "1359"
         ]
       },
-      "reference_path": "submission_results/tables/tab_balance.tex",
-      "reference_sha256": "0dfdcdb81044115b8fe9bf5c2f1262e05486cb8c966f994f0653281a4c92975c"
+      "generated_path": "reproduced/submission/tables/tab_balance.tex",
+      "expected_text_sha256": "298309fe6fdb57392b113d6cf62c3b82ed406197798d1527bf6848f7d505a681"
     },
     {
       "table": "A.2",
@@ -359,8 +359,8 @@
           "0.712"
         ]
       },
-      "reference_path": "submission_results/tables/tab_attrition_analysis_sm.tex",
-      "reference_sha256": "c149c9f4f9c9e9bacbb1fcf0e780dc88abd69ff766c3cd4ff75bdfbeccc1de04"
+      "generated_path": "reproduced/submission/tables/tab_attrition_analysis_sm.tex",
+      "expected_text_sha256": "6f12c2f6bd3e7f5c1c27f4b23d27276ad6a623c09fe1523e8a1d7979d1d14c93"
     },
     {
       "table": "A.3",
@@ -601,8 +601,8 @@
           "1043"
         ]
       },
-      "reference_path": "submission_results/tables/tab_balance_followup.tex",
-      "reference_sha256": "63b44bb8fd070620df8ddf175084447837ce9881fbd07a1b8c33dcf407a3426f"
+      "generated_path": "reproduced/submission/tables/tab_balance_followup.tex",
+      "expected_text_sha256": "8f699db6eca8e88a673352ae9e4c0752e692941113e62b209356dc0b79c1b8a2"
     },
     {
       "table": "A.4",
@@ -714,8 +714,8 @@
           "0.410"
         ]
       },
-      "reference_path": "submission_results/tables/tab_main_treatment_effects_sm_mechanisms.tex",
-      "reference_sha256": "1272d44815ad32b682a7f2418020fd3f7dcca1bf21cf308f118134305b84b2bd"
+      "generated_path": "reproduced/submission/tables/tab_main_treatment_effects_sm_mechanisms.tex",
+      "expected_text_sha256": "e4e1c31578be0749b6130227060a2606aa2f489352c70184e7165d07e7f4cdc3"
     },
     {
       "table": "A.5",
@@ -788,8 +788,8 @@
           "0.043"
         ]
       },
-      "reference_path": "submission_results/tables/tab_main_treatment_effects_sm_minutes.tex",
-      "reference_sha256": "2495c354dd2ede2b8ee0c02b8ddd8ead9abf951e272e06936e3c319addc97a59"
+      "generated_path": "reproduced/submission/tables/tab_main_treatment_effects_sm_minutes.tex",
+      "expected_text_sha256": "f93a03951fc4e0c23d884aed0d7cec4297264498e4de567dce14a5b2fa536d2d"
     },
     {
       "table": "A.6",
@@ -862,8 +862,8 @@
           "0.163"
         ]
       },
-      "reference_path": "submission_results/tables/tab_treatment_effects_motivation_followup.tex",
-      "reference_sha256": "de0df63abf01ee6b3903505fe62678cf5200ae917c24b747d52292381e3e0ee3"
+      "generated_path": "reproduced/submission/tables/tab_treatment_effects_motivation_followup.tex",
+      "expected_text_sha256": "a51c0abb2190a640503b0bd42e27eb4bbf2b9ee3db7d5b55c25d355b18fd47d4"
     },
     {
       "table": "A.7",
@@ -949,8 +949,8 @@
           "0.041"
         ]
       },
-      "reference_path": "submission_results/tables/tab_treatment_effects_closetoideal_followup.tex",
-      "reference_sha256": "88119d9971bc096d126a7069f031a41d0e010661239ca88704f3fa9b7b9a5d1e"
+      "generated_path": "reproduced/submission/tables/tab_treatment_effects_closetoideal_followup.tex",
+      "expected_text_sha256": "de34a4813e347880e30f8f3e691e113e2c93e59140b02a2c4d3d442f5629d5fd"
     },
     {
       "table": "A.8",
@@ -1036,8 +1036,8 @@
           "0.387"
         ]
       },
-      "reference_path": "submission_results/tables/tab_heterogeneity_timeuse_by_wedge.tex",
-      "reference_sha256": "ff3f23fd1b4012ba08f91da3121123682eb559102b515ca5ba2e284a5067a96b"
+      "generated_path": "reproduced/submission/tables/tab_heterogeneity_timeuse_by_wedge.tex",
+      "expected_text_sha256": "cf2618519c577a05310ae13ec7de311c7f1976d91e5a8129ddef25c67b98afc5"
     },
     {
       "table": "A.9",
@@ -1123,8 +1123,8 @@
           "0.586"
         ]
       },
-      "reference_path": "submission_results/tables/tab_heterogeneity_timeuse_by_basetime.tex",
-      "reference_sha256": "871632806a89b462439d53dc074068c491df2dda9b5538d2130ef84e516fc1f3"
+      "generated_path": "reproduced/submission/tables/tab_heterogeneity_timeuse_by_basetime.tex",
+      "expected_text_sha256": "a009acee40683a3a7b7bad354d1b1f499e09739dfb688f7d3b8d0797f601ee5e"
     },
     {
       "table": "C.1",
@@ -1172,8 +1172,9 @@
           "0.72"
         ]
       },
-      "reference_path": "submission_results/tables/mi_validation_results_table.tex",
-      "reference_sha256": "c1524f3b0fc87d42c3ce38664a6c03c29f0343a86fe2bf974708a3abdb1a9074"
+      "generated_path": "reproduced/submission/tables/mi_validation_results_table.tex",
+      "expected_text_sha256": "242e784ca291ebded40d8568b35006fea6f0e07ef7391ed095c8aa380e284b27"
     }
-  ]
+  ],
+  "output_fingerprint_normalization": "Remove whitespace from UTF-8 LaTeX text; retain all other characters."
 }

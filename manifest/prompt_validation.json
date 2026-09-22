@@ -1,7 +1,7 @@
 {
-  "validated_at_unix": 1790029395,
-  "manuscript_sha256": "a58a446e5d010bd92c5b7ccd16b5ef87de1ca0091930b5f9754841fee0af1ecd",
-  "parameters_sha256": "da0c0786f33ae43596aad2a15a5417a1a2410e766edd22ca095bb9a8b0f0e53f",
+  "validated_at_unix": 1790034375,
+  "manuscript_sha256": "143e0f869cc5cb4f12c27600f9c3cbba96b530ce310341bf4ef48f5afe98713f",
+  "parameters_sha256": "6aa6f82e2cb394ff63dd3e8ac437258d6a409e0854d4ee32bac02139c03e197f",
   "text_normalization": "Remove alltt Copy/linebreak wrappers and collapse whitespace only; preserve literal punctuation and ---END---.",
   "blocks_checked": 67,
   "arms": 4,

@@ -1,9 +1,9 @@
 # Prompt index
 
-- [Interviewer prompts](code/prompts/parameters.py)
-- [MITI global scoring prompts](code/prompts/miti_global_scores.py)
-- [MITI behavioral-count prompts](code/prompts/miti_behavioral_counts.py)
-- [Prompt usage guide](code/prompts/README.md)
+- [Interviewer prompts](../code/prompts/parameters.py)
+- [MITI global scoring prompts](../code/prompts/miti_global_scores.py)
+- [MITI behavioral-count prompts](../code/prompts/miti_behavioral_counts.py)
+- [Prompt usage guide](../code/prompts/README.md)
 
 ## Interviewer prompts
 
@@ -58,8 +58,8 @@ the manuscript/configuration hashes, block hashes and successful checks.
 |---|---|
 | Experimental interviews | `code/prompts/parameters.py` |
 | MITI corrected validation preparation | `code/private/miti_scoring/miti_benmchmarking/prepare_validation_batch.py` |
-| MITI global scoring | [`code/prompts/miti_global_scores.py`](code/prompts/miti_global_scores.py) |
-| MITI behavioral counts | [`code/prompts/miti_behavioral_counts.py`](code/prompts/miti_behavioral_counts.py) |
+| MITI global scoring | [`code/prompts/miti_global_scores.py`](../code/prompts/miti_global_scores.py) |
+| MITI behavioral counts | [`code/prompts/miti_behavioral_counts.py`](../code/prompts/miti_behavioral_counts.py) |
 | MITI model/replicate/ablation orchestration | `code/private/miti_scoring/run_campaign.py` |
 | BERTopic labeling | `code/private/classify_bertopic.py` |
 | Named positive and negative aspects | `code/private/fig_pros_cons.py`: `extraction_instructions()` |
@@ -76,4 +76,4 @@ social-media goal) from `VALIDATION_PROMPT` (topic-neutral, with the Change Goal
 passage removed). The corrected September 18 validation uses the latter.
 This change does not rescore the frozen experimental campaign. Its conservative
 sentence ablation and model reasoning settings are documented in
-`MITI_REPLICATION.md`.
+[MITI_REPLICATION.md](MITI_REPLICATION.md).

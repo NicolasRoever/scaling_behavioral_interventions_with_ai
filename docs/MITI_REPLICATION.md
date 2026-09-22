@@ -1,14 +1,14 @@
 # MITI replication inputs
 
-Updated September 19, 2026. All public processing is offline: $0 additional
+Updated September 21, 2026. All public processing is offline: $0 additional
 API/compute cost and zero model requests. Raw transcripts, transcript correction
 records, request/response payloads and model explanations are not distributed.
 
 ## Scoring prompts
 
-The reusable [global scoring templates and four coding rubrics](code/prompts/miti_global_scores.py)
-and [behavioral-count instructions](code/prompts/miti_behavioral_counts.py) are in
-`code/prompts/`. The [usage guide](code/prompts/README.md) explains how to render
+The reusable [global scoring templates and four coding rubrics](../code/prompts/miti_global_scores.py)
+and [behavioral-count instructions](../code/prompts/miti_behavioral_counts.py) are in
+`code/prompts/`. The [usage guide](../code/prompts/README.md) explains how to render
 study, topic-neutral validation, and conservative-sentence ablation prompts.
 The standard and ablated global prompts and coding rubrics were checked against
 the frozen September 10 study campaign and September 18 validation inputs.
@@ -68,7 +68,7 @@ as a fallback.
 `code/reproduce_submission.py` continues to use the separate 80 numeric pairs
 from the original 20-interview validation. It reconstructs original Table C.1,
 including its historical values, and does not substitute the corrected benchmark.
-See `SUBMISSION_TABLE_AUDIT.md` for that archival route.
+See [SUBMISSION_TABLE_AUDIT.md](SUBMISSION_TABLE_AUDIT.md) for that archival route.
 
 ## Manuscript status
 
@@ -79,8 +79,11 @@ and the 2,048-person eligible experimental sample, so the earlier discrepancy
 notes are obsolete. The saved scoring inputs are unchanged by the survey update.
 The new cleaned merge retains the same 2,048 treated participants and 671 controls.
 
-The two MITI histograms have minor layout/axis-tick differences from the
-manuscript exports; underlying scores, treatment means and shares agree.
+The latest two-arm manuscript histogram changes the legend from “Ambivalence”
+to “Decisional-Balance”; the package already uses “Decisional Balance”. The
+all-arm export retains the documented label and legend-layout adaptations.
+Underlying scores, treatment means and shares agree. The latest source review
+required no changes to the public calculations, score inputs or renderer.
 Source manuscript hashes and rendering comparisons are recorded separately.
 Only the replication package is updated; original analysis and manuscript files
 are read-only inputs.

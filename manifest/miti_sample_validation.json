@@ -89,5 +89,22 @@
     }
   ],
   "source_stability_table_exact_match": true,
-  "corrected_human_validation": "manifest/miti_benchmark_validation.json"
+  "corrected_human_validation": "manifest/miti_benchmark_validation.json",
+  "current_source_review": {
+    "reviewed_at_unix": 1790034212,
+    "source": "python/miti_scoring/build_campaign_exhibits.py",
+    "source_sha256": "fe6f37ebbde42e3760e92e1e5e813e531407504d2f128b06d45b832a6660878f",
+    "shared_calculations_match": true,
+    "plotting_matches_after_documented_adaptations": true,
+    "adaptations": [
+      "Manuscript treatment names without a hyphen in Decisional Balance",
+      "Two-column all-arm legend with space above bars",
+      "Omit unused average-score and forest figures",
+      "PDF release output only"
+    ],
+    "public_code_change_required": false,
+    "saved_scores_and_summary_hashes_unchanged": true,
+    "changed_manuscript_histogram": "Legend now uses Decisional-Balance instead of Ambivalence; underlying distributions unchanged.",
+    "api_requests": 0
+  }
 }

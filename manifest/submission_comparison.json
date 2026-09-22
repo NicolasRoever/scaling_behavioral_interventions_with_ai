@@ -1,5 +1,5 @@
 {
-  "compared_at_unix": 1789849693,
+  "compared_at_unix": 1790034375,
   "mode": "current_analysis",
   "submission_pdf_sha256": "f9780ba2df9df301b0664eb669c735c9433e187f16dd5be39a18aff248322e24",
   "tables": [
@@ -22,19 +22,19 @@
           "row": "changetalk",
           "column": 1,
           "pdf": "-0.094***",
-          "replicated": "-0.078***"
+          "replicated": "-0.079***"
         },
         {
           "row": "changetalk",
           "column": 2,
           "pdf": "0.110***",
-          "replicated": "0.090***"
+          "replicated": "0.092***"
         },
         {
           "row": "changetalk",
           "column": 3,
           "pdf": "0.054*",
-          "replicated": "0.042"
+          "replicated": "0.044"
         },
         {
           "row": "changetalk__se",
@@ -58,19 +58,19 @@
           "row": "decisionalbalance",
           "column": 1,
           "pdf": "-0.042",
-          "replicated": "-0.034"
+          "replicated": "-0.033"
         },
         {
           "row": "decisionalbalance",
           "column": 2,
           "pdf": "0.072**",
-          "replicated": "0.060**"
+          "replicated": "0.058**"
         },
         {
           "row": "decisionalbalance",
           "column": 3,
           "pdf": "0.022",
-          "replicated": "0.013"
+          "replicated": "0.014"
         },
         {
           "row": "decisionalbalance__se",
@@ -82,7 +82,7 @@
           "row": "decisionalbalance__se",
           "column": 2,
           "pdf": "0.030",
-          "replicated": "0.029"
+          "replicated": "0.028"
         },
         {
           "row": "decisionalbalance__se",
@@ -94,19 +94,19 @@
           "row": "directpersuasion",
           "column": 1,
           "pdf": "-0.085***",
-          "replicated": "-0.077***"
+          "replicated": "-0.075***"
         },
         {
           "row": "directpersuasion",
           "column": 2,
           "pdf": "0.093***",
-          "replicated": "0.079***"
+          "replicated": "0.076***"
         },
         {
           "row": "directpersuasion",
           "column": 3,
           "pdf": "0.073**",
-          "replicated": "0.072**"
+          "replicated": "0.071**"
         },
         {
           "row": "directpersuasion__se",
@@ -118,7 +118,7 @@
           "row": "directpersuasion__se",
           "column": 2,
           "pdf": "0.030",
-          "replicated": "0.029"
+          "replicated": "0.028"
         },
         {
           "row": "directpersuasion__se",
@@ -148,19 +148,19 @@
           "row": "r2",
           "column": 1,
           "pdf": "0.036",
-          "replicated": "0.030"
+          "replicated": "0.033"
         },
         {
           "row": "r2",
           "column": 2,
           "pdf": "0.026",
-          "replicated": "0.022"
+          "replicated": "0.027"
         },
         {
           "row": "r2",
           "column": 3,
           "pdf": "0.053",
-          "replicated": "0.052"
+          "replicated": "0.057"
         },
         {
           "row": "controlgroupmean",
@@ -184,55 +184,55 @@
           "row": "pvalueab",
           "column": 1,
           "pdf": "0.046",
-          "replicated": "0.084"
+          "replicated": "0.066"
         },
         {
           "row": "pvalueab",
           "column": 2,
           "pdf": "0.182",
-          "replicated": "0.283"
+          "replicated": "0.224"
         },
         {
           "row": "pvalueab",
           "column": 3,
           "pdf": "0.266",
-          "replicated": "0.303"
+          "replicated": "0.295"
         },
         {
           "row": "pvalueac",
           "column": 1,
           "pdf": "0.749",
-          "replicated": "0.961"
+          "replicated": "0.856"
         },
         {
           "row": "pvalueac",
           "column": 2,
           "pdf": "0.560",
-          "replicated": "0.701"
+          "replicated": "0.569"
         },
         {
           "row": "pvalueac",
           "column": 3,
           "pdf": "0.549",
-          "replicated": "0.305"
+          "replicated": "0.348"
         },
         {
           "row": "pvaluebc",
           "column": 1,
           "pdf": "0.106",
-          "replicated": "0.102"
+          "replicated": "0.107"
         },
         {
           "row": "pvaluebc",
           "column": 2,
           "pdf": "0.468",
-          "replicated": "0.498"
+          "replicated": "0.527"
         },
         {
           "row": "pvaluebc",
           "column": 3,
           "pdf": "0.089",
-          "replicated": "0.040"
+          "replicated": "0.047"
         }
       ],
       "status": "differs from PDF; see differences"
@@ -1493,54 +1493,349 @@
       "pdf_page": 46,
       "result": "tables/tab_main_treatment_effects_sm_mechanisms.tex",
       "checked_cells": 78,
-      "matching_cells": 78,
-      "numeric_match": true,
-      "differences": [],
-      "status": "matches PDF numeric entries"
+      "matching_cells": 41,
+      "numeric_match": false,
+      "differences": [
+        {
+          "row": "changetalk",
+          "column": 1,
+          "pdf": "0.516***",
+          "replicated": "0.514***"
+        },
+        {
+          "row": "changetalk",
+          "column": 2,
+          "pdf": "0.451***",
+          "replicated": "0.448***"
+        },
+        {
+          "row": "changetalk",
+          "column": 3,
+          "pdf": "0.270***",
+          "replicated": "0.272***"
+        },
+        {
+          "row": "changetalk",
+          "column": 4,
+          "pdf": "0.216***",
+          "replicated": "0.212***"
+        },
+        {
+          "row": "changetalk",
+          "column": 5,
+          "pdf": "0.184***",
+          "replicated": "0.180***"
+        },
+        {
+          "row": "changetalk",
+          "column": 6,
+          "pdf": "0.816***",
+          "replicated": "0.797***"
+        },
+        {
+          "row": "changetalk__se",
+          "column": 4,
+          "pdf": "0.050",
+          "replicated": "0.049"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 1,
+          "pdf": "0.212***",
+          "replicated": "0.202***"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 2,
+          "pdf": "0.127**",
+          "replicated": "0.123**"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 3,
+          "pdf": "-0.155***",
+          "replicated": "-0.154***"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 4,
+          "pdf": "-0.013",
+          "replicated": "-0.018"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 5,
+          "pdf": "0.140***",
+          "replicated": "0.133***"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 6,
+          "pdf": "0.148",
+          "replicated": "0.110"
+        },
+        {
+          "row": "decisionalbalance__se",
+          "column": 6,
+          "pdf": "0.232",
+          "replicated": "0.230"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 1,
+          "pdf": "0.432***",
+          "replicated": "0.425***"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 2,
+          "pdf": "0.202***",
+          "replicated": "0.195***"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 3,
+          "pdf": "0.021",
+          "replicated": "0.022"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 4,
+          "pdf": "0.078",
+          "replicated": "0.076"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 5,
+          "pdf": "0.191***",
+          "replicated": "0.188***"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 6,
+          "pdf": "0.345",
+          "replicated": "0.318"
+        },
+        {
+          "row": "directpersuasion__se",
+          "column": 4,
+          "pdf": "0.051",
+          "replicated": "0.050"
+        },
+        {
+          "row": "directpersuasion__se",
+          "column": 6,
+          "pdf": "0.236",
+          "replicated": "0.234"
+        },
+        {
+          "row": "r2",
+          "column": 1,
+          "pdf": "0.092",
+          "replicated": "0.100"
+        },
+        {
+          "row": "r2",
+          "column": 2,
+          "pdf": "0.101",
+          "replicated": "0.103"
+        },
+        {
+          "row": "r2",
+          "column": 3,
+          "pdf": "0.073",
+          "replicated": "0.075"
+        },
+        {
+          "row": "r2",
+          "column": 4,
+          "pdf": "0.106",
+          "replicated": "0.114"
+        },
+        {
+          "row": "r2",
+          "column": 5,
+          "pdf": "0.068",
+          "replicated": "0.073"
+        },
+        {
+          "row": "r2",
+          "column": 6,
+          "pdf": "0.037",
+          "replicated": "0.043"
+        },
+        {
+          "row": "pvalueab",
+          "column": 5,
+          "pdf": "0.364",
+          "replicated": "0.335"
+        },
+        {
+          "row": "pvalueab",
+          "column": 6,
+          "pdf": "0.009",
+          "replicated": "0.008"
+        },
+        {
+          "row": "pvalueac",
+          "column": 1,
+          "pdf": "0.101",
+          "replicated": "0.083"
+        },
+        {
+          "row": "pvalueac",
+          "column": 5,
+          "pdf": "0.876",
+          "replicated": "0.854"
+        },
+        {
+          "row": "pvalueac",
+          "column": 6,
+          "pdf": "0.072",
+          "replicated": "0.069"
+        },
+        {
+          "row": "pvaluebc",
+          "column": 2,
+          "pdf": "0.158",
+          "replicated": "0.176"
+        },
+        {
+          "row": "pvaluebc",
+          "column": 4,
+          "pdf": "0.078",
+          "replicated": "0.069"
+        },
+        {
+          "row": "pvaluebc",
+          "column": 5,
+          "pdf": "0.285",
+          "replicated": "0.248"
+        },
+        {
+          "row": "pvaluebc",
+          "column": 6,
+          "pdf": "0.410",
+          "replicated": "0.380"
+        }
+      ],
+      "status": "differs from PDF; see differences"
     },
     {
       "table": "A.5",
       "pdf_page": 47,
       "result": "tables/tab_main_treatment_effects_sm_minutes.tex",
       "checked_cells": 39,
-      "matching_cells": 28,
+      "matching_cells": 11,
       "numeric_match": false,
       "differences": [
         {
           "row": "changetalk",
+          "column": 1,
+          "pdf": "-7.754***",
+          "replicated": "-7.271***"
+        },
+        {
+          "row": "changetalk",
+          "column": 2,
+          "pdf": "-25.265***",
+          "replicated": "-24.606***"
+        },
+        {
+          "row": "changetalk",
           "column": 3,
           "pdf": "-11.203*",
-          "replicated": "-10.010*"
+          "replicated": "-10.069*"
+        },
+        {
+          "row": "changetalk__se",
+          "column": 1,
+          "pdf": "2.773",
+          "replicated": "2.728"
+        },
+        {
+          "row": "changetalk__se",
+          "column": 2,
+          "pdf": "3.909",
+          "replicated": "3.901"
         },
         {
           "row": "changetalk__se",
           "column": 3,
           "pdf": "5.930",
-          "replicated": "5.817"
+          "replicated": "5.791"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 1,
+          "pdf": "4.130",
+          "replicated": "4.030"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 2,
+          "pdf": "-14.552***",
+          "replicated": "-14.376***"
         },
         {
           "row": "decisionalbalance",
           "column": 3,
           "pdf": "-11.937**",
-          "replicated": "-12.328**"
+          "replicated": "-12.086**"
+        },
+        {
+          "row": "decisionalbalance__se",
+          "column": 1,
+          "pdf": "2.866",
+          "replicated": "2.820"
+        },
+        {
+          "row": "decisionalbalance__se",
+          "column": 2,
+          "pdf": "3.716",
+          "replicated": "3.694"
         },
         {
           "row": "decisionalbalance__se",
           "column": 3,
           "pdf": "5.698",
-          "replicated": "5.505"
+          "replicated": "5.493"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 1,
+          "pdf": "-7.444**",
+          "replicated": "-7.373**"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 2,
+          "pdf": "-39.320***",
+          "replicated": "-39.179***"
         },
         {
           "row": "directpersuasion",
           "column": 3,
           "pdf": "-23.824***",
-          "replicated": "-22.360***"
+          "replicated": "-22.595***"
+        },
+        {
+          "row": "directpersuasion__se",
+          "column": 1,
+          "pdf": "2.959",
+          "replicated": "2.912"
+        },
+        {
+          "row": "directpersuasion__se",
+          "column": 2,
+          "pdf": "4.213",
+          "replicated": "4.192"
         },
         {
           "row": "directpersuasion__se",
           "column": 3,
           "pdf": "6.181",
-          "replicated": "5.997"
+          "replicated": "5.969"
         },
         {
           "row": "observations",
@@ -1550,9 +1845,21 @@
         },
         {
           "row": "r2",
+          "column": 1,
+          "pdf": "0.362",
+          "replicated": "0.379"
+        },
+        {
+          "row": "r2",
+          "column": 2,
+          "pdf": "0.409",
+          "replicated": "0.414"
+        },
+        {
+          "row": "r2",
           "column": 3,
           "pdf": "0.427",
-          "replicated": "0.428"
+          "replicated": "0.429"
         },
         {
           "row": "controlgroupmean",
@@ -1562,15 +1869,33 @@
         },
         {
           "row": "pvalueab",
+          "column": 2,
+          "pdf": "0.004",
+          "replicated": "0.006"
+        },
+        {
+          "row": "pvalueab",
           "column": 3,
           "pdf": "0.896",
-          "replicated": "0.672"
+          "replicated": "0.712"
+        },
+        {
+          "row": "pvalueac",
+          "column": 1,
+          "pdf": "0.913",
+          "replicated": "0.971"
+        },
+        {
+          "row": "pvalueac",
+          "column": 3,
+          "pdf": "0.039",
+          "replicated": "0.037"
         },
         {
           "row": "pvaluebc",
           "column": 3,
           "pdf": "0.043",
-          "replicated": "0.078"
+          "replicated": "0.066"
         }
       ],
       "status": "differs from PDF; see differences"
@@ -1587,19 +1912,19 @@
           "row": "changetalk",
           "column": 1,
           "pdf": "0.147**",
-          "replicated": "0.137**"
+          "replicated": "0.136**"
         },
         {
           "row": "changetalk",
           "column": 2,
           "pdf": "0.167***",
-          "replicated": "0.151***"
+          "replicated": "0.148***"
         },
         {
           "row": "changetalk",
           "column": 3,
           "pdf": "0.088",
-          "replicated": "0.052"
+          "replicated": "0.053"
         },
         {
           "row": "changetalk__se",
@@ -1623,19 +1948,19 @@
           "row": "decisionalbalance",
           "column": 1,
           "pdf": "0.068",
-          "replicated": "0.063"
+          "replicated": "0.055"
         },
         {
           "row": "decisionalbalance",
           "column": 2,
           "pdf": "0.054",
-          "replicated": "0.042"
+          "replicated": "0.037"
         },
         {
           "row": "decisionalbalance",
           "column": 3,
           "pdf": "-0.073",
-          "replicated": "-0.083"
+          "replicated": "-0.082"
         },
         {
           "row": "decisionalbalance__se",
@@ -1653,25 +1978,25 @@
           "row": "decisionalbalance__se",
           "column": 3,
           "pdf": "0.059",
-          "replicated": "0.056"
+          "replicated": "0.057"
         },
         {
           "row": "directpersuasion",
           "column": 1,
           "pdf": "0.161***",
-          "replicated": "0.141**"
+          "replicated": "0.133**"
         },
         {
           "row": "directpersuasion",
           "column": 2,
           "pdf": "0.118**",
-          "replicated": "0.094*"
+          "replicated": "0.089"
         },
         {
           "row": "directpersuasion",
           "column": 3,
           "pdf": "0.010",
-          "replicated": "-0.010"
+          "replicated": "-0.008"
         },
         {
           "row": "directpersuasion__se",
@@ -1713,7 +2038,7 @@
           "row": "r2",
           "column": 1,
           "pdf": "0.067",
-          "replicated": "0.063"
+          "replicated": "0.068"
         },
         {
           "row": "r2",
@@ -1725,61 +2050,61 @@
           "row": "r2",
           "column": 3,
           "pdf": "0.084",
-          "replicated": "0.080"
+          "replicated": "0.078"
         },
         {
           "row": "pvalueab",
           "column": 1,
           "pdf": "0.167",
-          "replicated": "0.178"
+          "replicated": "0.145"
         },
         {
           "row": "pvalueab",
           "column": 2,
           "pdf": "0.036",
-          "replicated": "0.039"
+          "replicated": "0.037"
         },
         {
           "row": "pvalueab",
           "column": 3,
           "pdf": "0.007",
-          "replicated": "0.017"
+          "replicated": "0.018"
         },
         {
           "row": "pvalueac",
           "column": 1,
           "pdf": "0.806",
-          "replicated": "0.943"
+          "replicated": "0.959"
         },
         {
           "row": "pvalueac",
           "column": 2,
           "pdf": "0.363",
-          "replicated": "0.285"
+          "replicated": "0.263"
         },
         {
           "row": "pvalueac",
           "column": 3,
           "pdf": "0.181",
-          "replicated": "0.264"
+          "replicated": "0.277"
         },
         {
           "row": "pvaluebc",
           "column": 1,
           "pdf": "0.116",
-          "replicated": "0.170"
+          "replicated": "0.172"
         },
         {
           "row": "pvaluebc",
           "column": 2,
           "pdf": "0.252",
-          "replicated": "0.336"
+          "replicated": "0.346"
         },
         {
           "row": "pvaluebc",
           "column": 3,
           "pdf": "0.163",
-          "replicated": "0.198"
+          "replicated": "0.193"
         }
       ],
       "status": "differs from PDF; see differences"
@@ -1789,7 +2114,7 @@
       "pdf_page": 49,
       "result": "tables/tab_treatment_effects_closetoideal_followup.tex",
       "checked_cells": 52,
-      "matching_cells": 7,
+      "matching_cells": 5,
       "numeric_match": false,
       "differences": [
         {
@@ -1814,7 +2139,7 @@
           "row": "changetalk",
           "column": 4,
           "pdf": "0.051*",
-          "replicated": "0.053**"
+          "replicated": "0.054**"
         },
         {
           "row": "changetalk__se",
@@ -1844,7 +2169,7 @@
           "row": "decisionalbalance",
           "column": 1,
           "pdf": "0.011",
-          "replicated": "0.006"
+          "replicated": "0.007"
         },
         {
           "row": "decisionalbalance",
@@ -1856,13 +2181,13 @@
           "row": "decisionalbalance",
           "column": 3,
           "pdf": "0.020",
-          "replicated": "0.018"
+          "replicated": "0.019"
         },
         {
           "row": "decisionalbalance",
           "column": 4,
           "pdf": "0.040",
-          "replicated": "0.051**"
+          "replicated": "0.052**"
         },
         {
           "row": "decisionalbalance__se",
@@ -1892,7 +2217,7 @@
           "row": "directpersuasion",
           "column": 1,
           "pdf": "0.053***",
-          "replicated": "0.047***"
+          "replicated": "0.048***"
         },
         {
           "row": "directpersuasion",
@@ -1904,13 +2229,13 @@
           "row": "directpersuasion",
           "column": 3,
           "pdf": "0.082***",
-          "replicated": "0.075***"
+          "replicated": "0.079***"
         },
         {
           "row": "directpersuasion",
           "column": 4,
           "pdf": "0.099***",
-          "replicated": "0.093***"
+          "replicated": "0.097***"
         },
         {
           "row": "directpersuasion__se",
@@ -1934,7 +2259,7 @@
           "row": "directpersuasion__se",
           "column": 4,
           "pdf": "0.028",
-          "replicated": "0.026"
+          "replicated": "0.027"
         },
         {
           "row": "observations",
@@ -1962,15 +2287,27 @@
         },
         {
           "row": "r2",
+          "column": 1,
+          "pdf": "0.036",
+          "replicated": "0.037"
+        },
+        {
+          "row": "r2",
           "column": 2,
           "pdf": "0.045",
-          "replicated": "0.047"
+          "replicated": "0.046"
+        },
+        {
+          "row": "r2",
+          "column": 3,
+          "pdf": "0.112",
+          "replicated": "0.114"
         },
         {
           "row": "r2",
           "column": 4,
           "pdf": "0.123",
-          "replicated": "0.126"
+          "replicated": "0.130"
         },
         {
           "row": "controlgroupmean",
@@ -1994,7 +2331,7 @@
           "row": "pvalueab",
           "column": 1,
           "pdf": "0.222",
-          "replicated": "0.186"
+          "replicated": "0.201"
         },
         {
           "row": "pvalueab",
@@ -2006,19 +2343,19 @@
           "row": "pvalueab",
           "column": 3,
           "pdf": "0.159",
-          "replicated": "0.166"
+          "replicated": "0.168"
         },
         {
           "row": "pvalueab",
           "column": 4,
           "pdf": "0.683",
-          "replicated": "0.930"
+          "replicated": "0.929"
         },
         {
           "row": "pvalueac",
           "column": 1,
           "pdf": "0.319",
-          "replicated": "0.331"
+          "replicated": "0.311"
         },
         {
           "row": "pvalueac",
@@ -2030,19 +2367,19 @@
           "row": "pvalueac",
           "column": 3,
           "pdf": "0.312",
-          "replicated": "0.321"
+          "replicated": "0.270"
         },
         {
           "row": "pvalueac",
           "column": 4,
           "pdf": "0.096",
-          "replicated": "0.135"
+          "replicated": "0.107"
         },
         {
           "row": "pvaluebc",
           "column": 1,
           "pdf": "0.031",
-          "replicated": "0.025"
+          "replicated": "0.024"
         },
         {
           "row": "pvaluebc",
@@ -2054,13 +2391,13 @@
           "row": "pvaluebc",
           "column": 3,
           "pdf": "0.019",
-          "replicated": "0.020"
+          "replicated": "0.015"
         },
         {
           "row": "pvaluebc",
           "column": 4,
           "pdf": "0.041",
-          "replicated": "0.117"
+          "replicated": "0.093"
         }
       ],
       "status": "differs from PDF; see differences"
@@ -2070,80 +2407,152 @@
       "pdf_page": 50,
       "result": "tables/tab_heterogeneity_timeuse_by_wedge.tex",
       "checked_cells": 52,
-      "matching_cells": 27,
+      "matching_cells": 11,
       "numeric_match": false,
       "differences": [
         {
           "row": "changetalk",
+          "column": 1,
+          "pdf": "-12.513***",
+          "replicated": "-11.866***"
+        },
+        {
+          "row": "changetalk",
+          "column": 2,
+          "pdf": "-31.942***",
+          "replicated": "-31.576***"
+        },
+        {
+          "row": "changetalk",
           "column": 3,
           "pdf": "-2.728",
-          "replicated": "-3.681"
+          "replicated": "-3.516"
         },
         {
           "row": "changetalk",
           "column": 4,
           "pdf": "-20.259**",
-          "replicated": "-15.691*"
+          "replicated": "-14.997*"
+        },
+        {
+          "row": "changetalk__se",
+          "column": 1,
+          "pdf": "3.993",
+          "replicated": "4.025"
+        },
+        {
+          "row": "changetalk__se",
+          "column": 2,
+          "pdf": "5.050",
+          "replicated": "5.074"
         },
         {
           "row": "changetalk__se",
           "column": 3,
           "pdf": "7.656",
-          "replicated": "7.588"
+          "replicated": "7.533"
         },
         {
           "row": "changetalk__se",
           "column": 4,
           "pdf": "9.054",
-          "replicated": "8.753"
+          "replicated": "8.731"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 1,
+          "pdf": "-4.904",
+          "replicated": "-4.642"
+        },
+        {
+          "row": "decisionalbalance",
+          "column": 2,
+          "pdf": "-19.114***",
+          "replicated": "-19.053***"
         },
         {
           "row": "decisionalbalance",
           "column": 3,
           "pdf": "-4.594",
-          "replicated": "-6.334"
+          "replicated": "-5.394"
         },
         {
           "row": "decisionalbalance",
           "column": 4,
           "pdf": "-22.136**",
-          "replicated": "-19.109**"
+          "replicated": "-18.926**"
+        },
+        {
+          "row": "decisionalbalance__se",
+          "column": 1,
+          "pdf": "3.864",
+          "replicated": "3.875"
+        },
+        {
+          "row": "decisionalbalance__se",
+          "column": 2,
+          "pdf": "5.187",
+          "replicated": "5.169"
         },
         {
           "row": "decisionalbalance__se",
           "column": 3,
           "pdf": "7.271",
-          "replicated": "7.114"
+          "replicated": "7.055"
         },
         {
           "row": "decisionalbalance__se",
           "column": 4,
           "pdf": "8.899",
-          "replicated": "8.418"
+          "replicated": "8.406"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 1,
+          "pdf": "-21.046***",
+          "replicated": "-21.027***"
+        },
+        {
+          "row": "directpersuasion",
+          "column": 2,
+          "pdf": "-52.803***",
+          "replicated": "-52.372***"
         },
         {
           "row": "directpersuasion",
           "column": 3,
           "pdf": "-19.723***",
-          "replicated": "-19.318***"
+          "replicated": "-19.511***"
         },
         {
           "row": "directpersuasion",
           "column": 4,
           "pdf": "-30.256***",
-          "replicated": "-26.357***"
+          "replicated": "-26.078***"
+        },
+        {
+          "row": "directpersuasion__se",
+          "column": 1,
+          "pdf": "4.510",
+          "replicated": "4.473"
+        },
+        {
+          "row": "directpersuasion__se",
+          "column": 2,
+          "pdf": "5.856",
+          "replicated": "5.863"
         },
         {
           "row": "directpersuasion__se",
           "column": 3,
           "pdf": "7.537",
-          "replicated": "7.385"
+          "replicated": "7.251"
         },
         {
           "row": "directpersuasion__se",
           "column": 4,
           "pdf": "10.231",
-          "replicated": "9.703"
+          "replicated": "9.699"
         },
         {
           "row": "observations",
@@ -2159,15 +2568,27 @@
         },
         {
           "row": "r2",
+          "column": 1,
+          "pdf": "0.630",
+          "replicated": "0.631"
+        },
+        {
+          "row": "r2",
+          "column": 2,
+          "pdf": "0.457",
+          "replicated": "0.456"
+        },
+        {
+          "row": "r2",
           "column": 3,
           "pdf": "0.413",
-          "replicated": "0.409"
+          "replicated": "0.411"
         },
         {
           "row": "r2",
           "column": 4,
           "pdf": "0.309",
-          "replicated": "0.321"
+          "replicated": "0.318"
         },
         {
           "row": "controlgroupmean",
@@ -2183,45 +2604,57 @@
         },
         {
           "row": "pvalueab",
+          "column": 1,
+          "pdf": "0.036",
+          "replicated": "0.048"
+        },
+        {
+          "row": "pvalueab",
+          "column": 2,
+          "pdf": "0.011",
+          "replicated": "0.013"
+        },
+        {
+          "row": "pvalueab",
           "column": 3,
           "pdf": "0.806",
-          "replicated": "0.725"
+          "replicated": "0.799"
         },
         {
           "row": "pvalueab",
           "column": 4,
           "pdf": "0.818",
-          "replicated": "0.664"
+          "replicated": "0.620"
         },
         {
           "row": "pvalueac",
           "column": 1,
           "pdf": "0",
-          "replicated": "0.046"
+          "replicated": "0.033"
         },
         {
           "row": "pvalueac",
           "column": 3,
           "pdf": "0.040",
-          "replicated": "0.043"
+          "replicated": "0.039"
         },
         {
           "row": "pvalueac",
           "column": 4,
           "pdf": "0.387",
-          "replicated": "0.251"
+          "replicated": "0.232"
         },
         {
           "row": "pvaluebc",
           "column": 3,
           "pdf": "0.040",
-          "replicated": "0.073"
+          "replicated": "0.051"
         },
         {
           "row": "pvaluebc",
           "column": 4,
           "pdf": "0.387",
-          "replicated": "0.417"
+          "replicated": "0.427"
         }
       ],
       "status": "differs from PDF; see differences"
@@ -2238,145 +2671,145 @@
           "row": "changetalk",
           "column": 1,
           "pdf": "-13.961***",
-          "replicated": "-12.408***"
+          "replicated": "-11.677***"
         },
         {
           "row": "changetalk",
           "column": 2,
           "pdf": "-28.246***",
-          "replicated": "-34.556***"
+          "replicated": "-34.618***"
         },
         {
           "row": "changetalk",
           "column": 3,
           "pdf": "-3.473",
-          "replicated": "-4.996"
+          "replicated": "-4.756"
         },
         {
           "row": "changetalk",
           "column": 4,
           "pdf": "-16.542**",
-          "replicated": "-16.218*"
+          "replicated": "-17.369*"
         },
         {
           "row": "changetalk__se",
           "column": 1,
           "pdf": "3.985",
-          "replicated": "3.394"
+          "replicated": "3.417"
         },
         {
           "row": "changetalk__se",
           "column": 2,
           "pdf": "4.703",
-          "replicated": "5.518"
+          "replicated": "5.524"
         },
         {
           "row": "changetalk__se",
           "column": 3,
           "pdf": "2.877",
-          "replicated": "7.065"
+          "replicated": "7.060"
         },
         {
           "row": "changetalk__se",
           "column": 4,
           "pdf": "8.194",
-          "replicated": "9.278"
+          "replicated": "9.237"
         },
         {
           "row": "decisionalbalance",
           "column": 1,
           "pdf": "-6.340",
-          "replicated": "-8.773***"
+          "replicated": "-7.762**"
         },
         {
           "row": "decisionalbalance",
           "column": 2,
           "pdf": "-15.643***",
-          "replicated": "-15.837***"
+          "replicated": "-16.317***"
         },
         {
           "row": "decisionalbalance",
           "column": 3,
           "pdf": "-2.185",
-          "replicated": "-10.127"
+          "replicated": "-9.589"
         },
         {
           "row": "decisionalbalance",
           "column": 4,
           "pdf": "-20.608**",
-          "replicated": "-13.806"
+          "replicated": "-14.363"
         },
         {
           "row": "decisionalbalance__se",
           "column": 1,
           "pdf": "3.998",
-          "replicated": "3.183"
+          "replicated": "3.212"
         },
         {
           "row": "decisionalbalance__se",
           "column": 2,
           "pdf": "4.635",
-          "replicated": "5.521"
+          "replicated": "5.536"
         },
         {
           "row": "decisionalbalance__se",
           "column": 3,
           "pdf": "2.857",
-          "replicated": "6.459"
+          "replicated": "6.416"
         },
         {
           "row": "decisionalbalance__se",
           "column": 4,
           "pdf": "8.140",
-          "replicated": "8.986"
+          "replicated": "8.982"
         },
         {
           "row": "directpersuasion",
           "column": 1,
           "pdf": "-18.791***",
-          "replicated": "-17.122***"
+          "replicated": "-17.097***"
         },
         {
           "row": "directpersuasion",
           "column": 2,
           "pdf": "-47.287***",
-          "replicated": "-58.041***"
+          "replicated": "-58.024***"
         },
         {
           "row": "directpersuasion",
           "column": 3,
           "pdf": "-5.887**",
-          "replicated": "-15.452**"
+          "replicated": "-15.798**"
         },
         {
           "row": "directpersuasion",
           "column": 4,
           "pdf": "-15.722*",
-          "replicated": "-32.648***"
+          "replicated": "-33.264***"
         },
         {
           "row": "directpersuasion__se",
           "column": 1,
           "pdf": "4.588",
-          "replicated": "3.765"
+          "replicated": "3.756"
         },
         {
           "row": "directpersuasion__se",
           "column": 2,
           "pdf": "5.294",
-          "replicated": "6.261"
+          "replicated": "6.262"
         },
         {
           "row": "directpersuasion__se",
           "column": 3,
           "pdf": "2.852",
-          "replicated": "6.745"
+          "replicated": "6.678"
         },
         {
           "row": "directpersuasion__se",
           "column": 4,
           "pdf": "8.906",
-          "replicated": "10.113"
+          "replicated": "10.030"
         },
         {
           "row": "observations",
@@ -2406,25 +2839,25 @@
           "row": "r2",
           "column": 1,
           "pdf": "0.343",
-          "replicated": "0.268"
+          "replicated": "0.271"
         },
         {
           "row": "r2",
           "column": 2,
           "pdf": "0.496",
-          "replicated": "0.363"
+          "replicated": "0.360"
         },
         {
           "row": "r2",
           "column": 3,
           "pdf": "0.187",
-          "replicated": "0.168"
+          "replicated": "0.169"
         },
         {
           "row": "r2",
           "column": 4,
           "pdf": "0.227",
-          "replicated": "0.254"
+          "replicated": "0.253"
         },
         {
           "row": "controlgroupmean",
@@ -2454,7 +2887,7 @@
           "row": "pvalueab",
           "column": 1,
           "pdf": "0.045",
-          "replicated": "0.264"
+          "replicated": "0.230"
         },
         {
           "row": "pvalueab",
@@ -2466,49 +2899,49 @@
           "row": "pvalueab",
           "column": 3,
           "pdf": "0.636",
-          "replicated": "0.460"
+          "replicated": "0.477"
         },
         {
           "row": "pvalueab",
           "column": 4,
           "pdf": "0.619",
-          "replicated": "0.777"
+          "replicated": "0.726"
         },
         {
           "row": "pvalueac",
           "column": 1,
           "pdf": "0.006",
-          "replicated": "0.211"
+          "replicated": "0.152"
         },
         {
           "row": "pvalueac",
           "column": 3,
           "pdf": "0.165",
-          "replicated": "0.147"
+          "replicated": "0.126"
         },
         {
           "row": "pvalueac",
           "column": 4,
           "pdf": "0.586",
-          "replicated": "0.087"
+          "replicated": "0.098"
         },
         {
           "row": "pvaluebc",
           "column": 1,
           "pdf": "0.006",
-          "replicated": "0.021"
+          "replicated": "0.009"
         },
         {
           "row": "pvaluebc",
           "column": 3,
           "pdf": "0.165",
-          "replicated": "0.422"
+          "replicated": "0.345"
         },
         {
           "row": "pvaluebc",
           "column": 4,
           "pdf": "0.586",
-          "replicated": "0.044"
+          "replicated": "0.047"
         }
       ],
       "status": "differs from PDF; see differences"
@@ -2598,5 +3031,5 @@
     }
   ],
   "numeric_tables": 11,
-  "exact_numeric_matches": 1
+  "exact_numeric_matches": 0
 }

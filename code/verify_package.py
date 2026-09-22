@@ -47,26 +47,25 @@ def verify(package, check_reproduced, allow_rebuilt_data, check_submission=False
     from compare_submission import compare
     submission_spec = json.loads((package / 'manifest/submission_tables.json').read_text())
     expected_tables = {t['result'] for t in submission_spec['tables']}
-    supplied_tables = {str(f.relative_to(package / 'submission_results'))
-                       for f in (package / 'submission_results').rglob('*') if f.is_file()}
-    if supplied_tables != expected_tables:
-        errors.append('Original-submission reference table coverage differs')
-    if len(expected_tables) != 12:
-        errors.append('Expected all 12 original-submission tables')
-    roots = [package / 'submission_results']
+    if len(expected_tables) != 12 or len(submission_spec['tables']) != 12:
+        errors.append('Expected all 12 original-submission table specifications')
+    for table in submission_spec['tables']:
+        if table.get('generated_path') != 'reproduced/submission/' + table['result']:
+            errors.append('Invalid archival output path: ' + table['result'])
+        if not re.fullmatch(r'[0-9a-f]{64}', table.get('expected_text_sha256', '')):
+            errors.append('Missing archival output fingerprint: ' + table['result'])
     if check_submission:
-        roots.append(package / 'reproduced/submission')
-    for root in roots:
+        root = package / 'reproduced/submission'
         if any(not (root / relative).is_file() for relative in expected_tables):
-            errors.append('Missing original-submission table in ' + str(root))
-            continue
-        report = compare(package, root, submission=True)
-        if report['exact_numeric_matches'] != 11:
-            errors.append('Original-submission numerical table mismatch in ' + str(root))
-        if check_submission and root.name == 'submission':
-            for relative in expected_tables:
-                if re.sub(r'\s+', '', (root / relative).read_text()) != re.sub(r'\s+', '', (package / 'submission_results' / relative).read_text()):
-                    errors.append('Archival reference differs from generated table: ' + relative)
+            errors.append('Missing original-submission output; run code/reproduce_submission.py first')
+        else:
+            report = compare(package, root, submission=True)
+            if report['exact_numeric_matches'] != 11:
+                errors.append('Original-submission numerical table mismatch')
+            for table in submission_spec['tables']:
+                content = re.sub(r'\s+', '', (root / table['result']).read_text())
+                if hashlib.sha256(content.encode()).hexdigest() != table['expected_text_sha256']:
+                    errors.append('Archival output differs from its verified fingerprint: ' + table['result'])
     from prompts.check_appendix import load_configuration
     sys.path.insert(0, str(package / 'code/python'))
     from miti_validation import load_inputs
@@ -116,9 +115,9 @@ def verify(package, check_reproduced, allow_rebuilt_data, check_submission=False
     print('PASS: anonymous survey identifiers and platform-ID checks.')
     print('PASS: 67 prompt blocks in four arms match the appendix validation record.')
     print('PASS: corrected MITI benchmark has 504 valid paired scores, 14 interviews and all nine conditions.')
-    print('PASS: all 12 original-submission reference tables supplied; 11/11 numerical tables match the PDF.')
+    print('PASS: all 12 original-submission specifications and output fingerprints are supplied.')
     if check_submission:
-        print('PASS: original-submission rerun matches PDF numbers and released table references.')
+        print('PASS: original-submission rerun matches all 11 numerical tables and 12 verified output fingerprints.')
     if check_reproduced:
         print('PASS: all computed outputs exist and all regenerated LaTeX matches the release references.')
     if allow_rebuilt_data:

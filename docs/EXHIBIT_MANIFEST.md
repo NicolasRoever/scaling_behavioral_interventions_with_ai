@@ -1,6 +1,6 @@
 # Exhibit manifest
 
-Extracted from active `revision.tex` content, excluding `%` comments and `comment` environments. Computed files under `results/` are refreshed for the active survey snapshot. Released hashes and the separately inspected manuscript hashes are in `manifest/exhibits.json`. The original submission has a separate 12-table crosswalk in `manifest/submission_tables.json`, verified references in `submission_results/`, and a detailed audit in `SUBMISSION_TABLE_AUDIT.md`.
+Extracted from active `revision.tex` content, excluding `%` comments and `comment` environments. Computed files under `results/` are refreshed for the active survey snapshot. Released hashes and the separately inspected manuscript hashes are in `manifest/exhibits.json`. The original submission has a separate 12-table crosswalk in `manifest/submission_tables.json`, expected numeric cells and output fingerprints in that crosswalk, and a detailed audit in [SUBMISSION_TABLE_AUDIT.md](SUBMISSION_TABLE_AUDIT.md).
 
 | Manuscript path | Public generating code | Inputs / status |
 |---|---|---|

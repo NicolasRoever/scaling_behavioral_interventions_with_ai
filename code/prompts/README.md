@@ -51,7 +51,7 @@ The global prompts request a JSON object containing an integer `score` from 1
 to 5 and a short `justification`. The standard and ablated study templates,
 validation templates, and all four rubrics match the saved September 10 study
 campaign and September 18 corrected validation inputs exactly. See
-[MITI_REPLICATION.md](../../MITI_REPLICATION.md) for models, settings, and the
+[MITI_REPLICATION.md](../../docs/MITI_REPLICATION.md) for models, settings, and the
 saved results used in the paper.
 
 ## Behavioral counts

@@ -68,7 +68,7 @@ def make_config(script_dir: Path, environ: dict[str, str]) -> Config:
     output_dir = script_dir / "output"
     replication_root = script_dir.parents[1]
     in_replication_package = (
-        replication_root / "EXHIBIT_MANIFEST.md"
+        replication_root / "docs" / "EXHIBIT_MANIFEST.md"
     ).exists()
     if in_replication_package:
         default_input_path = (

@@ -85,5 +85,5 @@ public reproduction uses the saved codes and makes no model calls.
 
 `prolific_id`-named fields contain anonymous release keys, not original Prolific
 IDs. The current files passed the source-ID audit. Older Git commits still
-contain original platform identifiers; see `PRIVACY.md` for the distinction
+contain original platform identifiers; see [PRIVACY.md](PRIVACY.md) for the distinction
 between the clean working release and repository history.

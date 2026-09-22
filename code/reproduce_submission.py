@@ -1,7 +1,7 @@
 """Reconstruct the original submission's table specifications using saved inputs.
 
 This archival route deliberately retains the published reporting errors listed
-in SUBMISSION_TABLE_AUDIT.md. It does not alter the corrected default scripts.
+in docs/SUBMISSION_TABLE_AUDIT.md. It does not alter the corrected default scripts.
 No API requests are made. Requires Stata 17 and the public Python dependencies.
 """
 import argparse
@@ -40,7 +40,7 @@ def submission_script(name, text):
         # Reproduce the published duplicated b=c p-values under the a=c label.
         # Correct tests remain in the default analysis scripts.
         text = replace_checked(text, '    test 1.T = 3.T\n', '', 2)
-    return '* ARCHIVAL SPECIFICATION: see SUBMISSION_TABLE_AUDIT.md\n' + text
+    return '* ARCHIVAL SPECIFICATION: see docs/SUBMISSION_TABLE_AUDIT.md\n' + text
 
 
 def run_stata_tables(package, stata, output):

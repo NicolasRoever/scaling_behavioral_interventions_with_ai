@@ -9,5 +9,5 @@ time-use responses. No external participant IDs or interview text are included.
 Only `code/reproduce_submission.py` reads these files. The default runners and
 cleaning pipeline use `data/processed/` and `data/raw/` with the current export.
 File versions and checksums are recorded in
-`manifest/submission_survey_snapshot.json`; see `SUBMISSION_TABLE_AUDIT.md`
+`manifest/submission_survey_snapshot.json`; see [submission audit](../../../docs/SUBMISSION_TABLE_AUDIT.md)
 for reconstruction instructions and the archival specification corrections.

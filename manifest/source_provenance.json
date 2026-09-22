@@ -1,5 +1,5 @@
 {
-  "recorded_at_unix": 1790029343,
+  "recorded_at_unix": 1790034212,
   "source_files": [
     {
       "package_file": "code/stata/fig_baseline_sm_use.do",
@@ -264,13 +264,13 @@
     {
       "package_file": "code/python/miti_tables.py",
       "source": "python/miti_scoring/build_campaign_exhibits.py",
-      "source_sha256": "6d7b1437b0e29544ab30d41b19267c969d7c6c1d35d75b3ee60b39f0a26e4fca",
+      "source_sha256": "fe6f37ebbde42e3760e92e1e5e813e531407504d2f128b06d45b832a6660878f",
       "package_adjustment": "Offline experimental exhibits with exactly 2,048 eligible treated participants. Human-validation tables are built separately from the corrected September 18 benchmark. Shared renderer supports the revised panel headings. Use manuscript treatment names and a two-column all-arm legend."
     },
     {
       "package_file": "code/python/run_public.py",
       "source": "python/miti_scoring/build_campaign_exhibits.py",
-      "source_sha256": "6d7b1437b0e29544ab30d41b19267c969d7c6c1d35d75b3ee60b39f0a26e4fca",
+      "source_sha256": "fe6f37ebbde42e3760e92e1e5e813e531407504d2f128b06d45b832a6660878f",
       "package_adjustment": "Offline experimental exhibits with exactly 2,048 eligible treated participants. Human-validation tables are built separately from the corrected September 18 benchmark. Shared renderer supports the revised panel headings."
     },
     {
@@ -358,10 +358,10 @@
       "retained": "Anonymous pair keys, dimension, numeric human/model scores only"
     }
   ],
-  "submission_archival_adaptations": "code/reproduce_submission.py uses the three frozen deidentified inputs in manifest/submission_survey_snapshot.json and the specifications documented in SUBMISSION_TABLE_AUDIT.md.",
+  "submission_archival_adaptations": "code/reproduce_submission.py uses the three frozen deidentified inputs in manifest/submission_survey_snapshot.json and the specifications documented in docs/SUBMISSION_TABLE_AUDIT.md.",
   "interview_prompts": {
     "source": "revision.tex, Appendix D.1--D.4",
-    "source_sha256": "a58a446e5d010bd92c5b7ccd16b5ef87de1ca0091930b5f9754841fee0af1ecd",
+    "source_sha256": "143e0f869cc5cb4f12c27600f9c3cbba96b530ce310341bf4ef48f5afe98713f",
     "package_file": "code/prompts/parameters.py",
     "validation": "manifest/prompt_validation.json",
     "blocks": 67

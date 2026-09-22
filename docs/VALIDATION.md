@@ -4,11 +4,20 @@ Updated September 21, 2026 using local saved inputs only. Additional API/compute
 cost was $0; model requests were zero. Original analysis code and manuscript
 files were read-only inputs.
 
+- Package layout: supporting Markdown files now live in `docs/`, leaving only
+  `README.md` at the root. All 45 local Markdown links resolve. The duplicate
+  archival output folder was removed, and the original-submission workflow was
+  rerun successfully with numeric checks and fingerprints for all 12 outputs.
+- Latest manuscript/MITI refresh: all six previously flagged numerical prose
+  statements now agree with the current results. The current MITI builder's
+  shared calculations and plotting functions match the public implementation
+  after the documented presentation adaptations. Score inputs, source numeric
+  summaries and analysis code are unchanged; no analysis rerun was needed.
 - Latest app-use correction: all seven baseline use controls follow the source
   midpoint cutoff `> 2.5`. Three deidentified analysis datasets changed; raw
   outcomes, anonymous keys and sample sizes did not. The 14 affected table
-  fragments and eight affected figures were regenerated. Selected stale
-  manuscript prose is documented in `REPRODUCIBILITY_NOTES.md` and
+  fragments and eight affected figures were regenerated in the preceding update.
+  The resolved prose comparisons are recorded in [REPRODUCIBILITY_NOTES.md](REPRODUCIBILITY_NOTES.md) and
   `manifest/app_use_controls_validation.json`.
 - Earlier September 21 refresh: baseline writing filter matches `< 20`; rebuilding
   four cleaned files reproduces every numeric variable and anonymous join key.
@@ -26,7 +35,7 @@ files were read-only inputs.
   5,662 Qualtrics response IDs, including DTA metadata and extracted PDF text.
   All 12 survey/archival DTA files have anonymous ID values. The public verifier
   now checks identifier fields and exposed platform-ID patterns. **Git history
-  has 14 affected older file versions and has not been rewritten**; see `PRIVACY.md`.
+  has 14 affected older file versions and has not been rewritten**; see [PRIVACY.md](PRIVACY.md).
 - Stata/SE 17 and Python 3.9.12 public runners completed: **48 computed exhibits**
   (27 PDFs and 21 LaTeX fragments), plus supporting audit summaries. Completion
   markers and Stata logs were checked, as well as process exit codes.
@@ -41,10 +50,12 @@ files were read-only inputs.
   at normalized PDF-vector tolerance 1e-7. All eight figures changed by this
   update were visually reviewed.
 - The archival runner reproduced **11/11 original numerical tables and 742/742
-  checked entries**. All 12 archived reference tables are unchanged. Three
+  checked entries**. The optional archival runner generates all 12 tables; the
+  redundant output folder is removed. Expected table entries and normalized
+  output hashes remain in `manifest/submission_tables.json`. Three
   already deidentified prior-release survey files are frozen for this route;
   their hashes are checked before each archival run. Default runners use the
-  fully updated data. See `SUBMISSION_TABLE_AUDIT.md`.
+  fully updated data. See [SUBMISSION_TABLE_AUDIT.md](SUBMISSION_TABLE_AUDIT.md).
 - All nine current survey datasets were checked against original source numeric
   values (`rtol=1e-6`, `atol=1e-8`), with consistent anonymous participant/response
   IDs and privacy exclusions. All derived inputs, including the refreshed
@@ -76,6 +87,6 @@ files were read-only inputs.
   logs and caches are excluded. Installation also checks for concurrent edits.
 
 The manifests record numeric, privacy, input-version, prompt, figure and table
-comparisons. `REPRODUCIBILITY_NOTES.md` explains the updated follow-up data;
-`MITI_REPLICATION.md` documents the distinct saved MITI campaigns. These checks
+comparisons. [REPRODUCIBILITY_NOTES.md](REPRODUCIBILITY_NOTES.md) explains the updated follow-up data;
+[MITI_REPLICATION.md](MITI_REPLICATION.md) documents the distinct saved MITI campaigns. These checks
 cover the supplied analyses and exhibits, not every statement in the manuscript.

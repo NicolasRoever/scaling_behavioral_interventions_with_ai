@@ -32,7 +32,7 @@ conditions. Luna uses low reasoning; GPT-5.4 and GPT-5.5 use none. Five stochast
 runs repeat the same 14 interviews; they are not 70 independent interviews.
 The behavioral-count panel remains the saved historical summary. The old
 September 10 human-validation scores and unused inputs have been removed.
-See the package's `MITI_REPLICATION.md` for exact inputs and audit outputs.
+See the package's [docs/MITI_REPLICATION.md](../../docs/MITI_REPLICATION.md) for exact inputs and audit outputs.
 
 Actual transcript extraction, labeling, model fitting and LLM scoring require
 the withheld data; see `../private/README.md`.

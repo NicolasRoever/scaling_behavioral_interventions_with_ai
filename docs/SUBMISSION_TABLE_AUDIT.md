@@ -4,13 +4,13 @@ All 12 tables in `ssrn-6081126.pdf` are covered: 11 numerical tables and the
 static interview-structure table. The original-submission runner reproduces
 all **742 checked entries in all 11 numerical tables**, including reported
 standard errors, significance stars, sample sizes and hypothesis tests.
-Table 1 is supplied with its original wording restored. The PDF's table pages
+Table 1 is generated with its original wording restored. The PDF's table pages
 were visually inspected; the PDF itself is not distributed because it also
 contains example interviews.
 
 ## Run the original-submission tables
 
-After installing the Stata and Python dependencies described in `README.md`,
+After installing the Stata and Python dependencies described in [README.md](../README.md),
 run from the package root (substitute your Stata executable):
 
 ```bash
@@ -28,9 +28,10 @@ The archival runner constructs temporary copies of
 the public scripts, applies the documented archival specifications below, and
 writes only to `reproduced/submission/`. It requires no prior default run.
 Success is marked by `SUBMISSION_REPRODUCTION_COMPLETE`; mismatched numerical
-tables cause the runner to fail. `submission_results/` contains the verified
-reference tables. These are archival reconstructions, not recommended updates
-to the revised manuscript's analyses.
+tables cause the runner to fail. Expected printed entries and normalized output
+hashes are retained in `manifest/submission_tables.json`, so no separate folder
+of archival outputs is needed. The generated files are archival reconstructions,
+not recommended updates to the revised manuscript's analyses.
 
 ## Table-by-table results
 
@@ -45,11 +46,11 @@ snapshot. “Original” refers to the separate archival runner.
 | A.1 | 43 | Baseline balance | 161/181 | 181/181 |
 | A.2 | 44 | Follow-up attrition | 1/9 | 9/9 |
 | A.3 | 45 | Follow-up balance | 6/181 | 181/181 |
-| A.4 | 46 | Main mechanisms | 78/78 | 78/78 |
-| A.5 | 47 | Social-media minutes | 28/39 | 39/39 |
+| A.4 | 46 | Main mechanisms | 41/78 | 78/78 |
+| A.5 | 47 | Social-media minutes | 11/39 | 39/39 |
 | A.6 | 48 | Follow-up motivation and perceptions | 6/39 | 39/39 |
-| A.7 | 49 | Alignment with ideal time | 7/52 | 52/52 |
-| A.8 | 50 | Heterogeneity by baseline wedge | 27/52 | 52/52 |
+| A.7 | 49 | Alignment with ideal time | 5/52 | 52/52 |
+| A.8 | 50 | Heterogeneity by baseline wedge | 11/52 | 52/52 |
 | A.9 | 51 | Heterogeneity labeled baseline use | 6/52 | 52/52 |
 | C.1 | 69 | Human/model MITI validation | 8/20 | 20/20 |
 
@@ -61,11 +62,16 @@ matching the original table layout.
 
 ## Why the default analysis differs
 
-The follow-up input version now differs as well as some specifications. All
+The follow-up input version and baseline app-use controls now differ, as well
+as some specifications. All
 follow-up-dependent tables use the expanded data in the default route; the
 archival route preserves the previous analysis files. The points below describe
 the original specifications and their corrections, evaluated on the old sample.
 
+- **App-use controls:** The current baseline controls use an app-minute
+  midpoint cutoff greater than 2.5. The archived survey files preserve their
+  historical controls, which used a cutoff greater than zero. This also changes
+  adjusted baseline estimates, independently of the follow-up sample expansion.
 - **A.1 and A.3:** The original social-media-use row and joint balance tests use
   `baseline_actual_social_min_w` (winsorized). Current source scripts explicitly
   use raw `baseline_actual_social_min`. Reinstating winsorization reproduces
@@ -78,8 +84,8 @@ the original specifications and their corrections, evaluated on the old sample.
 - **A.7:** The current source has now restored pre-treatment
   `baseline_ideal_social_min_w`. With the archived inputs, all 52 numerical
   entries match the PDF; the updated follow-up sample changes the default values.
-  Both package routes now use the original “Within 30 min” heading, matching
-  the corrected manuscript and the absolute-gap calculation.
+  Both package routes now use the original “Within 30 min” heading, consistent with
+  the absolute-gap calculation.
 - **A.8:** The PDF's `a=c` row repeats the `b=c` test. Three rounded entries
   differ from a correctly calculated `test 1.T = 3.T`. The archival route
   retains the duplicated test solely to reconstruct the printed table.
@@ -107,7 +113,7 @@ leave the default corrected scripts intact.
 - `manifest/submission_survey_snapshot.json`: version, counts and hashes for the
   three frozen deidentified survey files.
 - `manifest/submission_tables.json`: PDF hash, page/table crosswalk, verified
-  printed cells, and reference hashes.
+  printed cells, generated-file paths and normalized output hashes.
 - `manifest/submission_comparison.json`: current-analysis differences from the PDF.
 - `manifest/submission_archival_comparison.json`: the successful original-table
   comparison produced by the archival run.
